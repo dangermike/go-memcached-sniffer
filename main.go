@@ -31,8 +31,8 @@ func main() {
 		},
 		cli.StringFlag{
 			Name:  "filter, f",
-			Value: "",
-			Usage: "the interface to sniff",
+			Value: "tcp and port 11211",
+			Usage: "pcap-stype filter on the incoming packets",
 		},
 		cli.IntFlag{
 			Name:  "snaplength, s",
@@ -113,10 +113,10 @@ func appAction(c *cli.Context) {
 		for fbuff := range toBeParsed {
 			pr := parseSession(fbuff.Buffer)
 			if pr.ParserOffset != pr.BufferLength || pr.ParserState != memcached_first_final {
-				log.WithFields(fields).WithField("flow_id", fbuff.Flow.FastHash()).Info("Parse failed on flow")
+				log.WithFields(pr.ToLogFields()).WithField("flow_id", fbuff.Flow.FastHash()).Info("Parse failed on flow")
 
 				fname := fmt.Sprintf("flow_%d.bin", fbuff.Flow.FastHash())
-				f, err := os.File.Create(fname)
+				f, err := os.Create(fname)
 				if err != nil {
 					log.WithField("fname", fname).WithError(err).Error("Failed to open file")
 				} else {

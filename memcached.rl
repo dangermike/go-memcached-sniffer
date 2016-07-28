@@ -3,7 +3,6 @@ package main
 
 import (
 	log "github.com/Sirupsen/logrus"
-	"fmt"
 )
 
 // Memcache protocol documentation at https://github.com/memcached/memcached/blob/master/doc/protocol.txt

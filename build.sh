@@ -13,3 +13,5 @@ for filename in $(ls *.rl); do
   echo "compiling ${filename} ${outfile}"
   ragel -Z -G2 $filename | gofmt > ${outfile}
 done
+
+go build
