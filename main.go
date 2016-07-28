@@ -187,7 +187,7 @@ func appAction(c *cli.Context) {
 					}
 				}
 			}
-			close(toBeParsed)
 		}
 	}
+	close(toBeParsed)
 }
