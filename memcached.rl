@@ -58,8 +58,8 @@ import (
 			atomic_val = [0-9]+;
 			noreply = ' noreply'?;
 
-			cmd_get_del = ('get'|'delete');
-			cmd_gets = 'gets';
+			cmd_del = ('delete');
+			cmd_gets = ('get'|'gets');
 			cmd_cas = 'cas';
 			cmd_atomic = ('incr'|'decr');
 			cmd_write = ('set'|'add'|'replace'|'append'|'prepend');
@@ -68,7 +68,7 @@ import (
 			do_atomic = cmd_atomic ' ' mk_key ' ' atomic_val noreply;
 			do_cas = cmd_cas	' ' mk_key	' ' flags ' '	exptime	' ' body_len	' ' cas_key noreply crlf body;
 			do_flush_all = 'flush_all' (' ' digit+)?;
-			do_get_del = cmd_get_del ' ' mk_key;
+			do_get_del = cmd_del ' ' mk_key;
 			do_gets = cmd_gets	' ' mk_key+;
 			do_lru_crawler = 'lru_crawler ' ('enable'|'disable');
 			do_memlimit = 'cache_memlimit ' digit+;
