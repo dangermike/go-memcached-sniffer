@@ -69,7 +69,7 @@ import (
 			do_cas = cmd_cas	' ' mk_key	' ' flags ' '	exptime	' ' body_len	' ' cas_key noreply crlf body;
 			do_flush_all = 'flush_all' (' ' digit+)?;
 			do_get_del = cmd_del ' ' mk_key;
-			do_gets = cmd_gets	' ' mk_key+;
+			do_gets = cmd_gets	(' ' mk_key)+;
 			do_lru_crawler = 'lru_crawler ' ('enable'|'disable');
 			do_memlimit = 'cache_memlimit ' digit+;
 			do_ones = ('version'|'verbosity'|'quit');
