@@ -23,6 +23,12 @@ func main() {
 	app.Name = "go-memcached-sniffer"
 	app.Usage = "Like a dog with its nose up memcached's butt"
 
+	// Explicitly setting so that the short code for version is "V" and verbose can be "v"
+	cli.VersionFlag = cli.BoolFlag{
+		Name:  "version, V",
+		Usage: "print the version",
+	}
+
 	app.Flags = []cli.Flag{
 		cli.StringFlag{
 			Name:  "interface, i",

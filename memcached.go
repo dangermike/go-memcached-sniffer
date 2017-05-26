@@ -35,7 +35,7 @@ import (
 
 //line memcached.go:37
 const memcached_start int = 1
-const memcached_first_final int = 834
+const memcached_first_final int = 852
 const memcached_error int = 0
 
 const memcached_en_main int = 1
@@ -127,8 +127,8 @@ func parseSession(data []byte) ParseResult {
 		goto st_case_15
 	case 16:
 		goto st_case_16
-	case 834:
-		goto st_case_834
+	case 852:
+		goto st_case_852
 	case 17:
 		goto st_case_17
 	case 18:
@@ -191,8 +191,8 @@ func parseSession(data []byte) ParseResult {
 		goto st_case_46
 	case 47:
 		goto st_case_47
-	case 835:
-		goto st_case_835
+	case 853:
+		goto st_case_853
 	case 48:
 		goto st_case_48
 	case 49:
@@ -399,14 +399,14 @@ func parseSession(data []byte) ParseResult {
 		goto st_case_149
 	case 150:
 		goto st_case_150
-	case 836:
-		goto st_case_836
 	case 151:
 		goto st_case_151
 	case 152:
 		goto st_case_152
 	case 153:
 		goto st_case_153
+	case 854:
+		goto st_case_854
 	case 154:
 		goto st_case_154
 	case 155:
@@ -425,14 +425,14 @@ func parseSession(data []byte) ParseResult {
 		goto st_case_161
 	case 162:
 		goto st_case_162
-	case 837:
-		goto st_case_837
 	case 163:
 		goto st_case_163
 	case 164:
 		goto st_case_164
 	case 165:
 		goto st_case_165
+	case 855:
+		goto st_case_855
 	case 166:
 		goto st_case_166
 	case 167:
@@ -455,14 +455,14 @@ func parseSession(data []byte) ParseResult {
 		goto st_case_175
 	case 176:
 		goto st_case_176
-	case 838:
-		goto st_case_838
 	case 177:
 		goto st_case_177
 	case 178:
 		goto st_case_178
 	case 179:
 		goto st_case_179
+	case 856:
+		goto st_case_856
 	case 180:
 		goto st_case_180
 	case 181:
@@ -981,14 +981,10 @@ func parseSession(data []byte) ParseResult {
 		goto st_case_437
 	case 438:
 		goto st_case_438
-	case 839:
-		goto st_case_839
 	case 439:
 		goto st_case_439
 	case 440:
 		goto st_case_440
-	case 840:
-		goto st_case_840
 	case 441:
 		goto st_case_441
 	case 442:
@@ -1009,10 +1005,14 @@ func parseSession(data []byte) ParseResult {
 		goto st_case_449
 	case 450:
 		goto st_case_450
+	case 857:
+		goto st_case_857
 	case 451:
 		goto st_case_451
 	case 452:
 		goto st_case_452
+	case 858:
+		goto st_case_858
 	case 453:
 		goto st_case_453
 	case 454:
@@ -1043,8 +1043,6 @@ func parseSession(data []byte) ParseResult {
 		goto st_case_466
 	case 467:
 		goto st_case_467
-	case 841:
-		goto st_case_841
 	case 468:
 		goto st_case_468
 	case 469:
@@ -1069,6 +1067,8 @@ func parseSession(data []byte) ParseResult {
 		goto st_case_478
 	case 479:
 		goto st_case_479
+	case 859:
+		goto st_case_859
 	case 480:
 		goto st_case_480
 	case 481:
@@ -1777,6 +1777,42 @@ func parseSession(data []byte) ParseResult {
 		goto st_case_832
 	case 833:
 		goto st_case_833
+	case 834:
+		goto st_case_834
+	case 835:
+		goto st_case_835
+	case 836:
+		goto st_case_836
+	case 837:
+		goto st_case_837
+	case 838:
+		goto st_case_838
+	case 839:
+		goto st_case_839
+	case 840:
+		goto st_case_840
+	case 841:
+		goto st_case_841
+	case 842:
+		goto st_case_842
+	case 843:
+		goto st_case_843
+	case 844:
+		goto st_case_844
+	case 845:
+		goto st_case_845
+	case 846:
+		goto st_case_846
+	case 847:
+		goto st_case_847
+	case 848:
+		goto st_case_848
+	case 849:
+		goto st_case_849
+	case 850:
+		goto st_case_850
+	case 851:
+		goto st_case_851
 	}
 	goto st_out
 	st_case_1:
@@ -1792,23 +1828,23 @@ func parseSession(data []byte) ParseResult {
 		case 103:
 			goto st79
 		case 105:
-			goto st82
+			goto st85
 		case 108:
-			goto st84
+			goto st87
 		case 112:
-			goto st103
+			goto st106
 		case 113:
-			goto st108
-		case 114:
 			goto st111
+		case 114:
+			goto st114
 		case 115:
-			goto st117
+			goto st120
 		case 116:
-			goto st385
+			goto st397
 		case 118:
-			goto st394
+			goto st406
 		case 119:
-			goto st404
+			goto st416
 		}
 		goto st0
 st_case_0:
@@ -1824,7 +1860,7 @@ st_case_0:
 		case 100:
 			goto st3
 		case 112:
-			goto st105
+			goto st108
 		}
 		goto st0
 	st3:
@@ -1865,7 +1901,7 @@ tr19:
 			goto _test_eof6
 		}
 	st_case_6:
-//line memcached.go:1869
+//line memcached.go:1905
 		if data[p] == 32 {
 			goto st7
 		}
@@ -1912,7 +1948,7 @@ tr23:
 			goto _test_eof10
 		}
 	st_case_10:
-//line memcached.go:1916
+//line memcached.go:1952
 		if data[p] == 32 {
 			goto st11
 		}
@@ -1938,12 +1974,12 @@ tr25:
 			goto _test_eof12
 		}
 	st_case_12:
-//line memcached.go:1942
+//line memcached.go:1978
 		switch data[p] {
 		case 13:
 			goto st13
 		case 32:
-			goto st726
+			goto st744
 		}
 		if 48 <= data[p] && data[p] <= 57 {
 			goto tr25
@@ -1981,7 +2017,7 @@ tr29:
 			goto _test_eof15
 		}
 	st_case_15:
-//line memcached.go:1985
+//line memcached.go:2021
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -2013,13 +2049,13 @@ tr32:
 				expectedLen, foundLen = 0, 0
 				keyString = ""
 			
-	goto st834
-	st834:
+	goto st852
+	st852:
 		if p++; p == pe {
-			goto _test_eof834
+			goto _test_eof852
 		}
-	st_case_834:
-//line memcached.go:2023
+	st_case_852:
+//line memcached.go:2059
 		switch data[p] {
 		case 97:
 			goto st2
@@ -2032,23 +2068,23 @@ tr32:
 		case 103:
 			goto st79
 		case 105:
-			goto st82
+			goto st85
 		case 108:
-			goto st84
+			goto st87
 		case 112:
-			goto st103
+			goto st106
 		case 113:
-			goto st108
-		case 114:
 			goto st111
+		case 114:
+			goto st114
 		case 115:
-			goto st117
+			goto st120
 		case 116:
-			goto st385
+			goto st397
 		case 118:
-			goto st394
+			goto st406
 		case 119:
-			goto st404
+			goto st416
 		}
 		goto st0
 	st17:
@@ -2230,7 +2266,7 @@ tr50:
 			goto _test_eof35
 		}
 	st_case_35:
-//line memcached.go:2234
+//line memcached.go:2270
 		if data[p] == 32 {
 			goto st36
 		}
@@ -2277,7 +2313,7 @@ tr54:
 			goto _test_eof39
 		}
 	st_case_39:
-//line memcached.go:2281
+//line memcached.go:2317
 		if data[p] == 32 {
 			goto st40
 		}
@@ -2303,7 +2339,7 @@ tr56:
 			goto _test_eof41
 		}
 	st_case_41:
-//line memcached.go:2307
+//line memcached.go:2343
 		if data[p] == 32 {
 			goto st42
 		}
@@ -2329,7 +2365,7 @@ tr56:
 		case 13:
 			goto st44
 		case 32:
-			goto st494
+			goto st506
 		}
 		if 48 <= data[p] && data[p] <= 57 {
 			goto st43
@@ -2367,7 +2403,7 @@ tr62:
 			goto _test_eof46
 		}
 	st_case_46:
-//line memcached.go:2371
+//line memcached.go:2407
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -2392,7 +2428,7 @@ tr63:
 			goto _test_eof47
 		}
 	st_case_47:
-//line memcached.go:2396
+//line memcached.go:2432
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -2421,13 +2457,13 @@ tr64:
 				expectedLen, foundLen = 0, 0
 				keyString = ""
 			
-	goto st835
-	st835:
+	goto st853
+	st853:
 		if p++; p == pe {
-			goto _test_eof835
+			goto _test_eof853
 		}
-	st_case_835:
-//line memcached.go:2431
+	st_case_853:
+//line memcached.go:2467
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -2447,53 +2483,53 @@ tr64:
 		case 359:
 			goto st79
 		case 361:
-			goto st82
+			goto st85
 		case 364:
-			goto st84
+			goto st87
 		case 368:
-			goto st103
+			goto st106
 		case 369:
-			goto st108
-		case 370:
 			goto st111
+		case 370:
+			goto st114
 		case 371:
-			goto st117
+			goto st120
 		case 372:
-			goto st385
+			goto st397
 		case 374:
-			goto st394
+			goto st406
 		case 375:
-			goto st404
+			goto st416
 		case 525:
 			goto tr63
 		case 609:
-			goto tr797
+			goto tr815
 		case 611:
-			goto tr798
+			goto tr816
 		case 612:
-			goto tr799
+			goto tr817
 		case 614:
-			goto tr800
+			goto tr818
 		case 615:
-			goto tr801
+			goto tr819
 		case 617:
-			goto tr802
+			goto tr820
 		case 620:
-			goto tr803
+			goto tr821
 		case 624:
-			goto tr804
+			goto tr822
 		case 625:
-			goto tr805
+			goto tr823
 		case 626:
-			goto tr806
+			goto tr824
 		case 627:
-			goto tr807
+			goto tr825
 		case 628:
-			goto tr808
+			goto tr826
 		case 630:
-			goto tr809
+			goto tr827
 		case 631:
-			goto tr810
+			goto tr828
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
@@ -2558,7 +2594,7 @@ tr70:
 			goto _test_eof53
 		}
 	st_case_53:
-//line memcached.go:2562
+//line memcached.go:2598
 		if data[p] == 32 {
 			goto st54
 		}
@@ -2718,7 +2754,7 @@ tr85:
 			goto _test_eof69
 		}
 	st_case_69:
-//line memcached.go:2722
+//line memcached.go:2758
 		if data[p] == 13 {
 			goto st16
 		}
@@ -2835,9 +2871,9 @@ tr85:
 	st_case_81:
 		switch data[p] {
 		case 32:
-			goto st68
+			goto st82
 		case 115:
-			goto st67
+			goto st84
 		}
 		goto st0
 	st82:
@@ -2845,26 +2881,39 @@ tr85:
 			goto _test_eof82
 		}
 	st_case_82:
-		if data[p] == 110 {
-			goto st83
+		if data[p] <= 32 {
+			goto st0
 		}
-		goto st0
+		goto tr98
+tr98:
+//line memcached.rl:46
+
+				keyString = keyString + string(data[p])
+			
+	goto st83
 	st83:
 		if p++; p == pe {
 			goto _test_eof83
 		}
 	st_case_83:
-		if data[p] == 99 {
-			goto st50
+//line memcached.go:2900
+		switch data[p] {
+		case 13:
+			goto st16
+		case 32:
+			goto st82
 		}
-		goto st0
+		if data[p] <= 31 {
+			goto st0
+		}
+		goto tr98
 	st84:
 		if p++; p == pe {
 			goto _test_eof84
 		}
 	st_case_84:
-		if data[p] == 114 {
-			goto st85
+		if data[p] == 32 {
+			goto st82
 		}
 		goto st0
 	st85:
@@ -2872,7 +2921,7 @@ tr85:
 			goto _test_eof85
 		}
 	st_case_85:
-		if data[p] == 117 {
+		if data[p] == 110 {
 			goto st86
 		}
 		goto st0
@@ -2881,8 +2930,8 @@ tr85:
 			goto _test_eof86
 		}
 	st_case_86:
-		if data[p] == 95 {
-			goto st87
+		if data[p] == 99 {
+			goto st50
 		}
 		goto st0
 	st87:
@@ -2890,7 +2939,7 @@ tr85:
 			goto _test_eof87
 		}
 	st_case_87:
-		if data[p] == 99 {
+		if data[p] == 114 {
 			goto st88
 		}
 		goto st0
@@ -2899,7 +2948,7 @@ tr85:
 			goto _test_eof88
 		}
 	st_case_88:
-		if data[p] == 114 {
+		if data[p] == 117 {
 			goto st89
 		}
 		goto st0
@@ -2908,7 +2957,7 @@ tr85:
 			goto _test_eof89
 		}
 	st_case_89:
-		if data[p] == 97 {
+		if data[p] == 95 {
 			goto st90
 		}
 		goto st0
@@ -2917,7 +2966,7 @@ tr85:
 			goto _test_eof90
 		}
 	st_case_90:
-		if data[p] == 119 {
+		if data[p] == 99 {
 			goto st91
 		}
 		goto st0
@@ -2926,7 +2975,7 @@ tr85:
 			goto _test_eof91
 		}
 	st_case_91:
-		if data[p] == 108 {
+		if data[p] == 114 {
 			goto st92
 		}
 		goto st0
@@ -2935,7 +2984,7 @@ tr85:
 			goto _test_eof92
 		}
 	st_case_92:
-		if data[p] == 101 {
+		if data[p] == 97 {
 			goto st93
 		}
 		goto st0
@@ -2944,7 +2993,7 @@ tr85:
 			goto _test_eof93
 		}
 	st_case_93:
-		if data[p] == 114 {
+		if data[p] == 119 {
 			goto st94
 		}
 		goto st0
@@ -2953,7 +3002,7 @@ tr85:
 			goto _test_eof94
 		}
 	st_case_94:
-		if data[p] == 32 {
+		if data[p] == 108 {
 			goto st95
 		}
 		goto st0
@@ -2962,11 +3011,8 @@ tr85:
 			goto _test_eof95
 		}
 	st_case_95:
-		switch data[p] {
-		case 100:
+		if data[p] == 101 {
 			goto st96
-		case 101:
-			goto st102
 		}
 		goto st0
 	st96:
@@ -2974,7 +3020,7 @@ tr85:
 			goto _test_eof96
 		}
 	st_case_96:
-		if data[p] == 105 {
+		if data[p] == 114 {
 			goto st97
 		}
 		goto st0
@@ -2983,7 +3029,7 @@ tr85:
 			goto _test_eof97
 		}
 	st_case_97:
-		if data[p] == 115 {
+		if data[p] == 32 {
 			goto st98
 		}
 		goto st0
@@ -2992,8 +3038,11 @@ tr85:
 			goto _test_eof98
 		}
 	st_case_98:
-		if data[p] == 97 {
+		switch data[p] {
+		case 100:
 			goto st99
+		case 101:
+			goto st105
 		}
 		goto st0
 	st99:
@@ -3001,7 +3050,7 @@ tr85:
 			goto _test_eof99
 		}
 	st_case_99:
-		if data[p] == 98 {
+		if data[p] == 105 {
 			goto st100
 		}
 		goto st0
@@ -3010,7 +3059,7 @@ tr85:
 			goto _test_eof100
 		}
 	st_case_100:
-		if data[p] == 108 {
+		if data[p] == 115 {
 			goto st101
 		}
 		goto st0
@@ -3019,8 +3068,8 @@ tr85:
 			goto _test_eof101
 		}
 	st_case_101:
-		if data[p] == 101 {
-			goto st63
+		if data[p] == 97 {
+			goto st102
 		}
 		goto st0
 	st102:
@@ -3028,8 +3077,8 @@ tr85:
 			goto _test_eof102
 		}
 	st_case_102:
-		if data[p] == 110 {
-			goto st98
+		if data[p] == 98 {
+			goto st103
 		}
 		goto st0
 	st103:
@@ -3037,7 +3086,7 @@ tr85:
 			goto _test_eof103
 		}
 	st_case_103:
-		if data[p] == 114 {
+		if data[p] == 108 {
 			goto st104
 		}
 		goto st0
@@ -3047,7 +3096,7 @@ tr85:
 		}
 	st_case_104:
 		if data[p] == 101 {
-			goto st105
+			goto st63
 		}
 		goto st0
 	st105:
@@ -3055,8 +3104,8 @@ tr85:
 			goto _test_eof105
 		}
 	st_case_105:
-		if data[p] == 112 {
-			goto st106
+		if data[p] == 110 {
+			goto st101
 		}
 		goto st0
 	st106:
@@ -3064,7 +3113,7 @@ tr85:
 			goto _test_eof106
 		}
 	st_case_106:
-		if data[p] == 101 {
+		if data[p] == 114 {
 			goto st107
 		}
 		goto st0
@@ -3073,8 +3122,8 @@ tr85:
 			goto _test_eof107
 		}
 	st_case_107:
-		if data[p] == 110 {
-			goto st3
+		if data[p] == 101 {
+			goto st108
 		}
 		goto st0
 	st108:
@@ -3082,7 +3131,7 @@ tr85:
 			goto _test_eof108
 		}
 	st_case_108:
-		if data[p] == 117 {
+		if data[p] == 112 {
 			goto st109
 		}
 		goto st0
@@ -3091,7 +3140,7 @@ tr85:
 			goto _test_eof109
 		}
 	st_case_109:
-		if data[p] == 105 {
+		if data[p] == 101 {
 			goto st110
 		}
 		goto st0
@@ -3100,8 +3149,8 @@ tr85:
 			goto _test_eof110
 		}
 	st_case_110:
-		if data[p] == 116 {
-			goto st63
+		if data[p] == 110 {
+			goto st3
 		}
 		goto st0
 	st111:
@@ -3109,7 +3158,7 @@ tr85:
 			goto _test_eof111
 		}
 	st_case_111:
-		if data[p] == 101 {
+		if data[p] == 117 {
 			goto st112
 		}
 		goto st0
@@ -3118,7 +3167,7 @@ tr85:
 			goto _test_eof112
 		}
 	st_case_112:
-		if data[p] == 112 {
+		if data[p] == 105 {
 			goto st113
 		}
 		goto st0
@@ -3127,8 +3176,8 @@ tr85:
 			goto _test_eof113
 		}
 	st_case_113:
-		if data[p] == 108 {
-			goto st114
+		if data[p] == 116 {
+			goto st63
 		}
 		goto st0
 	st114:
@@ -3136,7 +3185,7 @@ tr85:
 			goto _test_eof114
 		}
 	st_case_114:
-		if data[p] == 97 {
+		if data[p] == 101 {
 			goto st115
 		}
 		goto st0
@@ -3145,7 +3194,7 @@ tr85:
 			goto _test_eof115
 		}
 	st_case_115:
-		if data[p] == 99 {
+		if data[p] == 112 {
 			goto st116
 		}
 		goto st0
@@ -3154,8 +3203,8 @@ tr85:
 			goto _test_eof116
 		}
 	st_case_116:
-		if data[p] == 101 {
-			goto st4
+		if data[p] == 108 {
+			goto st117
 		}
 		goto st0
 	st117:
@@ -3163,13 +3212,8 @@ tr85:
 			goto _test_eof117
 		}
 	st_case_117:
-		switch data[p] {
-		case 101:
+		if data[p] == 97 {
 			goto st118
-		case 108:
-			goto st119
-		case 116:
-			goto st144
 		}
 		goto st0
 	st118:
@@ -3177,8 +3221,8 @@ tr85:
 			goto _test_eof118
 		}
 	st_case_118:
-		if data[p] == 116 {
-			goto st4
+		if data[p] == 99 {
+			goto st119
 		}
 		goto st0
 	st119:
@@ -3186,8 +3230,8 @@ tr85:
 			goto _test_eof119
 		}
 	st_case_119:
-		if data[p] == 97 {
-			goto st120
+		if data[p] == 101 {
+			goto st4
 		}
 		goto st0
 	st120:
@@ -3195,8 +3239,13 @@ tr85:
 			goto _test_eof120
 		}
 	st_case_120:
-		if data[p] == 98 {
+		switch data[p] {
+		case 101:
 			goto st121
+		case 108:
+			goto st122
+		case 116:
+			goto st147
 		}
 		goto st0
 	st121:
@@ -3204,8 +3253,8 @@ tr85:
 			goto _test_eof121
 		}
 	st_case_121:
-		if data[p] == 115 {
-			goto st122
+		if data[p] == 116 {
+			goto st4
 		}
 		goto st0
 	st122:
@@ -3213,7 +3262,7 @@ tr85:
 			goto _test_eof122
 		}
 	st_case_122:
-		if data[p] == 32 {
+		if data[p] == 97 {
 			goto st123
 		}
 		goto st0
@@ -3222,11 +3271,8 @@ tr85:
 			goto _test_eof123
 		}
 	st_case_123:
-		switch data[p] {
-		case 97:
+		if data[p] == 98 {
 			goto st124
-		case 114:
-			goto st133
 		}
 		goto st0
 	st124:
@@ -3234,7 +3280,7 @@ tr85:
 			goto _test_eof124
 		}
 	st_case_124:
-		if data[p] == 117 {
+		if data[p] == 115 {
 			goto st125
 		}
 		goto st0
@@ -3243,7 +3289,7 @@ tr85:
 			goto _test_eof125
 		}
 	st_case_125:
-		if data[p] == 116 {
+		if data[p] == 32 {
 			goto st126
 		}
 		goto st0
@@ -3252,8 +3298,11 @@ tr85:
 			goto _test_eof126
 		}
 	st_case_126:
-		if data[p] == 111 {
+		switch data[p] {
+		case 97:
 			goto st127
+		case 114:
+			goto st136
 		}
 		goto st0
 	st127:
@@ -3261,7 +3310,7 @@ tr85:
 			goto _test_eof127
 		}
 	st_case_127:
-		if data[p] == 109 {
+		if data[p] == 117 {
 			goto st128
 		}
 		goto st0
@@ -3270,7 +3319,7 @@ tr85:
 			goto _test_eof128
 		}
 	st_case_128:
-		if data[p] == 111 {
+		if data[p] == 116 {
 			goto st129
 		}
 		goto st0
@@ -3279,7 +3328,7 @@ tr85:
 			goto _test_eof129
 		}
 	st_case_129:
-		if data[p] == 118 {
+		if data[p] == 111 {
 			goto st130
 		}
 		goto st0
@@ -3288,7 +3337,7 @@ tr85:
 			goto _test_eof130
 		}
 	st_case_130:
-		if data[p] == 101 {
+		if data[p] == 109 {
 			goto st131
 		}
 		goto st0
@@ -3297,7 +3346,7 @@ tr85:
 			goto _test_eof131
 		}
 	st_case_131:
-		if data[p] == 32 {
+		if data[p] == 111 {
 			goto st132
 		}
 		goto st0
@@ -3306,8 +3355,8 @@ tr85:
 			goto _test_eof132
 		}
 	st_case_132:
-		if 48 <= data[p] && data[p] <= 49 {
-			goto st63
+		if data[p] == 118 {
+			goto st133
 		}
 		goto st0
 	st133:
@@ -3324,7 +3373,7 @@ tr85:
 			goto _test_eof134
 		}
 	st_case_134:
-		if data[p] == 97 {
+		if data[p] == 32 {
 			goto st135
 		}
 		goto st0
@@ -3333,8 +3382,8 @@ tr85:
 			goto _test_eof135
 		}
 	st_case_135:
-		if data[p] == 115 {
-			goto st136
+		if 48 <= data[p] && data[p] <= 49 {
+			goto st63
 		}
 		goto st0
 	st136:
@@ -3342,7 +3391,7 @@ tr85:
 			goto _test_eof136
 		}
 	st_case_136:
-		if data[p] == 115 {
+		if data[p] == 101 {
 			goto st137
 		}
 		goto st0
@@ -3351,7 +3400,7 @@ tr85:
 			goto _test_eof137
 		}
 	st_case_137:
-		if data[p] == 105 {
+		if data[p] == 97 {
 			goto st138
 		}
 		goto st0
@@ -3360,7 +3409,7 @@ tr85:
 			goto _test_eof138
 		}
 	st_case_138:
-		if data[p] == 103 {
+		if data[p] == 115 {
 			goto st139
 		}
 		goto st0
@@ -3369,7 +3418,7 @@ tr85:
 			goto _test_eof139
 		}
 	st_case_139:
-		if data[p] == 110 {
+		if data[p] == 115 {
 			goto st140
 		}
 		goto st0
@@ -3378,7 +3427,7 @@ tr85:
 			goto _test_eof140
 		}
 	st_case_140:
-		if data[p] == 32 {
+		if data[p] == 105 {
 			goto st141
 		}
 		goto st0
@@ -3387,11 +3436,8 @@ tr85:
 			goto _test_eof141
 		}
 	st_case_141:
-		if data[p] == 45 {
+		if data[p] == 103 {
 			goto st142
-		}
-		if 48 <= data[p] && data[p] <= 57 {
-			goto st143
 		}
 		goto st0
 	st142:
@@ -3399,7 +3445,7 @@ tr85:
 			goto _test_eof142
 		}
 	st_case_142:
-		if 48 <= data[p] && data[p] <= 57 {
+		if data[p] == 110 {
 			goto st143
 		}
 		goto st0
@@ -3409,10 +3455,7 @@ tr85:
 		}
 	st_case_143:
 		if data[p] == 32 {
-			goto st31
-		}
-		if 48 <= data[p] && data[p] <= 57 {
-			goto st143
+			goto st144
 		}
 		goto st0
 	st144:
@@ -3420,8 +3463,11 @@ tr85:
 			goto _test_eof144
 		}
 	st_case_144:
-		if data[p] == 97 {
+		if data[p] == 45 {
 			goto st145
+		}
+		if 48 <= data[p] && data[p] <= 57 {
+			goto st146
 		}
 		goto st0
 	st145:
@@ -3429,7 +3475,7 @@ tr85:
 			goto _test_eof145
 		}
 	st_case_145:
-		if data[p] == 116 {
+		if 48 <= data[p] && data[p] <= 57 {
 			goto st146
 		}
 		goto st0
@@ -3438,8 +3484,11 @@ tr85:
 			goto _test_eof146
 		}
 	st_case_146:
-		if data[p] == 115 {
-			goto st147
+		if data[p] == 32 {
+			goto st31
+		}
+		if 48 <= data[p] && data[p] <= 57 {
+			goto st146
 		}
 		goto st0
 	st147:
@@ -3447,10 +3496,7 @@ tr85:
 			goto _test_eof147
 		}
 	st_case_147:
-		switch data[p] {
-		case 13:
-			goto st16
-		case 32:
+		if data[p] == 97 {
 			goto st148
 		}
 		goto st0
@@ -3459,529 +3505,279 @@ tr85:
 			goto _test_eof148
 		}
 	st_case_148:
-		goto st149
+		if data[p] == 116 {
+			goto st149
+		}
+		goto st0
 	st149:
 		if p++; p == pe {
 			goto _test_eof149
 		}
 	st_case_149:
-		if data[p] == 13 {
+		if data[p] == 115 {
 			goto st150
 		}
-		goto st149
+		goto st0
 	st150:
 		if p++; p == pe {
 			goto _test_eof150
 		}
 	st_case_150:
 		switch data[p] {
-		case 10:
-			goto tr158
 		case 13:
-			goto st150
-		}
-		goto st149
-tr158:
-//line memcached.rl:37
-
-				expiry = int(0)
-				expectedLen, foundLen = 0, 0
-				keyString = ""
-			
-	goto st836
-	st836:
-		if p++; p == pe {
-			goto _test_eof836
-		}
-	st_case_836:
-//line memcached.go:3498
-		switch data[p] {
-		case 13:
-			goto st150
-		case 97:
+			goto st16
+		case 32:
 			goto st151
-		case 99:
-			goto st163
-		case 100:
-			goto st177
-		case 103:
-			goto st185
-		case 105:
-			goto st188
-		case 112:
-			goto st190
-		case 114:
-			goto st195
-		case 115:
-			goto st201
-		case 116:
-			goto st203
 		}
-		goto st149
+		goto st0
 	st151:
 		if p++; p == pe {
 			goto _test_eof151
 		}
 	st_case_151:
-		switch data[p] {
-		case 13:
-			goto st150
-		case 100:
-			goto st152
-		case 112:
-			goto st192
-		}
-		goto st149
+		goto st152
 	st152:
 		if p++; p == pe {
 			goto _test_eof152
 		}
 	st_case_152:
-		switch data[p] {
-		case 13:
-			goto st150
-		case 100:
+		if data[p] == 13 {
 			goto st153
 		}
-		goto st149
+		goto st152
 	st153:
 		if p++; p == pe {
 			goto _test_eof153
 		}
 	st_case_153:
 		switch data[p] {
+		case 10:
+			goto tr161
 		case 13:
-			goto st150
-		case 32:
-			goto st154
+			goto st153
 		}
-		goto st149
+		goto st152
+tr161:
+//line memcached.rl:37
+
+				expiry = int(0)
+				expectedLen, foundLen = 0, 0
+				keyString = ""
+			
+	goto st854
+	st854:
+		if p++; p == pe {
+			goto _test_eof854
+		}
+	st_case_854:
+//line memcached.go:3574
+		switch data[p] {
+		case 13:
+			goto st153
+		case 97:
+			goto st154
+		case 99:
+			goto st166
+		case 100:
+			goto st180
+		case 103:
+			goto st188
+		case 105:
+			goto st194
+		case 112:
+			goto st196
+		case 114:
+			goto st201
+		case 115:
+			goto st207
+		case 116:
+			goto st209
+		}
+		goto st152
 	st154:
 		if p++; p == pe {
 			goto _test_eof154
 		}
 	st_case_154:
-		if data[p] == 13 {
-			goto st150
+		switch data[p] {
+		case 13:
+			goto st153
+		case 100:
+			goto st155
+		case 112:
+			goto st198
 		}
-		if data[p] <= 32 {
-			goto st149
-		}
-		goto tr163
-tr163:
-//line memcached.rl:46
-
-				keyString = keyString + string(data[p])
-			
-	goto st155
+		goto st152
 	st155:
 		if p++; p == pe {
 			goto _test_eof155
 		}
 	st_case_155:
-//line memcached.go:3583
 		switch data[p] {
 		case 13:
-			goto st150
-		case 32:
+			goto st153
+		case 100:
 			goto st156
 		}
-		if data[p] <= 31 {
-			goto st149
-		}
-		goto tr163
+		goto st152
 	st156:
 		if p++; p == pe {
 			goto _test_eof156
 		}
 	st_case_156:
-		if data[p] == 13 {
-			goto st150
-		}
-		if 48 <= data[p] && data[p] <= 57 {
+		switch data[p] {
+		case 13:
+			goto st153
+		case 32:
 			goto st157
 		}
-		goto st149
+		goto st152
 	st157:
 		if p++; p == pe {
 			goto _test_eof157
 		}
 	st_case_157:
-		switch data[p] {
-		case 13:
-			goto st150
-		case 32:
-			goto st158
+		if data[p] == 13 {
+			goto st153
 		}
-		if 48 <= data[p] && data[p] <= 57 {
-			goto st157
+		if data[p] <= 32 {
+			goto st152
 		}
-		goto st149
+		goto tr166
+tr166:
+//line memcached.rl:46
+
+				keyString = keyString + string(data[p])
+			
+	goto st158
 	st158:
 		if p++; p == pe {
 			goto _test_eof158
 		}
 	st_case_158:
-		if data[p] == 13 {
-			goto st150
+//line memcached.go:3659
+		switch data[p] {
+		case 13:
+			goto st153
+		case 32:
+			goto st159
 		}
-		if 48 <= data[p] && data[p] <= 57 {
-			goto tr167
+		if data[p] <= 31 {
+			goto st152
 		}
-		goto st149
-tr167:
-//line memcached.rl:45
- expiry = expiry * 10 + (int(data[p]) - '0') 
-	goto st159
+		goto tr166
 	st159:
 		if p++; p == pe {
 			goto _test_eof159
 		}
 	st_case_159:
-//line memcached.go:3642
-		switch data[p] {
-		case 13:
-			goto st150
-		case 32:
-			goto st160
+		if data[p] == 13 {
+			goto st153
 		}
 		if 48 <= data[p] && data[p] <= 57 {
-			goto tr167
+			goto st160
 		}
-		goto st149
+		goto st152
 	st160:
 		if p++; p == pe {
 			goto _test_eof160
 		}
 	st_case_160:
-		if data[p] == 13 {
-			goto st150
+		switch data[p] {
+		case 13:
+			goto st153
+		case 32:
+			goto st161
 		}
 		if 48 <= data[p] && data[p] <= 57 {
-			goto tr169
+			goto st160
 		}
-		goto st149
-tr169:
-//line memcached.rl:43
- expectedLen = expectedLen * 10 + (int(data[p]) - int('0')) 
-	goto st161
+		goto st152
 	st161:
 		if p++; p == pe {
 			goto _test_eof161
 		}
 	st_case_161:
-//line memcached.go:3674
-		switch data[p] {
-		case 13:
-			goto st162
-		case 32:
-			goto st224
+		if data[p] == 13 {
+			goto st153
 		}
 		if 48 <= data[p] && data[p] <= 57 {
-			goto tr169
+			goto tr170
 		}
-		goto st149
+		goto st152
+tr170:
+//line memcached.rl:45
+ expiry = expiry * 10 + (int(data[p]) - '0') 
+	goto st162
 	st162:
 		if p++; p == pe {
 			goto _test_eof162
 		}
 	st_case_162:
+//line memcached.go:3718
 		switch data[p] {
-		case 10:
-			goto tr172
 		case 13:
-			goto st150
-		}
-		goto st149
-tr172:
-//line memcached.rl:37
-
-				expiry = int(0)
-				expectedLen, foundLen = 0, 0
-				keyString = ""
-			
-	goto st837
-tr307:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-//line memcached.rl:37
-
-				expiry = int(0)
-				expectedLen, foundLen = 0, 0
-				keyString = ""
-			
-	goto st837
-	st837:
-		if p++; p == pe {
-			goto _test_eof837
-		}
-	st_case_837:
-//line memcached.go:3720
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st150
-		case 353:
-			goto st151
-		case 355:
+			goto st153
+		case 32:
 			goto st163
-		case 356:
-			goto st177
-		case 359:
-			goto st185
-		case 361:
-			goto st188
-		case 368:
-			goto st190
-		case 370:
-			goto st195
-		case 371:
-			goto st201
-		case 372:
-			goto st203
-		case 525:
-			goto tr306
-		case 609:
-			goto tr820
-		case 611:
-			goto tr821
-		case 612:
-			goto tr822
-		case 615:
-			goto tr823
-		case 617:
-			goto tr824
-		case 624:
-			goto tr825
-		case 626:
-			goto tr826
-		case 627:
-			goto tr827
-		case 628:
-			goto tr828
 		}
-		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr305
-			}
-		case _widec >= 256:
-			goto st149
+		if 48 <= data[p] && data[p] <= 57 {
+			goto tr170
 		}
-		goto st0
+		goto st152
 	st163:
 		if p++; p == pe {
 			goto _test_eof163
 		}
 	st_case_163:
-		switch data[p] {
-		case 13:
-			goto st150
-		case 97:
-			goto st164
+		if data[p] == 13 {
+			goto st153
 		}
-		goto st149
+		if 48 <= data[p] && data[p] <= 57 {
+			goto tr172
+		}
+		goto st152
+tr172:
+//line memcached.rl:43
+ expectedLen = expectedLen * 10 + (int(data[p]) - int('0')) 
+	goto st164
 	st164:
 		if p++; p == pe {
 			goto _test_eof164
 		}
 	st_case_164:
+//line memcached.go:3750
 		switch data[p] {
 		case 13:
-			goto st150
-		case 115:
 			goto st165
+		case 32:
+			goto st230
 		}
-		goto st149
+		if 48 <= data[p] && data[p] <= 57 {
+			goto tr172
+		}
+		goto st152
 	st165:
 		if p++; p == pe {
 			goto _test_eof165
 		}
 	st_case_165:
 		switch data[p] {
-		case 13:
-			goto st150
-		case 32:
-			goto st166
-		}
-		goto st149
-	st166:
-		if p++; p == pe {
-			goto _test_eof166
-		}
-	st_case_166:
-		if data[p] == 13 {
-			goto st150
-		}
-		if data[p] <= 32 {
-			goto st149
-		}
-		goto tr176
-tr176:
-//line memcached.rl:46
-
-				keyString = keyString + string(data[p])
-			
-	goto st167
-	st167:
-		if p++; p == pe {
-			goto _test_eof167
-		}
-	st_case_167:
-//line memcached.go:3836
-		switch data[p] {
-		case 13:
-			goto st150
-		case 32:
-			goto st168
-		}
-		if data[p] <= 31 {
-			goto st149
-		}
-		goto tr176
-	st168:
-		if p++; p == pe {
-			goto _test_eof168
-		}
-	st_case_168:
-		if data[p] == 13 {
-			goto st150
-		}
-		if 48 <= data[p] && data[p] <= 57 {
-			goto st169
-		}
-		goto st149
-	st169:
-		if p++; p == pe {
-			goto _test_eof169
-		}
-	st_case_169:
-		switch data[p] {
-		case 13:
-			goto st150
-		case 32:
-			goto st170
-		}
-		if 48 <= data[p] && data[p] <= 57 {
-			goto st169
-		}
-		goto st149
-	st170:
-		if p++; p == pe {
-			goto _test_eof170
-		}
-	st_case_170:
-		if data[p] == 13 {
-			goto st150
-		}
-		if 48 <= data[p] && data[p] <= 57 {
-			goto tr180
-		}
-		goto st149
-tr180:
-//line memcached.rl:45
- expiry = expiry * 10 + (int(data[p]) - '0') 
-	goto st171
-	st171:
-		if p++; p == pe {
-			goto _test_eof171
-		}
-	st_case_171:
-//line memcached.go:3895
-		switch data[p] {
-		case 13:
-			goto st150
-		case 32:
-			goto st172
-		}
-		if 48 <= data[p] && data[p] <= 57 {
-			goto tr180
-		}
-		goto st149
-	st172:
-		if p++; p == pe {
-			goto _test_eof172
-		}
-	st_case_172:
-		if data[p] == 13 {
-			goto st150
-		}
-		if 48 <= data[p] && data[p] <= 57 {
-			goto tr182
-		}
-		goto st149
-tr182:
-//line memcached.rl:43
- expectedLen = expectedLen * 10 + (int(data[p]) - int('0')) 
-	goto st173
-	st173:
-		if p++; p == pe {
-			goto _test_eof173
-		}
-	st_case_173:
-//line memcached.go:3927
-		switch data[p] {
-		case 13:
-			goto st150
-		case 32:
-			goto st174
-		}
-		if 48 <= data[p] && data[p] <= 57 {
-			goto tr182
-		}
-		goto st149
-	st174:
-		if p++; p == pe {
-			goto _test_eof174
-		}
-	st_case_174:
-		if data[p] == 13 {
-			goto st150
-		}
-		if 48 <= data[p] && data[p] <= 57 {
-			goto st175
-		}
-		goto st149
-	st175:
-		if p++; p == pe {
-			goto _test_eof175
-		}
-	st_case_175:
-		switch data[p] {
-		case 13:
-			goto st176
-		case 32:
-			goto st257
-		}
-		if 48 <= data[p] && data[p] <= 57 {
-			goto st175
-		}
-		goto st149
-	st176:
-		if p++; p == pe {
-			goto _test_eof176
-		}
-	st_case_176:
-		switch data[p] {
 		case 10:
-			goto tr187
+			goto tr175
 		case 13:
-			goto st150
+			goto st153
 		}
-		goto st149
-tr187:
+		goto st152
+tr175:
 //line memcached.rl:37
 
 				expiry = int(0)
 				expectedLen, foundLen = 0, 0
 				keyString = ""
 			
-	goto st838
-tr218:
+	goto st855
+tr316:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 //line memcached.rl:37
@@ -3990,13 +3786,13 @@ tr218:
 				expectedLen, foundLen = 0, 0
 				keyString = ""
 			
-	goto st838
-	st838:
+	goto st855
+	st855:
 		if p++; p == pe {
-			goto _test_eof838
+			goto _test_eof855
 		}
-	st_case_838:
-//line memcached.go:4000
+	st_case_855:
+//line memcached.go:3796
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -4004,67 +3800,228 @@ tr218:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
 		case 353:
-			goto st151
+			goto st154
 		case 355:
-			goto st163
+			goto st166
 		case 356:
-			goto st177
+			goto st180
 		case 359:
-			goto st185
-		case 361:
 			goto st188
+		case 361:
+			goto st194
 		case 368:
-			goto st190
+			goto st196
 		case 370:
-			goto st195
-		case 371:
 			goto st201
+		case 371:
+			goto st207
 		case 372:
-			goto st203
+			goto st209
 		case 525:
-			goto tr217
+			goto tr315
 		case 609:
-			goto tr829
+			goto tr838
 		case 611:
-			goto tr830
+			goto tr839
 		case 612:
-			goto tr831
+			goto tr840
 		case 615:
-			goto tr832
+			goto tr841
 		case 617:
-			goto tr833
+			goto tr842
 		case 624:
-			goto tr834
+			goto tr843
 		case 626:
-			goto tr835
+			goto tr844
 		case 627:
-			goto tr836
+			goto tr845
 		case 628:
-			goto tr837
+			goto tr846
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
+	st166:
+		if p++; p == pe {
+			goto _test_eof166
+		}
+	st_case_166:
+		switch data[p] {
+		case 13:
+			goto st153
+		case 97:
+			goto st167
+		}
+		goto st152
+	st167:
+		if p++; p == pe {
+			goto _test_eof167
+		}
+	st_case_167:
+		switch data[p] {
+		case 13:
+			goto st153
+		case 115:
+			goto st168
+		}
+		goto st152
+	st168:
+		if p++; p == pe {
+			goto _test_eof168
+		}
+	st_case_168:
+		switch data[p] {
+		case 13:
+			goto st153
+		case 32:
+			goto st169
+		}
+		goto st152
+	st169:
+		if p++; p == pe {
+			goto _test_eof169
+		}
+	st_case_169:
+		if data[p] == 13 {
+			goto st153
+		}
+		if data[p] <= 32 {
+			goto st152
+		}
+		goto tr179
+tr179:
+//line memcached.rl:46
+
+				keyString = keyString + string(data[p])
+			
+	goto st170
+	st170:
+		if p++; p == pe {
+			goto _test_eof170
+		}
+	st_case_170:
+//line memcached.go:3912
+		switch data[p] {
+		case 13:
+			goto st153
+		case 32:
+			goto st171
+		}
+		if data[p] <= 31 {
+			goto st152
+		}
+		goto tr179
+	st171:
+		if p++; p == pe {
+			goto _test_eof171
+		}
+	st_case_171:
+		if data[p] == 13 {
+			goto st153
+		}
+		if 48 <= data[p] && data[p] <= 57 {
+			goto st172
+		}
+		goto st152
+	st172:
+		if p++; p == pe {
+			goto _test_eof172
+		}
+	st_case_172:
+		switch data[p] {
+		case 13:
+			goto st153
+		case 32:
+			goto st173
+		}
+		if 48 <= data[p] && data[p] <= 57 {
+			goto st172
+		}
+		goto st152
+	st173:
+		if p++; p == pe {
+			goto _test_eof173
+		}
+	st_case_173:
+		if data[p] == 13 {
+			goto st153
+		}
+		if 48 <= data[p] && data[p] <= 57 {
+			goto tr183
+		}
+		goto st152
+tr183:
+//line memcached.rl:45
+ expiry = expiry * 10 + (int(data[p]) - '0') 
+	goto st174
+	st174:
+		if p++; p == pe {
+			goto _test_eof174
+		}
+	st_case_174:
+//line memcached.go:3971
+		switch data[p] {
+		case 13:
+			goto st153
+		case 32:
+			goto st175
+		}
+		if 48 <= data[p] && data[p] <= 57 {
+			goto tr183
+		}
+		goto st152
+	st175:
+		if p++; p == pe {
+			goto _test_eof175
+		}
+	st_case_175:
+		if data[p] == 13 {
+			goto st153
+		}
+		if 48 <= data[p] && data[p] <= 57 {
+			goto tr185
+		}
+		goto st152
+tr185:
+//line memcached.rl:43
+ expectedLen = expectedLen * 10 + (int(data[p]) - int('0')) 
+	goto st176
+	st176:
+		if p++; p == pe {
+			goto _test_eof176
+		}
+	st_case_176:
+//line memcached.go:4003
+		switch data[p] {
+		case 13:
+			goto st153
+		case 32:
+			goto st177
+		}
+		if 48 <= data[p] && data[p] <= 57 {
+			goto tr185
+		}
+		goto st152
 	st177:
 		if p++; p == pe {
 			goto _test_eof177
 		}
 	st_case_177:
-		switch data[p] {
-		case 13:
-			goto st150
-		case 101:
+		if data[p] == 13 {
+			goto st153
+		}
+		if 48 <= data[p] && data[p] <= 57 {
 			goto st178
 		}
-		goto st149
+		goto st152
 	st178:
 		if p++; p == pe {
 			goto _test_eof178
@@ -4072,25 +4029,106 @@ tr218:
 	st_case_178:
 		switch data[p] {
 		case 13:
-			goto st150
-		case 99:
 			goto st179
-		case 108:
-			goto st182
+		case 32:
+			goto st263
 		}
-		goto st149
+		if 48 <= data[p] && data[p] <= 57 {
+			goto st178
+		}
+		goto st152
 	st179:
 		if p++; p == pe {
 			goto _test_eof179
 		}
 	st_case_179:
 		switch data[p] {
+		case 10:
+			goto tr190
 		case 13:
-			goto st150
-		case 114:
-			goto st180
+			goto st153
 		}
-		goto st149
+		goto st152
+tr190:
+//line memcached.rl:37
+
+				expiry = int(0)
+				expectedLen, foundLen = 0, 0
+				keyString = ""
+			
+	goto st856
+tr224:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+//line memcached.rl:37
+
+				expiry = int(0)
+				expectedLen, foundLen = 0, 0
+				keyString = ""
+			
+	goto st856
+	st856:
+		if p++; p == pe {
+			goto _test_eof856
+		}
+	st_case_856:
+//line memcached.go:4076
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st153
+		case 353:
+			goto st154
+		case 355:
+			goto st166
+		case 356:
+			goto st180
+		case 359:
+			goto st188
+		case 361:
+			goto st194
+		case 368:
+			goto st196
+		case 370:
+			goto st201
+		case 371:
+			goto st207
+		case 372:
+			goto st209
+		case 525:
+			goto tr223
+		case 609:
+			goto tr847
+		case 611:
+			goto tr848
+		case 612:
+			goto tr849
+		case 615:
+			goto tr850
+		case 617:
+			goto tr851
+		case 624:
+			goto tr852
+		case 626:
+			goto tr853
+		case 627:
+			goto tr854
+		case 628:
+			goto tr855
+		}
+		switch {
+		case _widec > 511:
+			if 512 <= _widec && _widec <= 767 {
+				goto tr222
+			}
+		case _widec >= 256:
+			goto st152
+		}
+		goto st0
 	st180:
 		if p++; p == pe {
 			goto _test_eof180
@@ -4098,30 +4136,25 @@ tr218:
 	st_case_180:
 		switch data[p] {
 		case 13:
-			goto st150
-		case 32:
+			goto st153
+		case 101:
 			goto st181
 		}
-		goto st149
-tr193:
-//line memcached.rl:46
-
-				keyString = keyString + string(data[p])
-			
-	goto st181
+		goto st152
 	st181:
 		if p++; p == pe {
 			goto _test_eof181
 		}
 	st_case_181:
-//line memcached.go:4118
-		if data[p] == 13 {
-			goto st150
+		switch data[p] {
+		case 13:
+			goto st153
+		case 99:
+			goto st182
+		case 108:
+			goto st185
 		}
-		if data[p] <= 32 {
-			goto st149
-		}
-		goto tr193
+		goto st152
 	st182:
 		if p++; p == pe {
 			goto _test_eof182
@@ -4129,11 +4162,11 @@ tr193:
 	st_case_182:
 		switch data[p] {
 		case 13:
-			goto st150
-		case 101:
+			goto st153
+		case 114:
 			goto st183
 		}
-		goto st149
+		goto st152
 	st183:
 		if p++; p == pe {
 			goto _test_eof183
@@ -4141,23 +4174,30 @@ tr193:
 	st_case_183:
 		switch data[p] {
 		case 13:
-			goto st150
-		case 116:
+			goto st153
+		case 32:
 			goto st184
 		}
-		goto st149
+		goto st152
+tr196:
+//line memcached.rl:46
+
+				keyString = keyString + string(data[p])
+			
+	goto st184
 	st184:
 		if p++; p == pe {
 			goto _test_eof184
 		}
 	st_case_184:
-		switch data[p] {
-		case 13:
-			goto st150
-		case 101:
-			goto st180
+//line memcached.go:4194
+		if data[p] == 13 {
+			goto st153
 		}
-		goto st149
+		if data[p] <= 32 {
+			goto st152
+		}
+		goto tr196
 	st185:
 		if p++; p == pe {
 			goto _test_eof185
@@ -4165,11 +4205,11 @@ tr193:
 	st_case_185:
 		switch data[p] {
 		case 13:
-			goto st150
+			goto st153
 		case 101:
 			goto st186
 		}
-		goto st149
+		goto st152
 	st186:
 		if p++; p == pe {
 			goto _test_eof186
@@ -4177,11 +4217,11 @@ tr193:
 	st_case_186:
 		switch data[p] {
 		case 13:
-			goto st150
+			goto st153
 		case 116:
 			goto st187
 		}
-		goto st149
+		goto st152
 	st187:
 		if p++; p == pe {
 			goto _test_eof187
@@ -4189,13 +4229,11 @@ tr193:
 	st_case_187:
 		switch data[p] {
 		case 13:
-			goto st150
-		case 32:
-			goto st181
-		case 115:
-			goto st180
+			goto st153
+		case 101:
+			goto st183
 		}
-		goto st149
+		goto st152
 	st188:
 		if p++; p == pe {
 			goto _test_eof188
@@ -4203,11 +4241,11 @@ tr193:
 	st_case_188:
 		switch data[p] {
 		case 13:
-			goto st150
-		case 110:
+			goto st153
+		case 101:
 			goto st189
 		}
-		goto st149
+		goto st152
 	st189:
 		if p++; p == pe {
 			goto _test_eof189
@@ -4215,11 +4253,11 @@ tr193:
 	st_case_189:
 		switch data[p] {
 		case 13:
-			goto st150
-		case 99:
-			goto st179
+			goto st153
+		case 116:
+			goto st190
 		}
-		goto st149
+		goto st152
 	st190:
 		if p++; p == pe {
 			goto _test_eof190
@@ -4227,35 +4265,47 @@ tr193:
 	st_case_190:
 		switch data[p] {
 		case 13:
-			goto st150
-		case 114:
+			goto st153
+		case 32:
 			goto st191
+		case 115:
+			goto st193
 		}
-		goto st149
+		goto st152
 	st191:
 		if p++; p == pe {
 			goto _test_eof191
 		}
 	st_case_191:
-		switch data[p] {
-		case 13:
-			goto st150
-		case 101:
-			goto st192
+		if data[p] == 13 {
+			goto st153
 		}
-		goto st149
+		if data[p] <= 32 {
+			goto st152
+		}
+		goto tr203
+tr203:
+//line memcached.rl:46
+
+				keyString = keyString + string(data[p])
+			
+	goto st192
 	st192:
 		if p++; p == pe {
 			goto _test_eof192
 		}
 	st_case_192:
+//line memcached.go:4299
 		switch data[p] {
 		case 13:
-			goto st150
-		case 112:
-			goto st193
+			goto st153
+		case 32:
+			goto st191
 		}
-		goto st149
+		if data[p] <= 31 {
+			goto st152
+		}
+		goto tr203
 	st193:
 		if p++; p == pe {
 			goto _test_eof193
@@ -4263,11 +4313,11 @@ tr193:
 	st_case_193:
 		switch data[p] {
 		case 13:
-			goto st150
-		case 101:
-			goto st194
+			goto st153
+		case 32:
+			goto st191
 		}
-		goto st149
+		goto st152
 	st194:
 		if p++; p == pe {
 			goto _test_eof194
@@ -4275,11 +4325,11 @@ tr193:
 	st_case_194:
 		switch data[p] {
 		case 13:
-			goto st150
+			goto st153
 		case 110:
-			goto st152
+			goto st195
 		}
-		goto st149
+		goto st152
 	st195:
 		if p++; p == pe {
 			goto _test_eof195
@@ -4287,11 +4337,11 @@ tr193:
 	st_case_195:
 		switch data[p] {
 		case 13:
-			goto st150
-		case 101:
-			goto st196
+			goto st153
+		case 99:
+			goto st182
 		}
-		goto st149
+		goto st152
 	st196:
 		if p++; p == pe {
 			goto _test_eof196
@@ -4299,11 +4349,11 @@ tr193:
 	st_case_196:
 		switch data[p] {
 		case 13:
-			goto st150
-		case 112:
+			goto st153
+		case 114:
 			goto st197
 		}
-		goto st149
+		goto st152
 	st197:
 		if p++; p == pe {
 			goto _test_eof197
@@ -4311,11 +4361,11 @@ tr193:
 	st_case_197:
 		switch data[p] {
 		case 13:
-			goto st150
-		case 108:
+			goto st153
+		case 101:
 			goto st198
 		}
-		goto st149
+		goto st152
 	st198:
 		if p++; p == pe {
 			goto _test_eof198
@@ -4323,11 +4373,11 @@ tr193:
 	st_case_198:
 		switch data[p] {
 		case 13:
-			goto st150
-		case 97:
+			goto st153
+		case 112:
 			goto st199
 		}
-		goto st149
+		goto st152
 	st199:
 		if p++; p == pe {
 			goto _test_eof199
@@ -4335,11 +4385,11 @@ tr193:
 	st_case_199:
 		switch data[p] {
 		case 13:
-			goto st150
-		case 99:
+			goto st153
+		case 101:
 			goto st200
 		}
-		goto st149
+		goto st152
 	st200:
 		if p++; p == pe {
 			goto _test_eof200
@@ -4347,11 +4397,11 @@ tr193:
 	st_case_200:
 		switch data[p] {
 		case 13:
-			goto st150
-		case 101:
 			goto st153
+		case 110:
+			goto st155
 		}
-		goto st149
+		goto st152
 	st201:
 		if p++; p == pe {
 			goto _test_eof201
@@ -4359,11 +4409,11 @@ tr193:
 	st_case_201:
 		switch data[p] {
 		case 13:
-			goto st150
+			goto st153
 		case 101:
 			goto st202
 		}
-		goto st149
+		goto st152
 	st202:
 		if p++; p == pe {
 			goto _test_eof202
@@ -4371,11 +4421,11 @@ tr193:
 	st_case_202:
 		switch data[p] {
 		case 13:
-			goto st150
-		case 116:
 			goto st153
+		case 112:
+			goto st203
 		}
-		goto st149
+		goto st152
 	st203:
 		if p++; p == pe {
 			goto _test_eof203
@@ -4383,11 +4433,11 @@ tr193:
 	st_case_203:
 		switch data[p] {
 		case 13:
-			goto st150
-		case 111:
+			goto st153
+		case 108:
 			goto st204
 		}
-		goto st149
+		goto st152
 	st204:
 		if p++; p == pe {
 			goto _test_eof204
@@ -4395,11 +4445,11 @@ tr193:
 	st_case_204:
 		switch data[p] {
 		case 13:
-			goto st150
-		case 117:
+			goto st153
+		case 97:
 			goto st205
 		}
-		goto st149
+		goto st152
 	st205:
 		if p++; p == pe {
 			goto _test_eof205
@@ -4407,11 +4457,11 @@ tr193:
 	st_case_205:
 		switch data[p] {
 		case 13:
-			goto st150
+			goto st153
 		case 99:
 			goto st206
 		}
-		goto st149
+		goto st152
 	st206:
 		if p++; p == pe {
 			goto _test_eof206
@@ -4419,11 +4469,11 @@ tr193:
 	st_case_206:
 		switch data[p] {
 		case 13:
-			goto st150
-		case 104:
-			goto st207
+			goto st153
+		case 101:
+			goto st156
 		}
-		goto st149
+		goto st152
 	st207:
 		if p++; p == pe {
 			goto _test_eof207
@@ -4431,285 +4481,144 @@ tr193:
 	st_case_207:
 		switch data[p] {
 		case 13:
-			goto st150
-		case 32:
+			goto st153
+		case 101:
 			goto st208
 		}
-		goto st149
+		goto st152
 	st208:
 		if p++; p == pe {
 			goto _test_eof208
 		}
 	st_case_208:
-		if data[p] == 13 {
-			goto st150
+		switch data[p] {
+		case 13:
+			goto st153
+		case 116:
+			goto st156
 		}
-		if data[p] <= 32 {
-			goto st149
-		}
-		goto tr213
-tr213:
-//line memcached.rl:46
-
-				keyString = keyString + string(data[p])
-			
-	goto st209
+		goto st152
 	st209:
 		if p++; p == pe {
 			goto _test_eof209
 		}
 	st_case_209:
-//line memcached.go:4463
 		switch data[p] {
 		case 13:
-			goto st150
-		case 32:
+			goto st153
+		case 111:
 			goto st210
 		}
-		if data[p] <= 31 {
-			goto st149
-		}
-		goto tr213
-tr215:
-//line memcached.rl:45
- expiry = expiry * 10 + (int(data[p]) - '0') 
-	goto st210
+		goto st152
 	st210:
 		if p++; p == pe {
 			goto _test_eof210
 		}
 	st_case_210:
-//line memcached.go:4483
-		if data[p] == 13 {
-			goto st150
+		switch data[p] {
+		case 13:
+			goto st153
+		case 117:
+			goto st211
 		}
-		if 48 <= data[p] && data[p] <= 57 {
-			goto tr215
-		}
-		goto st149
-tr216:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st211
+		goto st152
 	st211:
 		if p++; p == pe {
 			goto _test_eof211
 		}
 	st_case_211:
-//line memcached.go:4500
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
+		switch data[p] {
+		case 13:
+			goto st153
+		case 99:
+			goto st212
 		}
-		switch _widec {
-		case 269:
-			goto st150
-		case 525:
-			goto tr217
-		}
-		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr216
-			}
-		case _widec >= 256:
-			goto st149
-		}
-		goto st0
-tr217:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st212
+		goto st152
 	st212:
 		if p++; p == pe {
 			goto _test_eof212
 		}
 	st_case_212:
-//line memcached.go:4530
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
+		switch data[p] {
+		case 13:
+			goto st153
+		case 104:
+			goto st213
 		}
-		switch _widec {
-		case 266:
-			goto tr158
-		case 269:
-			goto st150
-		case 522:
-			goto tr218
-		case 525:
-			goto tr217
-		}
-		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr216
-			}
-		case _widec >= 256:
-			goto st149
-		}
-		goto st0
-tr829:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st213
+		goto st152
 	st213:
 		if p++; p == pe {
 			goto _test_eof213
 		}
 	st_case_213:
-//line memcached.go:4564
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
+		switch data[p] {
+		case 13:
+			goto st153
+		case 32:
+			goto st214
 		}
-		switch _widec {
-		case 269:
-			goto st150
-		case 356:
-			goto st152
-		case 368:
-			goto st192
-		case 525:
-			goto tr217
-		case 612:
-			goto tr219
-		case 624:
-			goto tr220
-		}
-		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr216
-			}
-		case _widec >= 256:
-			goto st149
-		}
-		goto st0
-tr219:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st214
+		goto st152
 	st214:
 		if p++; p == pe {
 			goto _test_eof214
 		}
 	st_case_214:
-//line memcached.go:4602
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st150
-		case 356:
+		if data[p] == 13 {
 			goto st153
-		case 525:
-			goto tr217
-		case 612:
-			goto tr221
 		}
-		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr216
-			}
-		case _widec >= 256:
-			goto st149
+		if data[p] <= 32 {
+			goto st152
 		}
-		goto st0
-tr221:
-//line memcached.rl:44
- foundLen = foundLen + 1 
+		goto tr219
+tr219:
+//line memcached.rl:46
+
+				keyString = keyString + string(data[p])
+			
 	goto st215
 	st215:
 		if p++; p == pe {
 			goto _test_eof215
 		}
 	st_case_215:
-//line memcached.go:4636
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
+//line memcached.go:4585
+		switch data[p] {
+		case 13:
+			goto st153
+		case 32:
+			goto st216
 		}
-		switch _widec {
-		case 269:
-			goto st150
-		case 288:
-			goto st154
-		case 525:
-			goto tr217
-		case 544:
-			goto tr222
+		if data[p] <= 31 {
+			goto st152
 		}
-		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr216
-			}
-		case _widec >= 256:
-			goto st149
-		}
-		goto st0
-tr222:
-//line memcached.rl:44
- foundLen = foundLen + 1 
+		goto tr219
+tr221:
+//line memcached.rl:45
+ expiry = expiry * 10 + (int(data[p]) - '0') 
 	goto st216
 	st216:
 		if p++; p == pe {
 			goto _test_eof216
 		}
 	st_case_216:
-//line memcached.go:4670
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
+//line memcached.go:4605
+		if data[p] == 13 {
+			goto st153
 		}
-		switch _widec {
-		case 269:
-			goto st150
-		case 525:
-			goto tr217
+		if 48 <= data[p] && data[p] <= 57 {
+			goto tr221
 		}
-		switch {
-		case _widec < 289:
-			if 256 <= _widec && _widec <= 288 {
-				goto st149
-			}
-		case _widec > 511:
-			switch {
-			case _widec > 544:
-				if 545 <= _widec && _widec <= 767 {
-					goto tr223
-				}
-			case _widec >= 512:
-				goto tr216
-			}
-		default:
-			goto tr163
-		}
-		goto st0
-tr223:
+		goto st152
+tr222:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-//line memcached.rl:46
-
-				keyString = keyString + string(data[p])
-			
 	goto st217
 	st217:
 		if p++; p == pe {
 			goto _test_eof217
 		}
 	st_case_217:
-//line memcached.go:4713
+//line memcached.go:4622
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -4717,33 +4626,20 @@ tr223:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 288:
-			goto st156
+			goto st153
 		case 525:
-			goto tr217
-		case 544:
-			goto tr224
+			goto tr223
 		}
 		switch {
-		case _widec < 289:
-			if 256 <= _widec && _widec <= 287 {
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec > 543:
-				if 545 <= _widec && _widec <= 767 {
-					goto tr223
-				}
-			case _widec >= 512:
-				goto tr216
+			if 512 <= _widec && _widec <= 767 {
+				goto tr222
 			}
-		default:
-			goto tr163
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
-tr224:
+tr223:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st218
@@ -4752,46 +4648,32 @@ tr224:
 			goto _test_eof218
 		}
 	st_case_218:
-//line memcached.go:4756
+//line memcached.go:4652
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
 			_widec += 256
 		}
 		switch _widec {
+		case 266:
+			goto tr161
 		case 269:
-			goto st150
+			goto st153
+		case 522:
+			goto tr224
 		case 525:
-			goto tr217
+			goto tr223
 		}
 		switch {
-		case _widec < 314:
-			switch {
-			case _widec > 303:
-				if 304 <= _widec && _widec <= 313 {
-					goto st157
-				}
-			case _widec >= 256:
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec < 560:
-				if 512 <= _widec && _widec <= 559 {
-					goto tr216
-				}
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr216
-				}
-			default:
-				goto tr225
+			if 512 <= _widec && _widec <= 767 {
+				goto tr222
 			}
-		default:
-			goto st149
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
-tr225:
+tr847:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st219
@@ -4800,7 +4682,7 @@ tr225:
 			goto _test_eof219
 		}
 	st_case_219:
-//line memcached.go:4804
+//line memcached.go:4686
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -4808,42 +4690,28 @@ tr225:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 288:
-			goto st158
+			goto st153
+		case 356:
+			goto st155
+		case 368:
+			goto st198
 		case 525:
-			goto tr217
-		case 544:
+			goto tr223
+		case 612:
+			goto tr225
+		case 624:
 			goto tr226
 		}
 		switch {
-		case _widec < 314:
-			switch {
-			case _widec > 303:
-				if 304 <= _widec && _widec <= 313 {
-					goto st157
-				}
-			case _widec >= 256:
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec < 560:
-				if 512 <= _widec && _widec <= 559 {
-					goto tr216
-				}
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr216
-				}
-			default:
-				goto tr225
+			if 512 <= _widec && _widec <= 767 {
+				goto tr222
 			}
-		default:
-			goto st149
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
-tr226:
+tr225:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st220
@@ -4852,7 +4720,7 @@ tr226:
 			goto _test_eof220
 		}
 	st_case_220:
-//line memcached.go:4856
+//line memcached.go:4724
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -4860,49 +4728,33 @@ tr226:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
+		case 356:
+			goto st156
 		case 525:
-			goto tr217
+			goto tr223
+		case 612:
+			goto tr227
 		}
 		switch {
-		case _widec < 314:
-			switch {
-			case _widec > 303:
-				if 304 <= _widec && _widec <= 313 {
-					goto tr167
-				}
-			case _widec >= 256:
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec < 560:
-				if 512 <= _widec && _widec <= 559 {
-					goto tr216
-				}
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr216
-				}
-			default:
-				goto tr227
+			if 512 <= _widec && _widec <= 767 {
+				goto tr222
 			}
-		default:
-			goto st149
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
 tr227:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-//line memcached.rl:45
- expiry = expiry * 10 + (int(data[p]) - '0') 
 	goto st221
 	st221:
 		if p++; p == pe {
 			goto _test_eof221
 		}
 	st_case_221:
-//line memcached.go:4906
+//line memcached.go:4758
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -4910,39 +4762,21 @@ tr227:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
 		case 288:
-			goto st160
+			goto st157
 		case 525:
-			goto tr217
+			goto tr223
 		case 544:
 			goto tr228
 		}
 		switch {
-		case _widec < 314:
-			switch {
-			case _widec > 303:
-				if 304 <= _widec && _widec <= 313 {
-					goto tr167
-				}
-			case _widec >= 256:
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec < 560:
-				if 512 <= _widec && _widec <= 559 {
-					goto tr216
-				}
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr216
-				}
-			default:
-				goto tr227
+			if 512 <= _widec && _widec <= 767 {
+				goto tr222
 			}
-		default:
-			goto st149
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
 tr228:
@@ -4954,7 +4788,7 @@ tr228:
 			goto _test_eof222
 		}
 	st_case_222:
-//line memcached.go:4958
+//line memcached.go:4792
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -4962,49 +4796,42 @@ tr228:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
 		case 525:
-			goto tr217
+			goto tr223
 		}
 		switch {
-		case _widec < 314:
-			switch {
-			case _widec > 303:
-				if 304 <= _widec && _widec <= 313 {
-					goto tr169
-				}
-			case _widec >= 256:
-				goto st149
+		case _widec < 289:
+			if 256 <= _widec && _widec <= 288 {
+				goto st152
 			}
 		case _widec > 511:
 			switch {
-			case _widec < 560:
-				if 512 <= _widec && _widec <= 559 {
-					goto tr216
+			case _widec > 544:
+				if 545 <= _widec && _widec <= 767 {
+					goto tr229
 				}
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr216
-				}
-			default:
-				goto tr229
+			case _widec >= 512:
+				goto tr222
 			}
 		default:
-			goto st149
+			goto tr166
 		}
 		goto st0
 tr229:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-//line memcached.rl:43
- expectedLen = expectedLen * 10 + (int(data[p]) - int('0')) 
+//line memcached.rl:46
+
+				keyString = keyString + string(data[p])
+			
 	goto st223
 	st223:
 		if p++; p == pe {
 			goto _test_eof223
 		}
 	st_case_223:
-//line memcached.go:5008
+//line memcached.go:4835
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -5012,113 +4839,336 @@ tr229:
 		}
 		switch _widec {
 		case 269:
-			goto st162
+			goto st153
 		case 288:
-			goto st224
+			goto st159
 		case 525:
-			goto tr230
+			goto tr223
 		case 544:
-			goto tr231
+			goto tr230
+		}
+		switch {
+		case _widec < 289:
+			if 256 <= _widec && _widec <= 287 {
+				goto st152
+			}
+		case _widec > 511:
+			switch {
+			case _widec > 543:
+				if 545 <= _widec && _widec <= 767 {
+					goto tr229
+				}
+			case _widec >= 512:
+				goto tr222
+			}
+		default:
+			goto tr166
+		}
+		goto st0
+tr230:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st224
+	st224:
+		if p++; p == pe {
+			goto _test_eof224
+		}
+	st_case_224:
+//line memcached.go:4878
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st153
+		case 525:
+			goto tr223
 		}
 		switch {
 		case _widec < 314:
 			switch {
 			case _widec > 303:
 				if 304 <= _widec && _widec <= 313 {
-					goto tr169
+					goto st160
 				}
 			case _widec >= 256:
-				goto st149
+				goto st152
 			}
 		case _widec > 511:
 			switch {
 			case _widec < 560:
 				if 512 <= _widec && _widec <= 559 {
-					goto tr216
+					goto tr222
 				}
 			case _widec > 569:
 				if 570 <= _widec && _widec <= 767 {
-					goto tr216
+					goto tr222
 				}
 			default:
-				goto tr229
+				goto tr231
 			}
 		default:
-			goto st149
+			goto st152
 		}
 		goto st0
-	st224:
-		if p++; p == pe {
-			goto _test_eof224
-		}
-	st_case_224:
-		switch data[p] {
-		case 13:
-			goto st150
-		case 110:
-			goto st225
-		}
-		goto st149
+tr231:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st225
 	st225:
 		if p++; p == pe {
 			goto _test_eof225
 		}
 	st_case_225:
-		switch data[p] {
-		case 13:
-			goto st150
-		case 111:
-			goto st226
+//line memcached.go:4926
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
 		}
-		goto st149
+		switch _widec {
+		case 269:
+			goto st153
+		case 288:
+			goto st161
+		case 525:
+			goto tr223
+		case 544:
+			goto tr232
+		}
+		switch {
+		case _widec < 314:
+			switch {
+			case _widec > 303:
+				if 304 <= _widec && _widec <= 313 {
+					goto st160
+				}
+			case _widec >= 256:
+				goto st152
+			}
+		case _widec > 511:
+			switch {
+			case _widec < 560:
+				if 512 <= _widec && _widec <= 559 {
+					goto tr222
+				}
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr222
+				}
+			default:
+				goto tr231
+			}
+		default:
+			goto st152
+		}
+		goto st0
+tr232:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st226
 	st226:
 		if p++; p == pe {
 			goto _test_eof226
 		}
 	st_case_226:
-		switch data[p] {
-		case 13:
-			goto st150
-		case 114:
-			goto st227
+//line memcached.go:4978
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
 		}
-		goto st149
+		switch _widec {
+		case 269:
+			goto st153
+		case 525:
+			goto tr223
+		}
+		switch {
+		case _widec < 314:
+			switch {
+			case _widec > 303:
+				if 304 <= _widec && _widec <= 313 {
+					goto tr170
+				}
+			case _widec >= 256:
+				goto st152
+			}
+		case _widec > 511:
+			switch {
+			case _widec < 560:
+				if 512 <= _widec && _widec <= 559 {
+					goto tr222
+				}
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr222
+				}
+			default:
+				goto tr233
+			}
+		default:
+			goto st152
+		}
+		goto st0
+tr233:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+//line memcached.rl:45
+ expiry = expiry * 10 + (int(data[p]) - '0') 
+	goto st227
 	st227:
 		if p++; p == pe {
 			goto _test_eof227
 		}
 	st_case_227:
-		switch data[p] {
-		case 13:
-			goto st150
-		case 101:
-			goto st228
+//line memcached.go:5028
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
 		}
-		goto st149
+		switch _widec {
+		case 269:
+			goto st153
+		case 288:
+			goto st163
+		case 525:
+			goto tr223
+		case 544:
+			goto tr234
+		}
+		switch {
+		case _widec < 314:
+			switch {
+			case _widec > 303:
+				if 304 <= _widec && _widec <= 313 {
+					goto tr170
+				}
+			case _widec >= 256:
+				goto st152
+			}
+		case _widec > 511:
+			switch {
+			case _widec < 560:
+				if 512 <= _widec && _widec <= 559 {
+					goto tr222
+				}
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr222
+				}
+			default:
+				goto tr233
+			}
+		default:
+			goto st152
+		}
+		goto st0
+tr234:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st228
 	st228:
 		if p++; p == pe {
 			goto _test_eof228
 		}
 	st_case_228:
-		switch data[p] {
-		case 13:
-			goto st150
-		case 112:
-			goto st229
+//line memcached.go:5080
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
 		}
-		goto st149
+		switch _widec {
+		case 269:
+			goto st153
+		case 525:
+			goto tr223
+		}
+		switch {
+		case _widec < 314:
+			switch {
+			case _widec > 303:
+				if 304 <= _widec && _widec <= 313 {
+					goto tr172
+				}
+			case _widec >= 256:
+				goto st152
+			}
+		case _widec > 511:
+			switch {
+			case _widec < 560:
+				if 512 <= _widec && _widec <= 559 {
+					goto tr222
+				}
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr222
+				}
+			default:
+				goto tr235
+			}
+		default:
+			goto st152
+		}
+		goto st0
+tr235:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+//line memcached.rl:43
+ expectedLen = expectedLen * 10 + (int(data[p]) - int('0')) 
+	goto st229
 	st229:
 		if p++; p == pe {
 			goto _test_eof229
 		}
 	st_case_229:
-		switch data[p] {
-		case 13:
-			goto st150
-		case 108:
-			goto st230
+//line memcached.go:5130
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
 		}
-		goto st149
+		switch _widec {
+		case 269:
+			goto st165
+		case 288:
+			goto st230
+		case 525:
+			goto tr236
+		case 544:
+			goto tr237
+		}
+		switch {
+		case _widec < 314:
+			switch {
+			case _widec > 303:
+				if 304 <= _widec && _widec <= 313 {
+					goto tr172
+				}
+			case _widec >= 256:
+				goto st152
+			}
+		case _widec > 511:
+			switch {
+			case _widec < 560:
+				if 512 <= _widec && _widec <= 559 {
+					goto tr222
+				}
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr222
+				}
+			default:
+				goto tr235
+			}
+		default:
+			goto st152
+		}
+		goto st0
 	st230:
 		if p++; p == pe {
 			goto _test_eof230
@@ -5126,225 +5176,93 @@ tr229:
 	st_case_230:
 		switch data[p] {
 		case 13:
-			goto st150
-		case 121:
+			goto st153
+		case 110:
 			goto st231
 		}
-		goto st149
+		goto st152
 	st231:
 		if p++; p == pe {
 			goto _test_eof231
 		}
 	st_case_231:
-		if data[p] == 13 {
-			goto st162
+		switch data[p] {
+		case 13:
+			goto st153
+		case 111:
+			goto st232
 		}
-		goto st149
-tr230:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st232
+		goto st152
 	st232:
 		if p++; p == pe {
 			goto _test_eof232
 		}
 	st_case_232:
-//line memcached.go:5153
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
+		switch data[p] {
+		case 13:
+			goto st153
+		case 114:
+			goto st233
 		}
-		switch _widec {
-		case 266:
-			goto tr172
-		case 269:
-			goto st150
-		case 522:
-			goto tr218
-		case 525:
-			goto tr217
-		}
-		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr216
-			}
-		case _widec >= 256:
-			goto st149
-		}
-		goto st0
-tr231:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st233
+		goto st152
 	st233:
 		if p++; p == pe {
 			goto _test_eof233
 		}
 	st_case_233:
-//line memcached.go:5187
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
+		switch data[p] {
+		case 13:
+			goto st153
+		case 101:
+			goto st234
 		}
-		switch _widec {
-		case 269:
-			goto st150
-		case 366:
-			goto st225
-		case 525:
-			goto tr217
-		case 622:
-			goto tr239
-		}
-		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr216
-			}
-		case _widec >= 256:
-			goto st149
-		}
-		goto st0
-tr239:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st234
+		goto st152
 	st234:
 		if p++; p == pe {
 			goto _test_eof234
 		}
 	st_case_234:
-//line memcached.go:5221
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
+		switch data[p] {
+		case 13:
+			goto st153
+		case 112:
+			goto st235
 		}
-		switch _widec {
-		case 269:
-			goto st150
-		case 367:
-			goto st226
-		case 525:
-			goto tr217
-		case 623:
-			goto tr240
-		}
-		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr216
-			}
-		case _widec >= 256:
-			goto st149
-		}
-		goto st0
-tr240:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st235
+		goto st152
 	st235:
 		if p++; p == pe {
 			goto _test_eof235
 		}
 	st_case_235:
-//line memcached.go:5255
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
+		switch data[p] {
+		case 13:
+			goto st153
+		case 108:
+			goto st236
 		}
-		switch _widec {
-		case 269:
-			goto st150
-		case 370:
-			goto st227
-		case 525:
-			goto tr217
-		case 626:
-			goto tr241
-		}
-		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr216
-			}
-		case _widec >= 256:
-			goto st149
-		}
-		goto st0
-tr241:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st236
+		goto st152
 	st236:
 		if p++; p == pe {
 			goto _test_eof236
 		}
 	st_case_236:
-//line memcached.go:5289
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
+		switch data[p] {
+		case 13:
+			goto st153
+		case 121:
+			goto st237
 		}
-		switch _widec {
-		case 269:
-			goto st150
-		case 357:
-			goto st228
-		case 525:
-			goto tr217
-		case 613:
-			goto tr242
-		}
-		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr216
-			}
-		case _widec >= 256:
-			goto st149
-		}
-		goto st0
-tr242:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st237
+		goto st152
 	st237:
 		if p++; p == pe {
 			goto _test_eof237
 		}
 	st_case_237:
-//line memcached.go:5323
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
+		if data[p] == 13 {
+			goto st165
 		}
-		switch _widec {
-		case 269:
-			goto st150
-		case 368:
-			goto st229
-		case 525:
-			goto tr217
-		case 624:
-			goto tr243
-		}
-		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr216
-			}
-		case _widec >= 256:
-			goto st149
-		}
-		goto st0
-tr243:
+		goto st152
+tr236:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st238
@@ -5353,32 +5271,32 @@ tr243:
 			goto _test_eof238
 		}
 	st_case_238:
-//line memcached.go:5357
+//line memcached.go:5275
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
 			_widec += 256
 		}
 		switch _widec {
+		case 266:
+			goto tr175
 		case 269:
-			goto st150
-		case 364:
-			goto st230
+			goto st153
+		case 522:
+			goto tr224
 		case 525:
-			goto tr217
-		case 620:
-			goto tr244
+			goto tr223
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr244:
+tr237:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st239
@@ -5387,7 +5305,7 @@ tr244:
 			goto _test_eof239
 		}
 	st_case_239:
-//line memcached.go:5391
+//line memcached.go:5309
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -5395,21 +5313,21 @@ tr244:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 377:
+			goto st153
+		case 366:
 			goto st231
 		case 525:
-			goto tr217
-		case 633:
+			goto tr223
+		case 622:
 			goto tr245
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
 tr245:
@@ -5421,7 +5339,7 @@ tr245:
 			goto _test_eof240
 		}
 	st_case_240:
-//line memcached.go:5425
+//line memcached.go:5343
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -5429,20 +5347,24 @@ tr245:
 		}
 		switch _widec {
 		case 269:
-			goto st162
+			goto st153
+		case 367:
+			goto st232
 		case 525:
-			goto tr230
+			goto tr223
+		case 623:
+			goto tr246
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr220:
+tr246:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st241
@@ -5451,7 +5373,7 @@ tr220:
 			goto _test_eof241
 		}
 	st_case_241:
-//line memcached.go:5455
+//line memcached.go:5377
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -5459,24 +5381,24 @@ tr220:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 368:
-			goto st193
+			goto st153
+		case 370:
+			goto st233
 		case 525:
-			goto tr217
-		case 624:
-			goto tr246
+			goto tr223
+		case 626:
+			goto tr247
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr246:
+tr247:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st242
@@ -5485,7 +5407,7 @@ tr246:
 			goto _test_eof242
 		}
 	st_case_242:
-//line memcached.go:5489
+//line memcached.go:5411
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -5493,24 +5415,24 @@ tr246:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
 		case 357:
-			goto st194
+			goto st234
 		case 525:
-			goto tr217
+			goto tr223
 		case 613:
-			goto tr247
+			goto tr248
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr247:
+tr248:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st243
@@ -5519,7 +5441,7 @@ tr247:
 			goto _test_eof243
 		}
 	st_case_243:
-//line memcached.go:5523
+//line memcached.go:5445
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -5527,24 +5449,24 @@ tr247:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 366:
-			goto st152
+			goto st153
+		case 368:
+			goto st235
 		case 525:
-			goto tr217
-		case 622:
-			goto tr219
+			goto tr223
+		case 624:
+			goto tr249
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr830:
+tr249:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st244
@@ -5553,7 +5475,7 @@ tr830:
 			goto _test_eof244
 		}
 	st_case_244:
-//line memcached.go:5557
+//line memcached.go:5479
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -5561,24 +5483,24 @@ tr830:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 353:
-			goto st164
+			goto st153
+		case 364:
+			goto st236
 		case 525:
-			goto tr217
-		case 609:
-			goto tr248
+			goto tr223
+		case 620:
+			goto tr250
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr248:
+tr250:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st245
@@ -5587,7 +5509,7 @@ tr248:
 			goto _test_eof245
 		}
 	st_case_245:
-//line memcached.go:5591
+//line memcached.go:5513
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -5595,24 +5517,24 @@ tr248:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 371:
-			goto st165
+			goto st153
+		case 377:
+			goto st237
 		case 525:
-			goto tr217
-		case 627:
-			goto tr249
+			goto tr223
+		case 633:
+			goto tr251
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr249:
+tr251:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st246
@@ -5621,7 +5543,7 @@ tr249:
 			goto _test_eof246
 		}
 	st_case_246:
-//line memcached.go:5625
+//line memcached.go:5547
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -5629,24 +5551,20 @@ tr249:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 288:
-			goto st166
+			goto st165
 		case 525:
-			goto tr217
-		case 544:
-			goto tr250
+			goto tr236
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr250:
+tr226:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st247
@@ -5655,7 +5573,7 @@ tr250:
 			goto _test_eof247
 		}
 	st_case_247:
-//line memcached.go:5659
+//line memcached.go:5577
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -5663,33 +5581,24 @@ tr250:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
+		case 368:
+			goto st199
 		case 525:
-			goto tr217
+			goto tr223
+		case 624:
+			goto tr252
 		}
 		switch {
-		case _widec < 289:
-			if 256 <= _widec && _widec <= 288 {
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec > 544:
-				if 545 <= _widec && _widec <= 767 {
-					goto tr251
-				}
-			case _widec >= 512:
-				goto tr216
+			if 512 <= _widec && _widec <= 767 {
+				goto tr222
 			}
-		default:
-			goto tr176
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
-tr251:
-//line memcached.rl:46
-
-				keyString = keyString + string(data[p])
-			
+tr252:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st248
@@ -5698,7 +5607,7 @@ tr251:
 			goto _test_eof248
 		}
 	st_case_248:
-//line memcached.go:5702
+//line memcached.go:5611
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -5706,33 +5615,24 @@ tr251:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 288:
-			goto st168
+			goto st153
+		case 357:
+			goto st200
 		case 525:
-			goto tr217
-		case 544:
-			goto tr252
+			goto tr223
+		case 613:
+			goto tr253
 		}
 		switch {
-		case _widec < 289:
-			if 256 <= _widec && _widec <= 287 {
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec > 543:
-				if 545 <= _widec && _widec <= 767 {
-					goto tr251
-				}
-			case _widec >= 512:
-				goto tr216
+			if 512 <= _widec && _widec <= 767 {
+				goto tr222
 			}
-		default:
-			goto tr176
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
-tr252:
+tr253:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st249
@@ -5741,7 +5641,7 @@ tr252:
 			goto _test_eof249
 		}
 	st_case_249:
-//line memcached.go:5745
+//line memcached.go:5645
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -5749,38 +5649,24 @@ tr252:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
+		case 366:
+			goto st155
 		case 525:
-			goto tr217
+			goto tr223
+		case 622:
+			goto tr225
 		}
 		switch {
-		case _widec < 314:
-			switch {
-			case _widec > 303:
-				if 304 <= _widec && _widec <= 313 {
-					goto st169
-				}
-			case _widec >= 256:
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec < 560:
-				if 512 <= _widec && _widec <= 559 {
-					goto tr216
-				}
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr216
-				}
-			default:
-				goto tr253
+			if 512 <= _widec && _widec <= 767 {
+				goto tr222
 			}
-		default:
-			goto st149
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
-tr253:
+tr848:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st250
@@ -5789,7 +5675,7 @@ tr253:
 			goto _test_eof250
 		}
 	st_case_250:
-//line memcached.go:5793
+//line memcached.go:5679
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -5797,39 +5683,21 @@ tr253:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 288:
-			goto st170
+			goto st153
+		case 353:
+			goto st167
 		case 525:
-			goto tr217
-		case 544:
+			goto tr223
+		case 609:
 			goto tr254
 		}
 		switch {
-		case _widec < 314:
-			switch {
-			case _widec > 303:
-				if 304 <= _widec && _widec <= 313 {
-					goto st169
-				}
-			case _widec >= 256:
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec < 560:
-				if 512 <= _widec && _widec <= 559 {
-					goto tr216
-				}
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr216
-				}
-			default:
-				goto tr253
+			if 512 <= _widec && _widec <= 767 {
+				goto tr222
 			}
-		default:
-			goto st149
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
 tr254:
@@ -5841,7 +5709,7 @@ tr254:
 			goto _test_eof251
 		}
 	st_case_251:
-//line memcached.go:5845
+//line memcached.go:5713
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -5849,40 +5717,24 @@ tr254:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
+		case 371:
+			goto st168
 		case 525:
-			goto tr217
+			goto tr223
+		case 627:
+			goto tr255
 		}
 		switch {
-		case _widec < 314:
-			switch {
-			case _widec > 303:
-				if 304 <= _widec && _widec <= 313 {
-					goto tr180
-				}
-			case _widec >= 256:
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec < 560:
-				if 512 <= _widec && _widec <= 559 {
-					goto tr216
-				}
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr216
-				}
-			default:
-				goto tr255
+			if 512 <= _widec && _widec <= 767 {
+				goto tr222
 			}
-		default:
-			goto st149
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
 tr255:
-//line memcached.rl:45
- expiry = expiry * 10 + (int(data[p]) - '0') 
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st252
@@ -5891,7 +5743,7 @@ tr255:
 			goto _test_eof252
 		}
 	st_case_252:
-//line memcached.go:5895
+//line memcached.go:5747
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -5899,39 +5751,21 @@ tr255:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
 		case 288:
-			goto st172
+			goto st169
 		case 525:
-			goto tr217
+			goto tr223
 		case 544:
 			goto tr256
 		}
 		switch {
-		case _widec < 314:
-			switch {
-			case _widec > 303:
-				if 304 <= _widec && _widec <= 313 {
-					goto tr180
-				}
-			case _widec >= 256:
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec < 560:
-				if 512 <= _widec && _widec <= 559 {
-					goto tr216
-				}
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr216
-				}
-			default:
-				goto tr255
+			if 512 <= _widec && _widec <= 767 {
+				goto tr222
 			}
-		default:
-			goto st149
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
 tr256:
@@ -5943,7 +5777,7 @@ tr256:
 			goto _test_eof253
 		}
 	st_case_253:
-//line memcached.go:5947
+//line memcached.go:5781
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -5951,40 +5785,33 @@ tr256:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
 		case 525:
-			goto tr217
+			goto tr223
 		}
 		switch {
-		case _widec < 314:
-			switch {
-			case _widec > 303:
-				if 304 <= _widec && _widec <= 313 {
-					goto tr182
-				}
-			case _widec >= 256:
-				goto st149
+		case _widec < 289:
+			if 256 <= _widec && _widec <= 288 {
+				goto st152
 			}
 		case _widec > 511:
 			switch {
-			case _widec < 560:
-				if 512 <= _widec && _widec <= 559 {
-					goto tr216
+			case _widec > 544:
+				if 545 <= _widec && _widec <= 767 {
+					goto tr257
 				}
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr216
-				}
-			default:
-				goto tr257
+			case _widec >= 512:
+				goto tr222
 			}
 		default:
-			goto st149
+			goto tr179
 		}
 		goto st0
 tr257:
-//line memcached.rl:43
- expectedLen = expectedLen * 10 + (int(data[p]) - int('0')) 
+//line memcached.rl:46
+
+				keyString = keyString + string(data[p])
+			
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st254
@@ -5993,7 +5820,7 @@ tr257:
 			goto _test_eof254
 		}
 	st_case_254:
-//line memcached.go:5997
+//line memcached.go:5824
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -6001,39 +5828,30 @@ tr257:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
 		case 288:
-			goto st174
+			goto st171
 		case 525:
-			goto tr217
+			goto tr223
 		case 544:
 			goto tr258
 		}
 		switch {
-		case _widec < 314:
-			switch {
-			case _widec > 303:
-				if 304 <= _widec && _widec <= 313 {
-					goto tr182
-				}
-			case _widec >= 256:
-				goto st149
+		case _widec < 289:
+			if 256 <= _widec && _widec <= 287 {
+				goto st152
 			}
 		case _widec > 511:
 			switch {
-			case _widec < 560:
-				if 512 <= _widec && _widec <= 559 {
-					goto tr216
+			case _widec > 543:
+				if 545 <= _widec && _widec <= 767 {
+					goto tr257
 				}
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr216
-				}
-			default:
-				goto tr257
+			case _widec >= 512:
+				goto tr222
 			}
 		default:
-			goto st149
+			goto tr179
 		}
 		goto st0
 tr258:
@@ -6045,7 +5863,7 @@ tr258:
 			goto _test_eof255
 		}
 	st_case_255:
-//line memcached.go:6049
+//line memcached.go:5867
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -6053,35 +5871,35 @@ tr258:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
 		case 525:
-			goto tr217
+			goto tr223
 		}
 		switch {
 		case _widec < 314:
 			switch {
 			case _widec > 303:
 				if 304 <= _widec && _widec <= 313 {
-					goto st175
+					goto st172
 				}
 			case _widec >= 256:
-				goto st149
+				goto st152
 			}
 		case _widec > 511:
 			switch {
 			case _widec < 560:
 				if 512 <= _widec && _widec <= 559 {
-					goto tr216
+					goto tr222
 				}
 			case _widec > 569:
 				if 570 <= _widec && _widec <= 767 {
-					goto tr216
+					goto tr222
 				}
 			default:
 				goto tr259
 			}
 		default:
-			goto st149
+			goto st152
 		}
 		goto st0
 tr259:
@@ -6093,7 +5911,7 @@ tr259:
 			goto _test_eof256
 		}
 	st_case_256:
-//line memcached.go:6097
+//line memcached.go:5915
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -6101,113 +5919,345 @@ tr259:
 		}
 		switch _widec {
 		case 269:
-			goto st176
+			goto st153
 		case 288:
-			goto st257
+			goto st173
 		case 525:
-			goto tr260
+			goto tr223
 		case 544:
-			goto tr261
+			goto tr260
 		}
 		switch {
 		case _widec < 314:
 			switch {
 			case _widec > 303:
 				if 304 <= _widec && _widec <= 313 {
-					goto st175
+					goto st172
 				}
 			case _widec >= 256:
-				goto st149
+				goto st152
 			}
 		case _widec > 511:
 			switch {
 			case _widec < 560:
 				if 512 <= _widec && _widec <= 559 {
-					goto tr216
+					goto tr222
 				}
 			case _widec > 569:
 				if 570 <= _widec && _widec <= 767 {
-					goto tr216
+					goto tr222
 				}
 			default:
 				goto tr259
 			}
 		default:
-			goto st149
+			goto st152
 		}
 		goto st0
+tr260:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st257
 	st257:
 		if p++; p == pe {
 			goto _test_eof257
 		}
 	st_case_257:
-		switch data[p] {
-		case 13:
-			goto st150
-		case 110:
-			goto st258
+//line memcached.go:5967
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
 		}
-		goto st149
+		switch _widec {
+		case 269:
+			goto st153
+		case 525:
+			goto tr223
+		}
+		switch {
+		case _widec < 314:
+			switch {
+			case _widec > 303:
+				if 304 <= _widec && _widec <= 313 {
+					goto tr183
+				}
+			case _widec >= 256:
+				goto st152
+			}
+		case _widec > 511:
+			switch {
+			case _widec < 560:
+				if 512 <= _widec && _widec <= 559 {
+					goto tr222
+				}
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr222
+				}
+			default:
+				goto tr261
+			}
+		default:
+			goto st152
+		}
+		goto st0
+tr261:
+//line memcached.rl:45
+ expiry = expiry * 10 + (int(data[p]) - '0') 
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st258
 	st258:
 		if p++; p == pe {
 			goto _test_eof258
 		}
 	st_case_258:
-		switch data[p] {
-		case 13:
-			goto st150
-		case 111:
-			goto st259
+//line memcached.go:6017
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
 		}
-		goto st149
+		switch _widec {
+		case 269:
+			goto st153
+		case 288:
+			goto st175
+		case 525:
+			goto tr223
+		case 544:
+			goto tr262
+		}
+		switch {
+		case _widec < 314:
+			switch {
+			case _widec > 303:
+				if 304 <= _widec && _widec <= 313 {
+					goto tr183
+				}
+			case _widec >= 256:
+				goto st152
+			}
+		case _widec > 511:
+			switch {
+			case _widec < 560:
+				if 512 <= _widec && _widec <= 559 {
+					goto tr222
+				}
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr222
+				}
+			default:
+				goto tr261
+			}
+		default:
+			goto st152
+		}
+		goto st0
+tr262:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st259
 	st259:
 		if p++; p == pe {
 			goto _test_eof259
 		}
 	st_case_259:
-		switch data[p] {
-		case 13:
-			goto st150
-		case 114:
-			goto st260
+//line memcached.go:6069
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
 		}
-		goto st149
+		switch _widec {
+		case 269:
+			goto st153
+		case 525:
+			goto tr223
+		}
+		switch {
+		case _widec < 314:
+			switch {
+			case _widec > 303:
+				if 304 <= _widec && _widec <= 313 {
+					goto tr185
+				}
+			case _widec >= 256:
+				goto st152
+			}
+		case _widec > 511:
+			switch {
+			case _widec < 560:
+				if 512 <= _widec && _widec <= 559 {
+					goto tr222
+				}
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr222
+				}
+			default:
+				goto tr263
+			}
+		default:
+			goto st152
+		}
+		goto st0
+tr263:
+//line memcached.rl:43
+ expectedLen = expectedLen * 10 + (int(data[p]) - int('0')) 
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st260
 	st260:
 		if p++; p == pe {
 			goto _test_eof260
 		}
 	st_case_260:
-		switch data[p] {
-		case 13:
-			goto st150
-		case 101:
-			goto st261
+//line memcached.go:6119
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
 		}
-		goto st149
+		switch _widec {
+		case 269:
+			goto st153
+		case 288:
+			goto st177
+		case 525:
+			goto tr223
+		case 544:
+			goto tr264
+		}
+		switch {
+		case _widec < 314:
+			switch {
+			case _widec > 303:
+				if 304 <= _widec && _widec <= 313 {
+					goto tr185
+				}
+			case _widec >= 256:
+				goto st152
+			}
+		case _widec > 511:
+			switch {
+			case _widec < 560:
+				if 512 <= _widec && _widec <= 559 {
+					goto tr222
+				}
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr222
+				}
+			default:
+				goto tr263
+			}
+		default:
+			goto st152
+		}
+		goto st0
+tr264:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st261
 	st261:
 		if p++; p == pe {
 			goto _test_eof261
 		}
 	st_case_261:
-		switch data[p] {
-		case 13:
-			goto st150
-		case 112:
-			goto st262
+//line memcached.go:6171
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
 		}
-		goto st149
+		switch _widec {
+		case 269:
+			goto st153
+		case 525:
+			goto tr223
+		}
+		switch {
+		case _widec < 314:
+			switch {
+			case _widec > 303:
+				if 304 <= _widec && _widec <= 313 {
+					goto st178
+				}
+			case _widec >= 256:
+				goto st152
+			}
+		case _widec > 511:
+			switch {
+			case _widec < 560:
+				if 512 <= _widec && _widec <= 559 {
+					goto tr222
+				}
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr222
+				}
+			default:
+				goto tr265
+			}
+		default:
+			goto st152
+		}
+		goto st0
+tr265:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st262
 	st262:
 		if p++; p == pe {
 			goto _test_eof262
 		}
 	st_case_262:
-		switch data[p] {
-		case 13:
-			goto st150
-		case 108:
-			goto st263
+//line memcached.go:6219
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
 		}
-		goto st149
+		switch _widec {
+		case 269:
+			goto st179
+		case 288:
+			goto st263
+		case 525:
+			goto tr266
+		case 544:
+			goto tr267
+		}
+		switch {
+		case _widec < 314:
+			switch {
+			case _widec > 303:
+				if 304 <= _widec && _widec <= 313 {
+					goto st178
+				}
+			case _widec >= 256:
+				goto st152
+			}
+		case _widec > 511:
+			switch {
+			case _widec < 560:
+				if 512 <= _widec && _widec <= 559 {
+					goto tr222
+				}
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr222
+				}
+			default:
+				goto tr265
+			}
+		default:
+			goto st152
+		}
+		goto st0
 	st263:
 		if p++; p == pe {
 			goto _test_eof263
@@ -6215,225 +6265,93 @@ tr259:
 	st_case_263:
 		switch data[p] {
 		case 13:
-			goto st150
-		case 121:
+			goto st153
+		case 110:
 			goto st264
 		}
-		goto st149
+		goto st152
 	st264:
 		if p++; p == pe {
 			goto _test_eof264
 		}
 	st_case_264:
-		if data[p] == 13 {
-			goto st176
+		switch data[p] {
+		case 13:
+			goto st153
+		case 111:
+			goto st265
 		}
-		goto st149
-tr260:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st265
+		goto st152
 	st265:
 		if p++; p == pe {
 			goto _test_eof265
 		}
 	st_case_265:
-//line memcached.go:6242
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
+		switch data[p] {
+		case 13:
+			goto st153
+		case 114:
+			goto st266
 		}
-		switch _widec {
-		case 266:
-			goto tr187
-		case 269:
-			goto st150
-		case 522:
-			goto tr218
-		case 525:
-			goto tr217
-		}
-		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr216
-			}
-		case _widec >= 256:
-			goto st149
-		}
-		goto st0
-tr261:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st266
+		goto st152
 	st266:
 		if p++; p == pe {
 			goto _test_eof266
 		}
 	st_case_266:
-//line memcached.go:6276
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
+		switch data[p] {
+		case 13:
+			goto st153
+		case 101:
+			goto st267
 		}
-		switch _widec {
-		case 269:
-			goto st150
-		case 366:
-			goto st258
-		case 525:
-			goto tr217
-		case 622:
-			goto tr269
-		}
-		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr216
-			}
-		case _widec >= 256:
-			goto st149
-		}
-		goto st0
-tr269:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st267
+		goto st152
 	st267:
 		if p++; p == pe {
 			goto _test_eof267
 		}
 	st_case_267:
-//line memcached.go:6310
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
+		switch data[p] {
+		case 13:
+			goto st153
+		case 112:
+			goto st268
 		}
-		switch _widec {
-		case 269:
-			goto st150
-		case 367:
-			goto st259
-		case 525:
-			goto tr217
-		case 623:
-			goto tr270
-		}
-		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr216
-			}
-		case _widec >= 256:
-			goto st149
-		}
-		goto st0
-tr270:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st268
+		goto st152
 	st268:
 		if p++; p == pe {
 			goto _test_eof268
 		}
 	st_case_268:
-//line memcached.go:6344
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
+		switch data[p] {
+		case 13:
+			goto st153
+		case 108:
+			goto st269
 		}
-		switch _widec {
-		case 269:
-			goto st150
-		case 370:
-			goto st260
-		case 525:
-			goto tr217
-		case 626:
-			goto tr271
-		}
-		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr216
-			}
-		case _widec >= 256:
-			goto st149
-		}
-		goto st0
-tr271:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st269
+		goto st152
 	st269:
 		if p++; p == pe {
 			goto _test_eof269
 		}
 	st_case_269:
-//line memcached.go:6378
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
+		switch data[p] {
+		case 13:
+			goto st153
+		case 121:
+			goto st270
 		}
-		switch _widec {
-		case 269:
-			goto st150
-		case 357:
-			goto st261
-		case 525:
-			goto tr217
-		case 613:
-			goto tr272
-		}
-		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr216
-			}
-		case _widec >= 256:
-			goto st149
-		}
-		goto st0
-tr272:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st270
+		goto st152
 	st270:
 		if p++; p == pe {
 			goto _test_eof270
 		}
 	st_case_270:
-//line memcached.go:6412
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
+		if data[p] == 13 {
+			goto st179
 		}
-		switch _widec {
-		case 269:
-			goto st150
-		case 368:
-			goto st262
-		case 525:
-			goto tr217
-		case 624:
-			goto tr273
-		}
-		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr216
-			}
-		case _widec >= 256:
-			goto st149
-		}
-		goto st0
-tr273:
+		goto st152
+tr266:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st271
@@ -6442,32 +6360,32 @@ tr273:
 			goto _test_eof271
 		}
 	st_case_271:
-//line memcached.go:6446
+//line memcached.go:6364
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
 			_widec += 256
 		}
 		switch _widec {
+		case 266:
+			goto tr190
 		case 269:
-			goto st150
-		case 364:
-			goto st263
+			goto st153
+		case 522:
+			goto tr224
 		case 525:
-			goto tr217
-		case 620:
-			goto tr274
+			goto tr223
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr274:
+tr267:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st272
@@ -6476,7 +6394,7 @@ tr274:
 			goto _test_eof272
 		}
 	st_case_272:
-//line memcached.go:6480
+//line memcached.go:6398
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -6484,21 +6402,21 @@ tr274:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 377:
+			goto st153
+		case 366:
 			goto st264
 		case 525:
-			goto tr217
-		case 633:
+			goto tr223
+		case 622:
 			goto tr275
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
 tr275:
@@ -6510,7 +6428,7 @@ tr275:
 			goto _test_eof273
 		}
 	st_case_273:
-//line memcached.go:6514
+//line memcached.go:6432
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -6518,20 +6436,24 @@ tr275:
 		}
 		switch _widec {
 		case 269:
-			goto st176
+			goto st153
+		case 367:
+			goto st265
 		case 525:
-			goto tr260
+			goto tr223
+		case 623:
+			goto tr276
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr831:
+tr276:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st274
@@ -6540,7 +6462,7 @@ tr831:
 			goto _test_eof274
 		}
 	st_case_274:
-//line memcached.go:6544
+//line memcached.go:6466
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -6548,24 +6470,24 @@ tr831:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 357:
-			goto st178
+			goto st153
+		case 370:
+			goto st266
 		case 525:
-			goto tr217
-		case 613:
-			goto tr276
+			goto tr223
+		case 626:
+			goto tr277
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr276:
+tr277:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st275
@@ -6574,7 +6496,7 @@ tr276:
 			goto _test_eof275
 		}
 	st_case_275:
-//line memcached.go:6578
+//line memcached.go:6500
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -6582,28 +6504,24 @@ tr276:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 355:
-			goto st179
-		case 364:
-			goto st182
+			goto st153
+		case 357:
+			goto st267
 		case 525:
-			goto tr217
-		case 611:
-			goto tr277
-		case 620:
+			goto tr223
+		case 613:
 			goto tr278
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr277:
+tr278:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st276
@@ -6612,7 +6530,7 @@ tr277:
 			goto _test_eof276
 		}
 	st_case_276:
-//line memcached.go:6616
+//line memcached.go:6534
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -6620,21 +6538,21 @@ tr277:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 370:
-			goto st180
+			goto st153
+		case 368:
+			goto st268
 		case 525:
-			goto tr217
-		case 626:
+			goto tr223
+		case 624:
 			goto tr279
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
 tr279:
@@ -6646,7 +6564,7 @@ tr279:
 			goto _test_eof277
 		}
 	st_case_277:
-//line memcached.go:6650
+//line memcached.go:6568
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -6654,32 +6572,24 @@ tr279:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 288:
-			goto st181
+			goto st153
+		case 364:
+			goto st269
 		case 525:
-			goto tr217
-		case 544:
+			goto tr223
+		case 620:
 			goto tr280
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
 tr280:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st278
-tr281:
-//line memcached.rl:46
-
-				keyString = keyString + string(data[p])
-			
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st278
@@ -6688,7 +6598,7 @@ tr281:
 			goto _test_eof278
 		}
 	st_case_278:
-//line memcached.go:6692
+//line memcached.go:6602
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -6696,29 +6606,24 @@ tr281:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
+		case 377:
+			goto st270
 		case 525:
-			goto tr217
+			goto tr223
+		case 633:
+			goto tr281
 		}
 		switch {
-		case _widec < 289:
-			if 256 <= _widec && _widec <= 288 {
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec > 544:
-				if 545 <= _widec && _widec <= 767 {
-					goto tr281
-				}
-			case _widec >= 512:
-				goto tr216
+			if 512 <= _widec && _widec <= 767 {
+				goto tr222
 			}
-		default:
-			goto tr193
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
-tr278:
+tr281:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st279
@@ -6727,7 +6632,7 @@ tr278:
 			goto _test_eof279
 		}
 	st_case_279:
-//line memcached.go:6731
+//line memcached.go:6636
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -6735,24 +6640,20 @@ tr278:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 357:
-			goto st183
+			goto st179
 		case 525:
-			goto tr217
-		case 613:
-			goto tr282
+			goto tr266
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr282:
+tr849:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st280
@@ -6761,7 +6662,7 @@ tr282:
 			goto _test_eof280
 		}
 	st_case_280:
-//line memcached.go:6765
+//line memcached.go:6666
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -6769,24 +6670,24 @@ tr282:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 372:
-			goto st184
+			goto st153
+		case 357:
+			goto st181
 		case 525:
-			goto tr217
-		case 628:
-			goto tr283
+			goto tr223
+		case 613:
+			goto tr282
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr283:
+tr282:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st281
@@ -6795,7 +6696,7 @@ tr283:
 			goto _test_eof281
 		}
 	st_case_281:
-//line memcached.go:6799
+//line memcached.go:6700
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -6803,24 +6704,28 @@ tr283:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 357:
-			goto st180
+			goto st153
+		case 355:
+			goto st182
+		case 364:
+			goto st185
 		case 525:
-			goto tr217
-		case 613:
+			goto tr223
+		case 611:
+			goto tr283
+		case 620:
 			goto tr284
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr284:
+tr283:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st282
@@ -6829,7 +6734,7 @@ tr284:
 			goto _test_eof282
 		}
 	st_case_282:
-//line memcached.go:6833
+//line memcached.go:6738
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -6837,41 +6742,33 @@ tr284:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 288:
-			goto st181
+			goto st153
+		case 370:
+			goto st183
 		case 525:
-			goto tr217
-		case 544:
+			goto tr223
+		case 626:
 			goto tr285
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
 tr285:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st283
-tr286:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-//line memcached.rl:46
-
-				keyString = keyString + string(data[p])
-			
-	goto st283
 	st283:
 		if p++; p == pe {
 			goto _test_eof283
 		}
 	st_case_283:
-//line memcached.go:6875
+//line memcached.go:6772
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -6879,29 +6776,32 @@ tr286:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
+		case 288:
+			goto st184
 		case 525:
-			goto tr217
+			goto tr223
+		case 544:
+			goto tr286
 		}
 		switch {
-		case _widec < 289:
-			if 256 <= _widec && _widec <= 288 {
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec > 544:
-				if 545 <= _widec && _widec <= 767 {
-					goto tr286
-				}
-			case _widec >= 512:
-				goto tr216
+			if 512 <= _widec && _widec <= 767 {
+				goto tr222
 			}
-		default:
-			goto tr193
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
-tr832:
+tr286:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st284
+tr287:
+//line memcached.rl:46
+
+				keyString = keyString + string(data[p])
+			
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st284
@@ -6910,7 +6810,7 @@ tr832:
 			goto _test_eof284
 		}
 	st_case_284:
-//line memcached.go:6914
+//line memcached.go:6814
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -6918,24 +6818,29 @@ tr832:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 357:
-			goto st186
+			goto st153
 		case 525:
-			goto tr217
-		case 613:
-			goto tr287
+			goto tr223
 		}
 		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+		case _widec < 289:
+			if 256 <= _widec && _widec <= 288 {
+				goto st152
 			}
-		case _widec >= 256:
-			goto st149
+		case _widec > 511:
+			switch {
+			case _widec > 544:
+				if 545 <= _widec && _widec <= 767 {
+					goto tr287
+				}
+			case _widec >= 512:
+				goto tr222
+			}
+		default:
+			goto tr196
 		}
 		goto st0
-tr287:
+tr284:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st285
@@ -6944,7 +6849,7 @@ tr287:
 			goto _test_eof285
 		}
 	st_case_285:
-//line memcached.go:6948
+//line memcached.go:6853
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -6952,21 +6857,21 @@ tr287:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 372:
-			goto st187
+			goto st153
+		case 357:
+			goto st186
 		case 525:
-			goto tr217
-		case 628:
+			goto tr223
+		case 613:
 			goto tr288
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
 tr288:
@@ -6978,7 +6883,7 @@ tr288:
 			goto _test_eof286
 		}
 	st_case_286:
-//line memcached.go:6982
+//line memcached.go:6887
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -6986,28 +6891,24 @@ tr288:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 288:
-			goto st181
-		case 371:
-			goto st180
+			goto st153
+		case 372:
+			goto st187
 		case 525:
-			goto tr217
-		case 544:
-			goto tr285
-		case 627:
-			goto tr284
+			goto tr223
+		case 628:
+			goto tr289
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr833:
+tr289:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st287
@@ -7016,7 +6917,7 @@ tr833:
 			goto _test_eof287
 		}
 	st_case_287:
-//line memcached.go:7020
+//line memcached.go:6921
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -7024,24 +6925,24 @@ tr833:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 366:
-			goto st189
+			goto st153
+		case 357:
+			goto st183
 		case 525:
-			goto tr217
-		case 622:
-			goto tr289
+			goto tr223
+		case 613:
+			goto tr290
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr289:
+tr290:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st288
@@ -7050,7 +6951,7 @@ tr289:
 			goto _test_eof288
 		}
 	st_case_288:
-//line memcached.go:7054
+//line memcached.go:6955
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -7058,33 +6959,41 @@ tr289:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 355:
-			goto st179
+			goto st153
+		case 288:
+			goto st184
 		case 525:
-			goto tr217
-		case 611:
-			goto tr277
+			goto tr223
+		case 544:
+			goto tr291
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr834:
+tr291:
 //line memcached.rl:44
  foundLen = foundLen + 1 
+	goto st289
+tr292:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+//line memcached.rl:46
+
+				keyString = keyString + string(data[p])
+			
 	goto st289
 	st289:
 		if p++; p == pe {
 			goto _test_eof289
 		}
 	st_case_289:
-//line memcached.go:7088
+//line memcached.go:6997
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -7092,24 +7001,29 @@ tr834:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 370:
-			goto st191
+			goto st153
 		case 525:
-			goto tr217
-		case 626:
-			goto tr290
+			goto tr223
 		}
 		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+		case _widec < 289:
+			if 256 <= _widec && _widec <= 288 {
+				goto st152
 			}
-		case _widec >= 256:
-			goto st149
+		case _widec > 511:
+			switch {
+			case _widec > 544:
+				if 545 <= _widec && _widec <= 767 {
+					goto tr292
+				}
+			case _widec >= 512:
+				goto tr222
+			}
+		default:
+			goto tr196
 		}
 		goto st0
-tr290:
+tr850:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st290
@@ -7118,7 +7032,7 @@ tr290:
 			goto _test_eof290
 		}
 	st_case_290:
-//line memcached.go:7122
+//line memcached.go:7036
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -7126,24 +7040,24 @@ tr290:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
 		case 357:
-			goto st192
+			goto st189
 		case 525:
-			goto tr217
+			goto tr223
 		case 613:
-			goto tr220
+			goto tr293
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr835:
+tr293:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st291
@@ -7152,7 +7066,7 @@ tr835:
 			goto _test_eof291
 		}
 	st_case_291:
-//line memcached.go:7156
+//line memcached.go:7070
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -7160,24 +7074,24 @@ tr835:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 357:
-			goto st196
+			goto st153
+		case 372:
+			goto st190
 		case 525:
-			goto tr217
-		case 613:
-			goto tr291
+			goto tr223
+		case 628:
+			goto tr294
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr291:
+tr294:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st292
@@ -7186,7 +7100,7 @@ tr291:
 			goto _test_eof292
 		}
 	st_case_292:
-//line memcached.go:7190
+//line memcached.go:7104
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -7194,24 +7108,28 @@ tr291:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 368:
-			goto st197
+			goto st153
+		case 288:
+			goto st191
+		case 371:
+			goto st193
 		case 525:
-			goto tr217
-		case 624:
-			goto tr292
+			goto tr223
+		case 544:
+			goto tr295
+		case 627:
+			goto tr296
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr292:
+tr295:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st293
@@ -7220,7 +7138,7 @@ tr292:
 			goto _test_eof293
 		}
 	st_case_293:
-//line memcached.go:7224
+//line memcached.go:7142
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -7228,33 +7146,42 @@ tr292:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 364:
-			goto st198
+			goto st153
 		case 525:
-			goto tr217
-		case 620:
-			goto tr293
+			goto tr223
 		}
 		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+		case _widec < 289:
+			if 256 <= _widec && _widec <= 288 {
+				goto st152
 			}
-		case _widec >= 256:
-			goto st149
+		case _widec > 511:
+			switch {
+			case _widec > 544:
+				if 545 <= _widec && _widec <= 767 {
+					goto tr297
+				}
+			case _widec >= 512:
+				goto tr222
+			}
+		default:
+			goto tr203
 		}
 		goto st0
-tr293:
+tr297:
 //line memcached.rl:44
  foundLen = foundLen + 1 
+//line memcached.rl:46
+
+				keyString = keyString + string(data[p])
+			
 	goto st294
 	st294:
 		if p++; p == pe {
 			goto _test_eof294
 		}
 	st_case_294:
-//line memcached.go:7258
+//line memcached.go:7185
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -7262,24 +7189,33 @@ tr293:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 353:
-			goto st199
+			goto st153
+		case 288:
+			goto st191
 		case 525:
-			goto tr217
-		case 609:
-			goto tr294
+			goto tr223
+		case 544:
+			goto tr295
 		}
 		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+		case _widec < 289:
+			if 256 <= _widec && _widec <= 287 {
+				goto st152
 			}
-		case _widec >= 256:
-			goto st149
+		case _widec > 511:
+			switch {
+			case _widec > 543:
+				if 545 <= _widec && _widec <= 767 {
+					goto tr297
+				}
+			case _widec >= 512:
+				goto tr222
+			}
+		default:
+			goto tr203
 		}
 		goto st0
-tr294:
+tr296:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st295
@@ -7288,7 +7224,7 @@ tr294:
 			goto _test_eof295
 		}
 	st_case_295:
-//line memcached.go:7292
+//line memcached.go:7228
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -7296,24 +7232,24 @@ tr294:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 355:
-			goto st200
+			goto st153
+		case 288:
+			goto st191
 		case 525:
-			goto tr217
-		case 611:
+			goto tr223
+		case 544:
 			goto tr295
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr295:
+tr851:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st296
@@ -7322,7 +7258,7 @@ tr295:
 			goto _test_eof296
 		}
 	st_case_296:
-//line memcached.go:7326
+//line memcached.go:7262
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -7330,24 +7266,24 @@ tr295:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 357:
 			goto st153
+		case 366:
+			goto st195
 		case 525:
-			goto tr217
-		case 613:
-			goto tr221
+			goto tr223
+		case 622:
+			goto tr298
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr836:
+tr298:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st297
@@ -7356,7 +7292,7 @@ tr836:
 			goto _test_eof297
 		}
 	st_case_297:
-//line memcached.go:7360
+//line memcached.go:7296
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -7364,24 +7300,24 @@ tr836:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 357:
-			goto st202
+			goto st153
+		case 355:
+			goto st182
 		case 525:
-			goto tr217
-		case 613:
-			goto tr296
+			goto tr223
+		case 611:
+			goto tr283
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr296:
+tr852:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st298
@@ -7390,7 +7326,7 @@ tr296:
 			goto _test_eof298
 		}
 	st_case_298:
-//line memcached.go:7394
+//line memcached.go:7330
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -7398,24 +7334,24 @@ tr296:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 372:
 			goto st153
+		case 370:
+			goto st197
 		case 525:
-			goto tr217
-		case 628:
-			goto tr221
+			goto tr223
+		case 626:
+			goto tr299
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr837:
+tr299:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st299
@@ -7424,7 +7360,7 @@ tr837:
 			goto _test_eof299
 		}
 	st_case_299:
-//line memcached.go:7428
+//line memcached.go:7364
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -7432,24 +7368,24 @@ tr837:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 367:
-			goto st204
+			goto st153
+		case 357:
+			goto st198
 		case 525:
-			goto tr217
-		case 623:
-			goto tr297
+			goto tr223
+		case 613:
+			goto tr226
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr297:
+tr853:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st300
@@ -7458,7 +7394,7 @@ tr297:
 			goto _test_eof300
 		}
 	st_case_300:
-//line memcached.go:7462
+//line memcached.go:7398
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -7466,24 +7402,24 @@ tr297:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 373:
-			goto st205
+			goto st153
+		case 357:
+			goto st202
 		case 525:
-			goto tr217
-		case 629:
-			goto tr298
+			goto tr223
+		case 613:
+			goto tr300
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr298:
+tr300:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st301
@@ -7492,7 +7428,7 @@ tr298:
 			goto _test_eof301
 		}
 	st_case_301:
-//line memcached.go:7496
+//line memcached.go:7432
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -7500,24 +7436,24 @@ tr298:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 355:
-			goto st206
+			goto st153
+		case 368:
+			goto st203
 		case 525:
-			goto tr217
-		case 611:
-			goto tr299
+			goto tr223
+		case 624:
+			goto tr301
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr299:
+tr301:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st302
@@ -7526,7 +7462,7 @@ tr299:
 			goto _test_eof302
 		}
 	st_case_302:
-//line memcached.go:7530
+//line memcached.go:7466
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -7534,24 +7470,24 @@ tr299:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 360:
-			goto st207
+			goto st153
+		case 364:
+			goto st204
 		case 525:
-			goto tr217
-		case 616:
-			goto tr300
+			goto tr223
+		case 620:
+			goto tr302
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr300:
+tr302:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st303
@@ -7560,7 +7496,7 @@ tr300:
 			goto _test_eof303
 		}
 	st_case_303:
-//line memcached.go:7564
+//line memcached.go:7500
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -7568,24 +7504,24 @@ tr300:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 288:
-			goto st208
+			goto st153
+		case 353:
+			goto st205
 		case 525:
-			goto tr217
-		case 544:
-			goto tr301
+			goto tr223
+		case 609:
+			goto tr303
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr216
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr301:
+tr303:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st304
@@ -7594,7 +7530,7 @@ tr301:
 			goto _test_eof304
 		}
 	st_case_304:
-//line memcached.go:7598
+//line memcached.go:7534
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -7602,42 +7538,33 @@ tr301:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
+		case 355:
+			goto st206
 		case 525:
-			goto tr217
+			goto tr223
+		case 611:
+			goto tr304
 		}
 		switch {
-		case _widec < 289:
-			if 256 <= _widec && _widec <= 288 {
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec > 544:
-				if 545 <= _widec && _widec <= 767 {
-					goto tr302
-				}
-			case _widec >= 512:
-				goto tr216
+			if 512 <= _widec && _widec <= 767 {
+				goto tr222
 			}
-		default:
-			goto tr213
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
-tr302:
+tr304:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-//line memcached.rl:46
-
-				keyString = keyString + string(data[p])
-			
 	goto st305
 	st305:
 		if p++; p == pe {
 			goto _test_eof305
 		}
 	st_case_305:
-//line memcached.go:7641
+//line memcached.go:7568
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -7645,48 +7572,33 @@ tr302:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 288:
-			goto st210
+			goto st153
+		case 357:
+			goto st156
 		case 525:
-			goto tr217
-		case 544:
-			goto tr303
+			goto tr223
+		case 613:
+			goto tr227
 		}
 		switch {
-		case _widec < 289:
-			if 256 <= _widec && _widec <= 287 {
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec > 543:
-				if 545 <= _widec && _widec <= 767 {
-					goto tr302
-				}
-			case _widec >= 512:
-				goto tr216
+			if 512 <= _widec && _widec <= 767 {
+				goto tr222
 			}
-		default:
-			goto tr213
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
-tr303:
+tr854:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st306
-tr304:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-//line memcached.rl:45
- expiry = expiry * 10 + (int(data[p]) - '0') 
 	goto st306
 	st306:
 		if p++; p == pe {
 			goto _test_eof306
 		}
 	st_case_306:
-//line memcached.go:7690
+//line memcached.go:7602
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -7694,35 +7606,21 @@ tr304:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
+		case 357:
+			goto st208
 		case 525:
-			goto tr217
+			goto tr223
+		case 613:
+			goto tr305
 		}
 		switch {
-		case _widec < 314:
-			switch {
-			case _widec > 303:
-				if 304 <= _widec && _widec <= 313 {
-					goto tr215
-				}
-			case _widec >= 256:
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec < 560:
-				if 512 <= _widec && _widec <= 559 {
-					goto tr216
-				}
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr216
-				}
-			default:
-				goto tr304
+			if 512 <= _widec && _widec <= 767 {
+				goto tr222
 			}
-		default:
-			goto st149
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
 tr305:
@@ -7734,7 +7632,7 @@ tr305:
 			goto _test_eof307
 		}
 	st_case_307:
-//line memcached.go:7738
+//line memcached.go:7636
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -7742,20 +7640,24 @@ tr305:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
+		case 372:
+			goto st156
 		case 525:
-			goto tr306
+			goto tr223
+		case 628:
+			goto tr227
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr306:
+tr855:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st308
@@ -7764,32 +7666,32 @@ tr306:
 			goto _test_eof308
 		}
 	st_case_308:
-//line memcached.go:7768
+//line memcached.go:7670
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
 			_widec += 256
 		}
 		switch _widec {
-		case 266:
-			goto tr158
 		case 269:
-			goto st150
-		case 522:
-			goto tr307
+			goto st153
+		case 367:
+			goto st210
 		case 525:
+			goto tr223
+		case 623:
 			goto tr306
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr820:
+tr306:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st309
@@ -7798,7 +7700,7 @@ tr820:
 			goto _test_eof309
 		}
 	st_case_309:
-//line memcached.go:7802
+//line memcached.go:7704
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -7806,28 +7708,24 @@ tr820:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 356:
-			goto st152
-		case 368:
-			goto st192
+			goto st153
+		case 373:
+			goto st211
 		case 525:
-			goto tr306
-		case 612:
-			goto tr308
-		case 624:
-			goto tr309
+			goto tr223
+		case 629:
+			goto tr307
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr308:
+tr307:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st310
@@ -7836,7 +7734,7 @@ tr308:
 			goto _test_eof310
 		}
 	st_case_310:
-//line memcached.go:7840
+//line memcached.go:7738
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -7844,24 +7742,24 @@ tr308:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 356:
 			goto st153
+		case 355:
+			goto st212
 		case 525:
-			goto tr306
-		case 612:
-			goto tr310
+			goto tr223
+		case 611:
+			goto tr308
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr310:
+tr308:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st311
@@ -7870,7 +7768,7 @@ tr310:
 			goto _test_eof311
 		}
 	st_case_311:
-//line memcached.go:7874
+//line memcached.go:7772
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -7878,24 +7776,24 @@ tr310:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 288:
-			goto st154
+			goto st153
+		case 360:
+			goto st213
 		case 525:
-			goto tr306
-		case 544:
-			goto tr311
+			goto tr223
+		case 616:
+			goto tr309
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr222
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr311:
+tr309:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st312
@@ -7904,7 +7802,7 @@ tr311:
 			goto _test_eof312
 		}
 	st_case_312:
-//line memcached.go:7908
+//line memcached.go:7806
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -7912,33 +7810,24 @@ tr311:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
+		case 288:
+			goto st214
 		case 525:
-			goto tr306
+			goto tr223
+		case 544:
+			goto tr310
 		}
 		switch {
-		case _widec < 289:
-			if 256 <= _widec && _widec <= 288 {
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec > 544:
-				if 545 <= _widec && _widec <= 767 {
-					goto tr312
-				}
-			case _widec >= 512:
-				goto tr305
+			if 512 <= _widec && _widec <= 767 {
+				goto tr222
 			}
-		default:
-			goto tr163
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
-tr312:
-//line memcached.rl:46
-
-				keyString = keyString + string(data[p])
-			
+tr310:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st313
@@ -7947,7 +7836,7 @@ tr312:
 			goto _test_eof313
 		}
 	st_case_313:
-//line memcached.go:7951
+//line memcached.go:7840
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -7955,42 +7844,42 @@ tr312:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 288:
-			goto st156
+			goto st153
 		case 525:
-			goto tr306
-		case 544:
-			goto tr313
+			goto tr223
 		}
 		switch {
 		case _widec < 289:
-			if 256 <= _widec && _widec <= 287 {
-				goto st149
+			if 256 <= _widec && _widec <= 288 {
+				goto st152
 			}
 		case _widec > 511:
 			switch {
-			case _widec > 543:
+			case _widec > 544:
 				if 545 <= _widec && _widec <= 767 {
-					goto tr312
+					goto tr311
 				}
 			case _widec >= 512:
-				goto tr305
+				goto tr222
 			}
 		default:
-			goto tr163
+			goto tr219
 		}
 		goto st0
-tr313:
+tr311:
 //line memcached.rl:44
  foundLen = foundLen + 1 
+//line memcached.rl:46
+
+				keyString = keyString + string(data[p])
+			
 	goto st314
 	st314:
 		if p++; p == pe {
 			goto _test_eof314
 		}
 	st_case_314:
-//line memcached.go:7994
+//line memcached.go:7883
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -7998,47 +7887,48 @@ tr313:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
+		case 288:
+			goto st216
 		case 525:
-			goto tr306
+			goto tr223
+		case 544:
+			goto tr312
 		}
 		switch {
-		case _widec < 314:
-			switch {
-			case _widec > 303:
-				if 304 <= _widec && _widec <= 313 {
-					goto st157
-				}
-			case _widec >= 256:
-				goto st149
+		case _widec < 289:
+			if 256 <= _widec && _widec <= 287 {
+				goto st152
 			}
 		case _widec > 511:
 			switch {
-			case _widec < 560:
-				if 512 <= _widec && _widec <= 559 {
-					goto tr305
+			case _widec > 543:
+				if 545 <= _widec && _widec <= 767 {
+					goto tr311
 				}
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr305
-				}
-			default:
-				goto tr314
+			case _widec >= 512:
+				goto tr222
 			}
 		default:
-			goto st149
+			goto tr219
 		}
 		goto st0
-tr314:
+tr312:
 //line memcached.rl:44
  foundLen = foundLen + 1 
+	goto st315
+tr313:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+//line memcached.rl:45
+ expiry = expiry * 10 + (int(data[p]) - '0') 
 	goto st315
 	st315:
 		if p++; p == pe {
 			goto _test_eof315
 		}
 	st_case_315:
-//line memcached.go:8042
+//line memcached.go:7932
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -8046,42 +7936,38 @@ tr314:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 288:
-			goto st158
+			goto st153
 		case 525:
-			goto tr306
-		case 544:
-			goto tr315
+			goto tr223
 		}
 		switch {
 		case _widec < 314:
 			switch {
 			case _widec > 303:
 				if 304 <= _widec && _widec <= 313 {
-					goto st157
+					goto tr221
 				}
 			case _widec >= 256:
-				goto st149
+				goto st152
 			}
 		case _widec > 511:
 			switch {
 			case _widec < 560:
 				if 512 <= _widec && _widec <= 559 {
-					goto tr305
+					goto tr222
 				}
 			case _widec > 569:
 				if 570 <= _widec && _widec <= 767 {
-					goto tr305
+					goto tr222
 				}
 			default:
-				goto tr314
+				goto tr313
 			}
 		default:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr315:
+tr314:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st316
@@ -8090,7 +7976,7 @@ tr315:
 			goto _test_eof316
 		}
 	st_case_316:
-//line memcached.go:8094
+//line memcached.go:7980
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -8098,40 +7984,20 @@ tr315:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
 		case 525:
-			goto tr306
+			goto tr315
 		}
 		switch {
-		case _widec < 314:
-			switch {
-			case _widec > 303:
-				if 304 <= _widec && _widec <= 313 {
-					goto tr167
-				}
-			case _widec >= 256:
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec < 560:
-				if 512 <= _widec && _widec <= 559 {
-					goto tr305
-				}
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr305
-				}
-			default:
-				goto tr316
+			if 512 <= _widec && _widec <= 767 {
+				goto tr314
 			}
-		default:
-			goto st149
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
-tr316:
-//line memcached.rl:45
- expiry = expiry * 10 + (int(data[p]) - '0') 
+tr315:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st317
@@ -8140,50 +8006,32 @@ tr316:
 			goto _test_eof317
 		}
 	st_case_317:
-//line memcached.go:8144
+//line memcached.go:8010
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
 			_widec += 256
 		}
 		switch _widec {
+		case 266:
+			goto tr161
 		case 269:
-			goto st150
-		case 288:
-			goto st160
+			goto st153
+		case 522:
+			goto tr316
 		case 525:
-			goto tr306
-		case 544:
-			goto tr317
+			goto tr315
 		}
 		switch {
-		case _widec < 314:
-			switch {
-			case _widec > 303:
-				if 304 <= _widec && _widec <= 313 {
-					goto tr167
-				}
-			case _widec >= 256:
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec < 560:
-				if 512 <= _widec && _widec <= 559 {
-					goto tr305
-				}
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr305
-				}
-			default:
-				goto tr316
+			if 512 <= _widec && _widec <= 767 {
+				goto tr314
 			}
-		default:
-			goto st149
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
-tr317:
+tr838:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st318
@@ -8192,7 +8040,7 @@ tr317:
 			goto _test_eof318
 		}
 	st_case_318:
-//line memcached.go:8196
+//line memcached.go:8044
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -8200,40 +8048,28 @@ tr317:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
+		case 356:
+			goto st155
+		case 368:
+			goto st198
 		case 525:
-			goto tr306
+			goto tr315
+		case 612:
+			goto tr317
+		case 624:
+			goto tr318
 		}
 		switch {
-		case _widec < 314:
-			switch {
-			case _widec > 303:
-				if 304 <= _widec && _widec <= 313 {
-					goto tr169
-				}
-			case _widec >= 256:
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec < 560:
-				if 512 <= _widec && _widec <= 559 {
-					goto tr305
-				}
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr305
-				}
-			default:
-				goto tr318
+			if 512 <= _widec && _widec <= 767 {
+				goto tr314
 			}
-		default:
-			goto st149
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
-tr318:
-//line memcached.rl:43
- expectedLen = expectedLen * 10 + (int(data[p]) - int('0')) 
+tr317:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st319
@@ -8242,7 +8078,7 @@ tr318:
 			goto _test_eof319
 		}
 	st_case_319:
-//line memcached.go:8246
+//line memcached.go:8082
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -8250,39 +8086,21 @@ tr318:
 		}
 		switch _widec {
 		case 269:
-			goto st162
-		case 288:
-			goto st224
+			goto st153
+		case 356:
+			goto st156
 		case 525:
+			goto tr315
+		case 612:
 			goto tr319
-		case 544:
-			goto tr320
 		}
 		switch {
-		case _widec < 314:
-			switch {
-			case _widec > 303:
-				if 304 <= _widec && _widec <= 313 {
-					goto tr169
-				}
-			case _widec >= 256:
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec < 560:
-				if 512 <= _widec && _widec <= 559 {
-					goto tr305
-				}
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr305
-				}
-			default:
-				goto tr318
+			if 512 <= _widec && _widec <= 767 {
+				goto tr314
 			}
-		default:
-			goto st149
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
 tr319:
@@ -8294,29 +8112,29 @@ tr319:
 			goto _test_eof320
 		}
 	st_case_320:
-//line memcached.go:8298
+//line memcached.go:8116
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
 			_widec += 256
 		}
 		switch _widec {
-		case 266:
-			goto tr172
 		case 269:
-			goto st150
-		case 522:
-			goto tr307
+			goto st153
+		case 288:
+			goto st157
 		case 525:
-			goto tr306
+			goto tr315
+		case 544:
+			goto tr320
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
 tr320:
@@ -8328,7 +8146,7 @@ tr320:
 			goto _test_eof321
 		}
 	st_case_321:
-//line memcached.go:8332
+//line memcached.go:8150
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -8336,24 +8154,33 @@ tr320:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 366:
-			goto st225
+			goto st153
 		case 525:
-			goto tr306
-		case 622:
-			goto tr321
+			goto tr315
 		}
 		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+		case _widec < 289:
+			if 256 <= _widec && _widec <= 288 {
+				goto st152
 			}
-		case _widec >= 256:
-			goto st149
+		case _widec > 511:
+			switch {
+			case _widec > 544:
+				if 545 <= _widec && _widec <= 767 {
+					goto tr321
+				}
+			case _widec >= 512:
+				goto tr314
+			}
+		default:
+			goto tr166
 		}
 		goto st0
 tr321:
+//line memcached.rl:46
+
+				keyString = keyString + string(data[p])
+			
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st322
@@ -8362,7 +8189,7 @@ tr321:
 			goto _test_eof322
 		}
 	st_case_322:
-//line memcached.go:8366
+//line memcached.go:8193
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -8370,21 +8197,30 @@ tr321:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 367:
-			goto st226
+			goto st153
+		case 288:
+			goto st159
 		case 525:
-			goto tr306
-		case 623:
+			goto tr315
+		case 544:
 			goto tr322
 		}
 		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+		case _widec < 289:
+			if 256 <= _widec && _widec <= 287 {
+				goto st152
 			}
-		case _widec >= 256:
-			goto st149
+		case _widec > 511:
+			switch {
+			case _widec > 543:
+				if 545 <= _widec && _widec <= 767 {
+					goto tr321
+				}
+			case _widec >= 512:
+				goto tr314
+			}
+		default:
+			goto tr166
 		}
 		goto st0
 tr322:
@@ -8396,7 +8232,7 @@ tr322:
 			goto _test_eof323
 		}
 	st_case_323:
-//line memcached.go:8400
+//line memcached.go:8236
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -8404,21 +8240,35 @@ tr322:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 370:
-			goto st227
+			goto st153
 		case 525:
-			goto tr306
-		case 626:
-			goto tr323
+			goto tr315
 		}
 		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+		case _widec < 314:
+			switch {
+			case _widec > 303:
+				if 304 <= _widec && _widec <= 313 {
+					goto st160
+				}
+			case _widec >= 256:
+				goto st152
 			}
-		case _widec >= 256:
-			goto st149
+		case _widec > 511:
+			switch {
+			case _widec < 560:
+				if 512 <= _widec && _widec <= 559 {
+					goto tr314
+				}
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr314
+				}
+			default:
+				goto tr323
+			}
+		default:
+			goto st152
 		}
 		goto st0
 tr323:
@@ -8430,7 +8280,7 @@ tr323:
 			goto _test_eof324
 		}
 	st_case_324:
-//line memcached.go:8434
+//line memcached.go:8284
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -8438,21 +8288,39 @@ tr323:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 357:
-			goto st228
+			goto st153
+		case 288:
+			goto st161
 		case 525:
-			goto tr306
-		case 613:
+			goto tr315
+		case 544:
 			goto tr324
 		}
 		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+		case _widec < 314:
+			switch {
+			case _widec > 303:
+				if 304 <= _widec && _widec <= 313 {
+					goto st160
+				}
+			case _widec >= 256:
+				goto st152
 			}
-		case _widec >= 256:
-			goto st149
+		case _widec > 511:
+			switch {
+			case _widec < 560:
+				if 512 <= _widec && _widec <= 559 {
+					goto tr314
+				}
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr314
+				}
+			default:
+				goto tr323
+			}
+		default:
+			goto st152
 		}
 		goto st0
 tr324:
@@ -8464,7 +8332,7 @@ tr324:
 			goto _test_eof325
 		}
 	st_case_325:
-//line memcached.go:8468
+//line memcached.go:8336
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -8472,24 +8340,40 @@ tr324:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 368:
-			goto st229
+			goto st153
 		case 525:
-			goto tr306
-		case 624:
-			goto tr325
+			goto tr315
 		}
 		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+		case _widec < 314:
+			switch {
+			case _widec > 303:
+				if 304 <= _widec && _widec <= 313 {
+					goto tr170
+				}
+			case _widec >= 256:
+				goto st152
 			}
-		case _widec >= 256:
-			goto st149
+		case _widec > 511:
+			switch {
+			case _widec < 560:
+				if 512 <= _widec && _widec <= 559 {
+					goto tr314
+				}
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr314
+				}
+			default:
+				goto tr325
+			}
+		default:
+			goto st152
 		}
 		goto st0
 tr325:
+//line memcached.rl:45
+ expiry = expiry * 10 + (int(data[p]) - '0') 
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st326
@@ -8498,7 +8382,7 @@ tr325:
 			goto _test_eof326
 		}
 	st_case_326:
-//line memcached.go:8502
+//line memcached.go:8386
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -8506,21 +8390,39 @@ tr325:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 364:
-			goto st230
+			goto st153
+		case 288:
+			goto st163
 		case 525:
-			goto tr306
-		case 620:
+			goto tr315
+		case 544:
 			goto tr326
 		}
 		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+		case _widec < 314:
+			switch {
+			case _widec > 303:
+				if 304 <= _widec && _widec <= 313 {
+					goto tr170
+				}
+			case _widec >= 256:
+				goto st152
 			}
-		case _widec >= 256:
-			goto st149
+		case _widec > 511:
+			switch {
+			case _widec < 560:
+				if 512 <= _widec && _widec <= 559 {
+					goto tr314
+				}
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr314
+				}
+			default:
+				goto tr325
+			}
+		default:
+			goto st152
 		}
 		goto st0
 tr326:
@@ -8532,7 +8434,7 @@ tr326:
 			goto _test_eof327
 		}
 	st_case_327:
-//line memcached.go:8536
+//line memcached.go:8438
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -8540,24 +8442,40 @@ tr326:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 377:
-			goto st231
+			goto st153
 		case 525:
-			goto tr306
-		case 633:
-			goto tr327
+			goto tr315
 		}
 		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+		case _widec < 314:
+			switch {
+			case _widec > 303:
+				if 304 <= _widec && _widec <= 313 {
+					goto tr172
+				}
+			case _widec >= 256:
+				goto st152
 			}
-		case _widec >= 256:
-			goto st149
+		case _widec > 511:
+			switch {
+			case _widec < 560:
+				if 512 <= _widec && _widec <= 559 {
+					goto tr314
+				}
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr314
+				}
+			default:
+				goto tr327
+			}
+		default:
+			goto st152
 		}
 		goto st0
 tr327:
+//line memcached.rl:43
+ expectedLen = expectedLen * 10 + (int(data[p]) - int('0')) 
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st328
@@ -8566,7 +8484,7 @@ tr327:
 			goto _test_eof328
 		}
 	st_case_328:
-//line memcached.go:8570
+//line memcached.go:8488
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -8574,20 +8492,42 @@ tr327:
 		}
 		switch _widec {
 		case 269:
-			goto st162
+			goto st165
+		case 288:
+			goto st230
 		case 525:
-			goto tr319
+			goto tr328
+		case 544:
+			goto tr329
 		}
 		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+		case _widec < 314:
+			switch {
+			case _widec > 303:
+				if 304 <= _widec && _widec <= 313 {
+					goto tr172
+				}
+			case _widec >= 256:
+				goto st152
 			}
-		case _widec >= 256:
-			goto st149
+		case _widec > 511:
+			switch {
+			case _widec < 560:
+				if 512 <= _widec && _widec <= 559 {
+					goto tr314
+				}
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr314
+				}
+			default:
+				goto tr327
+			}
+		default:
+			goto st152
 		}
 		goto st0
-tr309:
+tr328:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st329
@@ -8596,32 +8536,32 @@ tr309:
 			goto _test_eof329
 		}
 	st_case_329:
-//line memcached.go:8600
+//line memcached.go:8540
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
 			_widec += 256
 		}
 		switch _widec {
+		case 266:
+			goto tr175
 		case 269:
-			goto st150
-		case 368:
-			goto st193
+			goto st153
+		case 522:
+			goto tr316
 		case 525:
-			goto tr306
-		case 624:
-			goto tr328
+			goto tr315
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr328:
+tr329:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st330
@@ -8630,7 +8570,7 @@ tr328:
 			goto _test_eof330
 		}
 	st_case_330:
-//line memcached.go:8634
+//line memcached.go:8574
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -8638,24 +8578,24 @@ tr328:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 357:
-			goto st194
+			goto st153
+		case 366:
+			goto st231
 		case 525:
-			goto tr306
-		case 613:
-			goto tr329
+			goto tr315
+		case 622:
+			goto tr330
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr329:
+tr330:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st331
@@ -8664,7 +8604,7 @@ tr329:
 			goto _test_eof331
 		}
 	st_case_331:
-//line memcached.go:8668
+//line memcached.go:8608
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -8672,24 +8612,24 @@ tr329:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 366:
-			goto st152
+			goto st153
+		case 367:
+			goto st232
 		case 525:
-			goto tr306
-		case 622:
-			goto tr308
+			goto tr315
+		case 623:
+			goto tr331
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr821:
+tr331:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st332
@@ -8698,7 +8638,7 @@ tr821:
 			goto _test_eof332
 		}
 	st_case_332:
-//line memcached.go:8702
+//line memcached.go:8642
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -8706,24 +8646,24 @@ tr821:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 353:
-			goto st164
+			goto st153
+		case 370:
+			goto st233
 		case 525:
-			goto tr306
-		case 609:
-			goto tr330
+			goto tr315
+		case 626:
+			goto tr332
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr330:
+tr332:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st333
@@ -8732,7 +8672,7 @@ tr330:
 			goto _test_eof333
 		}
 	st_case_333:
-//line memcached.go:8736
+//line memcached.go:8676
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -8740,24 +8680,24 @@ tr330:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 371:
-			goto st165
+			goto st153
+		case 357:
+			goto st234
 		case 525:
-			goto tr306
-		case 627:
-			goto tr331
+			goto tr315
+		case 613:
+			goto tr333
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr331:
+tr333:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st334
@@ -8766,7 +8706,7 @@ tr331:
 			goto _test_eof334
 		}
 	st_case_334:
-//line memcached.go:8770
+//line memcached.go:8710
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -8774,24 +8714,24 @@ tr331:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 288:
-			goto st166
+			goto st153
+		case 368:
+			goto st235
 		case 525:
-			goto tr306
-		case 544:
-			goto tr332
+			goto tr315
+		case 624:
+			goto tr334
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr332:
+tr334:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st335
@@ -8800,7 +8740,7 @@ tr332:
 			goto _test_eof335
 		}
 	st_case_335:
-//line memcached.go:8804
+//line memcached.go:8744
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -8808,33 +8748,24 @@ tr332:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
+		case 364:
+			goto st236
 		case 525:
-			goto tr306
+			goto tr315
+		case 620:
+			goto tr335
 		}
 		switch {
-		case _widec < 289:
-			if 256 <= _widec && _widec <= 288 {
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec > 544:
-				if 545 <= _widec && _widec <= 767 {
-					goto tr333
-				}
-			case _widec >= 512:
-				goto tr305
+			if 512 <= _widec && _widec <= 767 {
+				goto tr314
 			}
-		default:
-			goto tr176
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
-tr333:
-//line memcached.rl:46
-
-				keyString = keyString + string(data[p])
-			
+tr335:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st336
@@ -8843,7 +8774,7 @@ tr333:
 			goto _test_eof336
 		}
 	st_case_336:
-//line memcached.go:8847
+//line memcached.go:8778
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -8851,33 +8782,24 @@ tr333:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 288:
-			goto st168
+			goto st153
+		case 377:
+			goto st237
 		case 525:
-			goto tr306
-		case 544:
-			goto tr334
+			goto tr315
+		case 633:
+			goto tr336
 		}
 		switch {
-		case _widec < 289:
-			if 256 <= _widec && _widec <= 287 {
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec > 543:
-				if 545 <= _widec && _widec <= 767 {
-					goto tr333
-				}
-			case _widec >= 512:
-				goto tr305
+			if 512 <= _widec && _widec <= 767 {
+				goto tr314
 			}
-		default:
-			goto tr176
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
-tr334:
+tr336:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st337
@@ -8886,7 +8808,7 @@ tr334:
 			goto _test_eof337
 		}
 	st_case_337:
-//line memcached.go:8890
+//line memcached.go:8812
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -8894,38 +8816,20 @@ tr334:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st165
 		case 525:
-			goto tr306
+			goto tr328
 		}
 		switch {
-		case _widec < 314:
-			switch {
-			case _widec > 303:
-				if 304 <= _widec && _widec <= 313 {
-					goto st169
-				}
-			case _widec >= 256:
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec < 560:
-				if 512 <= _widec && _widec <= 559 {
-					goto tr305
-				}
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr305
-				}
-			default:
-				goto tr335
+			if 512 <= _widec && _widec <= 767 {
+				goto tr314
 			}
-		default:
-			goto st149
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
-tr335:
+tr318:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st338
@@ -8934,7 +8838,7 @@ tr335:
 			goto _test_eof338
 		}
 	st_case_338:
-//line memcached.go:8938
+//line memcached.go:8842
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -8942,42 +8846,24 @@ tr335:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 288:
-			goto st170
+			goto st153
+		case 368:
+			goto st199
 		case 525:
-			goto tr306
-		case 544:
-			goto tr336
+			goto tr315
+		case 624:
+			goto tr337
 		}
 		switch {
-		case _widec < 314:
-			switch {
-			case _widec > 303:
-				if 304 <= _widec && _widec <= 313 {
-					goto st169
-				}
-			case _widec >= 256:
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec < 560:
-				if 512 <= _widec && _widec <= 559 {
-					goto tr305
-				}
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr305
-				}
-			default:
-				goto tr335
+			if 512 <= _widec && _widec <= 767 {
+				goto tr314
 			}
-		default:
-			goto st149
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
-tr336:
+tr337:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st339
@@ -8986,7 +8872,7 @@ tr336:
 			goto _test_eof339
 		}
 	st_case_339:
-//line memcached.go:8990
+//line memcached.go:8876
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -8994,40 +8880,24 @@ tr336:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
+		case 357:
+			goto st200
 		case 525:
-			goto tr306
+			goto tr315
+		case 613:
+			goto tr338
 		}
 		switch {
-		case _widec < 314:
-			switch {
-			case _widec > 303:
-				if 304 <= _widec && _widec <= 313 {
-					goto tr180
-				}
-			case _widec >= 256:
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec < 560:
-				if 512 <= _widec && _widec <= 559 {
-					goto tr305
-				}
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr305
-				}
-			default:
-				goto tr337
+			if 512 <= _widec && _widec <= 767 {
+				goto tr314
 			}
-		default:
-			goto st149
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
-tr337:
-//line memcached.rl:45
- expiry = expiry * 10 + (int(data[p]) - '0') 
+tr338:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st340
@@ -9036,7 +8906,7 @@ tr337:
 			goto _test_eof340
 		}
 	st_case_340:
-//line memcached.go:9040
+//line memcached.go:8910
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -9044,42 +8914,24 @@ tr337:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 288:
-			goto st172
+			goto st153
+		case 366:
+			goto st155
 		case 525:
-			goto tr306
-		case 544:
-			goto tr338
+			goto tr315
+		case 622:
+			goto tr317
 		}
 		switch {
-		case _widec < 314:
-			switch {
-			case _widec > 303:
-				if 304 <= _widec && _widec <= 313 {
-					goto tr180
-				}
-			case _widec >= 256:
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec < 560:
-				if 512 <= _widec && _widec <= 559 {
-					goto tr305
-				}
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr305
-				}
-			default:
-				goto tr337
+			if 512 <= _widec && _widec <= 767 {
+				goto tr314
 			}
-		default:
-			goto st149
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
-tr338:
+tr839:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st341
@@ -9088,7 +8940,7 @@ tr338:
 			goto _test_eof341
 		}
 	st_case_341:
-//line memcached.go:9092
+//line memcached.go:8944
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -9096,40 +8948,24 @@ tr338:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
+		case 353:
+			goto st167
 		case 525:
-			goto tr306
+			goto tr315
+		case 609:
+			goto tr339
 		}
 		switch {
-		case _widec < 314:
-			switch {
-			case _widec > 303:
-				if 304 <= _widec && _widec <= 313 {
-					goto tr182
-				}
-			case _widec >= 256:
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec < 560:
-				if 512 <= _widec && _widec <= 559 {
-					goto tr305
-				}
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr305
-				}
-			default:
-				goto tr339
+			if 512 <= _widec && _widec <= 767 {
+				goto tr314
 			}
-		default:
-			goto st149
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
 tr339:
-//line memcached.rl:43
- expectedLen = expectedLen * 10 + (int(data[p]) - int('0')) 
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st342
@@ -9138,7 +8974,7 @@ tr339:
 			goto _test_eof342
 		}
 	st_case_342:
-//line memcached.go:9142
+//line memcached.go:8978
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -9146,39 +8982,21 @@ tr339:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 288:
-			goto st174
+			goto st153
+		case 371:
+			goto st168
 		case 525:
-			goto tr306
-		case 544:
+			goto tr315
+		case 627:
 			goto tr340
 		}
 		switch {
-		case _widec < 314:
-			switch {
-			case _widec > 303:
-				if 304 <= _widec && _widec <= 313 {
-					goto tr182
-				}
-			case _widec >= 256:
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec < 560:
-				if 512 <= _widec && _widec <= 559 {
-					goto tr305
-				}
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr305
-				}
-			default:
-				goto tr339
+			if 512 <= _widec && _widec <= 767 {
+				goto tr314
 			}
-		default:
-			goto st149
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
 tr340:
@@ -9190,7 +9008,7 @@ tr340:
 			goto _test_eof343
 		}
 	st_case_343:
-//line memcached.go:9194
+//line memcached.go:9012
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -9198,35 +9016,21 @@ tr340:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
+		case 288:
+			goto st169
 		case 525:
-			goto tr306
+			goto tr315
+		case 544:
+			goto tr341
 		}
 		switch {
-		case _widec < 314:
-			switch {
-			case _widec > 303:
-				if 304 <= _widec && _widec <= 313 {
-					goto st175
-				}
-			case _widec >= 256:
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec < 560:
-				if 512 <= _widec && _widec <= 559 {
-					goto tr305
-				}
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr305
-				}
-			default:
-				goto tr341
+			if 512 <= _widec && _widec <= 767 {
+				goto tr314
 			}
-		default:
-			goto st149
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
 tr341:
@@ -9238,7 +9042,7 @@ tr341:
 			goto _test_eof344
 		}
 	st_case_344:
-//line memcached.go:9242
+//line memcached.go:9046
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -9246,42 +9050,33 @@ tr341:
 		}
 		switch _widec {
 		case 269:
-			goto st176
-		case 288:
-			goto st257
+			goto st153
 		case 525:
-			goto tr342
-		case 544:
-			goto tr343
+			goto tr315
 		}
 		switch {
-		case _widec < 314:
-			switch {
-			case _widec > 303:
-				if 304 <= _widec && _widec <= 313 {
-					goto st175
-				}
-			case _widec >= 256:
-				goto st149
+		case _widec < 289:
+			if 256 <= _widec && _widec <= 288 {
+				goto st152
 			}
 		case _widec > 511:
 			switch {
-			case _widec < 560:
-				if 512 <= _widec && _widec <= 559 {
-					goto tr305
+			case _widec > 544:
+				if 545 <= _widec && _widec <= 767 {
+					goto tr342
 				}
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr305
-				}
-			default:
-				goto tr341
+			case _widec >= 512:
+				goto tr314
 			}
 		default:
-			goto st149
+			goto tr179
 		}
 		goto st0
 tr342:
+//line memcached.rl:46
+
+				keyString = keyString + string(data[p])
+			
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st345
@@ -9290,29 +9085,38 @@ tr342:
 			goto _test_eof345
 		}
 	st_case_345:
-//line memcached.go:9294
+//line memcached.go:9089
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
 			_widec += 256
 		}
 		switch _widec {
-		case 266:
-			goto tr187
 		case 269:
-			goto st150
-		case 522:
-			goto tr218
+			goto st153
+		case 288:
+			goto st171
 		case 525:
-			goto tr306
+			goto tr315
+		case 544:
+			goto tr343
 		}
 		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+		case _widec < 289:
+			if 256 <= _widec && _widec <= 287 {
+				goto st152
 			}
-		case _widec >= 256:
-			goto st149
+		case _widec > 511:
+			switch {
+			case _widec > 543:
+				if 545 <= _widec && _widec <= 767 {
+					goto tr342
+				}
+			case _widec >= 512:
+				goto tr314
+			}
+		default:
+			goto tr179
 		}
 		goto st0
 tr343:
@@ -9324,7 +9128,7 @@ tr343:
 			goto _test_eof346
 		}
 	st_case_346:
-//line memcached.go:9328
+//line memcached.go:9132
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -9332,21 +9136,35 @@ tr343:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 366:
-			goto st258
+			goto st153
 		case 525:
-			goto tr306
-		case 622:
-			goto tr344
+			goto tr315
 		}
 		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+		case _widec < 314:
+			switch {
+			case _widec > 303:
+				if 304 <= _widec && _widec <= 313 {
+					goto st172
+				}
+			case _widec >= 256:
+				goto st152
 			}
-		case _widec >= 256:
-			goto st149
+		case _widec > 511:
+			switch {
+			case _widec < 560:
+				if 512 <= _widec && _widec <= 559 {
+					goto tr314
+				}
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr314
+				}
+			default:
+				goto tr344
+			}
+		default:
+			goto st152
 		}
 		goto st0
 tr344:
@@ -9358,7 +9176,7 @@ tr344:
 			goto _test_eof347
 		}
 	st_case_347:
-//line memcached.go:9362
+//line memcached.go:9180
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -9366,21 +9184,39 @@ tr344:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 367:
-			goto st259
+			goto st153
+		case 288:
+			goto st173
 		case 525:
-			goto tr306
-		case 623:
+			goto tr315
+		case 544:
 			goto tr345
 		}
 		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+		case _widec < 314:
+			switch {
+			case _widec > 303:
+				if 304 <= _widec && _widec <= 313 {
+					goto st172
+				}
+			case _widec >= 256:
+				goto st152
 			}
-		case _widec >= 256:
-			goto st149
+		case _widec > 511:
+			switch {
+			case _widec < 560:
+				if 512 <= _widec && _widec <= 559 {
+					goto tr314
+				}
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr314
+				}
+			default:
+				goto tr344
+			}
+		default:
+			goto st152
 		}
 		goto st0
 tr345:
@@ -9392,7 +9228,7 @@ tr345:
 			goto _test_eof348
 		}
 	st_case_348:
-//line memcached.go:9396
+//line memcached.go:9232
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -9400,24 +9236,40 @@ tr345:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 370:
-			goto st260
+			goto st153
 		case 525:
-			goto tr306
-		case 626:
-			goto tr346
+			goto tr315
 		}
 		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+		case _widec < 314:
+			switch {
+			case _widec > 303:
+				if 304 <= _widec && _widec <= 313 {
+					goto tr183
+				}
+			case _widec >= 256:
+				goto st152
 			}
-		case _widec >= 256:
-			goto st149
+		case _widec > 511:
+			switch {
+			case _widec < 560:
+				if 512 <= _widec && _widec <= 559 {
+					goto tr314
+				}
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr314
+				}
+			default:
+				goto tr346
+			}
+		default:
+			goto st152
 		}
 		goto st0
 tr346:
+//line memcached.rl:45
+ expiry = expiry * 10 + (int(data[p]) - '0') 
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st349
@@ -9426,7 +9278,7 @@ tr346:
 			goto _test_eof349
 		}
 	st_case_349:
-//line memcached.go:9430
+//line memcached.go:9282
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -9434,21 +9286,39 @@ tr346:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 357:
-			goto st261
+			goto st153
+		case 288:
+			goto st175
 		case 525:
-			goto tr306
-		case 613:
+			goto tr315
+		case 544:
 			goto tr347
 		}
 		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+		case _widec < 314:
+			switch {
+			case _widec > 303:
+				if 304 <= _widec && _widec <= 313 {
+					goto tr183
+				}
+			case _widec >= 256:
+				goto st152
 			}
-		case _widec >= 256:
-			goto st149
+		case _widec > 511:
+			switch {
+			case _widec < 560:
+				if 512 <= _widec && _widec <= 559 {
+					goto tr314
+				}
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr314
+				}
+			default:
+				goto tr346
+			}
+		default:
+			goto st152
 		}
 		goto st0
 tr347:
@@ -9460,7 +9330,7 @@ tr347:
 			goto _test_eof350
 		}
 	st_case_350:
-//line memcached.go:9464
+//line memcached.go:9334
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -9468,24 +9338,40 @@ tr347:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 368:
-			goto st262
+			goto st153
 		case 525:
-			goto tr306
-		case 624:
-			goto tr348
+			goto tr315
 		}
 		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+		case _widec < 314:
+			switch {
+			case _widec > 303:
+				if 304 <= _widec && _widec <= 313 {
+					goto tr185
+				}
+			case _widec >= 256:
+				goto st152
 			}
-		case _widec >= 256:
-			goto st149
+		case _widec > 511:
+			switch {
+			case _widec < 560:
+				if 512 <= _widec && _widec <= 559 {
+					goto tr314
+				}
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr314
+				}
+			default:
+				goto tr348
+			}
+		default:
+			goto st152
 		}
 		goto st0
 tr348:
+//line memcached.rl:43
+ expectedLen = expectedLen * 10 + (int(data[p]) - int('0')) 
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st351
@@ -9494,7 +9380,7 @@ tr348:
 			goto _test_eof351
 		}
 	st_case_351:
-//line memcached.go:9498
+//line memcached.go:9384
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -9502,21 +9388,39 @@ tr348:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 364:
-			goto st263
+			goto st153
+		case 288:
+			goto st177
 		case 525:
-			goto tr306
-		case 620:
+			goto tr315
+		case 544:
 			goto tr349
 		}
 		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+		case _widec < 314:
+			switch {
+			case _widec > 303:
+				if 304 <= _widec && _widec <= 313 {
+					goto tr185
+				}
+			case _widec >= 256:
+				goto st152
 			}
-		case _widec >= 256:
-			goto st149
+		case _widec > 511:
+			switch {
+			case _widec < 560:
+				if 512 <= _widec && _widec <= 559 {
+					goto tr314
+				}
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr314
+				}
+			default:
+				goto tr348
+			}
+		default:
+			goto st152
 		}
 		goto st0
 tr349:
@@ -9528,7 +9432,7 @@ tr349:
 			goto _test_eof352
 		}
 	st_case_352:
-//line memcached.go:9532
+//line memcached.go:9436
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -9536,21 +9440,35 @@ tr349:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 377:
-			goto st264
+			goto st153
 		case 525:
-			goto tr306
-		case 633:
-			goto tr350
+			goto tr315
 		}
 		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+		case _widec < 314:
+			switch {
+			case _widec > 303:
+				if 304 <= _widec && _widec <= 313 {
+					goto st178
+				}
+			case _widec >= 256:
+				goto st152
 			}
-		case _widec >= 256:
-			goto st149
+		case _widec > 511:
+			switch {
+			case _widec < 560:
+				if 512 <= _widec && _widec <= 559 {
+					goto tr314
+				}
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr314
+				}
+			default:
+				goto tr350
+			}
+		default:
+			goto st152
 		}
 		goto st0
 tr350:
@@ -9562,7 +9480,7 @@ tr350:
 			goto _test_eof353
 		}
 	st_case_353:
-//line memcached.go:9566
+//line memcached.go:9484
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -9570,20 +9488,42 @@ tr350:
 		}
 		switch _widec {
 		case 269:
-			goto st176
+			goto st179
+		case 288:
+			goto st263
 		case 525:
-			goto tr342
+			goto tr351
+		case 544:
+			goto tr352
 		}
 		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+		case _widec < 314:
+			switch {
+			case _widec > 303:
+				if 304 <= _widec && _widec <= 313 {
+					goto st178
+				}
+			case _widec >= 256:
+				goto st152
 			}
-		case _widec >= 256:
-			goto st149
+		case _widec > 511:
+			switch {
+			case _widec < 560:
+				if 512 <= _widec && _widec <= 559 {
+					goto tr314
+				}
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr314
+				}
+			default:
+				goto tr350
+			}
+		default:
+			goto st152
 		}
 		goto st0
-tr822:
+tr351:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st354
@@ -9592,32 +9532,32 @@ tr822:
 			goto _test_eof354
 		}
 	st_case_354:
-//line memcached.go:9596
+//line memcached.go:9536
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
 			_widec += 256
 		}
 		switch _widec {
+		case 266:
+			goto tr190
 		case 269:
-			goto st150
-		case 357:
-			goto st178
+			goto st153
+		case 522:
+			goto tr224
 		case 525:
-			goto tr306
-		case 613:
-			goto tr351
+			goto tr315
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr351:
+tr352:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st355
@@ -9626,7 +9566,7 @@ tr351:
 			goto _test_eof355
 		}
 	st_case_355:
-//line memcached.go:9630
+//line memcached.go:9570
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -9634,28 +9574,24 @@ tr351:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 355:
-			goto st179
-		case 364:
-			goto st182
+			goto st153
+		case 366:
+			goto st264
 		case 525:
-			goto tr306
-		case 611:
-			goto tr352
-		case 620:
+			goto tr315
+		case 622:
 			goto tr353
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr352:
+tr353:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st356
@@ -9664,7 +9600,7 @@ tr352:
 			goto _test_eof356
 		}
 	st_case_356:
-//line memcached.go:9668
+//line memcached.go:9604
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -9672,21 +9608,21 @@ tr352:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 370:
-			goto st180
+			goto st153
+		case 367:
+			goto st265
 		case 525:
-			goto tr306
-		case 626:
+			goto tr315
+		case 623:
 			goto tr354
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
 tr354:
@@ -9698,7 +9634,7 @@ tr354:
 			goto _test_eof357
 		}
 	st_case_357:
-//line memcached.go:9702
+//line memcached.go:9638
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -9706,32 +9642,24 @@ tr354:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 288:
-			goto st181
+			goto st153
+		case 370:
+			goto st266
 		case 525:
-			goto tr306
-		case 544:
+			goto tr315
+		case 626:
 			goto tr355
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
 tr355:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st358
-tr356:
-//line memcached.rl:46
-
-				keyString = keyString + string(data[p])
-			
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st358
@@ -9740,7 +9668,7 @@ tr356:
 			goto _test_eof358
 		}
 	st_case_358:
-//line memcached.go:9744
+//line memcached.go:9672
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -9748,29 +9676,24 @@ tr356:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
+		case 357:
+			goto st267
 		case 525:
-			goto tr306
+			goto tr315
+		case 613:
+			goto tr356
 		}
 		switch {
-		case _widec < 289:
-			if 256 <= _widec && _widec <= 288 {
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec > 544:
-				if 545 <= _widec && _widec <= 767 {
-					goto tr356
-				}
-			case _widec >= 512:
-				goto tr305
+			if 512 <= _widec && _widec <= 767 {
+				goto tr314
 			}
-		default:
-			goto tr193
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
-tr353:
+tr356:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st359
@@ -9779,7 +9702,7 @@ tr353:
 			goto _test_eof359
 		}
 	st_case_359:
-//line memcached.go:9783
+//line memcached.go:9706
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -9787,21 +9710,21 @@ tr353:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 357:
-			goto st183
+			goto st153
+		case 368:
+			goto st268
 		case 525:
-			goto tr306
-		case 613:
+			goto tr315
+		case 624:
 			goto tr357
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
 tr357:
@@ -9813,7 +9736,7 @@ tr357:
 			goto _test_eof360
 		}
 	st_case_360:
-//line memcached.go:9817
+//line memcached.go:9740
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -9821,21 +9744,21 @@ tr357:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 372:
-			goto st184
+			goto st153
+		case 364:
+			goto st269
 		case 525:
-			goto tr306
-		case 628:
+			goto tr315
+		case 620:
 			goto tr358
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
 tr358:
@@ -9847,7 +9770,7 @@ tr358:
 			goto _test_eof361
 		}
 	st_case_361:
-//line memcached.go:9851
+//line memcached.go:9774
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -9855,24 +9778,24 @@ tr358:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 357:
-			goto st180
+			goto st153
+		case 377:
+			goto st270
 		case 525:
-			goto tr306
-		case 613:
-			goto tr354
+			goto tr315
+		case 633:
+			goto tr359
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr823:
+tr359:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st362
@@ -9881,7 +9804,7 @@ tr823:
 			goto _test_eof362
 		}
 	st_case_362:
-//line memcached.go:9885
+//line memcached.go:9808
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -9889,24 +9812,20 @@ tr823:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 357:
-			goto st186
+			goto st179
 		case 525:
-			goto tr306
-		case 613:
-			goto tr359
+			goto tr351
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr359:
+tr840:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st363
@@ -9915,7 +9834,7 @@ tr359:
 			goto _test_eof363
 		}
 	st_case_363:
-//line memcached.go:9919
+//line memcached.go:9838
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -9923,21 +9842,21 @@ tr359:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 372:
-			goto st187
+			goto st153
+		case 357:
+			goto st181
 		case 525:
-			goto tr306
-		case 628:
+			goto tr315
+		case 613:
 			goto tr360
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
 tr360:
@@ -9949,7 +9868,7 @@ tr360:
 			goto _test_eof364
 		}
 	st_case_364:
-//line memcached.go:9953
+//line memcached.go:9872
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -9957,28 +9876,28 @@ tr360:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 288:
-			goto st181
-		case 371:
-			goto st180
+			goto st153
+		case 355:
+			goto st182
+		case 364:
+			goto st185
 		case 525:
-			goto tr306
-		case 544:
-			goto tr355
-		case 627:
-			goto tr354
+			goto tr315
+		case 611:
+			goto tr361
+		case 620:
+			goto tr362
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr824:
+tr361:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st365
@@ -9987,7 +9906,7 @@ tr824:
 			goto _test_eof365
 		}
 	st_case_365:
-//line memcached.go:9991
+//line memcached.go:9910
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -9995,24 +9914,24 @@ tr824:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 366:
-			goto st189
+			goto st153
+		case 370:
+			goto st183
 		case 525:
-			goto tr306
-		case 622:
-			goto tr361
+			goto tr315
+		case 626:
+			goto tr363
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr361:
+tr363:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st366
@@ -10021,7 +9940,7 @@ tr361:
 			goto _test_eof366
 		}
 	st_case_366:
-//line memcached.go:10025
+//line memcached.go:9944
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -10029,24 +9948,32 @@ tr361:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 355:
-			goto st179
+			goto st153
+		case 288:
+			goto st184
 		case 525:
-			goto tr306
-		case 611:
-			goto tr352
+			goto tr315
+		case 544:
+			goto tr364
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr825:
+tr364:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st367
+tr365:
+//line memcached.rl:46
+
+				keyString = keyString + string(data[p])
+			
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st367
@@ -10055,7 +9982,7 @@ tr825:
 			goto _test_eof367
 		}
 	st_case_367:
-//line memcached.go:10059
+//line memcached.go:9986
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -10063,21 +9990,26 @@ tr825:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 370:
-			goto st191
+			goto st153
 		case 525:
-			goto tr306
-		case 626:
-			goto tr362
+			goto tr315
 		}
 		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+		case _widec < 289:
+			if 256 <= _widec && _widec <= 288 {
+				goto st152
 			}
-		case _widec >= 256:
-			goto st149
+		case _widec > 511:
+			switch {
+			case _widec > 544:
+				if 545 <= _widec && _widec <= 767 {
+					goto tr365
+				}
+			case _widec >= 512:
+				goto tr314
+			}
+		default:
+			goto tr196
 		}
 		goto st0
 tr362:
@@ -10089,7 +10021,7 @@ tr362:
 			goto _test_eof368
 		}
 	st_case_368:
-//line memcached.go:10093
+//line memcached.go:10025
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -10097,24 +10029,24 @@ tr362:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
 		case 357:
-			goto st192
+			goto st186
 		case 525:
-			goto tr306
+			goto tr315
 		case 613:
-			goto tr309
+			goto tr366
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr826:
+tr366:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st369
@@ -10123,7 +10055,7 @@ tr826:
 			goto _test_eof369
 		}
 	st_case_369:
-//line memcached.go:10127
+//line memcached.go:10059
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -10131,24 +10063,24 @@ tr826:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 357:
-			goto st196
+			goto st153
+		case 372:
+			goto st187
 		case 525:
-			goto tr306
-		case 613:
-			goto tr363
+			goto tr315
+		case 628:
+			goto tr367
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr363:
+tr367:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st370
@@ -10157,7 +10089,7 @@ tr363:
 			goto _test_eof370
 		}
 	st_case_370:
-//line memcached.go:10161
+//line memcached.go:10093
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -10165,24 +10097,24 @@ tr363:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 368:
-			goto st197
+			goto st153
+		case 357:
+			goto st183
 		case 525:
-			goto tr306
-		case 624:
-			goto tr364
+			goto tr315
+		case 613:
+			goto tr363
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr364:
+tr841:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st371
@@ -10191,7 +10123,7 @@ tr364:
 			goto _test_eof371
 		}
 	st_case_371:
-//line memcached.go:10195
+//line memcached.go:10127
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -10199,24 +10131,24 @@ tr364:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 364:
-			goto st198
+			goto st153
+		case 357:
+			goto st189
 		case 525:
-			goto tr306
-		case 620:
-			goto tr365
+			goto tr315
+		case 613:
+			goto tr368
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr365:
+tr368:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st372
@@ -10225,7 +10157,7 @@ tr365:
 			goto _test_eof372
 		}
 	st_case_372:
-//line memcached.go:10229
+//line memcached.go:10161
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -10233,24 +10165,24 @@ tr365:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 353:
-			goto st199
+			goto st153
+		case 372:
+			goto st190
 		case 525:
-			goto tr306
-		case 609:
-			goto tr366
+			goto tr315
+		case 628:
+			goto tr369
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr366:
+tr369:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st373
@@ -10259,7 +10191,7 @@ tr366:
 			goto _test_eof373
 		}
 	st_case_373:
-//line memcached.go:10263
+//line memcached.go:10195
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -10267,24 +10199,28 @@ tr366:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 355:
-			goto st200
+			goto st153
+		case 288:
+			goto st191
+		case 371:
+			goto st193
 		case 525:
-			goto tr306
-		case 611:
-			goto tr367
+			goto tr315
+		case 544:
+			goto tr370
+		case 627:
+			goto tr371
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr367:
+tr370:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st374
@@ -10293,7 +10229,7 @@ tr367:
 			goto _test_eof374
 		}
 	st_case_374:
-//line memcached.go:10297
+//line memcached.go:10233
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -10301,24 +10237,33 @@ tr367:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 357:
 			goto st153
 		case 525:
-			goto tr306
-		case 613:
-			goto tr310
+			goto tr315
 		}
 		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+		case _widec < 289:
+			if 256 <= _widec && _widec <= 288 {
+				goto st152
 			}
-		case _widec >= 256:
-			goto st149
+		case _widec > 511:
+			switch {
+			case _widec > 544:
+				if 545 <= _widec && _widec <= 767 {
+					goto tr372
+				}
+			case _widec >= 512:
+				goto tr314
+			}
+		default:
+			goto tr203
 		}
 		goto st0
-tr827:
+tr372:
+//line memcached.rl:46
+
+				keyString = keyString + string(data[p])
+			
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st375
@@ -10327,7 +10272,7 @@ tr827:
 			goto _test_eof375
 		}
 	st_case_375:
-//line memcached.go:10331
+//line memcached.go:10276
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -10335,24 +10280,33 @@ tr827:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 357:
-			goto st202
+			goto st153
+		case 288:
+			goto st191
 		case 525:
-			goto tr306
-		case 613:
-			goto tr368
+			goto tr315
+		case 544:
+			goto tr370
 		}
 		switch {
-		case _widec > 511:
-			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+		case _widec < 289:
+			if 256 <= _widec && _widec <= 287 {
+				goto st152
 			}
-		case _widec >= 256:
-			goto st149
+		case _widec > 511:
+			switch {
+			case _widec > 543:
+				if 545 <= _widec && _widec <= 767 {
+					goto tr372
+				}
+			case _widec >= 512:
+				goto tr314
+			}
+		default:
+			goto tr203
 		}
 		goto st0
-tr368:
+tr371:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st376
@@ -10361,7 +10315,7 @@ tr368:
 			goto _test_eof376
 		}
 	st_case_376:
-//line memcached.go:10365
+//line memcached.go:10319
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -10369,24 +10323,24 @@ tr368:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 372:
 			goto st153
+		case 288:
+			goto st191
 		case 525:
-			goto tr306
-		case 628:
-			goto tr310
+			goto tr315
+		case 544:
+			goto tr370
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr828:
+tr842:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st377
@@ -10395,7 +10349,7 @@ tr828:
 			goto _test_eof377
 		}
 	st_case_377:
-//line memcached.go:10399
+//line memcached.go:10353
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -10403,24 +10357,24 @@ tr828:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 367:
-			goto st204
+			goto st153
+		case 366:
+			goto st195
 		case 525:
-			goto tr306
-		case 623:
-			goto tr369
+			goto tr315
+		case 622:
+			goto tr373
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr369:
+tr373:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st378
@@ -10429,7 +10383,7 @@ tr369:
 			goto _test_eof378
 		}
 	st_case_378:
-//line memcached.go:10433
+//line memcached.go:10387
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -10437,24 +10391,24 @@ tr369:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 373:
-			goto st205
+			goto st153
+		case 355:
+			goto st182
 		case 525:
-			goto tr306
-		case 629:
-			goto tr370
+			goto tr315
+		case 611:
+			goto tr361
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr370:
+tr843:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st379
@@ -10463,7 +10417,7 @@ tr370:
 			goto _test_eof379
 		}
 	st_case_379:
-//line memcached.go:10467
+//line memcached.go:10421
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -10471,24 +10425,24 @@ tr370:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 355:
-			goto st206
+			goto st153
+		case 370:
+			goto st197
 		case 525:
-			goto tr306
-		case 611:
-			goto tr371
+			goto tr315
+		case 626:
+			goto tr374
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr371:
+tr374:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st380
@@ -10497,7 +10451,7 @@ tr371:
 			goto _test_eof380
 		}
 	st_case_380:
-//line memcached.go:10501
+//line memcached.go:10455
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -10505,24 +10459,24 @@ tr371:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 360:
-			goto st207
+			goto st153
+		case 357:
+			goto st198
 		case 525:
-			goto tr306
-		case 616:
-			goto tr372
+			goto tr315
+		case 613:
+			goto tr318
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr372:
+tr844:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st381
@@ -10531,7 +10485,7 @@ tr372:
 			goto _test_eof381
 		}
 	st_case_381:
-//line memcached.go:10535
+//line memcached.go:10489
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -10539,24 +10493,24 @@ tr372:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 288:
-			goto st208
+			goto st153
+		case 357:
+			goto st202
 		case 525:
-			goto tr306
-		case 544:
-			goto tr373
+			goto tr315
+		case 613:
+			goto tr375
 		}
 		switch {
 		case _widec > 511:
 			if 512 <= _widec && _widec <= 767 {
-				goto tr305
+				goto tr314
 			}
 		case _widec >= 256:
-			goto st149
+			goto st152
 		}
 		goto st0
-tr373:
+tr375:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st382
@@ -10565,7 +10519,7 @@ tr373:
 			goto _test_eof382
 		}
 	st_case_382:
-//line memcached.go:10569
+//line memcached.go:10523
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -10573,33 +10527,24 @@ tr373:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
+		case 368:
+			goto st203
 		case 525:
-			goto tr306
+			goto tr315
+		case 624:
+			goto tr376
 		}
 		switch {
-		case _widec < 289:
-			if 256 <= _widec && _widec <= 288 {
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec > 544:
-				if 545 <= _widec && _widec <= 767 {
-					goto tr374
-				}
-			case _widec >= 512:
-				goto tr305
+			if 512 <= _widec && _widec <= 767 {
+				goto tr314
 			}
-		default:
-			goto tr213
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
-tr374:
-//line memcached.rl:46
-
-				keyString = keyString + string(data[p])
-			
+tr376:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st383
@@ -10608,7 +10553,7 @@ tr374:
 			goto _test_eof383
 		}
 	st_case_383:
-//line memcached.go:10612
+//line memcached.go:10557
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -10616,39 +10561,24 @@ tr374:
 		}
 		switch _widec {
 		case 269:
-			goto st150
-		case 288:
-			goto st210
+			goto st153
+		case 364:
+			goto st204
 		case 525:
-			goto tr306
-		case 544:
-			goto tr375
+			goto tr315
+		case 620:
+			goto tr377
 		}
 		switch {
-		case _widec < 289:
-			if 256 <= _widec && _widec <= 287 {
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec > 543:
-				if 545 <= _widec && _widec <= 767 {
-					goto tr374
-				}
-			case _widec >= 512:
-				goto tr305
+			if 512 <= _widec && _widec <= 767 {
+				goto tr314
 			}
-		default:
-			goto tr213
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
-tr375:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st384
-tr376:
-//line memcached.rl:45
- expiry = expiry * 10 + (int(data[p]) - '0') 
+tr377:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st384
@@ -10657,7 +10587,7 @@ tr376:
 			goto _test_eof384
 		}
 	st_case_384:
-//line memcached.go:10661
+//line memcached.go:10591
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -10665,167 +10595,467 @@ tr376:
 		}
 		switch _widec {
 		case 269:
-			goto st150
+			goto st153
+		case 353:
+			goto st205
 		case 525:
-			goto tr306
+			goto tr315
+		case 609:
+			goto tr378
 		}
 		switch {
-		case _widec < 314:
-			switch {
-			case _widec > 303:
-				if 304 <= _widec && _widec <= 313 {
-					goto tr215
-				}
-			case _widec >= 256:
-				goto st149
-			}
 		case _widec > 511:
-			switch {
-			case _widec < 560:
-				if 512 <= _widec && _widec <= 559 {
-					goto tr305
-				}
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr305
-				}
-			default:
-				goto tr376
+			if 512 <= _widec && _widec <= 767 {
+				goto tr314
 			}
-		default:
-			goto st149
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
+tr378:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st385
 	st385:
 		if p++; p == pe {
 			goto _test_eof385
 		}
 	st_case_385:
-		if data[p] == 111 {
-			goto st386
+//line memcached.go:10625
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st153
+		case 355:
+			goto st206
+		case 525:
+			goto tr315
+		case 611:
+			goto tr379
+		}
+		switch {
+		case _widec > 511:
+			if 512 <= _widec && _widec <= 767 {
+				goto tr314
+			}
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
+tr379:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st386
 	st386:
 		if p++; p == pe {
 			goto _test_eof386
 		}
 	st_case_386:
-		if data[p] == 117 {
-			goto st387
+//line memcached.go:10659
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st153
+		case 357:
+			goto st156
+		case 525:
+			goto tr315
+		case 613:
+			goto tr319
+		}
+		switch {
+		case _widec > 511:
+			if 512 <= _widec && _widec <= 767 {
+				goto tr314
+			}
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
+tr845:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st387
 	st387:
 		if p++; p == pe {
 			goto _test_eof387
 		}
 	st_case_387:
-		if data[p] == 99 {
-			goto st388
+//line memcached.go:10693
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st153
+		case 357:
+			goto st208
+		case 525:
+			goto tr315
+		case 613:
+			goto tr380
+		}
+		switch {
+		case _widec > 511:
+			if 512 <= _widec && _widec <= 767 {
+				goto tr314
+			}
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
+tr380:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st388
 	st388:
 		if p++; p == pe {
 			goto _test_eof388
 		}
 	st_case_388:
-		if data[p] == 104 {
-			goto st389
+//line memcached.go:10727
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st153
+		case 372:
+			goto st156
+		case 525:
+			goto tr315
+		case 628:
+			goto tr319
+		}
+		switch {
+		case _widec > 511:
+			if 512 <= _widec && _widec <= 767 {
+				goto tr314
+			}
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
+tr846:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st389
 	st389:
 		if p++; p == pe {
 			goto _test_eof389
 		}
 	st_case_389:
-		if data[p] == 32 {
-			goto st390
+//line memcached.go:10761
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st153
+		case 367:
+			goto st210
+		case 525:
+			goto tr315
+		case 623:
+			goto tr381
+		}
+		switch {
+		case _widec > 511:
+			if 512 <= _widec && _widec <= 767 {
+				goto tr314
+			}
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
+tr381:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st390
 	st390:
 		if p++; p == pe {
 			goto _test_eof390
 		}
 	st_case_390:
-		if data[p] <= 32 {
-			goto st0
+//line memcached.go:10795
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
 		}
-		goto tr382
+		switch _widec {
+		case 269:
+			goto st153
+		case 373:
+			goto st211
+		case 525:
+			goto tr315
+		case 629:
+			goto tr382
+		}
+		switch {
+		case _widec > 511:
+			if 512 <= _widec && _widec <= 767 {
+				goto tr314
+			}
+		case _widec >= 256:
+			goto st152
+		}
+		goto st0
 tr382:
-//line memcached.rl:46
-
-				keyString = keyString + string(data[p])
-			
+//line memcached.rl:44
+ foundLen = foundLen + 1 
 	goto st391
 	st391:
 		if p++; p == pe {
 			goto _test_eof391
 		}
 	st_case_391:
-//line memcached.go:10765
-		if data[p] == 32 {
-			goto st392
+//line memcached.go:10829
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
 		}
-		if data[p] <= 31 {
-			goto st0
+		switch _widec {
+		case 269:
+			goto st153
+		case 355:
+			goto st212
+		case 525:
+			goto tr315
+		case 611:
+			goto tr383
 		}
-		goto tr382
+		switch {
+		case _widec > 511:
+			if 512 <= _widec && _widec <= 767 {
+				goto tr314
+			}
+		case _widec >= 256:
+			goto st152
+		}
+		goto st0
+tr383:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st392
 	st392:
 		if p++; p == pe {
 			goto _test_eof392
 		}
 	st_case_392:
-		if 48 <= data[p] && data[p] <= 57 {
+//line memcached.go:10863
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st153
+		case 360:
+			goto st213
+		case 525:
+			goto tr315
+		case 616:
 			goto tr384
+		}
+		switch {
+		case _widec > 511:
+			if 512 <= _widec && _widec <= 767 {
+				goto tr314
+			}
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
 tr384:
-//line memcached.rl:45
- expiry = expiry * 10 + (int(data[p]) - '0') 
+//line memcached.rl:44
+ foundLen = foundLen + 1 
 	goto st393
 	st393:
 		if p++; p == pe {
 			goto _test_eof393
 		}
 	st_case_393:
-//line memcached.go:10791
-		switch data[p] {
-		case 13:
-			goto st16
-		case 32:
-			goto st56
+//line memcached.go:10897
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
 		}
-		if 48 <= data[p] && data[p] <= 57 {
-			goto tr384
+		switch _widec {
+		case 269:
+			goto st153
+		case 288:
+			goto st214
+		case 525:
+			goto tr315
+		case 544:
+			goto tr385
+		}
+		switch {
+		case _widec > 511:
+			if 512 <= _widec && _widec <= 767 {
+				goto tr314
+			}
+		case _widec >= 256:
+			goto st152
 		}
 		goto st0
+tr385:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st394
 	st394:
 		if p++; p == pe {
 			goto _test_eof394
 		}
 	st_case_394:
-		if data[p] == 101 {
-			goto st395
+//line memcached.go:10931
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st153
+		case 525:
+			goto tr315
+		}
+		switch {
+		case _widec < 289:
+			if 256 <= _widec && _widec <= 288 {
+				goto st152
+			}
+		case _widec > 511:
+			switch {
+			case _widec > 544:
+				if 545 <= _widec && _widec <= 767 {
+					goto tr386
+				}
+			case _widec >= 512:
+				goto tr314
+			}
+		default:
+			goto tr219
 		}
 		goto st0
+tr386:
+//line memcached.rl:46
+
+				keyString = keyString + string(data[p])
+			
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st395
 	st395:
 		if p++; p == pe {
 			goto _test_eof395
 		}
 	st_case_395:
-		if data[p] == 114 {
-			goto st396
+//line memcached.go:10974
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st153
+		case 288:
+			goto st216
+		case 525:
+			goto tr315
+		case 544:
+			goto tr387
+		}
+		switch {
+		case _widec < 289:
+			if 256 <= _widec && _widec <= 287 {
+				goto st152
+			}
+		case _widec > 511:
+			switch {
+			case _widec > 543:
+				if 545 <= _widec && _widec <= 767 {
+					goto tr386
+				}
+			case _widec >= 512:
+				goto tr314
+			}
+		default:
+			goto tr219
 		}
 		goto st0
+tr387:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st396
+tr388:
+//line memcached.rl:45
+ expiry = expiry * 10 + (int(data[p]) - '0') 
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st396
 	st396:
 		if p++; p == pe {
 			goto _test_eof396
 		}
 	st_case_396:
-		switch data[p] {
-		case 98:
-			goto st397
-		case 115:
-			goto st401
+//line memcached.go:11023
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st153
+		case 525:
+			goto tr315
+		}
+		switch {
+		case _widec < 314:
+			switch {
+			case _widec > 303:
+				if 304 <= _widec && _widec <= 313 {
+					goto tr221
+				}
+			case _widec >= 256:
+				goto st152
+			}
+		case _widec > 511:
+			switch {
+			case _widec < 560:
+				if 512 <= _widec && _widec <= 559 {
+					goto tr314
+				}
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr314
+				}
+			default:
+				goto tr388
+			}
+		default:
+			goto st152
 		}
 		goto st0
 	st397:
@@ -10842,7 +11072,7 @@ tr384:
 			goto _test_eof398
 		}
 	st_case_398:
-		if data[p] == 115 {
+		if data[p] == 117 {
 			goto st399
 		}
 		goto st0
@@ -10851,7 +11081,7 @@ tr384:
 			goto _test_eof399
 		}
 	st_case_399:
-		if data[p] == 105 {
+		if data[p] == 99 {
 			goto st400
 		}
 		goto st0
@@ -10860,8 +11090,8 @@ tr384:
 			goto _test_eof400
 		}
 	st_case_400:
-		if data[p] == 116 {
-			goto st62
+		if data[p] == 104 {
+			goto st401
 		}
 		goto st0
 	st401:
@@ -10869,7 +11099,7 @@ tr384:
 			goto _test_eof401
 		}
 	st_case_401:
-		if data[p] == 105 {
+		if data[p] == 32 {
 			goto st402
 		}
 		goto st0
@@ -10878,35 +11108,56 @@ tr384:
 			goto _test_eof402
 		}
 	st_case_402:
-		if data[p] == 111 {
-			goto st403
+		if data[p] <= 32 {
+			goto st0
 		}
-		goto st0
+		goto tr394
+tr394:
+//line memcached.rl:46
+
+				keyString = keyString + string(data[p])
+			
+	goto st403
 	st403:
 		if p++; p == pe {
 			goto _test_eof403
 		}
 	st_case_403:
-		if data[p] == 110 {
-			goto st63
+//line memcached.go:11127
+		if data[p] == 32 {
+			goto st404
 		}
-		goto st0
+		if data[p] <= 31 {
+			goto st0
+		}
+		goto tr394
 	st404:
 		if p++; p == pe {
 			goto _test_eof404
 		}
 	st_case_404:
-		if data[p] == 97 {
-			goto st405
+		if 48 <= data[p] && data[p] <= 57 {
+			goto tr396
 		}
 		goto st0
+tr396:
+//line memcached.rl:45
+ expiry = expiry * 10 + (int(data[p]) - '0') 
+	goto st405
 	st405:
 		if p++; p == pe {
 			goto _test_eof405
 		}
 	st_case_405:
-		if data[p] == 116 {
-			goto st406
+//line memcached.go:11153
+		switch data[p] {
+		case 13:
+			goto st16
+		case 32:
+			goto st56
+		}
+		if 48 <= data[p] && data[p] <= 57 {
+			goto tr396
 		}
 		goto st0
 	st406:
@@ -10914,7 +11165,7 @@ tr384:
 			goto _test_eof406
 		}
 	st_case_406:
-		if data[p] == 99 {
+		if data[p] == 101 {
 			goto st407
 		}
 		goto st0
@@ -10923,7 +11174,7 @@ tr384:
 			goto _test_eof407
 		}
 	st_case_407:
-		if data[p] == 104 {
+		if data[p] == 114 {
 			goto st408
 		}
 		goto st0
@@ -10932,8 +11183,11 @@ tr384:
 			goto _test_eof408
 		}
 	st_case_408:
-		if data[p] == 32 {
+		switch data[p] {
+		case 98:
 			goto st409
+		case 115:
+			goto st413
 		}
 		goto st0
 	st409:
@@ -10941,13 +11195,8 @@ tr384:
 			goto _test_eof409
 		}
 	st_case_409:
-		switch data[p] {
-		case 101:
+		if data[p] == 111 {
 			goto st410
-		case 102:
-			goto st418
-		case 109:
-			goto st424
 		}
 		goto st0
 	st410:
@@ -10955,7 +11204,7 @@ tr384:
 			goto _test_eof410
 		}
 	st_case_410:
-		if data[p] == 118 {
+		if data[p] == 115 {
 			goto st411
 		}
 		goto st0
@@ -10973,8 +11222,8 @@ tr384:
 			goto _test_eof412
 		}
 	st_case_412:
-		if data[p] == 99 {
-			goto st413
+		if data[p] == 116 {
+			goto st62
 		}
 		goto st0
 	st413:
@@ -10982,7 +11231,7 @@ tr384:
 			goto _test_eof413
 		}
 	st_case_413:
-		if data[p] == 116 {
+		if data[p] == 105 {
 			goto st414
 		}
 		goto st0
@@ -10991,7 +11240,7 @@ tr384:
 			goto _test_eof414
 		}
 	st_case_414:
-		if data[p] == 105 {
+		if data[p] == 111 {
 			goto st415
 		}
 		goto st0
@@ -11000,8 +11249,8 @@ tr384:
 			goto _test_eof415
 		}
 	st_case_415:
-		if data[p] == 111 {
-			goto st416
+		if data[p] == 110 {
+			goto st63
 		}
 		goto st0
 	st416:
@@ -11009,7 +11258,7 @@ tr384:
 			goto _test_eof416
 		}
 	st_case_416:
-		if data[p] == 110 {
+		if data[p] == 97 {
 			goto st417
 		}
 		goto st0
@@ -11018,8 +11267,8 @@ tr384:
 			goto _test_eof417
 		}
 	st_case_417:
-		if data[p] == 115 {
-			goto st63
+		if data[p] == 116 {
+			goto st418
 		}
 		goto st0
 	st418:
@@ -11027,7 +11276,7 @@ tr384:
 			goto _test_eof418
 		}
 	st_case_418:
-		if data[p] == 101 {
+		if data[p] == 99 {
 			goto st419
 		}
 		goto st0
@@ -11036,7 +11285,7 @@ tr384:
 			goto _test_eof419
 		}
 	st_case_419:
-		if data[p] == 116 {
+		if data[p] == 104 {
 			goto st420
 		}
 		goto st0
@@ -11045,7 +11294,7 @@ tr384:
 			goto _test_eof420
 		}
 	st_case_420:
-		if data[p] == 99 {
+		if data[p] == 32 {
 			goto st421
 		}
 		goto st0
@@ -11054,8 +11303,13 @@ tr384:
 			goto _test_eof421
 		}
 	st_case_421:
-		if data[p] == 104 {
+		switch data[p] {
+		case 101:
 			goto st422
+		case 102:
+			goto st430
+		case 109:
+			goto st436
 		}
 		goto st0
 	st422:
@@ -11063,7 +11317,7 @@ tr384:
 			goto _test_eof422
 		}
 	st_case_422:
-		if data[p] == 101 {
+		if data[p] == 118 {
 			goto st423
 		}
 		goto st0
@@ -11072,8 +11326,8 @@ tr384:
 			goto _test_eof423
 		}
 	st_case_423:
-		if data[p] == 114 {
-			goto st417
+		if data[p] == 105 {
+			goto st424
 		}
 		goto st0
 	st424:
@@ -11081,7 +11335,7 @@ tr384:
 			goto _test_eof424
 		}
 	st_case_424:
-		if data[p] == 117 {
+		if data[p] == 99 {
 			goto st425
 		}
 		goto st0
@@ -11099,20 +11353,128 @@ tr384:
 			goto _test_eof426
 		}
 	st_case_426:
-		if data[p] == 97 {
-			goto st413
+		if data[p] == 105 {
+			goto st427
 		}
 		goto st0
-tr797:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st427
 	st427:
 		if p++; p == pe {
 			goto _test_eof427
 		}
 	st_case_427:
-//line memcached.go:11116
+		if data[p] == 111 {
+			goto st428
+		}
+		goto st0
+	st428:
+		if p++; p == pe {
+			goto _test_eof428
+		}
+	st_case_428:
+		if data[p] == 110 {
+			goto st429
+		}
+		goto st0
+	st429:
+		if p++; p == pe {
+			goto _test_eof429
+		}
+	st_case_429:
+		if data[p] == 115 {
+			goto st63
+		}
+		goto st0
+	st430:
+		if p++; p == pe {
+			goto _test_eof430
+		}
+	st_case_430:
+		if data[p] == 101 {
+			goto st431
+		}
+		goto st0
+	st431:
+		if p++; p == pe {
+			goto _test_eof431
+		}
+	st_case_431:
+		if data[p] == 116 {
+			goto st432
+		}
+		goto st0
+	st432:
+		if p++; p == pe {
+			goto _test_eof432
+		}
+	st_case_432:
+		if data[p] == 99 {
+			goto st433
+		}
+		goto st0
+	st433:
+		if p++; p == pe {
+			goto _test_eof433
+		}
+	st_case_433:
+		if data[p] == 104 {
+			goto st434
+		}
+		goto st0
+	st434:
+		if p++; p == pe {
+			goto _test_eof434
+		}
+	st_case_434:
+		if data[p] == 101 {
+			goto st435
+		}
+		goto st0
+	st435:
+		if p++; p == pe {
+			goto _test_eof435
+		}
+	st_case_435:
+		if data[p] == 114 {
+			goto st429
+		}
+		goto st0
+	st436:
+		if p++; p == pe {
+			goto _test_eof436
+		}
+	st_case_436:
+		if data[p] == 117 {
+			goto st437
+		}
+		goto st0
+	st437:
+		if p++; p == pe {
+			goto _test_eof437
+		}
+	st_case_437:
+		if data[p] == 116 {
+			goto st438
+		}
+		goto st0
+	st438:
+		if p++; p == pe {
+			goto _test_eof438
+		}
+	st_case_438:
+		if data[p] == 97 {
+			goto st425
+		}
+		goto st0
+tr815:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st439
+	st439:
+		if p++; p == pe {
+			goto _test_eof439
+		}
+	st_case_439:
+//line memcached.go:11478
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -11124,28 +11486,28 @@ tr797:
 		case 356:
 			goto st3
 		case 368:
-			goto st105
+			goto st108
 		case 525:
 			goto tr63
 		case 612:
-			goto tr416
+			goto tr428
 		case 624:
-			goto tr417
+			goto tr429
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr416:
+tr428:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st428
-	st428:
+	goto st440
+	st440:
 		if p++; p == pe {
-			goto _test_eof428
+			goto _test_eof440
 		}
-	st_case_428:
-//line memcached.go:11149
+	st_case_440:
+//line memcached.go:11511
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -11159,22 +11521,22 @@ tr416:
 		case 525:
 			goto tr63
 		case 612:
-			goto tr418
+			goto tr430
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr418:
+tr430:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st429
-	st429:
+	goto st441
+	st441:
 		if p++; p == pe {
-			goto _test_eof429
+			goto _test_eof441
 		}
-	st_case_429:
-//line memcached.go:11178
+	st_case_441:
+//line memcached.go:11540
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -11188,22 +11550,22 @@ tr418:
 		case 525:
 			goto tr63
 		case 544:
-			goto tr419
+			goto tr431
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr419:
+tr431:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st430
-	st430:
+	goto st442
+	st442:
 		if p++; p == pe {
-			goto _test_eof430
+			goto _test_eof442
 		}
-	st_case_430:
-//line memcached.go:11207
+	st_case_442:
+//line memcached.go:11569
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -11222,26 +11584,26 @@ tr419:
 			}
 		case _widec > 544:
 			if 545 <= _widec && _widec <= 767 {
-				goto tr420
+				goto tr432
 			}
 		default:
 			goto tr62
 		}
 		goto st0
-tr420:
+tr432:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 //line memcached.rl:46
 
 				keyString = keyString + string(data[p])
 			
-	goto st431
-	st431:
+	goto st443
+	st443:
 		if p++; p == pe {
-			goto _test_eof431
+			goto _test_eof443
 		}
-	st_case_431:
-//line memcached.go:11245
+	st_case_443:
+//line memcached.go:11607
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -11255,7 +11617,7 @@ tr420:
 		case 525:
 			goto tr63
 		case 544:
-			goto tr421
+			goto tr433
 		}
 		switch {
 		case _widec < 512:
@@ -11264,22 +11626,22 @@ tr420:
 			}
 		case _widec > 543:
 			if 545 <= _widec && _widec <= 767 {
-				goto tr420
+				goto tr432
 			}
 		default:
 			goto tr62
 		}
 		goto st0
-tr421:
+tr433:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st432
-	st432:
+	goto st444
+	st444:
 		if p++; p == pe {
-			goto _test_eof432
+			goto _test_eof444
 		}
-	st_case_432:
-//line memcached.go:11283
+	st_case_444:
+//line memcached.go:11645
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -11303,22 +11665,22 @@ tr421:
 					goto tr62
 				}
 			case _widec >= 560:
-				goto tr422
+				goto tr434
 			}
 		default:
 			goto tr62
 		}
 		goto st0
-tr422:
+tr434:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st433
-	st433:
+	goto st445
+	st445:
 		if p++; p == pe {
-			goto _test_eof433
+			goto _test_eof445
 		}
-	st_case_433:
-//line memcached.go:11322
+	st_case_445:
+//line memcached.go:11684
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -11332,7 +11694,7 @@ tr422:
 		case 525:
 			goto tr63
 		case 544:
-			goto tr423
+			goto tr435
 		}
 		switch {
 		case _widec < 512:
@@ -11346,22 +11708,22 @@ tr422:
 					goto tr62
 				}
 			case _widec >= 560:
-				goto tr422
+				goto tr434
 			}
 		default:
 			goto tr62
 		}
 		goto st0
-tr423:
+tr435:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st434
-	st434:
+	goto st446
+	st446:
 		if p++; p == pe {
-			goto _test_eof434
+			goto _test_eof446
 		}
-	st_case_434:
-//line memcached.go:11365
+	st_case_446:
+//line memcached.go:11727
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -11385,24 +11747,24 @@ tr423:
 					goto tr62
 				}
 			case _widec >= 560:
-				goto tr424
+				goto tr436
 			}
 		default:
 			goto tr62
 		}
 		goto st0
-tr424:
+tr436:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 //line memcached.rl:45
  expiry = expiry * 10 + (int(data[p]) - '0') 
-	goto st435
-	st435:
+	goto st447
+	st447:
 		if p++; p == pe {
-			goto _test_eof435
+			goto _test_eof447
 		}
-	st_case_435:
-//line memcached.go:11406
+	st_case_447:
+//line memcached.go:11768
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -11416,7 +11778,7 @@ tr424:
 		case 525:
 			goto tr63
 		case 544:
-			goto tr425
+			goto tr437
 		}
 		switch {
 		case _widec < 512:
@@ -11430,22 +11792,22 @@ tr424:
 					goto tr62
 				}
 			case _widec >= 560:
-				goto tr424
+				goto tr436
 			}
 		default:
 			goto tr62
 		}
 		goto st0
-tr425:
+tr437:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st436
-	st436:
+	goto st448
+	st448:
 		if p++; p == pe {
-			goto _test_eof436
+			goto _test_eof448
 		}
-	st_case_436:
-//line memcached.go:11449
+	st_case_448:
+//line memcached.go:11811
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -11469,24 +11831,24 @@ tr425:
 					goto tr62
 				}
 			case _widec >= 560:
-				goto tr426
+				goto tr438
 			}
 		default:
 			goto tr62
 		}
 		goto st0
-tr426:
+tr438:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 //line memcached.rl:43
  expectedLen = expectedLen * 10 + (int(data[p]) - int('0')) 
-	goto st437
-	st437:
+	goto st449
+	st449:
 		if p++; p == pe {
-			goto _test_eof437
+			goto _test_eof449
 		}
-	st_case_437:
-//line memcached.go:11490
+	st_case_449:
+//line memcached.go:11852
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -11494,13 +11856,13 @@ tr426:
 		}
 		switch _widec {
 		case 269:
-			goto st438
+			goto st450
 		case 288:
-			goto st726
+			goto st744
 		case 525:
-			goto tr428
+			goto tr440
 		case 544:
-			goto tr429
+			goto tr441
 		}
 		switch {
 		case _widec < 512:
@@ -11514,35 +11876,35 @@ tr426:
 					goto tr62
 				}
 			case _widec >= 560:
-				goto tr426
+				goto tr438
 			}
 		default:
 			goto tr62
 		}
 		goto st0
-	st438:
+	st450:
 		if p++; p == pe {
-			goto _test_eof438
+			goto _test_eof450
 		}
-	st_case_438:
+	st_case_450:
 		if data[p] == 10 {
-			goto tr430
+			goto tr442
 		}
 		goto st0
-tr430:
+tr442:
 //line memcached.rl:37
 
 				expiry = int(0)
 				expectedLen, foundLen = 0, 0
 				keyString = ""
 			
-	goto st839
-	st839:
+	goto st857
+	st857:
 		if p++; p == pe {
-			goto _test_eof839
+			goto _test_eof857
 		}
-	st_case_839:
-//line memcached.go:11546
+	st_case_857:
+//line memcached.go:11908
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -11560,66 +11922,66 @@ tr430:
 		case 359:
 			goto st79
 		case 361:
-			goto st82
+			goto st85
 		case 364:
-			goto st84
+			goto st87
 		case 368:
-			goto st103
+			goto st106
 		case 369:
-			goto st108
-		case 370:
 			goto st111
+		case 370:
+			goto st114
 		case 371:
-			goto st117
+			goto st120
 		case 372:
-			goto st385
+			goto st397
 		case 374:
-			goto st394
+			goto st406
 		case 375:
-			goto st404
+			goto st416
 		case 609:
-			goto tr838
+			goto tr856
 		case 611:
-			goto tr839
+			goto tr857
 		case 612:
-			goto tr840
+			goto tr858
 		case 614:
-			goto tr841
+			goto tr859
 		case 615:
-			goto tr842
+			goto tr860
 		case 617:
-			goto tr843
+			goto tr861
 		case 620:
-			goto tr844
+			goto tr862
 		case 624:
-			goto tr845
+			goto tr863
 		case 625:
-			goto tr846
+			goto tr864
 		case 626:
-			goto tr847
+			goto tr865
 		case 627:
-			goto tr848
+			goto tr866
 		case 628:
-			goto tr849
+			goto tr867
 		case 630:
-			goto tr850
+			goto tr868
 		case 631:
-			goto tr851
+			goto tr869
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr838:
+tr856:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st439
-	st439:
+	goto st451
+	st451:
 		if p++; p == pe {
-			goto _test_eof439
+			goto _test_eof451
 		}
-	st_case_439:
-//line memcached.go:11623
+	st_case_451:
+//line memcached.go:11985
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -11631,13 +11993,13 @@ tr838:
 		case 356:
 			goto st3
 		case 368:
-			goto st105
+			goto st108
 		case 525:
 			goto tr31
 		case 612:
-			goto tr431
+			goto tr443
 		case 624:
-			goto tr432
+			goto tr444
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
@@ -11646,13 +12008,13 @@ tr838:
 tr31:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st440
-	st440:
+	goto st452
+	st452:
 		if p++; p == pe {
-			goto _test_eof440
+			goto _test_eof452
 		}
-	st_case_440:
-//line memcached.go:11656
+	st_case_452:
+//line memcached.go:12018
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -11664,7 +12026,7 @@ tr31:
 		case 269:
 			goto st16
 		case 522:
-			goto tr433
+			goto tr445
 		case 525:
 			goto tr31
 		}
@@ -11672,7 +12034,7 @@ tr31:
 			goto tr29
 		}
 		goto st0
-tr433:
+tr445:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 //line memcached.rl:37
@@ -11681,13 +12043,13 @@ tr433:
 				expectedLen, foundLen = 0, 0
 				keyString = ""
 			
-	goto st840
-	st840:
+	goto st858
+	st858:
 		if p++; p == pe {
-			goto _test_eof840
+			goto _test_eof858
 		}
-	st_case_840:
-//line memcached.go:11691
+	st_case_858:
+//line memcached.go:12053
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -11707,68 +12069,68 @@ tr433:
 		case 359:
 			goto st79
 		case 361:
-			goto st82
+			goto st85
 		case 364:
-			goto st84
+			goto st87
 		case 368:
-			goto st103
+			goto st106
 		case 369:
-			goto st108
-		case 370:
 			goto st111
+		case 370:
+			goto st114
 		case 371:
-			goto st117
+			goto st120
 		case 372:
-			goto st385
+			goto st397
 		case 374:
-			goto st394
+			goto st406
 		case 375:
-			goto st404
+			goto st416
 		case 525:
 			goto tr31
 		case 609:
-			goto tr838
+			goto tr856
 		case 611:
-			goto tr839
+			goto tr857
 		case 612:
-			goto tr840
+			goto tr858
 		case 614:
-			goto tr841
+			goto tr859
 		case 615:
-			goto tr842
+			goto tr860
 		case 617:
-			goto tr843
+			goto tr861
 		case 620:
-			goto tr844
+			goto tr862
 		case 624:
-			goto tr845
+			goto tr863
 		case 625:
-			goto tr846
+			goto tr864
 		case 626:
-			goto tr847
+			goto tr865
 		case 627:
-			goto tr848
+			goto tr866
 		case 628:
-			goto tr849
+			goto tr867
 		case 630:
-			goto tr850
+			goto tr868
 		case 631:
-			goto tr851
+			goto tr869
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr839:
+tr857:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st441
-	st441:
+	goto st453
+	st453:
 		if p++; p == pe {
-			goto _test_eof441
+			goto _test_eof453
 		}
-	st_case_441:
-//line memcached.go:11772
+	st_case_453:
+//line memcached.go:12134
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -11782,329 +12144,6 @@ tr839:
 		case 525:
 			goto tr31
 		case 609:
-			goto tr434
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr434:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st442
-	st442:
-		if p++; p == pe {
-			goto _test_eof442
-		}
-	st_case_442:
-//line memcached.go:11801
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 355:
-			goto st19
-		case 371:
-			goto st33
-		case 525:
-			goto tr31
-		case 611:
-			goto tr435
-		case 627:
-			goto tr436
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr435:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st443
-	st443:
-		if p++; p == pe {
-			goto _test_eof443
-		}
-	st_case_443:
-//line memcached.go:11834
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 360:
-			goto st20
-		case 525:
-			goto tr31
-		case 616:
-			goto tr437
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr437:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st444
-	st444:
-		if p++; p == pe {
-			goto _test_eof444
-		}
-	st_case_444:
-//line memcached.go:11863
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 357:
-			goto st21
-		case 525:
-			goto tr31
-		case 613:
-			goto tr438
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr438:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st445
-	st445:
-		if p++; p == pe {
-			goto _test_eof445
-		}
-	st_case_445:
-//line memcached.go:11892
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 351:
-			goto st22
-		case 525:
-			goto tr31
-		case 607:
-			goto tr439
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr439:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st446
-	st446:
-		if p++; p == pe {
-			goto _test_eof446
-		}
-	st_case_446:
-//line memcached.go:11921
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 365:
-			goto st23
-		case 525:
-			goto tr31
-		case 621:
-			goto tr440
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr440:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st447
-	st447:
-		if p++; p == pe {
-			goto _test_eof447
-		}
-	st_case_447:
-//line memcached.go:11950
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 357:
-			goto st24
-		case 525:
-			goto tr31
-		case 613:
-			goto tr441
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr441:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st448
-	st448:
-		if p++; p == pe {
-			goto _test_eof448
-		}
-	st_case_448:
-//line memcached.go:11979
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 365:
-			goto st25
-		case 525:
-			goto tr31
-		case 621:
-			goto tr442
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr442:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st449
-	st449:
-		if p++; p == pe {
-			goto _test_eof449
-		}
-	st_case_449:
-//line memcached.go:12008
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 364:
-			goto st26
-		case 525:
-			goto tr31
-		case 620:
-			goto tr443
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr443:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st450
-	st450:
-		if p++; p == pe {
-			goto _test_eof450
-		}
-	st_case_450:
-//line memcached.go:12037
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 361:
-			goto st27
-		case 525:
-			goto tr31
-		case 617:
-			goto tr444
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr444:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st451
-	st451:
-		if p++; p == pe {
-			goto _test_eof451
-		}
-	st_case_451:
-//line memcached.go:12066
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 365:
-			goto st28
-		case 525:
-			goto tr31
-		case 621:
-			goto tr445
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr445:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st452
-	st452:
-		if p++; p == pe {
-			goto _test_eof452
-		}
-	st_case_452:
-//line memcached.go:12095
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 361:
-			goto st29
-		case 525:
-			goto tr31
-		case 617:
 			goto tr446
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -12114,13 +12153,336 @@ tr445:
 tr446:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st453
-	st453:
+	goto st454
+	st454:
 		if p++; p == pe {
-			goto _test_eof453
+			goto _test_eof454
 		}
-	st_case_453:
-//line memcached.go:12124
+	st_case_454:
+//line memcached.go:12163
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 355:
+			goto st19
+		case 371:
+			goto st33
+		case 525:
+			goto tr31
+		case 611:
+			goto tr447
+		case 627:
+			goto tr448
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr447:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st455
+	st455:
+		if p++; p == pe {
+			goto _test_eof455
+		}
+	st_case_455:
+//line memcached.go:12196
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 360:
+			goto st20
+		case 525:
+			goto tr31
+		case 616:
+			goto tr449
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr449:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st456
+	st456:
+		if p++; p == pe {
+			goto _test_eof456
+		}
+	st_case_456:
+//line memcached.go:12225
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 357:
+			goto st21
+		case 525:
+			goto tr31
+		case 613:
+			goto tr450
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr450:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st457
+	st457:
+		if p++; p == pe {
+			goto _test_eof457
+		}
+	st_case_457:
+//line memcached.go:12254
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 351:
+			goto st22
+		case 525:
+			goto tr31
+		case 607:
+			goto tr451
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr451:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st458
+	st458:
+		if p++; p == pe {
+			goto _test_eof458
+		}
+	st_case_458:
+//line memcached.go:12283
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 365:
+			goto st23
+		case 525:
+			goto tr31
+		case 621:
+			goto tr452
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr452:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st459
+	st459:
+		if p++; p == pe {
+			goto _test_eof459
+		}
+	st_case_459:
+//line memcached.go:12312
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 357:
+			goto st24
+		case 525:
+			goto tr31
+		case 613:
+			goto tr453
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr453:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st460
+	st460:
+		if p++; p == pe {
+			goto _test_eof460
+		}
+	st_case_460:
+//line memcached.go:12341
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 365:
+			goto st25
+		case 525:
+			goto tr31
+		case 621:
+			goto tr454
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr454:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st461
+	st461:
+		if p++; p == pe {
+			goto _test_eof461
+		}
+	st_case_461:
+//line memcached.go:12370
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 364:
+			goto st26
+		case 525:
+			goto tr31
+		case 620:
+			goto tr455
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr455:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st462
+	st462:
+		if p++; p == pe {
+			goto _test_eof462
+		}
+	st_case_462:
+//line memcached.go:12399
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 361:
+			goto st27
+		case 525:
+			goto tr31
+		case 617:
+			goto tr456
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr456:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st463
+	st463:
+		if p++; p == pe {
+			goto _test_eof463
+		}
+	st_case_463:
+//line memcached.go:12428
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 365:
+			goto st28
+		case 525:
+			goto tr31
+		case 621:
+			goto tr457
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr457:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st464
+	st464:
+		if p++; p == pe {
+			goto _test_eof464
+		}
+	st_case_464:
+//line memcached.go:12457
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 361:
+			goto st29
+		case 525:
+			goto tr31
+		case 617:
+			goto tr458
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr458:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st465
+	st465:
+		if p++; p == pe {
+			goto _test_eof465
+		}
+	st_case_465:
+//line memcached.go:12486
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -12134,22 +12496,22 @@ tr446:
 		case 525:
 			goto tr31
 		case 628:
-			goto tr447
+			goto tr459
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr447:
+tr459:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st454
-	st454:
+	goto st466
+	st466:
 		if p++; p == pe {
-			goto _test_eof454
+			goto _test_eof466
 		}
-	st_case_454:
-//line memcached.go:12153
+	st_case_466:
+//line memcached.go:12515
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -12163,22 +12525,22 @@ tr447:
 		case 525:
 			goto tr31
 		case 544:
-			goto tr448
+			goto tr460
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr448:
+tr460:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st455
-	st455:
+	goto st467
+	st467:
 		if p++; p == pe {
-			goto _test_eof455
+			goto _test_eof467
 		}
-	st_case_455:
-//line memcached.go:12182
+	st_case_467:
+//line memcached.go:12544
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -12202,22 +12564,22 @@ tr448:
 					goto tr29
 				}
 			case _widec >= 560:
-				goto tr448
+				goto tr460
 			}
 		default:
 			goto tr29
 		}
 		goto st0
-tr436:
+tr448:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st456
-	st456:
+	goto st468
+	st468:
 		if p++; p == pe {
-			goto _test_eof456
+			goto _test_eof468
 		}
-	st_case_456:
-//line memcached.go:12221
+	st_case_468:
+//line memcached.go:12583
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -12231,22 +12593,22 @@ tr436:
 		case 525:
 			goto tr31
 		case 544:
-			goto tr449
+			goto tr461
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr449:
+tr461:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st457
-	st457:
+	goto st469
+	st469:
 		if p++; p == pe {
-			goto _test_eof457
+			goto _test_eof469
 		}
-	st_case_457:
-//line memcached.go:12250
+	st_case_469:
+//line memcached.go:12612
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -12265,26 +12627,26 @@ tr449:
 			}
 		case _widec > 544:
 			if 545 <= _widec && _widec <= 767 {
-				goto tr450
+				goto tr462
 			}
 		default:
 			goto tr29
 		}
 		goto st0
-tr450:
+tr462:
 //line memcached.rl:46
 
 				keyString = keyString + string(data[p])
 			
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st458
-	st458:
+	goto st470
+	st470:
 		if p++; p == pe {
-			goto _test_eof458
+			goto _test_eof470
 		}
-	st_case_458:
-//line memcached.go:12288
+	st_case_470:
+//line memcached.go:12650
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -12298,7 +12660,7 @@ tr450:
 		case 525:
 			goto tr31
 		case 544:
-			goto tr451
+			goto tr463
 		}
 		switch {
 		case _widec < 512:
@@ -12307,22 +12669,22 @@ tr450:
 			}
 		case _widec > 543:
 			if 545 <= _widec && _widec <= 767 {
-				goto tr450
+				goto tr462
 			}
 		default:
 			goto tr29
 		}
 		goto st0
-tr451:
+tr463:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st459
-	st459:
+	goto st471
+	st471:
 		if p++; p == pe {
-			goto _test_eof459
+			goto _test_eof471
 		}
-	st_case_459:
-//line memcached.go:12326
+	st_case_471:
+//line memcached.go:12688
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -12346,22 +12708,22 @@ tr451:
 					goto tr29
 				}
 			case _widec >= 560:
-				goto tr452
+				goto tr464
 			}
 		default:
 			goto tr29
 		}
 		goto st0
-tr452:
+tr464:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st460
-	st460:
+	goto st472
+	st472:
 		if p++; p == pe {
-			goto _test_eof460
+			goto _test_eof472
 		}
-	st_case_460:
-//line memcached.go:12365
+	st_case_472:
+//line memcached.go:12727
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -12375,7 +12737,7 @@ tr452:
 		case 525:
 			goto tr31
 		case 544:
-			goto tr453
+			goto tr465
 		}
 		switch {
 		case _widec < 512:
@@ -12389,22 +12751,22 @@ tr452:
 					goto tr29
 				}
 			case _widec >= 560:
-				goto tr452
+				goto tr464
 			}
 		default:
 			goto tr29
 		}
 		goto st0
-tr453:
+tr465:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st461
-	st461:
+	goto st473
+	st473:
 		if p++; p == pe {
-			goto _test_eof461
+			goto _test_eof473
 		}
-	st_case_461:
-//line memcached.go:12408
+	st_case_473:
+//line memcached.go:12770
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -12428,24 +12790,24 @@ tr453:
 					goto tr29
 				}
 			case _widec >= 560:
-				goto tr454
+				goto tr466
 			}
 		default:
 			goto tr29
 		}
 		goto st0
-tr454:
+tr466:
 //line memcached.rl:45
  expiry = expiry * 10 + (int(data[p]) - '0') 
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st462
-	st462:
+	goto st474
+	st474:
 		if p++; p == pe {
-			goto _test_eof462
+			goto _test_eof474
 		}
-	st_case_462:
-//line memcached.go:12449
+	st_case_474:
+//line memcached.go:12811
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -12459,7 +12821,7 @@ tr454:
 		case 525:
 			goto tr31
 		case 544:
-			goto tr455
+			goto tr467
 		}
 		switch {
 		case _widec < 512:
@@ -12473,22 +12835,22 @@ tr454:
 					goto tr29
 				}
 			case _widec >= 560:
-				goto tr454
+				goto tr466
 			}
 		default:
 			goto tr29
 		}
 		goto st0
-tr455:
+tr467:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st463
-	st463:
+	goto st475
+	st475:
 		if p++; p == pe {
-			goto _test_eof463
+			goto _test_eof475
 		}
-	st_case_463:
-//line memcached.go:12492
+	st_case_475:
+//line memcached.go:12854
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -12512,24 +12874,24 @@ tr455:
 					goto tr29
 				}
 			case _widec >= 560:
-				goto tr456
+				goto tr468
 			}
 		default:
 			goto tr29
 		}
 		goto st0
-tr456:
+tr468:
 //line memcached.rl:43
  expectedLen = expectedLen * 10 + (int(data[p]) - int('0')) 
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st464
-	st464:
+	goto st476
+	st476:
 		if p++; p == pe {
-			goto _test_eof464
+			goto _test_eof476
 		}
-	st_case_464:
-//line memcached.go:12533
+	st_case_476:
+//line memcached.go:12895
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -12543,7 +12905,7 @@ tr456:
 		case 525:
 			goto tr31
 		case 544:
-			goto tr457
+			goto tr469
 		}
 		switch {
 		case _widec < 512:
@@ -12557,22 +12919,22 @@ tr456:
 					goto tr29
 				}
 			case _widec >= 560:
-				goto tr456
+				goto tr468
 			}
 		default:
 			goto tr29
 		}
 		goto st0
-tr457:
+tr469:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st465
-	st465:
+	goto st477
+	st477:
 		if p++; p == pe {
-			goto _test_eof465
+			goto _test_eof477
 		}
-	st_case_465:
-//line memcached.go:12576
+	st_case_477:
+//line memcached.go:12938
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -12596,22 +12958,22 @@ tr457:
 					goto tr29
 				}
 			case _widec >= 560:
-				goto tr458
+				goto tr470
 			}
 		default:
 			goto tr29
 		}
 		goto st0
-tr458:
+tr470:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st466
-	st466:
+	goto st478
+	st478:
 		if p++; p == pe {
-			goto _test_eof466
+			goto _test_eof478
 		}
-	st_case_466:
-//line memcached.go:12615
+	st_case_478:
+//line memcached.go:12977
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -12619,13 +12981,13 @@ tr458:
 		}
 		switch _widec {
 		case 269:
-			goto st467
+			goto st479
 		case 288:
-			goto st494
+			goto st506
 		case 525:
-			goto tr460
+			goto tr472
 		case 544:
-			goto tr461
+			goto tr473
 		}
 		switch {
 		case _widec < 512:
@@ -12639,35 +13001,35 @@ tr458:
 					goto tr29
 				}
 			case _widec >= 560:
-				goto tr458
+				goto tr470
 			}
 		default:
 			goto tr29
 		}
 		goto st0
-	st467:
+	st479:
 		if p++; p == pe {
-			goto _test_eof467
+			goto _test_eof479
 		}
-	st_case_467:
+	st_case_479:
 		if data[p] == 10 {
-			goto tr462
+			goto tr474
 		}
 		goto st0
-tr462:
+tr474:
 //line memcached.rl:37
 
 				expiry = int(0)
 				expectedLen, foundLen = 0, 0
 				keyString = ""
 			
-	goto st841
-	st841:
+	goto st859
+	st859:
 		if p++; p == pe {
-			goto _test_eof841
+			goto _test_eof859
 		}
-	st_case_841:
-//line memcached.go:12671
+	st_case_859:
+//line memcached.go:13033
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -12685,66 +13047,66 @@ tr462:
 		case 359:
 			goto st79
 		case 361:
-			goto st82
+			goto st85
 		case 364:
-			goto st84
+			goto st87
 		case 368:
-			goto st103
+			goto st106
 		case 369:
-			goto st108
-		case 370:
 			goto st111
+		case 370:
+			goto st114
 		case 371:
-			goto st117
+			goto st120
 		case 372:
-			goto st385
+			goto st397
 		case 374:
-			goto st394
+			goto st406
 		case 375:
-			goto st404
+			goto st416
 		case 609:
-			goto tr797
+			goto tr815
 		case 611:
-			goto tr798
+			goto tr816
 		case 612:
-			goto tr799
+			goto tr817
 		case 614:
-			goto tr800
+			goto tr818
 		case 615:
-			goto tr801
+			goto tr819
 		case 617:
-			goto tr802
+			goto tr820
 		case 620:
-			goto tr803
+			goto tr821
 		case 624:
-			goto tr804
+			goto tr822
 		case 625:
-			goto tr805
+			goto tr823
 		case 626:
-			goto tr806
+			goto tr824
 		case 627:
-			goto tr807
+			goto tr825
 		case 628:
-			goto tr808
+			goto tr826
 		case 630:
-			goto tr809
+			goto tr827
 		case 631:
-			goto tr810
+			goto tr828
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr798:
+tr816:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st468
-	st468:
+	goto st480
+	st480:
 		if p++; p == pe {
-			goto _test_eof468
+			goto _test_eof480
 		}
-	st_case_468:
-//line memcached.go:12748
+	st_case_480:
+//line memcached.go:13110
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -12758,22 +13120,22 @@ tr798:
 		case 525:
 			goto tr63
 		case 609:
-			goto tr463
+			goto tr475
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr463:
+tr475:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st469
-	st469:
+	goto st481
+	st481:
 		if p++; p == pe {
-			goto _test_eof469
+			goto _test_eof481
 		}
-	st_case_469:
-//line memcached.go:12777
+	st_case_481:
+//line memcached.go:13139
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -12789,24 +13151,24 @@ tr463:
 		case 525:
 			goto tr63
 		case 611:
-			goto tr464
+			goto tr476
 		case 627:
-			goto tr465
+			goto tr477
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr464:
+tr476:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st470
-	st470:
+	goto st482
+	st482:
 		if p++; p == pe {
-			goto _test_eof470
+			goto _test_eof482
 		}
-	st_case_470:
-//line memcached.go:12810
+	st_case_482:
+//line memcached.go:13172
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -12820,22 +13182,22 @@ tr464:
 		case 525:
 			goto tr63
 		case 616:
-			goto tr466
+			goto tr478
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr466:
+tr478:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st471
-	st471:
+	goto st483
+	st483:
 		if p++; p == pe {
-			goto _test_eof471
+			goto _test_eof483
 		}
-	st_case_471:
-//line memcached.go:12839
+	st_case_483:
+//line memcached.go:13201
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -12849,22 +13211,22 @@ tr466:
 		case 525:
 			goto tr63
 		case 613:
-			goto tr467
+			goto tr479
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr467:
+tr479:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st472
-	st472:
+	goto st484
+	st484:
 		if p++; p == pe {
-			goto _test_eof472
+			goto _test_eof484
 		}
-	st_case_472:
-//line memcached.go:12868
+	st_case_484:
+//line memcached.go:13230
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -12878,22 +13240,22 @@ tr467:
 		case 525:
 			goto tr63
 		case 607:
-			goto tr468
+			goto tr480
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr468:
+tr480:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st473
-	st473:
+	goto st485
+	st485:
 		if p++; p == pe {
-			goto _test_eof473
+			goto _test_eof485
 		}
-	st_case_473:
-//line memcached.go:12897
+	st_case_485:
+//line memcached.go:13259
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -12907,22 +13269,22 @@ tr468:
 		case 525:
 			goto tr63
 		case 621:
-			goto tr469
+			goto tr481
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr469:
+tr481:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st474
-	st474:
+	goto st486
+	st486:
 		if p++; p == pe {
-			goto _test_eof474
+			goto _test_eof486
 		}
-	st_case_474:
-//line memcached.go:12926
+	st_case_486:
+//line memcached.go:13288
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -12936,22 +13298,22 @@ tr469:
 		case 525:
 			goto tr63
 		case 613:
-			goto tr470
+			goto tr482
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr470:
+tr482:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st475
-	st475:
+	goto st487
+	st487:
 		if p++; p == pe {
-			goto _test_eof475
+			goto _test_eof487
 		}
-	st_case_475:
-//line memcached.go:12955
+	st_case_487:
+//line memcached.go:13317
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -12965,22 +13327,22 @@ tr470:
 		case 525:
 			goto tr63
 		case 621:
-			goto tr471
+			goto tr483
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr471:
+tr483:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st476
-	st476:
+	goto st488
+	st488:
 		if p++; p == pe {
-			goto _test_eof476
+			goto _test_eof488
 		}
-	st_case_476:
-//line memcached.go:12984
+	st_case_488:
+//line memcached.go:13346
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -12994,22 +13356,22 @@ tr471:
 		case 525:
 			goto tr63
 		case 620:
-			goto tr472
+			goto tr484
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr472:
+tr484:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st477
-	st477:
+	goto st489
+	st489:
 		if p++; p == pe {
-			goto _test_eof477
+			goto _test_eof489
 		}
-	st_case_477:
-//line memcached.go:13013
+	st_case_489:
+//line memcached.go:13375
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -13023,22 +13385,22 @@ tr472:
 		case 525:
 			goto tr63
 		case 617:
-			goto tr473
+			goto tr485
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr473:
+tr485:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st478
-	st478:
+	goto st490
+	st490:
 		if p++; p == pe {
-			goto _test_eof478
+			goto _test_eof490
 		}
-	st_case_478:
-//line memcached.go:13042
+	st_case_490:
+//line memcached.go:13404
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -13052,22 +13414,22 @@ tr473:
 		case 525:
 			goto tr63
 		case 621:
-			goto tr474
+			goto tr486
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr474:
+tr486:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st479
-	st479:
+	goto st491
+	st491:
 		if p++; p == pe {
-			goto _test_eof479
+			goto _test_eof491
 		}
-	st_case_479:
-//line memcached.go:13071
+	st_case_491:
+//line memcached.go:13433
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -13081,22 +13443,22 @@ tr474:
 		case 525:
 			goto tr63
 		case 617:
-			goto tr475
+			goto tr487
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr475:
+tr487:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st480
-	st480:
+	goto st492
+	st492:
 		if p++; p == pe {
-			goto _test_eof480
+			goto _test_eof492
 		}
-	st_case_480:
-//line memcached.go:13100
+	st_case_492:
+//line memcached.go:13462
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -13110,22 +13472,22 @@ tr475:
 		case 525:
 			goto tr63
 		case 628:
-			goto tr476
+			goto tr488
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr476:
+tr488:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st481
-	st481:
+	goto st493
+	st493:
 		if p++; p == pe {
-			goto _test_eof481
+			goto _test_eof493
 		}
-	st_case_481:
-//line memcached.go:13129
+	st_case_493:
+//line memcached.go:13491
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -13139,22 +13501,22 @@ tr476:
 		case 525:
 			goto tr63
 		case 544:
-			goto tr477
+			goto tr489
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr477:
+tr489:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st482
-	st482:
+	goto st494
+	st494:
 		if p++; p == pe {
-			goto _test_eof482
+			goto _test_eof494
 		}
-	st_case_482:
-//line memcached.go:13158
+	st_case_494:
+//line memcached.go:13520
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -13178,22 +13540,22 @@ tr477:
 					goto tr62
 				}
 			case _widec >= 560:
-				goto tr477
+				goto tr489
 			}
 		default:
 			goto tr62
 		}
 		goto st0
-tr465:
+tr477:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st483
-	st483:
+	goto st495
+	st495:
 		if p++; p == pe {
-			goto _test_eof483
+			goto _test_eof495
 		}
-	st_case_483:
-//line memcached.go:13197
+	st_case_495:
+//line memcached.go:13559
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -13207,22 +13569,22 @@ tr465:
 		case 525:
 			goto tr63
 		case 544:
-			goto tr478
+			goto tr490
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr478:
+tr490:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st484
-	st484:
+	goto st496
+	st496:
 		if p++; p == pe {
-			goto _test_eof484
+			goto _test_eof496
 		}
-	st_case_484:
-//line memcached.go:13226
+	st_case_496:
+//line memcached.go:13588
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -13241,26 +13603,26 @@ tr478:
 			}
 		case _widec > 544:
 			if 545 <= _widec && _widec <= 767 {
-				goto tr479
+				goto tr491
 			}
 		default:
 			goto tr62
 		}
 		goto st0
-tr479:
+tr491:
 //line memcached.rl:46
 
 				keyString = keyString + string(data[p])
 			
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st485
-	st485:
+	goto st497
+	st497:
 		if p++; p == pe {
-			goto _test_eof485
+			goto _test_eof497
 		}
-	st_case_485:
-//line memcached.go:13264
+	st_case_497:
+//line memcached.go:13626
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -13274,7 +13636,7 @@ tr479:
 		case 525:
 			goto tr63
 		case 544:
-			goto tr480
+			goto tr492
 		}
 		switch {
 		case _widec < 512:
@@ -13283,22 +13645,22 @@ tr479:
 			}
 		case _widec > 543:
 			if 545 <= _widec && _widec <= 767 {
-				goto tr479
+				goto tr491
 			}
 		default:
 			goto tr62
 		}
 		goto st0
-tr480:
+tr492:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st486
-	st486:
+	goto st498
+	st498:
 		if p++; p == pe {
-			goto _test_eof486
+			goto _test_eof498
 		}
-	st_case_486:
-//line memcached.go:13302
+	st_case_498:
+//line memcached.go:13664
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -13322,22 +13684,22 @@ tr480:
 					goto tr62
 				}
 			case _widec >= 560:
-				goto tr481
+				goto tr493
 			}
 		default:
 			goto tr62
 		}
 		goto st0
-tr481:
+tr493:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st487
-	st487:
+	goto st499
+	st499:
 		if p++; p == pe {
-			goto _test_eof487
+			goto _test_eof499
 		}
-	st_case_487:
-//line memcached.go:13341
+	st_case_499:
+//line memcached.go:13703
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -13351,7 +13713,7 @@ tr481:
 		case 525:
 			goto tr63
 		case 544:
-			goto tr482
+			goto tr494
 		}
 		switch {
 		case _widec < 512:
@@ -13365,22 +13727,22 @@ tr481:
 					goto tr62
 				}
 			case _widec >= 560:
-				goto tr481
+				goto tr493
 			}
 		default:
 			goto tr62
 		}
 		goto st0
-tr482:
+tr494:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st488
-	st488:
+	goto st500
+	st500:
 		if p++; p == pe {
-			goto _test_eof488
+			goto _test_eof500
 		}
-	st_case_488:
-//line memcached.go:13384
+	st_case_500:
+//line memcached.go:13746
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -13404,24 +13766,24 @@ tr482:
 					goto tr62
 				}
 			case _widec >= 560:
-				goto tr483
+				goto tr495
 			}
 		default:
 			goto tr62
 		}
 		goto st0
-tr483:
+tr495:
 //line memcached.rl:45
  expiry = expiry * 10 + (int(data[p]) - '0') 
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st489
-	st489:
+	goto st501
+	st501:
 		if p++; p == pe {
-			goto _test_eof489
+			goto _test_eof501
 		}
-	st_case_489:
-//line memcached.go:13425
+	st_case_501:
+//line memcached.go:13787
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -13435,7 +13797,7 @@ tr483:
 		case 525:
 			goto tr63
 		case 544:
-			goto tr484
+			goto tr496
 		}
 		switch {
 		case _widec < 512:
@@ -13449,22 +13811,22 @@ tr483:
 					goto tr62
 				}
 			case _widec >= 560:
-				goto tr483
+				goto tr495
 			}
 		default:
 			goto tr62
 		}
 		goto st0
-tr484:
+tr496:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st490
-	st490:
+	goto st502
+	st502:
 		if p++; p == pe {
-			goto _test_eof490
+			goto _test_eof502
 		}
-	st_case_490:
-//line memcached.go:13468
+	st_case_502:
+//line memcached.go:13830
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -13488,24 +13850,24 @@ tr484:
 					goto tr62
 				}
 			case _widec >= 560:
-				goto tr485
+				goto tr497
 			}
 		default:
 			goto tr62
 		}
 		goto st0
-tr485:
+tr497:
 //line memcached.rl:43
  expectedLen = expectedLen * 10 + (int(data[p]) - int('0')) 
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st491
-	st491:
+	goto st503
+	st503:
 		if p++; p == pe {
-			goto _test_eof491
+			goto _test_eof503
 		}
-	st_case_491:
-//line memcached.go:13509
+	st_case_503:
+//line memcached.go:13871
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -13519,7 +13881,7 @@ tr485:
 		case 525:
 			goto tr63
 		case 544:
-			goto tr486
+			goto tr498
 		}
 		switch {
 		case _widec < 512:
@@ -13533,22 +13895,22 @@ tr485:
 					goto tr62
 				}
 			case _widec >= 560:
-				goto tr485
+				goto tr497
 			}
 		default:
 			goto tr62
 		}
 		goto st0
-tr486:
+tr498:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st492
-	st492:
+	goto st504
+	st504:
 		if p++; p == pe {
-			goto _test_eof492
+			goto _test_eof504
 		}
-	st_case_492:
-//line memcached.go:13552
+	st_case_504:
+//line memcached.go:13914
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -13572,22 +13934,22 @@ tr486:
 					goto tr62
 				}
 			case _widec >= 560:
-				goto tr487
+				goto tr499
 			}
 		default:
 			goto tr62
 		}
 		goto st0
-tr487:
+tr499:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st493
-	st493:
+	goto st505
+	st505:
 		if p++; p == pe {
-			goto _test_eof493
+			goto _test_eof505
 		}
-	st_case_493:
-//line memcached.go:13591
+	st_case_505:
+//line memcached.go:13953
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -13595,13 +13957,13 @@ tr487:
 		}
 		switch _widec {
 		case 269:
-			goto st467
+			goto st479
 		case 288:
-			goto st494
+			goto st506
 		case 525:
-			goto tr488
+			goto tr500
 		case 544:
-			goto tr489
+			goto tr501
 		}
 		switch {
 		case _widec < 512:
@@ -13615,94 +13977,94 @@ tr487:
 					goto tr62
 				}
 			case _widec >= 560:
-				goto tr487
+				goto tr499
 			}
 		default:
 			goto tr62
 		}
 		goto st0
-	st494:
+	st506:
 		if p++; p == pe {
-			goto _test_eof494
+			goto _test_eof506
 		}
-	st_case_494:
+	st_case_506:
 		if data[p] == 110 {
-			goto st495
+			goto st507
 		}
 		goto st0
-	st495:
+	st507:
 		if p++; p == pe {
-			goto _test_eof495
+			goto _test_eof507
 		}
-	st_case_495:
+	st_case_507:
 		if data[p] == 111 {
-			goto st496
+			goto st508
 		}
 		goto st0
-	st496:
+	st508:
 		if p++; p == pe {
-			goto _test_eof496
+			goto _test_eof508
 		}
-	st_case_496:
+	st_case_508:
 		if data[p] == 114 {
-			goto st497
+			goto st509
 		}
 		goto st0
-	st497:
+	st509:
 		if p++; p == pe {
-			goto _test_eof497
+			goto _test_eof509
 		}
-	st_case_497:
+	st_case_509:
 		if data[p] == 101 {
-			goto st498
+			goto st510
 		}
 		goto st0
-	st498:
+	st510:
 		if p++; p == pe {
-			goto _test_eof498
+			goto _test_eof510
 		}
-	st_case_498:
+	st_case_510:
 		if data[p] == 112 {
-			goto st499
+			goto st511
 		}
 		goto st0
-	st499:
+	st511:
 		if p++; p == pe {
-			goto _test_eof499
+			goto _test_eof511
 		}
-	st_case_499:
+	st_case_511:
 		if data[p] == 108 {
-			goto st500
+			goto st512
 		}
 		goto st0
-	st500:
+	st512:
 		if p++; p == pe {
-			goto _test_eof500
+			goto _test_eof512
 		}
-	st_case_500:
+	st_case_512:
 		if data[p] == 121 {
-			goto st501
+			goto st513
 		}
 		goto st0
-	st501:
+	st513:
 		if p++; p == pe {
-			goto _test_eof501
+			goto _test_eof513
 		}
-	st_case_501:
+	st_case_513:
 		if data[p] == 13 {
 			goto st44
 		}
 		goto st0
-tr488:
+tr500:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st502
-	st502:
+	goto st514
+	st514:
 		if p++; p == pe {
-			goto _test_eof502
+			goto _test_eof514
 		}
-	st_case_502:
-//line memcached.go:13706
+	st_case_514:
+//line memcached.go:14068
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -13710,7 +14072,7 @@ tr488:
 		}
 		switch _widec {
 		case 266:
-			goto tr462
+			goto tr474
 		case 269:
 			goto st16
 		case 522:
@@ -13722,16 +14084,16 @@ tr488:
 			goto tr62
 		}
 		goto st0
-tr489:
+tr501:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st503
-	st503:
+	goto st515
+	st515:
 		if p++; p == pe {
-			goto _test_eof503
+			goto _test_eof515
 		}
-	st_case_503:
-//line memcached.go:13735
+	st_case_515:
+//line memcached.go:14097
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -13741,26 +14103,26 @@ tr489:
 		case 269:
 			goto st16
 		case 366:
-			goto st495
+			goto st507
 		case 525:
 			goto tr63
 		case 622:
-			goto tr497
+			goto tr509
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr497:
+tr509:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st504
-	st504:
+	goto st516
+	st516:
 		if p++; p == pe {
-			goto _test_eof504
+			goto _test_eof516
 		}
-	st_case_504:
-//line memcached.go:13764
+	st_case_516:
+//line memcached.go:14126
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -13770,379 +14132,13 @@ tr497:
 		case 269:
 			goto st16
 		case 367:
-			goto st496
+			goto st508
 		case 525:
 			goto tr63
 		case 623:
-			goto tr498
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr498:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st505
-	st505:
-		if p++; p == pe {
-			goto _test_eof505
-		}
-	st_case_505:
-//line memcached.go:13793
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 370:
-			goto st497
-		case 525:
-			goto tr63
-		case 626:
-			goto tr499
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr499:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st506
-	st506:
-		if p++; p == pe {
-			goto _test_eof506
-		}
-	st_case_506:
-//line memcached.go:13822
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 357:
-			goto st498
-		case 525:
-			goto tr63
-		case 613:
-			goto tr500
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr500:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st507
-	st507:
-		if p++; p == pe {
-			goto _test_eof507
-		}
-	st_case_507:
-//line memcached.go:13851
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 368:
-			goto st499
-		case 525:
-			goto tr63
-		case 624:
-			goto tr501
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr501:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st508
-	st508:
-		if p++; p == pe {
-			goto _test_eof508
-		}
-	st_case_508:
-//line memcached.go:13880
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 364:
-			goto st500
-		case 525:
-			goto tr63
-		case 620:
-			goto tr502
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr502:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st509
-	st509:
-		if p++; p == pe {
-			goto _test_eof509
-		}
-	st_case_509:
-//line memcached.go:13909
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 377:
-			goto st501
-		case 525:
-			goto tr63
-		case 633:
-			goto tr503
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr503:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st510
-	st510:
-		if p++; p == pe {
-			goto _test_eof510
-		}
-	st_case_510:
-//line memcached.go:13938
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st467
-		case 525:
-			goto tr488
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr799:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st511
-	st511:
-		if p++; p == pe {
-			goto _test_eof511
-		}
-	st_case_511:
-//line memcached.go:13963
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 357:
-			goto st49
-		case 525:
-			goto tr63
-		case 613:
-			goto tr504
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr504:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st512
-	st512:
-		if p++; p == pe {
-			goto _test_eof512
-		}
-	st_case_512:
-//line memcached.go:13992
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 355:
-			goto st50
-		case 364:
-			goto st64
-		case 525:
-			goto tr63
-		case 611:
-			goto tr505
-		case 620:
-			goto tr506
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr505:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st513
-	st513:
-		if p++; p == pe {
-			goto _test_eof513
-		}
-	st_case_513:
-//line memcached.go:14025
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 370:
-			goto st51
-		case 525:
-			goto tr63
-		case 626:
-			goto tr507
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr507:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st514
-	st514:
-		if p++; p == pe {
-			goto _test_eof514
-		}
-	st_case_514:
-//line memcached.go:14054
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 288:
-			goto st52
-		case 525:
-			goto tr63
-		case 544:
-			goto tr508
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr508:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st515
-	st515:
-		if p++; p == pe {
-			goto _test_eof515
-		}
-	st_case_515:
-//line memcached.go:14083
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 525:
-			goto tr63
-		}
-		switch {
-		case _widec < 512:
-			if 289 <= _widec && _widec <= 511 {
-				goto tr70
-			}
-		case _widec > 544:
-			if 545 <= _widec && _widec <= 767 {
-				goto tr509
-			}
-		default:
-			goto tr62
-		}
-		goto st0
-tr509:
-//line memcached.rl:46
-
-				keyString = keyString + string(data[p])
-			
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st516
-	st516:
-		if p++; p == pe {
-			goto _test_eof516
-		}
-	st_case_516:
-//line memcached.go:14121
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 288:
-			goto st54
-		case 525:
-			goto tr63
-		case 544:
 			goto tr510
 		}
-		switch {
-		case _widec < 512:
-			if 289 <= _widec && _widec <= 511 {
-				goto tr70
-			}
-		case _widec > 543:
-			if 545 <= _widec && _widec <= 767 {
-				goto tr509
-			}
-		default:
+		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
@@ -14155,7 +14151,7 @@ tr510:
 			goto _test_eof517
 		}
 	st_case_517:
-//line memcached.go:14159
+//line memcached.go:14155
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -14164,24 +14160,14 @@ tr510:
 		switch _widec {
 		case 269:
 			goto st16
+		case 370:
+			goto st509
 		case 525:
 			goto tr63
+		case 626:
+			goto tr511
 		}
-		switch {
-		case _widec < 512:
-			if 304 <= _widec && _widec <= 313 {
-				goto st55
-			}
-		case _widec > 559:
-			switch {
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr62
-				}
-			case _widec >= 560:
-				goto tr511
-			}
-		default:
+		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
@@ -14194,7 +14180,7 @@ tr511:
 			goto _test_eof518
 		}
 	st_case_518:
-//line memcached.go:14198
+//line memcached.go:14184
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -14203,28 +14189,14 @@ tr511:
 		switch _widec {
 		case 269:
 			goto st16
-		case 288:
-			goto st56
+		case 357:
+			goto st510
 		case 525:
 			goto tr63
-		case 544:
+		case 613:
 			goto tr512
 		}
-		switch {
-		case _widec < 512:
-			if 304 <= _widec && _widec <= 313 {
-				goto st55
-			}
-		case _widec > 559:
-			switch {
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr62
-				}
-			case _widec >= 560:
-				goto tr511
-			}
-		default:
+		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
@@ -14237,7 +14209,7 @@ tr512:
 			goto _test_eof519
 		}
 	st_case_519:
-//line memcached.go:14241
+//line memcached.go:14213
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -14246,11 +14218,11 @@ tr512:
 		switch _widec {
 		case 269:
 			goto st16
-		case 366:
-			goto st57
+		case 368:
+			goto st511
 		case 525:
 			goto tr63
-		case 622:
+		case 624:
 			goto tr513
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -14266,7 +14238,7 @@ tr513:
 			goto _test_eof520
 		}
 	st_case_520:
-//line memcached.go:14270
+//line memcached.go:14242
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -14275,11 +14247,11 @@ tr513:
 		switch _widec {
 		case 269:
 			goto st16
-		case 367:
-			goto st58
+		case 364:
+			goto st512
 		case 525:
 			goto tr63
-		case 623:
+		case 620:
 			goto tr514
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -14295,7 +14267,7 @@ tr514:
 			goto _test_eof521
 		}
 	st_case_521:
-//line memcached.go:14299
+//line memcached.go:14271
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -14304,11 +14276,11 @@ tr514:
 		switch _widec {
 		case 269:
 			goto st16
-		case 370:
-			goto st59
+		case 377:
+			goto st513
 		case 525:
 			goto tr63
-		case 626:
+		case 633:
 			goto tr515
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -14324,7 +14296,397 @@ tr515:
 			goto _test_eof522
 		}
 	st_case_522:
-//line memcached.go:14328
+//line memcached.go:14300
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st479
+		case 525:
+			goto tr500
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr817:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st523
+	st523:
+		if p++; p == pe {
+			goto _test_eof523
+		}
+	st_case_523:
+//line memcached.go:14325
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 357:
+			goto st49
+		case 525:
+			goto tr63
+		case 613:
+			goto tr516
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr516:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st524
+	st524:
+		if p++; p == pe {
+			goto _test_eof524
+		}
+	st_case_524:
+//line memcached.go:14354
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 355:
+			goto st50
+		case 364:
+			goto st64
+		case 525:
+			goto tr63
+		case 611:
+			goto tr517
+		case 620:
+			goto tr518
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr517:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st525
+	st525:
+		if p++; p == pe {
+			goto _test_eof525
+		}
+	st_case_525:
+//line memcached.go:14387
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 370:
+			goto st51
+		case 525:
+			goto tr63
+		case 626:
+			goto tr519
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr519:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st526
+	st526:
+		if p++; p == pe {
+			goto _test_eof526
+		}
+	st_case_526:
+//line memcached.go:14416
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 288:
+			goto st52
+		case 525:
+			goto tr63
+		case 544:
+			goto tr520
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr520:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st527
+	st527:
+		if p++; p == pe {
+			goto _test_eof527
+		}
+	st_case_527:
+//line memcached.go:14445
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 525:
+			goto tr63
+		}
+		switch {
+		case _widec < 512:
+			if 289 <= _widec && _widec <= 511 {
+				goto tr70
+			}
+		case _widec > 544:
+			if 545 <= _widec && _widec <= 767 {
+				goto tr521
+			}
+		default:
+			goto tr62
+		}
+		goto st0
+tr521:
+//line memcached.rl:46
+
+				keyString = keyString + string(data[p])
+			
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st528
+	st528:
+		if p++; p == pe {
+			goto _test_eof528
+		}
+	st_case_528:
+//line memcached.go:14483
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 288:
+			goto st54
+		case 525:
+			goto tr63
+		case 544:
+			goto tr522
+		}
+		switch {
+		case _widec < 512:
+			if 289 <= _widec && _widec <= 511 {
+				goto tr70
+			}
+		case _widec > 543:
+			if 545 <= _widec && _widec <= 767 {
+				goto tr521
+			}
+		default:
+			goto tr62
+		}
+		goto st0
+tr522:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st529
+	st529:
+		if p++; p == pe {
+			goto _test_eof529
+		}
+	st_case_529:
+//line memcached.go:14521
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 525:
+			goto tr63
+		}
+		switch {
+		case _widec < 512:
+			if 304 <= _widec && _widec <= 313 {
+				goto st55
+			}
+		case _widec > 559:
+			switch {
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr62
+				}
+			case _widec >= 560:
+				goto tr523
+			}
+		default:
+			goto tr62
+		}
+		goto st0
+tr523:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st530
+	st530:
+		if p++; p == pe {
+			goto _test_eof530
+		}
+	st_case_530:
+//line memcached.go:14560
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 288:
+			goto st56
+		case 525:
+			goto tr63
+		case 544:
+			goto tr524
+		}
+		switch {
+		case _widec < 512:
+			if 304 <= _widec && _widec <= 313 {
+				goto st55
+			}
+		case _widec > 559:
+			switch {
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr62
+				}
+			case _widec >= 560:
+				goto tr523
+			}
+		default:
+			goto tr62
+		}
+		goto st0
+tr524:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st531
+	st531:
+		if p++; p == pe {
+			goto _test_eof531
+		}
+	st_case_531:
+//line memcached.go:14603
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 366:
+			goto st57
+		case 525:
+			goto tr63
+		case 622:
+			goto tr525
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr525:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st532
+	st532:
+		if p++; p == pe {
+			goto _test_eof532
+		}
+	st_case_532:
+//line memcached.go:14632
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 367:
+			goto st58
+		case 525:
+			goto tr63
+		case 623:
+			goto tr526
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr526:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st533
+	st533:
+		if p++; p == pe {
+			goto _test_eof533
+		}
+	st_case_533:
+//line memcached.go:14661
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 370:
+			goto st59
+		case 525:
+			goto tr63
+		case 626:
+			goto tr527
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr527:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st534
+	st534:
+		if p++; p == pe {
+			goto _test_eof534
+		}
+	st_case_534:
+//line memcached.go:14690
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -14338,22 +14700,22 @@ tr515:
 		case 525:
 			goto tr63
 		case 613:
-			goto tr516
+			goto tr528
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr516:
+tr528:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st523
-	st523:
+	goto st535
+	st535:
 		if p++; p == pe {
-			goto _test_eof523
+			goto _test_eof535
 		}
-	st_case_523:
-//line memcached.go:14357
+	st_case_535:
+//line memcached.go:14719
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -14367,22 +14729,22 @@ tr516:
 		case 525:
 			goto tr63
 		case 624:
-			goto tr517
+			goto tr529
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr517:
+tr529:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st524
-	st524:
+	goto st536
+	st536:
 		if p++; p == pe {
-			goto _test_eof524
+			goto _test_eof536
 		}
-	st_case_524:
-//line memcached.go:14386
+	st_case_536:
+//line memcached.go:14748
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -14396,22 +14758,22 @@ tr517:
 		case 525:
 			goto tr63
 		case 620:
-			goto tr518
+			goto tr530
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr518:
+tr530:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st525
-	st525:
+	goto st537
+	st537:
 		if p++; p == pe {
-			goto _test_eof525
+			goto _test_eof537
 		}
-	st_case_525:
-//line memcached.go:14415
+	st_case_537:
+//line memcached.go:14777
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -14429,16 +14791,16 @@ tr518:
 			goto tr62
 		}
 		goto st0
-tr506:
+tr518:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st526
-	st526:
+	goto st538
+	st538:
 		if p++; p == pe {
-			goto _test_eof526
+			goto _test_eof538
 		}
-	st_case_526:
-//line memcached.go:14442
+	st_case_538:
+//line memcached.go:14804
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -14452,22 +14814,22 @@ tr506:
 		case 525:
 			goto tr63
 		case 613:
-			goto tr519
+			goto tr531
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr519:
+tr531:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st527
-	st527:
+	goto st539
+	st539:
 		if p++; p == pe {
-			goto _test_eof527
+			goto _test_eof539
 		}
-	st_case_527:
-//line memcached.go:14471
+	st_case_539:
+//line memcached.go:14833
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -14481,22 +14843,22 @@ tr519:
 		case 525:
 			goto tr63
 		case 628:
-			goto tr520
+			goto tr532
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr520:
+tr532:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st528
-	st528:
+	goto st540
+	st540:
 		if p++; p == pe {
-			goto _test_eof528
+			goto _test_eof540
 		}
-	st_case_528:
-//line memcached.go:14500
+	st_case_540:
+//line memcached.go:14862
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -14510,22 +14872,22 @@ tr520:
 		case 525:
 			goto tr63
 		case 613:
-			goto tr521
+			goto tr533
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr521:
+tr533:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st529
-	st529:
+	goto st541
+	st541:
 		if p++; p == pe {
-			goto _test_eof529
+			goto _test_eof541
 		}
-	st_case_529:
-//line memcached.go:14529
+	st_case_541:
+//line memcached.go:14891
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -14539,30 +14901,30 @@ tr521:
 		case 525:
 			goto tr63
 		case 544:
-			goto tr522
+			goto tr534
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr522:
+tr534:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st530
-tr523:
+	goto st542
+tr535:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 //line memcached.rl:46
 
 				keyString = keyString + string(data[p])
 			
-	goto st530
-	st530:
+	goto st542
+	st542:
 		if p++; p == pe {
-			goto _test_eof530
+			goto _test_eof542
 		}
-	st_case_530:
-//line memcached.go:14566
+	st_case_542:
+//line memcached.go:14928
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -14581,22 +14943,22 @@ tr523:
 			}
 		case _widec > 544:
 			if 545 <= _widec && _widec <= 767 {
-				goto tr523
+				goto tr535
 			}
 		default:
 			goto tr62
 		}
 		goto st0
-tr800:
+tr818:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st531
-	st531:
+	goto st543
+	st543:
 		if p++; p == pe {
-			goto _test_eof531
+			goto _test_eof543
 		}
-	st_case_531:
-//line memcached.go:14600
+	st_case_543:
+//line memcached.go:14962
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -14610,22 +14972,22 @@ tr800:
 		case 525:
 			goto tr63
 		case 620:
-			goto tr524
+			goto tr536
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr524:
+tr536:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st532
-	st532:
+	goto st544
+	st544:
 		if p++; p == pe {
-			goto _test_eof532
+			goto _test_eof544
 		}
-	st_case_532:
-//line memcached.go:14629
+	st_case_544:
+//line memcached.go:14991
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -14639,22 +15001,22 @@ tr524:
 		case 525:
 			goto tr63
 		case 629:
-			goto tr525
+			goto tr537
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr525:
+tr537:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st533
-	st533:
+	goto st545
+	st545:
 		if p++; p == pe {
-			goto _test_eof533
+			goto _test_eof545
 		}
-	st_case_533:
-//line memcached.go:14658
+	st_case_545:
+//line memcached.go:15020
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -14668,22 +15030,22 @@ tr525:
 		case 525:
 			goto tr63
 		case 627:
-			goto tr526
+			goto tr538
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr526:
+tr538:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st534
-	st534:
+	goto st546
+	st546:
 		if p++; p == pe {
-			goto _test_eof534
+			goto _test_eof546
 		}
-	st_case_534:
-//line memcached.go:14687
+	st_case_546:
+//line memcached.go:15049
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -14697,22 +15059,22 @@ tr526:
 		case 525:
 			goto tr63
 		case 616:
-			goto tr527
+			goto tr539
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr527:
+tr539:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st535
-	st535:
+	goto st547
+	st547:
 		if p++; p == pe {
-			goto _test_eof535
+			goto _test_eof547
 		}
-	st_case_535:
-//line memcached.go:14716
+	st_case_547:
+//line memcached.go:15078
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -14726,22 +15088,22 @@ tr527:
 		case 525:
 			goto tr63
 		case 607:
-			goto tr528
+			goto tr540
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr528:
+tr540:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st536
-	st536:
+	goto st548
+	st548:
 		if p++; p == pe {
-			goto _test_eof536
+			goto _test_eof548
 		}
-	st_case_536:
-//line memcached.go:14745
+	st_case_548:
+//line memcached.go:15107
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -14755,22 +15117,22 @@ tr528:
 		case 525:
 			goto tr63
 		case 609:
-			goto tr529
+			goto tr541
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr529:
+tr541:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st537
-	st537:
+	goto st549
+	st549:
 		if p++; p == pe {
-			goto _test_eof537
+			goto _test_eof549
 		}
-	st_case_537:
-//line memcached.go:14774
+	st_case_549:
+//line memcached.go:15136
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -14784,22 +15146,22 @@ tr529:
 		case 525:
 			goto tr63
 		case 620:
-			goto tr530
+			goto tr542
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr530:
+tr542:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st538
-	st538:
+	goto st550
+	st550:
 		if p++; p == pe {
-			goto _test_eof538
+			goto _test_eof550
 		}
-	st_case_538:
-//line memcached.go:14803
+	st_case_550:
+//line memcached.go:15165
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -14813,22 +15175,22 @@ tr530:
 		case 525:
 			goto tr63
 		case 620:
-			goto tr476
+			goto tr488
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr801:
+tr819:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st539
-	st539:
+	goto st551
+	st551:
 		if p++; p == pe {
-			goto _test_eof539
+			goto _test_eof551
 		}
-	st_case_539:
-//line memcached.go:14832
+	st_case_551:
+//line memcached.go:15194
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -14842,22 +15204,22 @@ tr801:
 		case 525:
 			goto tr63
 		case 613:
-			goto tr531
+			goto tr543
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr531:
+tr543:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st540
-	st540:
+	goto st552
+	st552:
 		if p++; p == pe {
-			goto _test_eof540
+			goto _test_eof552
 		}
-	st_case_540:
-//line memcached.go:14861
+	st_case_552:
+//line memcached.go:15223
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -14871,416 +15233,6 @@ tr531:
 		case 525:
 			goto tr63
 		case 628:
-			goto tr532
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr532:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st541
-	st541:
-		if p++; p == pe {
-			goto _test_eof541
-		}
-	st_case_541:
-//line memcached.go:14890
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 288:
-			goto st68
-		case 371:
-			goto st67
-		case 525:
-			goto tr63
-		case 544:
-			goto tr522
-		case 627:
-			goto tr521
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr802:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st542
-	st542:
-		if p++; p == pe {
-			goto _test_eof542
-		}
-	st_case_542:
-//line memcached.go:14923
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 366:
-			goto st83
-		case 525:
-			goto tr63
-		case 622:
-			goto tr533
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr533:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st543
-	st543:
-		if p++; p == pe {
-			goto _test_eof543
-		}
-	st_case_543:
-//line memcached.go:14952
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 355:
-			goto st50
-		case 525:
-			goto tr63
-		case 611:
-			goto tr505
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr803:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st544
-	st544:
-		if p++; p == pe {
-			goto _test_eof544
-		}
-	st_case_544:
-//line memcached.go:14981
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 370:
-			goto st85
-		case 525:
-			goto tr63
-		case 626:
-			goto tr534
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr534:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st545
-	st545:
-		if p++; p == pe {
-			goto _test_eof545
-		}
-	st_case_545:
-//line memcached.go:15010
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 373:
-			goto st86
-		case 525:
-			goto tr63
-		case 629:
-			goto tr535
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr535:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st546
-	st546:
-		if p++; p == pe {
-			goto _test_eof546
-		}
-	st_case_546:
-//line memcached.go:15039
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 351:
-			goto st87
-		case 525:
-			goto tr63
-		case 607:
-			goto tr536
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr536:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st547
-	st547:
-		if p++; p == pe {
-			goto _test_eof547
-		}
-	st_case_547:
-//line memcached.go:15068
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 355:
-			goto st88
-		case 525:
-			goto tr63
-		case 611:
-			goto tr537
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr537:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st548
-	st548:
-		if p++; p == pe {
-			goto _test_eof548
-		}
-	st_case_548:
-//line memcached.go:15097
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 370:
-			goto st89
-		case 525:
-			goto tr63
-		case 626:
-			goto tr538
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr538:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st549
-	st549:
-		if p++; p == pe {
-			goto _test_eof549
-		}
-	st_case_549:
-//line memcached.go:15126
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 353:
-			goto st90
-		case 525:
-			goto tr63
-		case 609:
-			goto tr539
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr539:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st550
-	st550:
-		if p++; p == pe {
-			goto _test_eof550
-		}
-	st_case_550:
-//line memcached.go:15155
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 375:
-			goto st91
-		case 525:
-			goto tr63
-		case 631:
-			goto tr540
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr540:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st551
-	st551:
-		if p++; p == pe {
-			goto _test_eof551
-		}
-	st_case_551:
-//line memcached.go:15184
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 364:
-			goto st92
-		case 525:
-			goto tr63
-		case 620:
-			goto tr541
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr541:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st552
-	st552:
-		if p++; p == pe {
-			goto _test_eof552
-		}
-	st_case_552:
-//line memcached.go:15213
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 357:
-			goto st93
-		case 525:
-			goto tr63
-		case 613:
-			goto tr542
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr542:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st553
-	st553:
-		if p++; p == pe {
-			goto _test_eof553
-		}
-	st_case_553:
-//line memcached.go:15242
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 370:
-			goto st94
-		case 525:
-			goto tr63
-		case 626:
-			goto tr543
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr543:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st554
-	st554:
-		if p++; p == pe {
-			goto _test_eof554
-		}
-	st_case_554:
-//line memcached.go:15271
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 288:
-			goto st95
-		case 525:
-			goto tr63
-		case 544:
 			goto tr544
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -15290,13 +15242,13 @@ tr543:
 tr544:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st555
-	st555:
+	goto st553
+	st553:
 		if p++; p == pe {
-			goto _test_eof555
+			goto _test_eof553
 		}
-	st_case_555:
-//line memcached.go:15300
+	st_case_553:
+//line memcached.go:15252
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -15305,15 +15257,15 @@ tr544:
 		switch _widec {
 		case 269:
 			goto st16
-		case 356:
-			goto st96
-		case 357:
-			goto st102
+		case 288:
+			goto st82
+		case 371:
+			goto st84
 		case 525:
 			goto tr63
-		case 612:
+		case 544:
 			goto tr545
-		case 613:
+		case 627:
 			goto tr546
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -15323,13 +15275,13 @@ tr544:
 tr545:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st556
-	st556:
+	goto st554
+	st554:
 		if p++; p == pe {
-			goto _test_eof556
+			goto _test_eof554
 		}
-	st_case_556:
-//line memcached.go:15333
+	st_case_554:
+//line memcached.go:15285
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -15338,18 +15290,94 @@ tr545:
 		switch _widec {
 		case 269:
 			goto st16
-		case 361:
-			goto st97
 		case 525:
 			goto tr63
-		case 617:
-			goto tr547
+		}
+		switch {
+		case _widec < 512:
+			if 289 <= _widec && _widec <= 511 {
+				goto tr98
+			}
+		case _widec > 544:
+			if 545 <= _widec && _widec <= 767 {
+				goto tr547
+			}
+		default:
+			goto tr62
+		}
+		goto st0
+tr547:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+//line memcached.rl:46
+
+				keyString = keyString + string(data[p])
+			
+	goto st555
+	st555:
+		if p++; p == pe {
+			goto _test_eof555
+		}
+	st_case_555:
+//line memcached.go:15323
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 288:
+			goto st82
+		case 525:
+			goto tr63
+		case 544:
+			goto tr545
+		}
+		switch {
+		case _widec < 512:
+			if 289 <= _widec && _widec <= 511 {
+				goto tr98
+			}
+		case _widec > 543:
+			if 545 <= _widec && _widec <= 767 {
+				goto tr547
+			}
+		default:
+			goto tr62
+		}
+		goto st0
+tr546:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st556
+	st556:
+		if p++; p == pe {
+			goto _test_eof556
+		}
+	st_case_556:
+//line memcached.go:15361
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 288:
+			goto st82
+		case 525:
+			goto tr63
+		case 544:
+			goto tr545
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr547:
+tr820:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st557
@@ -15358,7 +15386,7 @@ tr547:
 			goto _test_eof557
 		}
 	st_case_557:
-//line memcached.go:15362
+//line memcached.go:15390
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -15367,11 +15395,11 @@ tr547:
 		switch _widec {
 		case 269:
 			goto st16
-		case 371:
-			goto st98
+		case 366:
+			goto st86
 		case 525:
 			goto tr63
-		case 627:
+		case 622:
 			goto tr548
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -15387,7 +15415,7 @@ tr548:
 			goto _test_eof558
 		}
 	st_case_558:
-//line memcached.go:15391
+//line memcached.go:15419
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -15396,11 +15424,40 @@ tr548:
 		switch _widec {
 		case 269:
 			goto st16
-		case 353:
-			goto st99
+		case 355:
+			goto st50
 		case 525:
 			goto tr63
-		case 609:
+		case 611:
+			goto tr517
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr821:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st559
+	st559:
+		if p++; p == pe {
+			goto _test_eof559
+		}
+	st_case_559:
+//line memcached.go:15448
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 370:
+			goto st88
+		case 525:
+			goto tr63
+		case 626:
 			goto tr549
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -15410,13 +15467,13 @@ tr548:
 tr549:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st559
-	st559:
+	goto st560
+	st560:
 		if p++; p == pe {
-			goto _test_eof559
+			goto _test_eof560
 		}
-	st_case_559:
-//line memcached.go:15420
+	st_case_560:
+//line memcached.go:15477
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -15425,11 +15482,11 @@ tr549:
 		switch _widec {
 		case 269:
 			goto st16
-		case 354:
-			goto st100
+		case 373:
+			goto st89
 		case 525:
 			goto tr63
-		case 610:
+		case 629:
 			goto tr550
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -15439,13 +15496,13 @@ tr549:
 tr550:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st560
-	st560:
+	goto st561
+	st561:
 		if p++; p == pe {
-			goto _test_eof560
+			goto _test_eof561
 		}
-	st_case_560:
-//line memcached.go:15449
+	st_case_561:
+//line memcached.go:15506
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -15454,11 +15511,11 @@ tr550:
 		switch _widec {
 		case 269:
 			goto st16
-		case 364:
-			goto st101
+		case 351:
+			goto st90
 		case 525:
 			goto tr63
-		case 620:
+		case 607:
 			goto tr551
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -15468,13 +15525,423 @@ tr550:
 tr551:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st561
-	st561:
+	goto st562
+	st562:
 		if p++; p == pe {
-			goto _test_eof561
+			goto _test_eof562
 		}
-	st_case_561:
-//line memcached.go:15478
+	st_case_562:
+//line memcached.go:15535
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 355:
+			goto st91
+		case 525:
+			goto tr63
+		case 611:
+			goto tr552
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr552:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st563
+	st563:
+		if p++; p == pe {
+			goto _test_eof563
+		}
+	st_case_563:
+//line memcached.go:15564
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 370:
+			goto st92
+		case 525:
+			goto tr63
+		case 626:
+			goto tr553
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr553:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st564
+	st564:
+		if p++; p == pe {
+			goto _test_eof564
+		}
+	st_case_564:
+//line memcached.go:15593
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 353:
+			goto st93
+		case 525:
+			goto tr63
+		case 609:
+			goto tr554
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr554:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st565
+	st565:
+		if p++; p == pe {
+			goto _test_eof565
+		}
+	st_case_565:
+//line memcached.go:15622
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 375:
+			goto st94
+		case 525:
+			goto tr63
+		case 631:
+			goto tr555
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr555:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st566
+	st566:
+		if p++; p == pe {
+			goto _test_eof566
+		}
+	st_case_566:
+//line memcached.go:15651
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 364:
+			goto st95
+		case 525:
+			goto tr63
+		case 620:
+			goto tr556
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr556:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st567
+	st567:
+		if p++; p == pe {
+			goto _test_eof567
+		}
+	st_case_567:
+//line memcached.go:15680
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 357:
+			goto st96
+		case 525:
+			goto tr63
+		case 613:
+			goto tr557
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr557:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st568
+	st568:
+		if p++; p == pe {
+			goto _test_eof568
+		}
+	st_case_568:
+//line memcached.go:15709
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 370:
+			goto st97
+		case 525:
+			goto tr63
+		case 626:
+			goto tr558
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr558:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st569
+	st569:
+		if p++; p == pe {
+			goto _test_eof569
+		}
+	st_case_569:
+//line memcached.go:15738
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 288:
+			goto st98
+		case 525:
+			goto tr63
+		case 544:
+			goto tr559
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr559:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st570
+	st570:
+		if p++; p == pe {
+			goto _test_eof570
+		}
+	st_case_570:
+//line memcached.go:15767
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 356:
+			goto st99
+		case 357:
+			goto st105
+		case 525:
+			goto tr63
+		case 612:
+			goto tr560
+		case 613:
+			goto tr561
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr560:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st571
+	st571:
+		if p++; p == pe {
+			goto _test_eof571
+		}
+	st_case_571:
+//line memcached.go:15800
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 361:
+			goto st100
+		case 525:
+			goto tr63
+		case 617:
+			goto tr562
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr562:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st572
+	st572:
+		if p++; p == pe {
+			goto _test_eof572
+		}
+	st_case_572:
+//line memcached.go:15829
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 371:
+			goto st101
+		case 525:
+			goto tr63
+		case 627:
+			goto tr563
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr563:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st573
+	st573:
+		if p++; p == pe {
+			goto _test_eof573
+		}
+	st_case_573:
+//line memcached.go:15858
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 353:
+			goto st102
+		case 525:
+			goto tr63
+		case 609:
+			goto tr564
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr564:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st574
+	st574:
+		if p++; p == pe {
+			goto _test_eof574
+		}
+	st_case_574:
+//line memcached.go:15887
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 354:
+			goto st103
+		case 525:
+			goto tr63
+		case 610:
+			goto tr565
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr565:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st575
+	st575:
+		if p++; p == pe {
+			goto _test_eof575
+		}
+	st_case_575:
+//line memcached.go:15916
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 364:
+			goto st104
+		case 525:
+			goto tr63
+		case 620:
+			goto tr566
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr566:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st576
+	st576:
+		if p++; p == pe {
+			goto _test_eof576
+		}
+	st_case_576:
+//line memcached.go:15945
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -15492,16 +15959,16 @@ tr551:
 			goto tr62
 		}
 		goto st0
-tr546:
+tr561:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st562
-	st562:
+	goto st577
+	st577:
 		if p++; p == pe {
-			goto _test_eof562
+			goto _test_eof577
 		}
-	st_case_562:
-//line memcached.go:15505
+	st_case_577:
+//line memcached.go:15972
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -15511,26 +15978,26 @@ tr546:
 		case 269:
 			goto st16
 		case 366:
-			goto st98
+			goto st101
 		case 525:
 			goto tr63
 		case 622:
-			goto tr548
+			goto tr563
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr804:
+tr822:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st563
-	st563:
+	goto st578
+	st578:
 		if p++; p == pe {
-			goto _test_eof563
+			goto _test_eof578
 		}
-	st_case_563:
-//line memcached.go:15534
+	st_case_578:
+//line memcached.go:16001
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -15540,26 +16007,26 @@ tr804:
 		case 269:
 			goto st16
 		case 370:
-			goto st104
+			goto st107
 		case 525:
 			goto tr63
 		case 626:
-			goto tr552
+			goto tr567
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr552:
+tr567:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st564
-	st564:
+	goto st579
+	st579:
 		if p++; p == pe {
-			goto _test_eof564
+			goto _test_eof579
 		}
-	st_case_564:
-//line memcached.go:15563
+	st_case_579:
+//line memcached.go:16030
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -15569,26 +16036,26 @@ tr552:
 		case 269:
 			goto st16
 		case 357:
-			goto st105
+			goto st108
 		case 525:
 			goto tr63
 		case 613:
-			goto tr417
+			goto tr429
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr417:
+tr429:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st565
-	st565:
+	goto st580
+	st580:
 		if p++; p == pe {
-			goto _test_eof565
+			goto _test_eof580
 		}
-	st_case_565:
-//line memcached.go:15592
+	st_case_580:
+//line memcached.go:16059
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -15598,26 +16065,26 @@ tr417:
 		case 269:
 			goto st16
 		case 368:
-			goto st106
+			goto st109
 		case 525:
 			goto tr63
 		case 624:
-			goto tr553
+			goto tr568
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr553:
+tr568:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st566
-	st566:
+	goto st581
+	st581:
 		if p++; p == pe {
-			goto _test_eof566
+			goto _test_eof581
 		}
-	st_case_566:
-//line memcached.go:15621
+	st_case_581:
+//line memcached.go:16088
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -15627,26 +16094,26 @@ tr553:
 		case 269:
 			goto st16
 		case 357:
-			goto st107
+			goto st110
 		case 525:
 			goto tr63
 		case 613:
-			goto tr554
+			goto tr569
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr554:
+tr569:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st567
-	st567:
+	goto st582
+	st582:
 		if p++; p == pe {
-			goto _test_eof567
+			goto _test_eof582
 		}
-	st_case_567:
-//line memcached.go:15650
+	st_case_582:
+//line memcached.go:16117
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -15660,22 +16127,22 @@ tr554:
 		case 525:
 			goto tr63
 		case 622:
-			goto tr416
+			goto tr428
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr805:
+tr823:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st568
-	st568:
+	goto st583
+	st583:
 		if p++; p == pe {
-			goto _test_eof568
+			goto _test_eof583
 		}
-	st_case_568:
-//line memcached.go:15679
+	st_case_583:
+//line memcached.go:16146
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -15685,26 +16152,26 @@ tr805:
 		case 269:
 			goto st16
 		case 373:
-			goto st109
+			goto st112
 		case 525:
 			goto tr63
 		case 629:
-			goto tr555
+			goto tr570
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr555:
+tr570:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st569
-	st569:
+	goto st584
+	st584:
 		if p++; p == pe {
-			goto _test_eof569
+			goto _test_eof584
 		}
-	st_case_569:
-//line memcached.go:15708
+	st_case_584:
+//line memcached.go:16175
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -15714,455 +16181,10 @@ tr555:
 		case 269:
 			goto st16
 		case 361:
-			goto st110
-		case 525:
-			goto tr63
-		case 617:
-			goto tr556
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr556:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st570
-	st570:
-		if p++; p == pe {
-			goto _test_eof570
-		}
-	st_case_570:
-//line memcached.go:15737
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 372:
-			goto st63
-		case 525:
-			goto tr63
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr806:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st571
-	st571:
-		if p++; p == pe {
-			goto _test_eof571
-		}
-	st_case_571:
-//line memcached.go:15764
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 357:
-			goto st112
-		case 525:
-			goto tr63
-		case 613:
-			goto tr557
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr557:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st572
-	st572:
-		if p++; p == pe {
-			goto _test_eof572
-		}
-	st_case_572:
-//line memcached.go:15793
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 368:
 			goto st113
 		case 525:
 			goto tr63
-		case 624:
-			goto tr558
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr558:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st573
-	st573:
-		if p++; p == pe {
-			goto _test_eof573
-		}
-	st_case_573:
-//line memcached.go:15822
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 364:
-			goto st114
-		case 525:
-			goto tr63
-		case 620:
-			goto tr559
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr559:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st574
-	st574:
-		if p++; p == pe {
-			goto _test_eof574
-		}
-	st_case_574:
-//line memcached.go:15851
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 353:
-			goto st115
-		case 525:
-			goto tr63
-		case 609:
-			goto tr560
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr560:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st575
-	st575:
-		if p++; p == pe {
-			goto _test_eof575
-		}
-	st_case_575:
-//line memcached.go:15880
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 355:
-			goto st116
-		case 525:
-			goto tr63
-		case 611:
-			goto tr561
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr561:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st576
-	st576:
-		if p++; p == pe {
-			goto _test_eof576
-		}
-	st_case_576:
-//line memcached.go:15909
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 357:
-			goto st4
-		case 525:
-			goto tr63
-		case 613:
-			goto tr418
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr807:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st577
-	st577:
-		if p++; p == pe {
-			goto _test_eof577
-		}
-	st_case_577:
-//line memcached.go:15938
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 357:
-			goto st118
-		case 364:
-			goto st119
-		case 372:
-			goto st144
-		case 525:
-			goto tr63
-		case 613:
-			goto tr562
-		case 620:
-			goto tr563
-		case 628:
-			goto tr564
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr562:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st578
-	st578:
-		if p++; p == pe {
-			goto _test_eof578
-		}
-	st_case_578:
-//line memcached.go:15975
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 372:
-			goto st4
-		case 525:
-			goto tr63
-		case 628:
-			goto tr418
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr563:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st579
-	st579:
-		if p++; p == pe {
-			goto _test_eof579
-		}
-	st_case_579:
-//line memcached.go:16004
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 353:
-			goto st120
-		case 525:
-			goto tr63
-		case 609:
-			goto tr565
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr565:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st580
-	st580:
-		if p++; p == pe {
-			goto _test_eof580
-		}
-	st_case_580:
-//line memcached.go:16033
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 354:
-			goto st121
-		case 525:
-			goto tr63
-		case 610:
-			goto tr566
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr566:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st581
-	st581:
-		if p++; p == pe {
-			goto _test_eof581
-		}
-	st_case_581:
-//line memcached.go:16062
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 371:
-			goto st122
-		case 525:
-			goto tr63
-		case 627:
-			goto tr567
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr567:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st582
-	st582:
-		if p++; p == pe {
-			goto _test_eof582
-		}
-	st_case_582:
-//line memcached.go:16091
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 288:
-			goto st123
-		case 525:
-			goto tr63
-		case 544:
-			goto tr568
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr568:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st583
-	st583:
-		if p++; p == pe {
-			goto _test_eof583
-		}
-	st_case_583:
-//line memcached.go:16120
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 353:
-			goto st124
-		case 370:
-			goto st133
-		case 525:
-			goto tr63
-		case 609:
-			goto tr569
-		case 626:
-			goto tr570
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr569:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st584
-	st584:
-		if p++; p == pe {
-			goto _test_eof584
-		}
-	st_case_584:
-//line memcached.go:16153
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 373:
-			goto st125
-		case 525:
-			goto tr63
-		case 629:
+		case 617:
 			goto tr571
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -16178,7 +16200,7 @@ tr571:
 			goto _test_eof585
 		}
 	st_case_585:
-//line memcached.go:16182
+//line memcached.go:16204
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -16188,17 +16210,15 @@ tr571:
 		case 269:
 			goto st16
 		case 372:
-			goto st126
+			goto st63
 		case 525:
 			goto tr63
-		case 628:
-			goto tr572
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr572:
+tr824:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st586
@@ -16207,123 +16227,7 @@ tr572:
 			goto _test_eof586
 		}
 	st_case_586:
-//line memcached.go:16211
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 367:
-			goto st127
-		case 525:
-			goto tr63
-		case 623:
-			goto tr573
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr573:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st587
-	st587:
-		if p++; p == pe {
-			goto _test_eof587
-		}
-	st_case_587:
-//line memcached.go:16240
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 365:
-			goto st128
-		case 525:
-			goto tr63
-		case 621:
-			goto tr574
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr574:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st588
-	st588:
-		if p++; p == pe {
-			goto _test_eof588
-		}
-	st_case_588:
-//line memcached.go:16269
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 367:
-			goto st129
-		case 525:
-			goto tr63
-		case 623:
-			goto tr575
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr575:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st589
-	st589:
-		if p++; p == pe {
-			goto _test_eof589
-		}
-	st_case_589:
-//line memcached.go:16298
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 374:
-			goto st130
-		case 525:
-			goto tr63
-		case 630:
-			goto tr576
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr576:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st590
-	st590:
-		if p++; p == pe {
-			goto _test_eof590
-		}
-	st_case_590:
-//line memcached.go:16327
+//line memcached.go:16231
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -16333,17 +16237,133 @@ tr576:
 		case 269:
 			goto st16
 		case 357:
-			goto st131
+			goto st115
 		case 525:
 			goto tr63
 		case 613:
-			goto tr577
+			goto tr572
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr577:
+tr572:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st587
+	st587:
+		if p++; p == pe {
+			goto _test_eof587
+		}
+	st_case_587:
+//line memcached.go:16260
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 368:
+			goto st116
+		case 525:
+			goto tr63
+		case 624:
+			goto tr573
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr573:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st588
+	st588:
+		if p++; p == pe {
+			goto _test_eof588
+		}
+	st_case_588:
+//line memcached.go:16289
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 364:
+			goto st117
+		case 525:
+			goto tr63
+		case 620:
+			goto tr574
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr574:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st589
+	st589:
+		if p++; p == pe {
+			goto _test_eof589
+		}
+	st_case_589:
+//line memcached.go:16318
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 353:
+			goto st118
+		case 525:
+			goto tr63
+		case 609:
+			goto tr575
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr575:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st590
+	st590:
+		if p++; p == pe {
+			goto _test_eof590
+		}
+	st_case_590:
+//line memcached.go:16347
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 355:
+			goto st119
+		case 525:
+			goto tr63
+		case 611:
+			goto tr576
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr576:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st591
@@ -16352,7 +16372,189 @@ tr577:
 			goto _test_eof591
 		}
 	st_case_591:
-//line memcached.go:16356
+//line memcached.go:16376
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 357:
+			goto st4
+		case 525:
+			goto tr63
+		case 613:
+			goto tr430
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr825:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st592
+	st592:
+		if p++; p == pe {
+			goto _test_eof592
+		}
+	st_case_592:
+//line memcached.go:16405
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 357:
+			goto st121
+		case 364:
+			goto st122
+		case 372:
+			goto st147
+		case 525:
+			goto tr63
+		case 613:
+			goto tr577
+		case 620:
+			goto tr578
+		case 628:
+			goto tr579
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr577:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st593
+	st593:
+		if p++; p == pe {
+			goto _test_eof593
+		}
+	st_case_593:
+//line memcached.go:16442
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 372:
+			goto st4
+		case 525:
+			goto tr63
+		case 628:
+			goto tr430
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr578:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st594
+	st594:
+		if p++; p == pe {
+			goto _test_eof594
+		}
+	st_case_594:
+//line memcached.go:16471
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 353:
+			goto st123
+		case 525:
+			goto tr63
+		case 609:
+			goto tr580
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr580:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st595
+	st595:
+		if p++; p == pe {
+			goto _test_eof595
+		}
+	st_case_595:
+//line memcached.go:16500
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 354:
+			goto st124
+		case 525:
+			goto tr63
+		case 610:
+			goto tr581
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr581:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st596
+	st596:
+		if p++; p == pe {
+			goto _test_eof596
+		}
+	st_case_596:
+//line memcached.go:16529
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 371:
+			goto st125
+		case 525:
+			goto tr63
+		case 627:
+			goto tr582
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr582:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st597
+	st597:
+		if p++; p == pe {
+			goto _test_eof597
+		}
+	st_case_597:
+//line memcached.go:16558
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -16362,26 +16564,291 @@ tr577:
 		case 269:
 			goto st16
 		case 288:
-			goto st132
+			goto st126
 		case 525:
 			goto tr63
 		case 544:
-			goto tr578
+			goto tr583
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr578:
+tr583:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st592
-	st592:
+	goto st598
+	st598:
 		if p++; p == pe {
-			goto _test_eof592
+			goto _test_eof598
 		}
-	st_case_592:
-//line memcached.go:16385
+	st_case_598:
+//line memcached.go:16587
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 353:
+			goto st127
+		case 370:
+			goto st136
+		case 525:
+			goto tr63
+		case 609:
+			goto tr584
+		case 626:
+			goto tr585
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr584:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st599
+	st599:
+		if p++; p == pe {
+			goto _test_eof599
+		}
+	st_case_599:
+//line memcached.go:16620
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 373:
+			goto st128
+		case 525:
+			goto tr63
+		case 629:
+			goto tr586
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr586:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st600
+	st600:
+		if p++; p == pe {
+			goto _test_eof600
+		}
+	st_case_600:
+//line memcached.go:16649
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 372:
+			goto st129
+		case 525:
+			goto tr63
+		case 628:
+			goto tr587
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr587:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st601
+	st601:
+		if p++; p == pe {
+			goto _test_eof601
+		}
+	st_case_601:
+//line memcached.go:16678
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 367:
+			goto st130
+		case 525:
+			goto tr63
+		case 623:
+			goto tr588
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr588:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st602
+	st602:
+		if p++; p == pe {
+			goto _test_eof602
+		}
+	st_case_602:
+//line memcached.go:16707
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 365:
+			goto st131
+		case 525:
+			goto tr63
+		case 621:
+			goto tr589
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr589:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st603
+	st603:
+		if p++; p == pe {
+			goto _test_eof603
+		}
+	st_case_603:
+//line memcached.go:16736
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 367:
+			goto st132
+		case 525:
+			goto tr63
+		case 623:
+			goto tr590
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr590:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st604
+	st604:
+		if p++; p == pe {
+			goto _test_eof604
+		}
+	st_case_604:
+//line memcached.go:16765
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 374:
+			goto st133
+		case 525:
+			goto tr63
+		case 630:
+			goto tr591
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr591:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st605
+	st605:
+		if p++; p == pe {
+			goto _test_eof605
+		}
+	st_case_605:
+//line memcached.go:16794
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 357:
+			goto st134
+		case 525:
+			goto tr63
+		case 613:
+			goto tr592
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr592:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st606
+	st606:
+		if p++; p == pe {
+			goto _test_eof606
+		}
+	st_case_606:
+//line memcached.go:16823
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 288:
+			goto st135
+		case 525:
+			goto tr63
+		case 544:
+			goto tr593
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr593:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st607
+	st607:
+		if p++; p == pe {
+			goto _test_eof607
+		}
+	st_case_607:
+//line memcached.go:16852
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -16402,16 +16869,16 @@ tr578:
 			goto st63
 		}
 		goto st0
-tr570:
+tr585:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st593
-	st593:
+	goto st608
+	st608:
 		if p++; p == pe {
-			goto _test_eof593
+			goto _test_eof608
 		}
-	st_case_593:
-//line memcached.go:16415
+	st_case_608:
+//line memcached.go:16882
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -16421,26 +16888,26 @@ tr570:
 		case 269:
 			goto st16
 		case 357:
-			goto st134
+			goto st137
 		case 525:
 			goto tr63
 		case 613:
-			goto tr579
+			goto tr594
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr579:
+tr594:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st594
-	st594:
+	goto st609
+	st609:
 		if p++; p == pe {
-			goto _test_eof594
+			goto _test_eof609
 		}
-	st_case_594:
-//line memcached.go:16444
+	st_case_609:
+//line memcached.go:16911
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -16450,26 +16917,26 @@ tr579:
 		case 269:
 			goto st16
 		case 353:
-			goto st135
+			goto st138
 		case 525:
 			goto tr63
 		case 609:
-			goto tr580
+			goto tr595
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr580:
+tr595:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st595
-	st595:
+	goto st610
+	st610:
 		if p++; p == pe {
-			goto _test_eof595
+			goto _test_eof610
 		}
-	st_case_595:
-//line memcached.go:16473
+	st_case_610:
+//line memcached.go:16940
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -16479,26 +16946,26 @@ tr580:
 		case 269:
 			goto st16
 		case 371:
-			goto st136
+			goto st139
 		case 525:
 			goto tr63
 		case 627:
-			goto tr581
+			goto tr596
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr581:
+tr596:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st596
-	st596:
+	goto st611
+	st611:
 		if p++; p == pe {
-			goto _test_eof596
+			goto _test_eof611
 		}
-	st_case_596:
-//line memcached.go:16502
+	st_case_611:
+//line memcached.go:16969
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -16508,26 +16975,26 @@ tr581:
 		case 269:
 			goto st16
 		case 371:
-			goto st137
+			goto st140
 		case 525:
 			goto tr63
 		case 627:
-			goto tr582
+			goto tr597
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr582:
+tr597:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st597
-	st597:
+	goto st612
+	st612:
 		if p++; p == pe {
-			goto _test_eof597
+			goto _test_eof612
 		}
-	st_case_597:
-//line memcached.go:16531
+	st_case_612:
+//line memcached.go:16998
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -16537,26 +17004,26 @@ tr582:
 		case 269:
 			goto st16
 		case 361:
-			goto st138
+			goto st141
 		case 525:
 			goto tr63
 		case 617:
-			goto tr583
+			goto tr598
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr583:
+tr598:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st598
-	st598:
+	goto st613
+	st613:
 		if p++; p == pe {
-			goto _test_eof598
+			goto _test_eof613
 		}
-	st_case_598:
-//line memcached.go:16560
+	st_case_613:
+//line memcached.go:17027
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -16566,26 +17033,26 @@ tr583:
 		case 269:
 			goto st16
 		case 359:
-			goto st139
+			goto st142
 		case 525:
 			goto tr63
 		case 615:
-			goto tr584
+			goto tr599
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr584:
+tr599:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st599
-	st599:
+	goto st614
+	st614:
 		if p++; p == pe {
-			goto _test_eof599
+			goto _test_eof614
 		}
-	st_case_599:
-//line memcached.go:16589
+	st_case_614:
+//line memcached.go:17056
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -16595,26 +17062,26 @@ tr584:
 		case 269:
 			goto st16
 		case 366:
-			goto st140
+			goto st143
 		case 525:
 			goto tr63
 		case 622:
-			goto tr585
+			goto tr600
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr585:
+tr600:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st600
-	st600:
+	goto st615
+	st615:
 		if p++; p == pe {
-			goto _test_eof600
+			goto _test_eof615
 		}
-	st_case_600:
-//line memcached.go:16618
+	st_case_615:
+//line memcached.go:17085
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -16624,26 +17091,26 @@ tr585:
 		case 269:
 			goto st16
 		case 288:
-			goto st141
+			goto st144
 		case 525:
 			goto tr63
 		case 544:
-			goto tr586
+			goto tr601
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr586:
+tr601:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st601
-	st601:
+	goto st616
+	st616:
 		if p++; p == pe {
-			goto _test_eof601
+			goto _test_eof616
 		}
-	st_case_601:
-//line memcached.go:16647
+	st_case_616:
+//line memcached.go:17114
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -16653,16 +17120,16 @@ tr586:
 		case 269:
 			goto st16
 		case 301:
-			goto st142
+			goto st145
 		case 525:
 			goto tr63
 		case 557:
-			goto tr587
+			goto tr602
 		}
 		switch {
 		case _widec < 512:
 			if 304 <= _widec && _widec <= 313 {
-				goto st143
+				goto st146
 			}
 		case _widec > 559:
 			switch {
@@ -16671,22 +17138,22 @@ tr586:
 					goto tr62
 				}
 			case _widec >= 560:
-				goto tr588
+				goto tr603
 			}
 		default:
 			goto tr62
 		}
 		goto st0
-tr587:
+tr602:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st602
-	st602:
+	goto st617
+	st617:
 		if p++; p == pe {
-			goto _test_eof602
+			goto _test_eof617
 		}
-	st_case_602:
-//line memcached.go:16690
+	st_case_617:
+//line memcached.go:17157
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -16701,7 +17168,7 @@ tr587:
 		switch {
 		case _widec < 512:
 			if 304 <= _widec && _widec <= 313 {
-				goto st143
+				goto st146
 			}
 		case _widec > 559:
 			switch {
@@ -16710,22 +17177,22 @@ tr587:
 					goto tr62
 				}
 			case _widec >= 560:
-				goto tr588
+				goto tr603
 			}
 		default:
 			goto tr62
 		}
 		goto st0
-tr588:
+tr603:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st603
-	st603:
+	goto st618
+	st618:
 		if p++; p == pe {
-			goto _test_eof603
+			goto _test_eof618
 		}
-	st_case_603:
-//line memcached.go:16729
+	st_case_618:
+//line memcached.go:17196
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -16739,12 +17206,12 @@ tr588:
 		case 525:
 			goto tr63
 		case 544:
-			goto tr477
+			goto tr489
 		}
 		switch {
 		case _widec < 512:
 			if 304 <= _widec && _widec <= 313 {
-				goto st143
+				goto st146
 			}
 		case _widec > 559:
 			switch {
@@ -16753,22 +17220,22 @@ tr588:
 					goto tr62
 				}
 			case _widec >= 560:
-				goto tr588
+				goto tr603
 			}
 		default:
 			goto tr62
 		}
 		goto st0
-tr564:
+tr579:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st604
-	st604:
+	goto st619
+	st619:
 		if p++; p == pe {
-			goto _test_eof604
+			goto _test_eof619
 		}
-	st_case_604:
-//line memcached.go:16772
+	st_case_619:
+//line memcached.go:17239
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -16778,26 +17245,26 @@ tr564:
 		case 269:
 			goto st16
 		case 353:
-			goto st145
+			goto st148
 		case 525:
 			goto tr63
 		case 609:
-			goto tr589
+			goto tr604
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr589:
+tr604:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st605
-	st605:
+	goto st620
+	st620:
 		if p++; p == pe {
-			goto _test_eof605
+			goto _test_eof620
 		}
-	st_case_605:
-//line memcached.go:16801
+	st_case_620:
+//line memcached.go:17268
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -16807,26 +17274,26 @@ tr589:
 		case 269:
 			goto st16
 		case 372:
-			goto st146
+			goto st149
 		case 525:
 			goto tr63
 		case 628:
-			goto tr590
+			goto tr605
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr590:
+tr605:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st606
-	st606:
+	goto st621
+	st621:
 		if p++; p == pe {
-			goto _test_eof606
+			goto _test_eof621
 		}
-	st_case_606:
-//line memcached.go:16830
+	st_case_621:
+//line memcached.go:17297
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -16836,26 +17303,26 @@ tr590:
 		case 269:
 			goto st16
 		case 371:
-			goto st147
+			goto st150
 		case 525:
 			goto tr63
 		case 627:
-			goto tr591
+			goto tr606
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr591:
+tr606:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st607
-	st607:
+	goto st622
+	st622:
 		if p++; p == pe {
-			goto _test_eof607
+			goto _test_eof622
 		}
-	st_case_607:
-//line memcached.go:16859
+	st_case_622:
+//line memcached.go:17326
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -16865,422 +17332,26 @@ tr591:
 		case 269:
 			goto st16
 		case 288:
-			goto st148
+			goto st151
 		case 525:
 			goto tr63
 		case 544:
-			goto tr216
+			goto tr222
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr808:
+tr826:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st608
-	st608:
+	goto st623
+	st623:
 		if p++; p == pe {
-			goto _test_eof608
+			goto _test_eof623
 		}
-	st_case_608:
-//line memcached.go:16888
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 367:
-			goto st386
-		case 525:
-			goto tr63
-		case 623:
-			goto tr592
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr592:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st609
-	st609:
-		if p++; p == pe {
-			goto _test_eof609
-		}
-	st_case_609:
-//line memcached.go:16917
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 373:
-			goto st387
-		case 525:
-			goto tr63
-		case 629:
-			goto tr593
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr593:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st610
-	st610:
-		if p++; p == pe {
-			goto _test_eof610
-		}
-	st_case_610:
-//line memcached.go:16946
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 355:
-			goto st388
-		case 525:
-			goto tr63
-		case 611:
-			goto tr594
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr594:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st611
-	st611:
-		if p++; p == pe {
-			goto _test_eof611
-		}
-	st_case_611:
-//line memcached.go:16975
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 360:
-			goto st389
-		case 525:
-			goto tr63
-		case 616:
-			goto tr595
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr595:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st612
-	st612:
-		if p++; p == pe {
-			goto _test_eof612
-		}
-	st_case_612:
-//line memcached.go:17004
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 288:
-			goto st390
-		case 525:
-			goto tr63
-		case 544:
-			goto tr596
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr596:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st613
-	st613:
-		if p++; p == pe {
-			goto _test_eof613
-		}
-	st_case_613:
-//line memcached.go:17033
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 525:
-			goto tr63
-		}
-		switch {
-		case _widec < 512:
-			if 289 <= _widec && _widec <= 511 {
-				goto tr382
-			}
-		case _widec > 544:
-			if 545 <= _widec && _widec <= 767 {
-				goto tr597
-			}
-		default:
-			goto tr62
-		}
-		goto st0
-tr597:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-//line memcached.rl:46
-
-				keyString = keyString + string(data[p])
-			
-	goto st614
-	st614:
-		if p++; p == pe {
-			goto _test_eof614
-		}
-	st_case_614:
-//line memcached.go:17071
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 288:
-			goto st392
-		case 525:
-			goto tr63
-		case 544:
-			goto tr598
-		}
-		switch {
-		case _widec < 512:
-			if 289 <= _widec && _widec <= 511 {
-				goto tr382
-			}
-		case _widec > 543:
-			if 545 <= _widec && _widec <= 767 {
-				goto tr597
-			}
-		default:
-			goto tr62
-		}
-		goto st0
-tr598:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st615
-	st615:
-		if p++; p == pe {
-			goto _test_eof615
-		}
-	st_case_615:
-//line memcached.go:17109
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 525:
-			goto tr63
-		}
-		switch {
-		case _widec < 512:
-			if 304 <= _widec && _widec <= 313 {
-				goto tr384
-			}
-		case _widec > 559:
-			switch {
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr62
-				}
-			case _widec >= 560:
-				goto tr599
-			}
-		default:
-			goto tr62
-		}
-		goto st0
-tr599:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-//line memcached.rl:45
- expiry = expiry * 10 + (int(data[p]) - '0') 
-	goto st616
-	st616:
-		if p++; p == pe {
-			goto _test_eof616
-		}
-	st_case_616:
-//line memcached.go:17150
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 288:
-			goto st56
-		case 525:
-			goto tr63
-		case 544:
-			goto tr512
-		}
-		switch {
-		case _widec < 512:
-			if 304 <= _widec && _widec <= 313 {
-				goto tr384
-			}
-		case _widec > 559:
-			switch {
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr62
-				}
-			case _widec >= 560:
-				goto tr599
-			}
-		default:
-			goto tr62
-		}
-		goto st0
-tr809:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st617
-	st617:
-		if p++; p == pe {
-			goto _test_eof617
-		}
-	st_case_617:
-//line memcached.go:17193
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 357:
-			goto st395
-		case 525:
-			goto tr63
-		case 613:
-			goto tr600
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr600:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st618
-	st618:
-		if p++; p == pe {
-			goto _test_eof618
-		}
-	st_case_618:
-//line memcached.go:17222
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 370:
-			goto st396
-		case 525:
-			goto tr63
-		case 626:
-			goto tr601
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr601:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st619
-	st619:
-		if p++; p == pe {
-			goto _test_eof619
-		}
-	st_case_619:
-//line memcached.go:17251
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 354:
-			goto st397
-		case 371:
-			goto st401
-		case 525:
-			goto tr63
-		case 610:
-			goto tr602
-		case 627:
-			goto tr603
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr602:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st620
-	st620:
-		if p++; p == pe {
-			goto _test_eof620
-		}
-	st_case_620:
-//line memcached.go:17284
+	st_case_623:
+//line memcached.go:17355
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -17294,122 +17365,6 @@ tr602:
 		case 525:
 			goto tr63
 		case 623:
-			goto tr604
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr604:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st621
-	st621:
-		if p++; p == pe {
-			goto _test_eof621
-		}
-	st_case_621:
-//line memcached.go:17313
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 371:
-			goto st399
-		case 525:
-			goto tr63
-		case 627:
-			goto tr605
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr605:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st622
-	st622:
-		if p++; p == pe {
-			goto _test_eof622
-		}
-	st_case_622:
-//line memcached.go:17342
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 361:
-			goto st400
-		case 525:
-			goto tr63
-		case 617:
-			goto tr606
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr606:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st623
-	st623:
-		if p++; p == pe {
-			goto _test_eof623
-		}
-	st_case_623:
-//line memcached.go:17371
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 372:
-			goto st62
-		case 525:
-			goto tr63
-		case 628:
-			goto tr518
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr603:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st624
-	st624:
-		if p++; p == pe {
-			goto _test_eof624
-		}
-	st_case_624:
-//line memcached.go:17400
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 361:
-			goto st402
-		case 525:
-			goto tr63
-		case 617:
 			goto tr607
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -17419,13 +17374,13 @@ tr603:
 tr607:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st625
-	st625:
+	goto st624
+	st624:
 		if p++; p == pe {
-			goto _test_eof625
+			goto _test_eof624
 		}
-	st_case_625:
-//line memcached.go:17429
+	st_case_624:
+//line memcached.go:17384
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -17434,11 +17389,11 @@ tr607:
 		switch _widec {
 		case 269:
 			goto st16
-		case 367:
-			goto st403
+		case 373:
+			goto st399
 		case 525:
 			goto tr63
-		case 623:
+		case 629:
 			goto tr608
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -17448,13 +17403,13 @@ tr607:
 tr608:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st626
-	st626:
+	goto st625
+	st625:
 		if p++; p == pe {
-			goto _test_eof626
+			goto _test_eof625
 		}
-	st_case_626:
-//line memcached.go:17458
+	st_case_625:
+//line memcached.go:17413
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -17463,38 +17418,11 @@ tr608:
 		switch _widec {
 		case 269:
 			goto st16
-		case 366:
-			goto st63
+		case 355:
+			goto st400
 		case 525:
 			goto tr63
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr810:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st627
-	st627:
-		if p++; p == pe {
-			goto _test_eof627
-		}
-	st_case_627:
-//line memcached.go:17485
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 353:
-			goto st405
-		case 525:
-			goto tr63
-		case 609:
+		case 611:
 			goto tr609
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -17504,71 +17432,13 @@ tr810:
 tr609:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st628
-	st628:
+	goto st626
+	st626:
 		if p++; p == pe {
-			goto _test_eof628
+			goto _test_eof626
 		}
-	st_case_628:
-//line memcached.go:17514
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 372:
-			goto st406
-		case 525:
-			goto tr63
-		case 628:
-			goto tr610
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr610:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st629
-	st629:
-		if p++; p == pe {
-			goto _test_eof629
-		}
-	st_case_629:
-//line memcached.go:17543
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 355:
-			goto st407
-		case 525:
-			goto tr63
-		case 611:
-			goto tr611
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr62
-		}
-		goto st0
-tr611:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st630
-	st630:
-		if p++; p == pe {
-			goto _test_eof630
-		}
-	st_case_630:
-//line memcached.go:17572
+	st_case_626:
+//line memcached.go:17442
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -17578,26 +17448,26 @@ tr611:
 		case 269:
 			goto st16
 		case 360:
-			goto st408
+			goto st401
 		case 525:
 			goto tr63
 		case 616:
-			goto tr612
+			goto tr610
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr612:
+tr610:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st631
-	st631:
+	goto st627
+	st627:
 		if p++; p == pe {
-			goto _test_eof631
+			goto _test_eof627
 		}
-	st_case_631:
-//line memcached.go:17601
+	st_case_627:
+//line memcached.go:17471
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -17607,17 +17477,177 @@ tr612:
 		case 269:
 			goto st16
 		case 288:
-			goto st409
+			goto st402
 		case 525:
 			goto tr63
 		case 544:
-			goto tr613
+			goto tr611
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
+tr611:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st628
+	st628:
+		if p++; p == pe {
+			goto _test_eof628
+		}
+	st_case_628:
+//line memcached.go:17500
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 525:
+			goto tr63
+		}
+		switch {
+		case _widec < 512:
+			if 289 <= _widec && _widec <= 511 {
+				goto tr394
+			}
+		case _widec > 544:
+			if 545 <= _widec && _widec <= 767 {
+				goto tr612
+			}
+		default:
+			goto tr62
+		}
+		goto st0
+tr612:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+//line memcached.rl:46
+
+				keyString = keyString + string(data[p])
+			
+	goto st629
+	st629:
+		if p++; p == pe {
+			goto _test_eof629
+		}
+	st_case_629:
+//line memcached.go:17538
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 288:
+			goto st404
+		case 525:
+			goto tr63
+		case 544:
+			goto tr613
+		}
+		switch {
+		case _widec < 512:
+			if 289 <= _widec && _widec <= 511 {
+				goto tr394
+			}
+		case _widec > 543:
+			if 545 <= _widec && _widec <= 767 {
+				goto tr612
+			}
+		default:
+			goto tr62
+		}
+		goto st0
 tr613:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st630
+	st630:
+		if p++; p == pe {
+			goto _test_eof630
+		}
+	st_case_630:
+//line memcached.go:17576
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 525:
+			goto tr63
+		}
+		switch {
+		case _widec < 512:
+			if 304 <= _widec && _widec <= 313 {
+				goto tr396
+			}
+		case _widec > 559:
+			switch {
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr62
+				}
+			case _widec >= 560:
+				goto tr614
+			}
+		default:
+			goto tr62
+		}
+		goto st0
+tr614:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+//line memcached.rl:45
+ expiry = expiry * 10 + (int(data[p]) - '0') 
+	goto st631
+	st631:
+		if p++; p == pe {
+			goto _test_eof631
+		}
+	st_case_631:
+//line memcached.go:17617
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 288:
+			goto st56
+		case 525:
+			goto tr63
+		case 544:
+			goto tr524
+		}
+		switch {
+		case _widec < 512:
+			if 304 <= _widec && _widec <= 313 {
+				goto tr396
+			}
+		case _widec > 559:
+			switch {
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr62
+				}
+			case _widec >= 560:
+				goto tr614
+			}
+		default:
+			goto tr62
+		}
+		goto st0
+tr827:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st632
@@ -17626,7 +17656,7 @@ tr613:
 			goto _test_eof632
 		}
 	st_case_632:
-//line memcached.go:17630
+//line memcached.go:17660
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -17636,25 +17666,17 @@ tr613:
 		case 269:
 			goto st16
 		case 357:
-			goto st410
-		case 358:
-			goto st418
-		case 365:
-			goto st424
+			goto st407
 		case 525:
 			goto tr63
 		case 613:
-			goto tr614
-		case 614:
 			goto tr615
-		case 621:
-			goto tr616
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr614:
+tr615:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st633
@@ -17663,7 +17685,7 @@ tr614:
 			goto _test_eof633
 		}
 	st_case_633:
-//line memcached.go:17667
+//line memcached.go:17689
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -17672,18 +17694,18 @@ tr614:
 		switch _widec {
 		case 269:
 			goto st16
-		case 374:
-			goto st411
+		case 370:
+			goto st408
 		case 525:
 			goto tr63
-		case 630:
-			goto tr617
+		case 626:
+			goto tr616
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr617:
+tr616:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st634
@@ -17692,7 +17714,7 @@ tr617:
 			goto _test_eof634
 		}
 	st_case_634:
-//line memcached.go:17696
+//line memcached.go:17718
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -17701,18 +17723,22 @@ tr617:
 		switch _widec {
 		case 269:
 			goto st16
-		case 361:
-			goto st412
+		case 354:
+			goto st409
+		case 371:
+			goto st413
 		case 525:
 			goto tr63
-		case 617:
+		case 610:
+			goto tr617
+		case 627:
 			goto tr618
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr618:
+tr617:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st635
@@ -17721,7 +17747,7 @@ tr618:
 			goto _test_eof635
 		}
 	st_case_635:
-//line memcached.go:17725
+//line memcached.go:17751
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -17730,11 +17756,11 @@ tr618:
 		switch _widec {
 		case 269:
 			goto st16
-		case 355:
-			goto st413
+		case 367:
+			goto st410
 		case 525:
 			goto tr63
-		case 611:
+		case 623:
 			goto tr619
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -17750,7 +17776,7 @@ tr619:
 			goto _test_eof636
 		}
 	st_case_636:
-//line memcached.go:17754
+//line memcached.go:17780
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -17759,11 +17785,11 @@ tr619:
 		switch _widec {
 		case 269:
 			goto st16
-		case 372:
-			goto st414
+		case 371:
+			goto st411
 		case 525:
 			goto tr63
-		case 628:
+		case 627:
 			goto tr620
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -17779,7 +17805,7 @@ tr620:
 			goto _test_eof637
 		}
 	st_case_637:
-//line memcached.go:17783
+//line memcached.go:17809
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -17789,7 +17815,7 @@ tr620:
 		case 269:
 			goto st16
 		case 361:
-			goto st415
+			goto st412
 		case 525:
 			goto tr63
 		case 617:
@@ -17808,7 +17834,7 @@ tr621:
 			goto _test_eof638
 		}
 	st_case_638:
-//line memcached.go:17812
+//line memcached.go:17838
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -17817,11 +17843,40 @@ tr621:
 		switch _widec {
 		case 269:
 			goto st16
-		case 367:
-			goto st416
+		case 372:
+			goto st62
 		case 525:
 			goto tr63
-		case 623:
+		case 628:
+			goto tr530
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr618:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st639
+	st639:
+		if p++; p == pe {
+			goto _test_eof639
+		}
+	st_case_639:
+//line memcached.go:17867
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 361:
+			goto st414
+		case 525:
+			goto tr63
+		case 617:
 			goto tr622
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -17831,13 +17886,13 @@ tr621:
 tr622:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st639
-	st639:
+	goto st640
+	st640:
 		if p++; p == pe {
-			goto _test_eof639
+			goto _test_eof640
 		}
-	st_case_639:
-//line memcached.go:17841
+	st_case_640:
+//line memcached.go:17896
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -17846,11 +17901,11 @@ tr622:
 		switch _widec {
 		case 269:
 			goto st16
-		case 366:
-			goto st417
+		case 367:
+			goto st415
 		case 525:
 			goto tr63
-		case 622:
+		case 623:
 			goto tr623
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -17860,13 +17915,425 @@ tr622:
 tr623:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st640
-	st640:
+	goto st641
+	st641:
 		if p++; p == pe {
-			goto _test_eof640
+			goto _test_eof641
 		}
-	st_case_640:
-//line memcached.go:17870
+	st_case_641:
+//line memcached.go:17925
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 366:
+			goto st63
+		case 525:
+			goto tr63
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr828:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st642
+	st642:
+		if p++; p == pe {
+			goto _test_eof642
+		}
+	st_case_642:
+//line memcached.go:17952
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 353:
+			goto st417
+		case 525:
+			goto tr63
+		case 609:
+			goto tr624
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr624:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st643
+	st643:
+		if p++; p == pe {
+			goto _test_eof643
+		}
+	st_case_643:
+//line memcached.go:17981
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 372:
+			goto st418
+		case 525:
+			goto tr63
+		case 628:
+			goto tr625
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr625:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st644
+	st644:
+		if p++; p == pe {
+			goto _test_eof644
+		}
+	st_case_644:
+//line memcached.go:18010
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 355:
+			goto st419
+		case 525:
+			goto tr63
+		case 611:
+			goto tr626
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr626:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st645
+	st645:
+		if p++; p == pe {
+			goto _test_eof645
+		}
+	st_case_645:
+//line memcached.go:18039
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 360:
+			goto st420
+		case 525:
+			goto tr63
+		case 616:
+			goto tr627
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr627:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st646
+	st646:
+		if p++; p == pe {
+			goto _test_eof646
+		}
+	st_case_646:
+//line memcached.go:18068
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 288:
+			goto st421
+		case 525:
+			goto tr63
+		case 544:
+			goto tr628
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr628:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st647
+	st647:
+		if p++; p == pe {
+			goto _test_eof647
+		}
+	st_case_647:
+//line memcached.go:18097
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 357:
+			goto st422
+		case 358:
+			goto st430
+		case 365:
+			goto st436
+		case 525:
+			goto tr63
+		case 613:
+			goto tr629
+		case 614:
+			goto tr630
+		case 621:
+			goto tr631
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr629:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st648
+	st648:
+		if p++; p == pe {
+			goto _test_eof648
+		}
+	st_case_648:
+//line memcached.go:18134
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 374:
+			goto st423
+		case 525:
+			goto tr63
+		case 630:
+			goto tr632
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr632:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st649
+	st649:
+		if p++; p == pe {
+			goto _test_eof649
+		}
+	st_case_649:
+//line memcached.go:18163
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 361:
+			goto st424
+		case 525:
+			goto tr63
+		case 617:
+			goto tr633
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr633:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st650
+	st650:
+		if p++; p == pe {
+			goto _test_eof650
+		}
+	st_case_650:
+//line memcached.go:18192
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 355:
+			goto st425
+		case 525:
+			goto tr63
+		case 611:
+			goto tr634
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr634:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st651
+	st651:
+		if p++; p == pe {
+			goto _test_eof651
+		}
+	st_case_651:
+//line memcached.go:18221
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 372:
+			goto st426
+		case 525:
+			goto tr63
+		case 628:
+			goto tr635
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr635:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st652
+	st652:
+		if p++; p == pe {
+			goto _test_eof652
+		}
+	st_case_652:
+//line memcached.go:18250
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 361:
+			goto st427
+		case 525:
+			goto tr63
+		case 617:
+			goto tr636
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr636:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st653
+	st653:
+		if p++; p == pe {
+			goto _test_eof653
+		}
+	st_case_653:
+//line memcached.go:18279
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 367:
+			goto st428
+		case 525:
+			goto tr63
+		case 623:
+			goto tr637
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr637:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st654
+	st654:
+		if p++; p == pe {
+			goto _test_eof654
+		}
+	st_case_654:
+//line memcached.go:18308
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 366:
+			goto st429
+		case 525:
+			goto tr63
+		case 622:
+			goto tr638
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr62
+		}
+		goto st0
+tr638:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st655
+	st655:
+		if p++; p == pe {
+			goto _test_eof655
+		}
+	st_case_655:
+//line memcached.go:18337
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -17884,16 +18351,16 @@ tr623:
 			goto tr62
 		}
 		goto st0
-tr615:
+tr630:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st641
-	st641:
+	goto st656
+	st656:
 		if p++; p == pe {
-			goto _test_eof641
+			goto _test_eof656
 		}
-	st_case_641:
-//line memcached.go:17897
+	st_case_656:
+//line memcached.go:18364
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -17903,26 +18370,26 @@ tr615:
 		case 269:
 			goto st16
 		case 357:
-			goto st419
+			goto st431
 		case 525:
 			goto tr63
 		case 613:
-			goto tr624
+			goto tr639
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr624:
+tr639:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st642
-	st642:
+	goto st657
+	st657:
 		if p++; p == pe {
-			goto _test_eof642
+			goto _test_eof657
 		}
-	st_case_642:
-//line memcached.go:17926
+	st_case_657:
+//line memcached.go:18393
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -17932,26 +18399,26 @@ tr624:
 		case 269:
 			goto st16
 		case 372:
-			goto st420
+			goto st432
 		case 525:
 			goto tr63
 		case 628:
-			goto tr625
+			goto tr640
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr625:
+tr640:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st643
-	st643:
+	goto st658
+	st658:
 		if p++; p == pe {
-			goto _test_eof643
+			goto _test_eof658
 		}
-	st_case_643:
-//line memcached.go:17955
+	st_case_658:
+//line memcached.go:18422
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -17961,26 +18428,26 @@ tr625:
 		case 269:
 			goto st16
 		case 355:
-			goto st421
+			goto st433
 		case 525:
 			goto tr63
 		case 611:
-			goto tr626
+			goto tr641
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr626:
+tr641:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st644
-	st644:
+	goto st659
+	st659:
 		if p++; p == pe {
-			goto _test_eof644
+			goto _test_eof659
 		}
-	st_case_644:
-//line memcached.go:17984
+	st_case_659:
+//line memcached.go:18451
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -17990,26 +18457,26 @@ tr626:
 		case 269:
 			goto st16
 		case 360:
-			goto st422
+			goto st434
 		case 525:
 			goto tr63
 		case 616:
-			goto tr627
+			goto tr642
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr627:
+tr642:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st645
-	st645:
+	goto st660
+	st660:
 		if p++; p == pe {
-			goto _test_eof645
+			goto _test_eof660
 		}
-	st_case_645:
-//line memcached.go:18013
+	st_case_660:
+//line memcached.go:18480
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -18019,26 +18486,26 @@ tr627:
 		case 269:
 			goto st16
 		case 357:
-			goto st423
+			goto st435
 		case 525:
 			goto tr63
 		case 613:
-			goto tr628
+			goto tr643
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr628:
+tr643:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st646
-	st646:
+	goto st661
+	st661:
 		if p++; p == pe {
-			goto _test_eof646
+			goto _test_eof661
 		}
-	st_case_646:
-//line memcached.go:18042
+	st_case_661:
+//line memcached.go:18509
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -18048,26 +18515,26 @@ tr628:
 		case 269:
 			goto st16
 		case 370:
-			goto st417
+			goto st429
 		case 525:
 			goto tr63
 		case 626:
-			goto tr623
+			goto tr638
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr616:
+tr631:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st647
-	st647:
+	goto st662
+	st662:
 		if p++; p == pe {
-			goto _test_eof647
+			goto _test_eof662
 		}
-	st_case_647:
-//line memcached.go:18071
+	st_case_662:
+//line memcached.go:18538
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -18077,26 +18544,26 @@ tr616:
 		case 269:
 			goto st16
 		case 373:
-			goto st425
+			goto st437
 		case 525:
 			goto tr63
 		case 629:
-			goto tr629
+			goto tr644
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr629:
+tr644:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st648
-	st648:
+	goto st663
+	st663:
 		if p++; p == pe {
-			goto _test_eof648
+			goto _test_eof663
 		}
-	st_case_648:
-//line memcached.go:18100
+	st_case_663:
+//line memcached.go:18567
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -18106,26 +18573,26 @@ tr629:
 		case 269:
 			goto st16
 		case 372:
-			goto st426
+			goto st438
 		case 525:
 			goto tr63
 		case 628:
-			goto tr630
+			goto tr645
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr630:
+tr645:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st649
-	st649:
+	goto st664
+	st664:
 		if p++; p == pe {
-			goto _test_eof649
+			goto _test_eof664
 		}
-	st_case_649:
-//line memcached.go:18129
+	st_case_664:
+//line memcached.go:18596
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -18135,26 +18602,26 @@ tr630:
 		case 269:
 			goto st16
 		case 353:
-			goto st413
+			goto st425
 		case 525:
 			goto tr63
 		case 609:
-			goto tr619
+			goto tr634
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr460:
+tr472:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st650
-	st650:
+	goto st665
+	st665:
 		if p++; p == pe {
-			goto _test_eof650
+			goto _test_eof665
 		}
-	st_case_650:
-//line memcached.go:18158
+	st_case_665:
+//line memcached.go:18625
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -18162,7 +18629,7 @@ tr460:
 		}
 		switch _widec {
 		case 266:
-			goto tr462
+			goto tr474
 		case 269:
 			goto st16
 		case 522:
@@ -18174,16 +18641,16 @@ tr460:
 			goto tr29
 		}
 		goto st0
-tr461:
+tr473:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st651
-	st651:
+	goto st666
+	st666:
 		if p++; p == pe {
-			goto _test_eof651
+			goto _test_eof666
 		}
-	st_case_651:
-//line memcached.go:18187
+	st_case_666:
+//line memcached.go:18654
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -18193,490 +18660,13 @@ tr461:
 		case 269:
 			goto st16
 		case 366:
-			goto st495
+			goto st507
 		case 525:
 			goto tr31
 		case 622:
-			goto tr631
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr631:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st652
-	st652:
-		if p++; p == pe {
-			goto _test_eof652
-		}
-	st_case_652:
-//line memcached.go:18216
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 367:
-			goto st496
-		case 525:
-			goto tr31
-		case 623:
-			goto tr632
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr632:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st653
-	st653:
-		if p++; p == pe {
-			goto _test_eof653
-		}
-	st_case_653:
-//line memcached.go:18245
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 370:
-			goto st497
-		case 525:
-			goto tr31
-		case 626:
-			goto tr633
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr633:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st654
-	st654:
-		if p++; p == pe {
-			goto _test_eof654
-		}
-	st_case_654:
-//line memcached.go:18274
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 357:
-			goto st498
-		case 525:
-			goto tr31
-		case 613:
-			goto tr634
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr634:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st655
-	st655:
-		if p++; p == pe {
-			goto _test_eof655
-		}
-	st_case_655:
-//line memcached.go:18303
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 368:
-			goto st499
-		case 525:
-			goto tr31
-		case 624:
-			goto tr635
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr635:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st656
-	st656:
-		if p++; p == pe {
-			goto _test_eof656
-		}
-	st_case_656:
-//line memcached.go:18332
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 364:
-			goto st500
-		case 525:
-			goto tr31
-		case 620:
-			goto tr636
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr636:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st657
-	st657:
-		if p++; p == pe {
-			goto _test_eof657
-		}
-	st_case_657:
-//line memcached.go:18361
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 377:
-			goto st501
-		case 525:
-			goto tr31
-		case 633:
-			goto tr637
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr637:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st658
-	st658:
-		if p++; p == pe {
-			goto _test_eof658
-		}
-	st_case_658:
-//line memcached.go:18390
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st467
-		case 525:
-			goto tr460
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr840:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st659
-	st659:
-		if p++; p == pe {
-			goto _test_eof659
-		}
-	st_case_659:
-//line memcached.go:18415
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 357:
-			goto st49
-		case 525:
-			goto tr31
-		case 613:
-			goto tr638
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr638:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st660
-	st660:
-		if p++; p == pe {
-			goto _test_eof660
-		}
-	st_case_660:
-//line memcached.go:18444
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 355:
-			goto st50
-		case 364:
-			goto st64
-		case 525:
-			goto tr31
-		case 611:
-			goto tr639
-		case 620:
-			goto tr640
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr639:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st661
-	st661:
-		if p++; p == pe {
-			goto _test_eof661
-		}
-	st_case_661:
-//line memcached.go:18477
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 370:
-			goto st51
-		case 525:
-			goto tr31
-		case 626:
-			goto tr641
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr641:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st662
-	st662:
-		if p++; p == pe {
-			goto _test_eof662
-		}
-	st_case_662:
-//line memcached.go:18506
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 288:
-			goto st52
-		case 525:
-			goto tr31
-		case 544:
-			goto tr642
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr642:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st663
-	st663:
-		if p++; p == pe {
-			goto _test_eof663
-		}
-	st_case_663:
-//line memcached.go:18535
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 525:
-			goto tr31
-		}
-		switch {
-		case _widec < 512:
-			if 289 <= _widec && _widec <= 511 {
-				goto tr70
-			}
-		case _widec > 544:
-			if 545 <= _widec && _widec <= 767 {
-				goto tr643
-			}
-		default:
-			goto tr29
-		}
-		goto st0
-tr643:
-//line memcached.rl:46
-
-				keyString = keyString + string(data[p])
-			
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st664
-	st664:
-		if p++; p == pe {
-			goto _test_eof664
-		}
-	st_case_664:
-//line memcached.go:18573
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 288:
-			goto st54
-		case 525:
-			goto tr31
-		case 544:
-			goto tr644
-		}
-		switch {
-		case _widec < 512:
-			if 289 <= _widec && _widec <= 511 {
-				goto tr70
-			}
-		case _widec > 543:
-			if 545 <= _widec && _widec <= 767 {
-				goto tr643
-			}
-		default:
-			goto tr29
-		}
-		goto st0
-tr644:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st665
-	st665:
-		if p++; p == pe {
-			goto _test_eof665
-		}
-	st_case_665:
-//line memcached.go:18611
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 525:
-			goto tr31
-		}
-		switch {
-		case _widec < 512:
-			if 304 <= _widec && _widec <= 313 {
-				goto st55
-			}
-		case _widec > 559:
-			switch {
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr29
-				}
-			case _widec >= 560:
-				goto tr645
-			}
-		default:
-			goto tr29
-		}
-		goto st0
-tr645:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st666
-	st666:
-		if p++; p == pe {
-			goto _test_eof666
-		}
-	st_case_666:
-//line memcached.go:18650
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 288:
-			goto st56
-		case 525:
-			goto tr31
-		case 544:
 			goto tr646
 		}
-		switch {
-		case _widec < 512:
-			if 304 <= _widec && _widec <= 313 {
-				goto st55
-			}
-		case _widec > 559:
-			switch {
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr29
-				}
-			case _widec >= 560:
-				goto tr645
-			}
-		default:
+		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
@@ -18689,7 +18679,7 @@ tr646:
 			goto _test_eof667
 		}
 	st_case_667:
-//line memcached.go:18693
+//line memcached.go:18683
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -18698,11 +18688,11 @@ tr646:
 		switch _widec {
 		case 269:
 			goto st16
-		case 366:
-			goto st57
+		case 367:
+			goto st508
 		case 525:
 			goto tr31
-		case 622:
+		case 623:
 			goto tr647
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -18718,7 +18708,7 @@ tr647:
 			goto _test_eof668
 		}
 	st_case_668:
-//line memcached.go:18722
+//line memcached.go:18712
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -18727,11 +18717,11 @@ tr647:
 		switch _widec {
 		case 269:
 			goto st16
-		case 367:
-			goto st58
+		case 370:
+			goto st509
 		case 525:
 			goto tr31
-		case 623:
+		case 626:
 			goto tr648
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -18747,7 +18737,7 @@ tr648:
 			goto _test_eof669
 		}
 	st_case_669:
-//line memcached.go:18751
+//line memcached.go:18741
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -18756,11 +18746,11 @@ tr648:
 		switch _widec {
 		case 269:
 			goto st16
-		case 370:
-			goto st59
+		case 357:
+			goto st510
 		case 525:
 			goto tr31
-		case 626:
+		case 613:
 			goto tr649
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -18776,7 +18766,7 @@ tr649:
 			goto _test_eof670
 		}
 	st_case_670:
-//line memcached.go:18780
+//line memcached.go:18770
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -18785,11 +18775,11 @@ tr649:
 		switch _widec {
 		case 269:
 			goto st16
-		case 357:
-			goto st60
+		case 368:
+			goto st511
 		case 525:
 			goto tr31
-		case 613:
+		case 624:
 			goto tr650
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -18805,7 +18795,7 @@ tr650:
 			goto _test_eof671
 		}
 	st_case_671:
-//line memcached.go:18809
+//line memcached.go:18799
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -18814,11 +18804,11 @@ tr650:
 		switch _widec {
 		case 269:
 			goto st16
-		case 368:
-			goto st61
+		case 364:
+			goto st512
 		case 525:
 			goto tr31
-		case 624:
+		case 620:
 			goto tr651
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -18834,7 +18824,7 @@ tr651:
 			goto _test_eof672
 		}
 	st_case_672:
-//line memcached.go:18838
+//line memcached.go:18828
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -18843,11 +18833,11 @@ tr651:
 		switch _widec {
 		case 269:
 			goto st16
-		case 364:
-			goto st62
+		case 377:
+			goto st513
 		case 525:
 			goto tr31
-		case 620:
+		case 633:
 			goto tr652
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -18863,7 +18853,7 @@ tr652:
 			goto _test_eof673
 		}
 	st_case_673:
-//line memcached.go:18867
+//line memcached.go:18857
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -18871,17 +18861,15 @@ tr652:
 		}
 		switch _widec {
 		case 269:
-			goto st16
-		case 377:
-			goto st63
+			goto st479
 		case 525:
-			goto tr31
+			goto tr472
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr640:
+tr858:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st674
@@ -18890,7 +18878,7 @@ tr640:
 			goto _test_eof674
 		}
 	st_case_674:
-//line memcached.go:18894
+//line memcached.go:18882
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -18900,7 +18888,7 @@ tr640:
 		case 269:
 			goto st16
 		case 357:
-			goto st65
+			goto st49
 		case 525:
 			goto tr31
 		case 613:
@@ -18919,7 +18907,7 @@ tr653:
 			goto _test_eof675
 		}
 	st_case_675:
-//line memcached.go:18923
+//line memcached.go:18911
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -18928,12 +18916,16 @@ tr653:
 		switch _widec {
 		case 269:
 			goto st16
-		case 372:
-			goto st66
+		case 355:
+			goto st50
+		case 364:
+			goto st64
 		case 525:
 			goto tr31
-		case 628:
+		case 611:
 			goto tr654
+		case 620:
+			goto tr655
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
@@ -18948,7 +18940,482 @@ tr654:
 			goto _test_eof676
 		}
 	st_case_676:
-//line memcached.go:18952
+//line memcached.go:18944
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 370:
+			goto st51
+		case 525:
+			goto tr31
+		case 626:
+			goto tr656
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr656:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st677
+	st677:
+		if p++; p == pe {
+			goto _test_eof677
+		}
+	st_case_677:
+//line memcached.go:18973
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 288:
+			goto st52
+		case 525:
+			goto tr31
+		case 544:
+			goto tr657
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr657:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st678
+	st678:
+		if p++; p == pe {
+			goto _test_eof678
+		}
+	st_case_678:
+//line memcached.go:19002
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 525:
+			goto tr31
+		}
+		switch {
+		case _widec < 512:
+			if 289 <= _widec && _widec <= 511 {
+				goto tr70
+			}
+		case _widec > 544:
+			if 545 <= _widec && _widec <= 767 {
+				goto tr658
+			}
+		default:
+			goto tr29
+		}
+		goto st0
+tr658:
+//line memcached.rl:46
+
+				keyString = keyString + string(data[p])
+			
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st679
+	st679:
+		if p++; p == pe {
+			goto _test_eof679
+		}
+	st_case_679:
+//line memcached.go:19040
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 288:
+			goto st54
+		case 525:
+			goto tr31
+		case 544:
+			goto tr659
+		}
+		switch {
+		case _widec < 512:
+			if 289 <= _widec && _widec <= 511 {
+				goto tr70
+			}
+		case _widec > 543:
+			if 545 <= _widec && _widec <= 767 {
+				goto tr658
+			}
+		default:
+			goto tr29
+		}
+		goto st0
+tr659:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st680
+	st680:
+		if p++; p == pe {
+			goto _test_eof680
+		}
+	st_case_680:
+//line memcached.go:19078
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 525:
+			goto tr31
+		}
+		switch {
+		case _widec < 512:
+			if 304 <= _widec && _widec <= 313 {
+				goto st55
+			}
+		case _widec > 559:
+			switch {
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr29
+				}
+			case _widec >= 560:
+				goto tr660
+			}
+		default:
+			goto tr29
+		}
+		goto st0
+tr660:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st681
+	st681:
+		if p++; p == pe {
+			goto _test_eof681
+		}
+	st_case_681:
+//line memcached.go:19117
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 288:
+			goto st56
+		case 525:
+			goto tr31
+		case 544:
+			goto tr661
+		}
+		switch {
+		case _widec < 512:
+			if 304 <= _widec && _widec <= 313 {
+				goto st55
+			}
+		case _widec > 559:
+			switch {
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr29
+				}
+			case _widec >= 560:
+				goto tr660
+			}
+		default:
+			goto tr29
+		}
+		goto st0
+tr661:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st682
+	st682:
+		if p++; p == pe {
+			goto _test_eof682
+		}
+	st_case_682:
+//line memcached.go:19160
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 366:
+			goto st57
+		case 525:
+			goto tr31
+		case 622:
+			goto tr662
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr662:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st683
+	st683:
+		if p++; p == pe {
+			goto _test_eof683
+		}
+	st_case_683:
+//line memcached.go:19189
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 367:
+			goto st58
+		case 525:
+			goto tr31
+		case 623:
+			goto tr663
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr663:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st684
+	st684:
+		if p++; p == pe {
+			goto _test_eof684
+		}
+	st_case_684:
+//line memcached.go:19218
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 370:
+			goto st59
+		case 525:
+			goto tr31
+		case 626:
+			goto tr664
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr664:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st685
+	st685:
+		if p++; p == pe {
+			goto _test_eof685
+		}
+	st_case_685:
+//line memcached.go:19247
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 357:
+			goto st60
+		case 525:
+			goto tr31
+		case 613:
+			goto tr665
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr665:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st686
+	st686:
+		if p++; p == pe {
+			goto _test_eof686
+		}
+	st_case_686:
+//line memcached.go:19276
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 368:
+			goto st61
+		case 525:
+			goto tr31
+		case 624:
+			goto tr666
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr666:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st687
+	st687:
+		if p++; p == pe {
+			goto _test_eof687
+		}
+	st_case_687:
+//line memcached.go:19305
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 364:
+			goto st62
+		case 525:
+			goto tr31
+		case 620:
+			goto tr667
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr667:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st688
+	st688:
+		if p++; p == pe {
+			goto _test_eof688
+		}
+	st_case_688:
+//line memcached.go:19334
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 377:
+			goto st63
+		case 525:
+			goto tr31
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr655:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st689
+	st689:
+		if p++; p == pe {
+			goto _test_eof689
+		}
+	st_case_689:
+//line memcached.go:19361
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 357:
+			goto st65
+		case 525:
+			goto tr31
+		case 613:
+			goto tr668
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr668:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st690
+	st690:
+		if p++; p == pe {
+			goto _test_eof690
+		}
+	st_case_690:
+//line memcached.go:19390
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 372:
+			goto st66
+		case 525:
+			goto tr31
+		case 628:
+			goto tr669
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr669:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st691
+	st691:
+		if p++; p == pe {
+			goto _test_eof691
+		}
+	st_case_691:
+//line memcached.go:19419
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -18962,22 +19429,22 @@ tr654:
 		case 525:
 			goto tr31
 		case 613:
-			goto tr655
+			goto tr670
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr655:
+tr670:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st677
-	st677:
+	goto st692
+	st692:
 		if p++; p == pe {
-			goto _test_eof677
+			goto _test_eof692
 		}
-	st_case_677:
-//line memcached.go:18981
+	st_case_692:
+//line memcached.go:19448
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -18991,30 +19458,30 @@ tr655:
 		case 525:
 			goto tr31
 		case 544:
-			goto tr656
+			goto tr671
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr656:
+tr671:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st678
-tr657:
+	goto st693
+tr672:
 //line memcached.rl:46
 
 				keyString = keyString + string(data[p])
 			
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st678
-	st678:
+	goto st693
+	st693:
 		if p++; p == pe {
-			goto _test_eof678
+			goto _test_eof693
 		}
-	st_case_678:
-//line memcached.go:19018
+	st_case_693:
+//line memcached.go:19485
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -19033,22 +19500,22 @@ tr657:
 			}
 		case _widec > 544:
 			if 545 <= _widec && _widec <= 767 {
-				goto tr657
+				goto tr672
 			}
 		default:
 			goto tr29
 		}
 		goto st0
-tr841:
+tr859:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st679
-	st679:
+	goto st694
+	st694:
 		if p++; p == pe {
-			goto _test_eof679
+			goto _test_eof694
 		}
-	st_case_679:
-//line memcached.go:19052
+	st_case_694:
+//line memcached.go:19519
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -19062,22 +19529,22 @@ tr841:
 		case 525:
 			goto tr31
 		case 620:
-			goto tr658
+			goto tr673
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr658:
+tr673:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st680
-	st680:
+	goto st695
+	st695:
 		if p++; p == pe {
-			goto _test_eof680
+			goto _test_eof695
 		}
-	st_case_680:
-//line memcached.go:19081
+	st_case_695:
+//line memcached.go:19548
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -19091,22 +19558,22 @@ tr658:
 		case 525:
 			goto tr31
 		case 629:
-			goto tr659
+			goto tr674
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr659:
+tr674:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st681
-	st681:
+	goto st696
+	st696:
 		if p++; p == pe {
-			goto _test_eof681
+			goto _test_eof696
 		}
-	st_case_681:
-//line memcached.go:19110
+	st_case_696:
+//line memcached.go:19577
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -19120,22 +19587,22 @@ tr659:
 		case 525:
 			goto tr31
 		case 627:
-			goto tr660
+			goto tr675
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr660:
+tr675:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st682
-	st682:
+	goto st697
+	st697:
 		if p++; p == pe {
-			goto _test_eof682
+			goto _test_eof697
 		}
-	st_case_682:
-//line memcached.go:19139
+	st_case_697:
+//line memcached.go:19606
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -19149,22 +19616,22 @@ tr660:
 		case 525:
 			goto tr31
 		case 616:
-			goto tr661
+			goto tr676
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr661:
+tr676:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st683
-	st683:
+	goto st698
+	st698:
 		if p++; p == pe {
-			goto _test_eof683
+			goto _test_eof698
 		}
-	st_case_683:
-//line memcached.go:19168
+	st_case_698:
+//line memcached.go:19635
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -19178,22 +19645,22 @@ tr661:
 		case 525:
 			goto tr31
 		case 607:
-			goto tr662
+			goto tr677
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr662:
+tr677:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st684
-	st684:
+	goto st699
+	st699:
 		if p++; p == pe {
-			goto _test_eof684
+			goto _test_eof699
 		}
-	st_case_684:
-//line memcached.go:19197
+	st_case_699:
+//line memcached.go:19664
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -19207,22 +19674,22 @@ tr662:
 		case 525:
 			goto tr31
 		case 609:
-			goto tr663
+			goto tr678
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr663:
+tr678:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st685
-	st685:
+	goto st700
+	st700:
 		if p++; p == pe {
-			goto _test_eof685
+			goto _test_eof700
 		}
-	st_case_685:
-//line memcached.go:19226
+	st_case_700:
+//line memcached.go:19693
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -19236,22 +19703,22 @@ tr663:
 		case 525:
 			goto tr31
 		case 620:
-			goto tr664
+			goto tr679
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr664:
+tr679:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st686
-	st686:
+	goto st701
+	st701:
 		if p++; p == pe {
-			goto _test_eof686
+			goto _test_eof701
 		}
-	st_case_686:
-//line memcached.go:19255
+	st_case_701:
+//line memcached.go:19722
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -19265,22 +19732,22 @@ tr664:
 		case 525:
 			goto tr31
 		case 620:
-			goto tr447
+			goto tr459
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr842:
+tr860:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st687
-	st687:
+	goto st702
+	st702:
 		if p++; p == pe {
-			goto _test_eof687
+			goto _test_eof702
 		}
-	st_case_687:
-//line memcached.go:19284
+	st_case_702:
+//line memcached.go:19751
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -19294,22 +19761,22 @@ tr842:
 		case 525:
 			goto tr31
 		case 613:
-			goto tr665
+			goto tr680
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr665:
+tr680:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st688
-	st688:
+	goto st703
+	st703:
 		if p++; p == pe {
-			goto _test_eof688
+			goto _test_eof703
 		}
-	st_case_688:
-//line memcached.go:19313
+	st_case_703:
+//line memcached.go:19780
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -19323,478 +19790,6 @@ tr665:
 		case 525:
 			goto tr31
 		case 628:
-			goto tr666
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr666:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st689
-	st689:
-		if p++; p == pe {
-			goto _test_eof689
-		}
-	st_case_689:
-//line memcached.go:19342
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 288:
-			goto st68
-		case 371:
-			goto st67
-		case 525:
-			goto tr31
-		case 544:
-			goto tr656
-		case 627:
-			goto tr655
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr843:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st690
-	st690:
-		if p++; p == pe {
-			goto _test_eof690
-		}
-	st_case_690:
-//line memcached.go:19375
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 366:
-			goto st83
-		case 525:
-			goto tr31
-		case 622:
-			goto tr667
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr667:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st691
-	st691:
-		if p++; p == pe {
-			goto _test_eof691
-		}
-	st_case_691:
-//line memcached.go:19404
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 355:
-			goto st50
-		case 525:
-			goto tr31
-		case 611:
-			goto tr639
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr844:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st692
-	st692:
-		if p++; p == pe {
-			goto _test_eof692
-		}
-	st_case_692:
-//line memcached.go:19433
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 370:
-			goto st85
-		case 525:
-			goto tr31
-		case 626:
-			goto tr668
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr668:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st693
-	st693:
-		if p++; p == pe {
-			goto _test_eof693
-		}
-	st_case_693:
-//line memcached.go:19462
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 373:
-			goto st86
-		case 525:
-			goto tr31
-		case 629:
-			goto tr669
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr669:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st694
-	st694:
-		if p++; p == pe {
-			goto _test_eof694
-		}
-	st_case_694:
-//line memcached.go:19491
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 351:
-			goto st87
-		case 525:
-			goto tr31
-		case 607:
-			goto tr670
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr670:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st695
-	st695:
-		if p++; p == pe {
-			goto _test_eof695
-		}
-	st_case_695:
-//line memcached.go:19520
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 355:
-			goto st88
-		case 525:
-			goto tr31
-		case 611:
-			goto tr671
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr671:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st696
-	st696:
-		if p++; p == pe {
-			goto _test_eof696
-		}
-	st_case_696:
-//line memcached.go:19549
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 370:
-			goto st89
-		case 525:
-			goto tr31
-		case 626:
-			goto tr672
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr672:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st697
-	st697:
-		if p++; p == pe {
-			goto _test_eof697
-		}
-	st_case_697:
-//line memcached.go:19578
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 353:
-			goto st90
-		case 525:
-			goto tr31
-		case 609:
-			goto tr673
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr673:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st698
-	st698:
-		if p++; p == pe {
-			goto _test_eof698
-		}
-	st_case_698:
-//line memcached.go:19607
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 375:
-			goto st91
-		case 525:
-			goto tr31
-		case 631:
-			goto tr674
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr674:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st699
-	st699:
-		if p++; p == pe {
-			goto _test_eof699
-		}
-	st_case_699:
-//line memcached.go:19636
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 364:
-			goto st92
-		case 525:
-			goto tr31
-		case 620:
-			goto tr675
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr675:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st700
-	st700:
-		if p++; p == pe {
-			goto _test_eof700
-		}
-	st_case_700:
-//line memcached.go:19665
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 357:
-			goto st93
-		case 525:
-			goto tr31
-		case 613:
-			goto tr676
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr676:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st701
-	st701:
-		if p++; p == pe {
-			goto _test_eof701
-		}
-	st_case_701:
-//line memcached.go:19694
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 370:
-			goto st94
-		case 525:
-			goto tr31
-		case 626:
-			goto tr677
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr677:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st702
-	st702:
-		if p++; p == pe {
-			goto _test_eof702
-		}
-	st_case_702:
-//line memcached.go:19723
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 288:
-			goto st95
-		case 525:
-			goto tr31
-		case 544:
-			goto tr678
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr678:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st703
-	st703:
-		if p++; p == pe {
-			goto _test_eof703
-		}
-	st_case_703:
-//line memcached.go:19752
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 356:
-			goto st96
-		case 357:
-			goto st102
-		case 525:
-			goto tr31
-		case 612:
-			goto tr679
-		case 613:
-			goto tr680
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr679:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st704
-	st704:
-		if p++; p == pe {
-			goto _test_eof704
-		}
-	st_case_704:
-//line memcached.go:19785
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 361:
-			goto st97
-		case 525:
-			goto tr31
-		case 617:
 			goto tr681
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -19804,13 +19799,13 @@ tr679:
 tr681:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st705
-	st705:
+	goto st704
+	st704:
 		if p++; p == pe {
-			goto _test_eof705
+			goto _test_eof704
 		}
-	st_case_705:
-//line memcached.go:19814
+	st_case_704:
+//line memcached.go:19809
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -19819,12 +19814,16 @@ tr681:
 		switch _widec {
 		case 269:
 			goto st16
+		case 288:
+			goto st82
 		case 371:
-			goto st98
+			goto st84
 		case 525:
 			goto tr31
-		case 627:
+		case 544:
 			goto tr682
+		case 627:
+			goto tr683
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
@@ -19833,13 +19832,13 @@ tr681:
 tr682:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st706
-	st706:
+	goto st705
+	st705:
 		if p++; p == pe {
-			goto _test_eof706
+			goto _test_eof705
 		}
-	st_case_706:
-//line memcached.go:19843
+	st_case_705:
+//line memcached.go:19842
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -19848,14 +19847,61 @@ tr682:
 		switch _widec {
 		case 269:
 			goto st16
-		case 353:
-			goto st99
 		case 525:
 			goto tr31
-		case 609:
-			goto tr683
 		}
-		if 512 <= _widec && _widec <= 767 {
+		switch {
+		case _widec < 512:
+			if 289 <= _widec && _widec <= 511 {
+				goto tr98
+			}
+		case _widec > 544:
+			if 545 <= _widec && _widec <= 767 {
+				goto tr684
+			}
+		default:
+			goto tr29
+		}
+		goto st0
+tr684:
+//line memcached.rl:46
+
+				keyString = keyString + string(data[p])
+			
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st706
+	st706:
+		if p++; p == pe {
+			goto _test_eof706
+		}
+	st_case_706:
+//line memcached.go:19880
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 288:
+			goto st82
+		case 525:
+			goto tr31
+		case 544:
+			goto tr682
+		}
+		switch {
+		case _widec < 512:
+			if 289 <= _widec && _widec <= 511 {
+				goto tr98
+			}
+		case _widec > 543:
+			if 545 <= _widec && _widec <= 767 {
+				goto tr684
+			}
+		default:
 			goto tr29
 		}
 		goto st0
@@ -19868,7 +19914,7 @@ tr683:
 			goto _test_eof707
 		}
 	st_case_707:
-//line memcached.go:19872
+//line memcached.go:19918
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -19877,18 +19923,18 @@ tr683:
 		switch _widec {
 		case 269:
 			goto st16
-		case 354:
-			goto st100
+		case 288:
+			goto st82
 		case 525:
 			goto tr31
-		case 610:
-			goto tr684
+		case 544:
+			goto tr682
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr684:
+tr861:
 //line memcached.rl:44
  foundLen = foundLen + 1 
 	goto st708
@@ -19897,7 +19943,7 @@ tr684:
 			goto _test_eof708
 		}
 	st_case_708:
-//line memcached.go:19901
+//line memcached.go:19947
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -19906,11 +19952,11 @@ tr684:
 		switch _widec {
 		case 269:
 			goto st16
-		case 364:
-			goto st101
+		case 366:
+			goto st86
 		case 525:
 			goto tr31
-		case 620:
+		case 622:
 			goto tr685
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -19926,7 +19972,533 @@ tr685:
 			goto _test_eof709
 		}
 	st_case_709:
-//line memcached.go:19930
+//line memcached.go:19976
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 355:
+			goto st50
+		case 525:
+			goto tr31
+		case 611:
+			goto tr654
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr862:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st710
+	st710:
+		if p++; p == pe {
+			goto _test_eof710
+		}
+	st_case_710:
+//line memcached.go:20005
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 370:
+			goto st88
+		case 525:
+			goto tr31
+		case 626:
+			goto tr686
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr686:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st711
+	st711:
+		if p++; p == pe {
+			goto _test_eof711
+		}
+	st_case_711:
+//line memcached.go:20034
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 373:
+			goto st89
+		case 525:
+			goto tr31
+		case 629:
+			goto tr687
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr687:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st712
+	st712:
+		if p++; p == pe {
+			goto _test_eof712
+		}
+	st_case_712:
+//line memcached.go:20063
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 351:
+			goto st90
+		case 525:
+			goto tr31
+		case 607:
+			goto tr688
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr688:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st713
+	st713:
+		if p++; p == pe {
+			goto _test_eof713
+		}
+	st_case_713:
+//line memcached.go:20092
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 355:
+			goto st91
+		case 525:
+			goto tr31
+		case 611:
+			goto tr689
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr689:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st714
+	st714:
+		if p++; p == pe {
+			goto _test_eof714
+		}
+	st_case_714:
+//line memcached.go:20121
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 370:
+			goto st92
+		case 525:
+			goto tr31
+		case 626:
+			goto tr690
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr690:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st715
+	st715:
+		if p++; p == pe {
+			goto _test_eof715
+		}
+	st_case_715:
+//line memcached.go:20150
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 353:
+			goto st93
+		case 525:
+			goto tr31
+		case 609:
+			goto tr691
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr691:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st716
+	st716:
+		if p++; p == pe {
+			goto _test_eof716
+		}
+	st_case_716:
+//line memcached.go:20179
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 375:
+			goto st94
+		case 525:
+			goto tr31
+		case 631:
+			goto tr692
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr692:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st717
+	st717:
+		if p++; p == pe {
+			goto _test_eof717
+		}
+	st_case_717:
+//line memcached.go:20208
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 364:
+			goto st95
+		case 525:
+			goto tr31
+		case 620:
+			goto tr693
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr693:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st718
+	st718:
+		if p++; p == pe {
+			goto _test_eof718
+		}
+	st_case_718:
+//line memcached.go:20237
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 357:
+			goto st96
+		case 525:
+			goto tr31
+		case 613:
+			goto tr694
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr694:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st719
+	st719:
+		if p++; p == pe {
+			goto _test_eof719
+		}
+	st_case_719:
+//line memcached.go:20266
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 370:
+			goto st97
+		case 525:
+			goto tr31
+		case 626:
+			goto tr695
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr695:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st720
+	st720:
+		if p++; p == pe {
+			goto _test_eof720
+		}
+	st_case_720:
+//line memcached.go:20295
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 288:
+			goto st98
+		case 525:
+			goto tr31
+		case 544:
+			goto tr696
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr696:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st721
+	st721:
+		if p++; p == pe {
+			goto _test_eof721
+		}
+	st_case_721:
+//line memcached.go:20324
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 356:
+			goto st99
+		case 357:
+			goto st105
+		case 525:
+			goto tr31
+		case 612:
+			goto tr697
+		case 613:
+			goto tr698
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr697:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st722
+	st722:
+		if p++; p == pe {
+			goto _test_eof722
+		}
+	st_case_722:
+//line memcached.go:20357
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 361:
+			goto st100
+		case 525:
+			goto tr31
+		case 617:
+			goto tr699
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr699:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st723
+	st723:
+		if p++; p == pe {
+			goto _test_eof723
+		}
+	st_case_723:
+//line memcached.go:20386
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 371:
+			goto st101
+		case 525:
+			goto tr31
+		case 627:
+			goto tr700
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr700:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st724
+	st724:
+		if p++; p == pe {
+			goto _test_eof724
+		}
+	st_case_724:
+//line memcached.go:20415
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 353:
+			goto st102
+		case 525:
+			goto tr31
+		case 609:
+			goto tr701
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr701:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st725
+	st725:
+		if p++; p == pe {
+			goto _test_eof725
+		}
+	st_case_725:
+//line memcached.go:20444
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 354:
+			goto st103
+		case 525:
+			goto tr31
+		case 610:
+			goto tr702
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr702:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st726
+	st726:
+		if p++; p == pe {
+			goto _test_eof726
+		}
+	st_case_726:
+//line memcached.go:20473
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 364:
+			goto st104
+		case 525:
+			goto tr31
+		case 620:
+			goto tr703
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr703:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st727
+	st727:
+		if p++; p == pe {
+			goto _test_eof727
+		}
+	st_case_727:
+//line memcached.go:20502
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -19944,16 +20516,16 @@ tr685:
 			goto tr29
 		}
 		goto st0
-tr680:
+tr698:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st710
-	st710:
+	goto st728
+	st728:
 		if p++; p == pe {
-			goto _test_eof710
+			goto _test_eof728
 		}
-	st_case_710:
-//line memcached.go:19957
+	st_case_728:
+//line memcached.go:20529
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -19963,26 +20535,26 @@ tr680:
 		case 269:
 			goto st16
 		case 366:
-			goto st98
+			goto st101
 		case 525:
 			goto tr31
 		case 622:
-			goto tr682
+			goto tr700
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr845:
+tr863:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st711
-	st711:
+	goto st729
+	st729:
 		if p++; p == pe {
-			goto _test_eof711
+			goto _test_eof729
 		}
-	st_case_711:
-//line memcached.go:19986
+	st_case_729:
+//line memcached.go:20558
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -19992,26 +20564,26 @@ tr845:
 		case 269:
 			goto st16
 		case 370:
-			goto st104
+			goto st107
 		case 525:
 			goto tr31
 		case 626:
-			goto tr686
+			goto tr704
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr686:
+tr704:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st712
-	st712:
+	goto st730
+	st730:
 		if p++; p == pe {
-			goto _test_eof712
+			goto _test_eof730
 		}
-	st_case_712:
-//line memcached.go:20015
+	st_case_730:
+//line memcached.go:20587
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -20021,26 +20593,26 @@ tr686:
 		case 269:
 			goto st16
 		case 357:
-			goto st105
+			goto st108
 		case 525:
 			goto tr31
 		case 613:
-			goto tr432
+			goto tr444
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr432:
+tr444:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st713
-	st713:
+	goto st731
+	st731:
 		if p++; p == pe {
-			goto _test_eof713
+			goto _test_eof731
 		}
-	st_case_713:
-//line memcached.go:20044
+	st_case_731:
+//line memcached.go:20616
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -20050,26 +20622,26 @@ tr432:
 		case 269:
 			goto st16
 		case 368:
-			goto st106
+			goto st109
 		case 525:
 			goto tr31
 		case 624:
-			goto tr687
+			goto tr705
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr687:
+tr705:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st714
-	st714:
+	goto st732
+	st732:
 		if p++; p == pe {
-			goto _test_eof714
+			goto _test_eof732
 		}
-	st_case_714:
-//line memcached.go:20073
+	st_case_732:
+//line memcached.go:20645
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -20079,26 +20651,26 @@ tr687:
 		case 269:
 			goto st16
 		case 357:
-			goto st107
+			goto st110
 		case 525:
 			goto tr31
 		case 613:
-			goto tr688
+			goto tr706
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr688:
+tr706:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st715
-	st715:
+	goto st733
+	st733:
 		if p++; p == pe {
-			goto _test_eof715
+			goto _test_eof733
 		}
-	st_case_715:
-//line memcached.go:20102
+	st_case_733:
+//line memcached.go:20674
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -20112,22 +20684,22 @@ tr688:
 		case 525:
 			goto tr31
 		case 622:
-			goto tr431
+			goto tr443
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr431:
+tr443:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st716
-	st716:
+	goto st734
+	st734:
 		if p++; p == pe {
-			goto _test_eof716
+			goto _test_eof734
 		}
-	st_case_716:
-//line memcached.go:20131
+	st_case_734:
+//line memcached.go:20703
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -20141,22 +20713,22 @@ tr431:
 		case 525:
 			goto tr31
 		case 612:
-			goto tr689
+			goto tr707
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr689:
+tr707:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st717
-	st717:
+	goto st735
+	st735:
 		if p++; p == pe {
-			goto _test_eof717
+			goto _test_eof735
 		}
-	st_case_717:
-//line memcached.go:20160
+	st_case_735:
+//line memcached.go:20732
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -20170,22 +20742,22 @@ tr689:
 		case 525:
 			goto tr31
 		case 544:
-			goto tr690
+			goto tr708
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr690:
+tr708:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st718
-	st718:
+	goto st736
+	st736:
 		if p++; p == pe {
-			goto _test_eof718
+			goto _test_eof736
 		}
-	st_case_718:
-//line memcached.go:20189
+	st_case_736:
+//line memcached.go:20761
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -20204,26 +20776,26 @@ tr690:
 			}
 		case _widec > 544:
 			if 545 <= _widec && _widec <= 767 {
-				goto tr691
+				goto tr709
 			}
 		default:
 			goto tr29
 		}
 		goto st0
-tr691:
+tr709:
 //line memcached.rl:46
 
 				keyString = keyString + string(data[p])
 			
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st719
-	st719:
+	goto st737
+	st737:
 		if p++; p == pe {
-			goto _test_eof719
+			goto _test_eof737
 		}
-	st_case_719:
-//line memcached.go:20227
+	st_case_737:
+//line memcached.go:20799
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -20237,7 +20809,7 @@ tr691:
 		case 525:
 			goto tr31
 		case 544:
-			goto tr692
+			goto tr710
 		}
 		switch {
 		case _widec < 512:
@@ -20246,22 +20818,22 @@ tr691:
 			}
 		case _widec > 543:
 			if 545 <= _widec && _widec <= 767 {
-				goto tr691
+				goto tr709
 			}
 		default:
 			goto tr29
 		}
 		goto st0
-tr692:
+tr710:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st720
-	st720:
+	goto st738
+	st738:
 		if p++; p == pe {
-			goto _test_eof720
+			goto _test_eof738
 		}
-	st_case_720:
-//line memcached.go:20265
+	st_case_738:
+//line memcached.go:20837
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -20285,22 +20857,22 @@ tr692:
 					goto tr29
 				}
 			case _widec >= 560:
-				goto tr693
+				goto tr711
 			}
 		default:
 			goto tr29
 		}
 		goto st0
-tr693:
+tr711:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st721
-	st721:
+	goto st739
+	st739:
 		if p++; p == pe {
-			goto _test_eof721
+			goto _test_eof739
 		}
-	st_case_721:
-//line memcached.go:20304
+	st_case_739:
+//line memcached.go:20876
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -20314,7 +20886,7 @@ tr693:
 		case 525:
 			goto tr31
 		case 544:
-			goto tr694
+			goto tr712
 		}
 		switch {
 		case _widec < 512:
@@ -20328,22 +20900,22 @@ tr693:
 					goto tr29
 				}
 			case _widec >= 560:
-				goto tr693
+				goto tr711
 			}
 		default:
 			goto tr29
 		}
 		goto st0
-tr694:
+tr712:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st722
-	st722:
+	goto st740
+	st740:
 		if p++; p == pe {
-			goto _test_eof722
+			goto _test_eof740
 		}
-	st_case_722:
-//line memcached.go:20347
+	st_case_740:
+//line memcached.go:20919
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -20367,24 +20939,24 @@ tr694:
 					goto tr29
 				}
 			case _widec >= 560:
-				goto tr695
+				goto tr713
 			}
 		default:
 			goto tr29
 		}
 		goto st0
-tr695:
+tr713:
 //line memcached.rl:45
  expiry = expiry * 10 + (int(data[p]) - '0') 
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st723
-	st723:
+	goto st741
+	st741:
 		if p++; p == pe {
-			goto _test_eof723
+			goto _test_eof741
 		}
-	st_case_723:
-//line memcached.go:20388
+	st_case_741:
+//line memcached.go:20960
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -20398,7 +20970,7 @@ tr695:
 		case 525:
 			goto tr31
 		case 544:
-			goto tr696
+			goto tr714
 		}
 		switch {
 		case _widec < 512:
@@ -20412,22 +20984,22 @@ tr695:
 					goto tr29
 				}
 			case _widec >= 560:
-				goto tr695
+				goto tr713
 			}
 		default:
 			goto tr29
 		}
 		goto st0
-tr696:
+tr714:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st724
-	st724:
+	goto st742
+	st742:
 		if p++; p == pe {
-			goto _test_eof724
+			goto _test_eof742
 		}
-	st_case_724:
-//line memcached.go:20431
+	st_case_742:
+//line memcached.go:21003
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -20451,24 +21023,24 @@ tr696:
 					goto tr29
 				}
 			case _widec >= 560:
-				goto tr697
+				goto tr715
 			}
 		default:
 			goto tr29
 		}
 		goto st0
-tr697:
+tr715:
 //line memcached.rl:43
  expectedLen = expectedLen * 10 + (int(data[p]) - int('0')) 
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st725
-	st725:
+	goto st743
+	st743:
 		if p++; p == pe {
-			goto _test_eof725
+			goto _test_eof743
 		}
-	st_case_725:
-//line memcached.go:20472
+	st_case_743:
+//line memcached.go:21044
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -20476,13 +21048,13 @@ tr697:
 		}
 		switch _widec {
 		case 269:
-			goto st438
+			goto st450
 		case 288:
-			goto st726
+			goto st744
 		case 525:
-			goto tr698
+			goto tr716
 		case 544:
-			goto tr699
+			goto tr717
 		}
 		switch {
 		case _widec < 512:
@@ -20496,94 +21068,94 @@ tr697:
 					goto tr29
 				}
 			case _widec >= 560:
-				goto tr697
+				goto tr715
 			}
 		default:
 			goto tr29
 		}
 		goto st0
-	st726:
+	st744:
 		if p++; p == pe {
-			goto _test_eof726
+			goto _test_eof744
 		}
-	st_case_726:
+	st_case_744:
 		if data[p] == 110 {
-			goto st727
+			goto st745
 		}
 		goto st0
-	st727:
+	st745:
 		if p++; p == pe {
-			goto _test_eof727
+			goto _test_eof745
 		}
-	st_case_727:
+	st_case_745:
 		if data[p] == 111 {
-			goto st728
+			goto st746
 		}
 		goto st0
-	st728:
+	st746:
 		if p++; p == pe {
-			goto _test_eof728
+			goto _test_eof746
 		}
-	st_case_728:
+	st_case_746:
 		if data[p] == 114 {
-			goto st729
+			goto st747
 		}
 		goto st0
-	st729:
+	st747:
 		if p++; p == pe {
-			goto _test_eof729
+			goto _test_eof747
 		}
-	st_case_729:
+	st_case_747:
 		if data[p] == 101 {
-			goto st730
+			goto st748
 		}
 		goto st0
-	st730:
+	st748:
 		if p++; p == pe {
-			goto _test_eof730
+			goto _test_eof748
 		}
-	st_case_730:
+	st_case_748:
 		if data[p] == 112 {
-			goto st731
+			goto st749
 		}
 		goto st0
-	st731:
+	st749:
 		if p++; p == pe {
-			goto _test_eof731
+			goto _test_eof749
 		}
-	st_case_731:
+	st_case_749:
 		if data[p] == 108 {
-			goto st732
+			goto st750
 		}
 		goto st0
-	st732:
+	st750:
 		if p++; p == pe {
-			goto _test_eof732
+			goto _test_eof750
 		}
-	st_case_732:
+	st_case_750:
 		if data[p] == 121 {
-			goto st733
+			goto st751
 		}
 		goto st0
-	st733:
+	st751:
 		if p++; p == pe {
-			goto _test_eof733
+			goto _test_eof751
 		}
-	st_case_733:
+	st_case_751:
 		if data[p] == 13 {
 			goto st13
 		}
 		goto st0
-tr698:
+tr716:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st734
-	st734:
+	goto st752
+	st752:
 		if p++; p == pe {
-			goto _test_eof734
+			goto _test_eof752
 		}
-	st_case_734:
-//line memcached.go:20587
+	st_case_752:
+//line memcached.go:21159
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -20591,11 +21163,11 @@ tr698:
 		}
 		switch _widec {
 		case 266:
-			goto tr430
+			goto tr442
 		case 269:
 			goto st16
 		case 522:
-			goto tr433
+			goto tr445
 		case 525:
 			goto tr31
 		}
@@ -20603,16 +21175,16 @@ tr698:
 			goto tr29
 		}
 		goto st0
-tr699:
+tr717:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st735
-	st735:
+	goto st753
+	st753:
 		if p++; p == pe {
-			goto _test_eof735
+			goto _test_eof753
 		}
-	st_case_735:
-//line memcached.go:20616
+	st_case_753:
+//line memcached.go:21188
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -20622,26 +21194,26 @@ tr699:
 		case 269:
 			goto st16
 		case 366:
-			goto st727
+			goto st745
 		case 525:
 			goto tr31
 		case 622:
-			goto tr707
+			goto tr725
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr707:
+tr725:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st736
-	st736:
+	goto st754
+	st754:
 		if p++; p == pe {
-			goto _test_eof736
+			goto _test_eof754
 		}
-	st_case_736:
-//line memcached.go:20645
+	st_case_754:
+//line memcached.go:21217
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -20651,26 +21223,26 @@ tr707:
 		case 269:
 			goto st16
 		case 367:
-			goto st728
+			goto st746
 		case 525:
 			goto tr31
 		case 623:
-			goto tr708
+			goto tr726
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr708:
+tr726:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st737
-	st737:
+	goto st755
+	st755:
 		if p++; p == pe {
-			goto _test_eof737
+			goto _test_eof755
 		}
-	st_case_737:
-//line memcached.go:20674
+	st_case_755:
+//line memcached.go:21246
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -20680,26 +21252,26 @@ tr708:
 		case 269:
 			goto st16
 		case 370:
-			goto st729
+			goto st747
 		case 525:
 			goto tr31
 		case 626:
-			goto tr709
+			goto tr727
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr709:
+tr727:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st738
-	st738:
+	goto st756
+	st756:
 		if p++; p == pe {
-			goto _test_eof738
+			goto _test_eof756
 		}
-	st_case_738:
-//line memcached.go:20703
+	st_case_756:
+//line memcached.go:21275
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -20709,26 +21281,26 @@ tr709:
 		case 269:
 			goto st16
 		case 357:
-			goto st730
+			goto st748
 		case 525:
 			goto tr31
 		case 613:
-			goto tr710
+			goto tr728
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr710:
+tr728:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st739
-	st739:
+	goto st757
+	st757:
 		if p++; p == pe {
-			goto _test_eof739
+			goto _test_eof757
 		}
-	st_case_739:
-//line memcached.go:20732
+	st_case_757:
+//line memcached.go:21304
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -20738,26 +21310,26 @@ tr710:
 		case 269:
 			goto st16
 		case 368:
-			goto st731
+			goto st749
 		case 525:
 			goto tr31
 		case 624:
-			goto tr711
+			goto tr729
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr711:
+tr729:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st740
-	st740:
+	goto st758
+	st758:
 		if p++; p == pe {
-			goto _test_eof740
+			goto _test_eof758
 		}
-	st_case_740:
-//line memcached.go:20761
+	st_case_758:
+//line memcached.go:21333
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -20767,26 +21339,26 @@ tr711:
 		case 269:
 			goto st16
 		case 364:
-			goto st732
+			goto st750
 		case 525:
 			goto tr31
 		case 620:
-			goto tr712
+			goto tr730
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr712:
+tr730:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st741
-	st741:
+	goto st759
+	st759:
 		if p++; p == pe {
-			goto _test_eof741
+			goto _test_eof759
 		}
-	st_case_741:
-//line memcached.go:20790
+	st_case_759:
+//line memcached.go:21362
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -20796,26 +21368,26 @@ tr712:
 		case 269:
 			goto st16
 		case 377:
-			goto st733
+			goto st751
 		case 525:
 			goto tr31
 		case 633:
-			goto tr713
+			goto tr731
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr713:
+tr731:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st742
-	st742:
+	goto st760
+	st760:
 		if p++; p == pe {
-			goto _test_eof742
+			goto _test_eof760
 		}
-	st_case_742:
-//line memcached.go:20819
+	st_case_760:
+//line memcached.go:21391
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -20823,24 +21395,24 @@ tr713:
 		}
 		switch _widec {
 		case 269:
-			goto st438
+			goto st450
 		case 525:
-			goto tr698
+			goto tr716
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr846:
+tr864:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st743
-	st743:
+	goto st761
+	st761:
 		if p++; p == pe {
-			goto _test_eof743
+			goto _test_eof761
 		}
-	st_case_743:
-//line memcached.go:20844
+	st_case_761:
+//line memcached.go:21416
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -20850,26 +21422,26 @@ tr846:
 		case 269:
 			goto st16
 		case 373:
-			goto st109
+			goto st112
 		case 525:
 			goto tr31
 		case 629:
-			goto tr714
+			goto tr732
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr714:
+tr732:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st744
-	st744:
+	goto st762
+	st762:
 		if p++; p == pe {
-			goto _test_eof744
+			goto _test_eof762
 		}
-	st_case_744:
-//line memcached.go:20873
+	st_case_762:
+//line memcached.go:21445
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -20879,26 +21451,26 @@ tr714:
 		case 269:
 			goto st16
 		case 361:
-			goto st110
+			goto st113
 		case 525:
 			goto tr31
 		case 617:
-			goto tr715
+			goto tr733
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr715:
+tr733:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st745
-	st745:
+	goto st763
+	st763:
 		if p++; p == pe {
-			goto _test_eof745
+			goto _test_eof763
 		}
-	st_case_745:
-//line memcached.go:20902
+	st_case_763:
+//line memcached.go:21474
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -20916,16 +21488,16 @@ tr715:
 			goto tr29
 		}
 		goto st0
-tr847:
+tr865:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st746
-	st746:
+	goto st764
+	st764:
 		if p++; p == pe {
-			goto _test_eof746
+			goto _test_eof764
 		}
-	st_case_746:
-//line memcached.go:20929
+	st_case_764:
+//line memcached.go:21501
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -20935,515 +21507,10 @@ tr847:
 		case 269:
 			goto st16
 		case 357:
-			goto st112
-		case 525:
-			goto tr31
-		case 613:
-			goto tr716
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr716:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st747
-	st747:
-		if p++; p == pe {
-			goto _test_eof747
-		}
-	st_case_747:
-//line memcached.go:20958
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 368:
-			goto st113
-		case 525:
-			goto tr31
-		case 624:
-			goto tr717
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr717:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st748
-	st748:
-		if p++; p == pe {
-			goto _test_eof748
-		}
-	st_case_748:
-//line memcached.go:20987
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 364:
-			goto st114
-		case 525:
-			goto tr31
-		case 620:
-			goto tr718
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr718:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st749
-	st749:
-		if p++; p == pe {
-			goto _test_eof749
-		}
-	st_case_749:
-//line memcached.go:21016
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 353:
 			goto st115
 		case 525:
 			goto tr31
-		case 609:
-			goto tr719
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr719:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st750
-	st750:
-		if p++; p == pe {
-			goto _test_eof750
-		}
-	st_case_750:
-//line memcached.go:21045
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 355:
-			goto st116
-		case 525:
-			goto tr31
-		case 611:
-			goto tr720
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr720:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st751
-	st751:
-		if p++; p == pe {
-			goto _test_eof751
-		}
-	st_case_751:
-//line memcached.go:21074
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 357:
-			goto st4
-		case 525:
-			goto tr31
 		case 613:
-			goto tr689
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr848:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st752
-	st752:
-		if p++; p == pe {
-			goto _test_eof752
-		}
-	st_case_752:
-//line memcached.go:21103
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 357:
-			goto st118
-		case 364:
-			goto st119
-		case 372:
-			goto st144
-		case 525:
-			goto tr31
-		case 613:
-			goto tr721
-		case 620:
-			goto tr722
-		case 628:
-			goto tr723
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr721:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st753
-	st753:
-		if p++; p == pe {
-			goto _test_eof753
-		}
-	st_case_753:
-//line memcached.go:21140
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 372:
-			goto st4
-		case 525:
-			goto tr31
-		case 628:
-			goto tr689
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr722:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st754
-	st754:
-		if p++; p == pe {
-			goto _test_eof754
-		}
-	st_case_754:
-//line memcached.go:21169
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 353:
-			goto st120
-		case 525:
-			goto tr31
-		case 609:
-			goto tr724
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr724:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st755
-	st755:
-		if p++; p == pe {
-			goto _test_eof755
-		}
-	st_case_755:
-//line memcached.go:21198
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 354:
-			goto st121
-		case 525:
-			goto tr31
-		case 610:
-			goto tr725
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr725:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st756
-	st756:
-		if p++; p == pe {
-			goto _test_eof756
-		}
-	st_case_756:
-//line memcached.go:21227
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 371:
-			goto st122
-		case 525:
-			goto tr31
-		case 627:
-			goto tr726
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr726:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st757
-	st757:
-		if p++; p == pe {
-			goto _test_eof757
-		}
-	st_case_757:
-//line memcached.go:21256
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 288:
-			goto st123
-		case 525:
-			goto tr31
-		case 544:
-			goto tr727
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr727:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st758
-	st758:
-		if p++; p == pe {
-			goto _test_eof758
-		}
-	st_case_758:
-//line memcached.go:21285
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 353:
-			goto st124
-		case 370:
-			goto st133
-		case 525:
-			goto tr31
-		case 609:
-			goto tr728
-		case 626:
-			goto tr729
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr728:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st759
-	st759:
-		if p++; p == pe {
-			goto _test_eof759
-		}
-	st_case_759:
-//line memcached.go:21318
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 373:
-			goto st125
-		case 525:
-			goto tr31
-		case 629:
-			goto tr730
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr730:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st760
-	st760:
-		if p++; p == pe {
-			goto _test_eof760
-		}
-	st_case_760:
-//line memcached.go:21347
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 372:
-			goto st126
-		case 525:
-			goto tr31
-		case 628:
-			goto tr731
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr731:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st761
-	st761:
-		if p++; p == pe {
-			goto _test_eof761
-		}
-	st_case_761:
-//line memcached.go:21376
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 367:
-			goto st127
-		case 525:
-			goto tr31
-		case 623:
-			goto tr732
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr732:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st762
-	st762:
-		if p++; p == pe {
-			goto _test_eof762
-		}
-	st_case_762:
-//line memcached.go:21405
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 365:
-			goto st128
-		case 525:
-			goto tr31
-		case 621:
-			goto tr733
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr733:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st763
-	st763:
-		if p++; p == pe {
-			goto _test_eof763
-		}
-	st_case_763:
-//line memcached.go:21434
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 367:
-			goto st129
-		case 525:
-			goto tr31
-		case 623:
 			goto tr734
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -21453,13 +21520,13 @@ tr733:
 tr734:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st764
-	st764:
+	goto st765
+	st765:
 		if p++; p == pe {
-			goto _test_eof764
+			goto _test_eof765
 		}
-	st_case_764:
-//line memcached.go:21463
+	st_case_765:
+//line memcached.go:21530
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -21468,11 +21535,11 @@ tr734:
 		switch _widec {
 		case 269:
 			goto st16
-		case 374:
-			goto st130
+		case 368:
+			goto st116
 		case 525:
 			goto tr31
-		case 630:
+		case 624:
 			goto tr735
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -21482,13 +21549,13 @@ tr734:
 tr735:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st765
-	st765:
+	goto st766
+	st766:
 		if p++; p == pe {
-			goto _test_eof765
+			goto _test_eof766
 		}
-	st_case_765:
-//line memcached.go:21492
+	st_case_766:
+//line memcached.go:21559
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -21497,11 +21564,11 @@ tr735:
 		switch _widec {
 		case 269:
 			goto st16
-		case 357:
-			goto st131
+		case 364:
+			goto st117
 		case 525:
 			goto tr31
-		case 613:
+		case 620:
 			goto tr736
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -21511,13 +21578,13 @@ tr735:
 tr736:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st766
-	st766:
+	goto st767
+	st767:
 		if p++; p == pe {
-			goto _test_eof766
+			goto _test_eof767
 		}
-	st_case_766:
-//line memcached.go:21521
+	st_case_767:
+//line memcached.go:21588
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -21526,11 +21593,11 @@ tr736:
 		switch _widec {
 		case 269:
 			goto st16
-		case 288:
-			goto st132
+		case 353:
+			goto st118
 		case 525:
 			goto tr31
-		case 544:
+		case 609:
 			goto tr737
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -21540,13 +21607,518 @@ tr736:
 tr737:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st767
-	st767:
+	goto st768
+	st768:
 		if p++; p == pe {
-			goto _test_eof767
+			goto _test_eof768
 		}
-	st_case_767:
-//line memcached.go:21550
+	st_case_768:
+//line memcached.go:21617
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 355:
+			goto st119
+		case 525:
+			goto tr31
+		case 611:
+			goto tr738
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr738:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st769
+	st769:
+		if p++; p == pe {
+			goto _test_eof769
+		}
+	st_case_769:
+//line memcached.go:21646
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 357:
+			goto st4
+		case 525:
+			goto tr31
+		case 613:
+			goto tr707
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr866:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st770
+	st770:
+		if p++; p == pe {
+			goto _test_eof770
+		}
+	st_case_770:
+//line memcached.go:21675
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 357:
+			goto st121
+		case 364:
+			goto st122
+		case 372:
+			goto st147
+		case 525:
+			goto tr31
+		case 613:
+			goto tr739
+		case 620:
+			goto tr740
+		case 628:
+			goto tr741
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr739:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st771
+	st771:
+		if p++; p == pe {
+			goto _test_eof771
+		}
+	st_case_771:
+//line memcached.go:21712
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 372:
+			goto st4
+		case 525:
+			goto tr31
+		case 628:
+			goto tr707
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr740:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st772
+	st772:
+		if p++; p == pe {
+			goto _test_eof772
+		}
+	st_case_772:
+//line memcached.go:21741
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 353:
+			goto st123
+		case 525:
+			goto tr31
+		case 609:
+			goto tr742
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr742:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st773
+	st773:
+		if p++; p == pe {
+			goto _test_eof773
+		}
+	st_case_773:
+//line memcached.go:21770
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 354:
+			goto st124
+		case 525:
+			goto tr31
+		case 610:
+			goto tr743
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr743:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st774
+	st774:
+		if p++; p == pe {
+			goto _test_eof774
+		}
+	st_case_774:
+//line memcached.go:21799
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 371:
+			goto st125
+		case 525:
+			goto tr31
+		case 627:
+			goto tr744
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr744:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st775
+	st775:
+		if p++; p == pe {
+			goto _test_eof775
+		}
+	st_case_775:
+//line memcached.go:21828
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 288:
+			goto st126
+		case 525:
+			goto tr31
+		case 544:
+			goto tr745
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr745:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st776
+	st776:
+		if p++; p == pe {
+			goto _test_eof776
+		}
+	st_case_776:
+//line memcached.go:21857
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 353:
+			goto st127
+		case 370:
+			goto st136
+		case 525:
+			goto tr31
+		case 609:
+			goto tr746
+		case 626:
+			goto tr747
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr746:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st777
+	st777:
+		if p++; p == pe {
+			goto _test_eof777
+		}
+	st_case_777:
+//line memcached.go:21890
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 373:
+			goto st128
+		case 525:
+			goto tr31
+		case 629:
+			goto tr748
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr748:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st778
+	st778:
+		if p++; p == pe {
+			goto _test_eof778
+		}
+	st_case_778:
+//line memcached.go:21919
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 372:
+			goto st129
+		case 525:
+			goto tr31
+		case 628:
+			goto tr749
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr749:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st779
+	st779:
+		if p++; p == pe {
+			goto _test_eof779
+		}
+	st_case_779:
+//line memcached.go:21948
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 367:
+			goto st130
+		case 525:
+			goto tr31
+		case 623:
+			goto tr750
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr750:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st780
+	st780:
+		if p++; p == pe {
+			goto _test_eof780
+		}
+	st_case_780:
+//line memcached.go:21977
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 365:
+			goto st131
+		case 525:
+			goto tr31
+		case 621:
+			goto tr751
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr751:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st781
+	st781:
+		if p++; p == pe {
+			goto _test_eof781
+		}
+	st_case_781:
+//line memcached.go:22006
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 367:
+			goto st132
+		case 525:
+			goto tr31
+		case 623:
+			goto tr752
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr752:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st782
+	st782:
+		if p++; p == pe {
+			goto _test_eof782
+		}
+	st_case_782:
+//line memcached.go:22035
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 374:
+			goto st133
+		case 525:
+			goto tr31
+		case 630:
+			goto tr753
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr753:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st783
+	st783:
+		if p++; p == pe {
+			goto _test_eof783
+		}
+	st_case_783:
+//line memcached.go:22064
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 357:
+			goto st134
+		case 525:
+			goto tr31
+		case 613:
+			goto tr754
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr754:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st784
+	st784:
+		if p++; p == pe {
+			goto _test_eof784
+		}
+	st_case_784:
+//line memcached.go:22093
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 288:
+			goto st135
+		case 525:
+			goto tr31
+		case 544:
+			goto tr755
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr755:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st785
+	st785:
+		if p++; p == pe {
+			goto _test_eof785
+		}
+	st_case_785:
+//line memcached.go:22122
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -21567,16 +22139,16 @@ tr737:
 			goto st63
 		}
 		goto st0
-tr729:
+tr747:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st768
-	st768:
+	goto st786
+	st786:
 		if p++; p == pe {
-			goto _test_eof768
+			goto _test_eof786
 		}
-	st_case_768:
-//line memcached.go:21580
+	st_case_786:
+//line memcached.go:22152
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -21586,26 +22158,26 @@ tr729:
 		case 269:
 			goto st16
 		case 357:
-			goto st134
+			goto st137
 		case 525:
 			goto tr31
 		case 613:
-			goto tr738
+			goto tr756
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr738:
+tr756:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st769
-	st769:
+	goto st787
+	st787:
 		if p++; p == pe {
-			goto _test_eof769
+			goto _test_eof787
 		}
-	st_case_769:
-//line memcached.go:21609
+	st_case_787:
+//line memcached.go:22181
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -21615,26 +22187,26 @@ tr738:
 		case 269:
 			goto st16
 		case 353:
-			goto st135
+			goto st138
 		case 525:
 			goto tr31
 		case 609:
-			goto tr739
+			goto tr757
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr739:
+tr757:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st770
-	st770:
+	goto st788
+	st788:
 		if p++; p == pe {
-			goto _test_eof770
+			goto _test_eof788
 		}
-	st_case_770:
-//line memcached.go:21638
+	st_case_788:
+//line memcached.go:22210
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -21644,26 +22216,26 @@ tr739:
 		case 269:
 			goto st16
 		case 371:
-			goto st136
+			goto st139
 		case 525:
 			goto tr31
 		case 627:
-			goto tr740
+			goto tr758
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr740:
+tr758:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st771
-	st771:
+	goto st789
+	st789:
 		if p++; p == pe {
-			goto _test_eof771
+			goto _test_eof789
 		}
-	st_case_771:
-//line memcached.go:21667
+	st_case_789:
+//line memcached.go:22239
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -21673,26 +22245,26 @@ tr740:
 		case 269:
 			goto st16
 		case 371:
-			goto st137
+			goto st140
 		case 525:
 			goto tr31
 		case 627:
-			goto tr741
+			goto tr759
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr741:
+tr759:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st772
-	st772:
+	goto st790
+	st790:
 		if p++; p == pe {
-			goto _test_eof772
+			goto _test_eof790
 		}
-	st_case_772:
-//line memcached.go:21696
+	st_case_790:
+//line memcached.go:22268
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -21702,26 +22274,26 @@ tr741:
 		case 269:
 			goto st16
 		case 361:
-			goto st138
+			goto st141
 		case 525:
 			goto tr31
 		case 617:
-			goto tr742
+			goto tr760
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr742:
+tr760:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st773
-	st773:
+	goto st791
+	st791:
 		if p++; p == pe {
-			goto _test_eof773
+			goto _test_eof791
 		}
-	st_case_773:
-//line memcached.go:21725
+	st_case_791:
+//line memcached.go:22297
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -21731,26 +22303,26 @@ tr742:
 		case 269:
 			goto st16
 		case 359:
-			goto st139
+			goto st142
 		case 525:
 			goto tr31
 		case 615:
-			goto tr743
+			goto tr761
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr743:
+tr761:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st774
-	st774:
+	goto st792
+	st792:
 		if p++; p == pe {
-			goto _test_eof774
+			goto _test_eof792
 		}
-	st_case_774:
-//line memcached.go:21754
+	st_case_792:
+//line memcached.go:22326
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -21760,26 +22332,26 @@ tr743:
 		case 269:
 			goto st16
 		case 366:
-			goto st140
+			goto st143
 		case 525:
 			goto tr31
 		case 622:
-			goto tr744
+			goto tr762
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr744:
+tr762:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st775
-	st775:
+	goto st793
+	st793:
 		if p++; p == pe {
-			goto _test_eof775
+			goto _test_eof793
 		}
-	st_case_775:
-//line memcached.go:21783
+	st_case_793:
+//line memcached.go:22355
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -21789,26 +22361,26 @@ tr744:
 		case 269:
 			goto st16
 		case 288:
-			goto st141
+			goto st144
 		case 525:
 			goto tr31
 		case 544:
-			goto tr745
+			goto tr763
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr745:
+tr763:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st776
-	st776:
+	goto st794
+	st794:
 		if p++; p == pe {
-			goto _test_eof776
+			goto _test_eof794
 		}
-	st_case_776:
-//line memcached.go:21812
+	st_case_794:
+//line memcached.go:22384
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -21818,16 +22390,16 @@ tr745:
 		case 269:
 			goto st16
 		case 301:
-			goto st142
+			goto st145
 		case 525:
 			goto tr31
 		case 557:
-			goto tr746
+			goto tr764
 		}
 		switch {
 		case _widec < 512:
 			if 304 <= _widec && _widec <= 313 {
-				goto st143
+				goto st146
 			}
 		case _widec > 559:
 			switch {
@@ -21836,22 +22408,22 @@ tr745:
 					goto tr29
 				}
 			case _widec >= 560:
-				goto tr747
+				goto tr765
 			}
 		default:
 			goto tr29
 		}
 		goto st0
-tr746:
+tr764:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st777
-	st777:
+	goto st795
+	st795:
 		if p++; p == pe {
-			goto _test_eof777
+			goto _test_eof795
 		}
-	st_case_777:
-//line memcached.go:21855
+	st_case_795:
+//line memcached.go:22427
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -21866,7 +22438,7 @@ tr746:
 		switch {
 		case _widec < 512:
 			if 304 <= _widec && _widec <= 313 {
-				goto st143
+				goto st146
 			}
 		case _widec > 559:
 			switch {
@@ -21875,22 +22447,22 @@ tr746:
 					goto tr29
 				}
 			case _widec >= 560:
-				goto tr747
+				goto tr765
 			}
 		default:
 			goto tr29
 		}
 		goto st0
-tr747:
+tr765:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st778
-	st778:
+	goto st796
+	st796:
 		if p++; p == pe {
-			goto _test_eof778
+			goto _test_eof796
 		}
-	st_case_778:
-//line memcached.go:21894
+	st_case_796:
+//line memcached.go:22466
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -21904,12 +22476,12 @@ tr747:
 		case 525:
 			goto tr31
 		case 544:
-			goto tr448
+			goto tr460
 		}
 		switch {
 		case _widec < 512:
 			if 304 <= _widec && _widec <= 313 {
-				goto st143
+				goto st146
 			}
 		case _widec > 559:
 			switch {
@@ -21918,22 +22490,22 @@ tr747:
 					goto tr29
 				}
 			case _widec >= 560:
-				goto tr747
+				goto tr765
 			}
 		default:
 			goto tr29
 		}
 		goto st0
-tr723:
+tr741:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st779
-	st779:
+	goto st797
+	st797:
 		if p++; p == pe {
-			goto _test_eof779
+			goto _test_eof797
 		}
-	st_case_779:
-//line memcached.go:21937
+	st_case_797:
+//line memcached.go:22509
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -21943,26 +22515,26 @@ tr723:
 		case 269:
 			goto st16
 		case 353:
-			goto st145
+			goto st148
 		case 525:
 			goto tr31
 		case 609:
-			goto tr748
+			goto tr766
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr748:
+tr766:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st780
-	st780:
+	goto st798
+	st798:
 		if p++; p == pe {
-			goto _test_eof780
+			goto _test_eof798
 		}
-	st_case_780:
-//line memcached.go:21966
+	st_case_798:
+//line memcached.go:22538
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -21972,26 +22544,26 @@ tr748:
 		case 269:
 			goto st16
 		case 372:
-			goto st146
+			goto st149
 		case 525:
 			goto tr31
 		case 628:
-			goto tr749
+			goto tr767
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr749:
+tr767:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st781
-	st781:
+	goto st799
+	st799:
 		if p++; p == pe {
-			goto _test_eof781
+			goto _test_eof799
 		}
-	st_case_781:
-//line memcached.go:21995
+	st_case_799:
+//line memcached.go:22567
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -22001,26 +22573,26 @@ tr749:
 		case 269:
 			goto st16
 		case 371:
-			goto st147
+			goto st150
 		case 525:
 			goto tr31
 		case 627:
-			goto tr750
+			goto tr768
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr750:
+tr768:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st782
-	st782:
+	goto st800
+	st800:
 		if p++; p == pe {
-			goto _test_eof782
+			goto _test_eof800
 		}
-	st_case_782:
-//line memcached.go:22024
+	st_case_800:
+//line memcached.go:22596
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -22030,422 +22602,26 @@ tr750:
 		case 269:
 			goto st16
 		case 288:
-			goto st148
+			goto st151
 		case 525:
 			goto tr31
 		case 544:
-			goto tr305
+			goto tr314
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr849:
+tr867:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st783
-	st783:
+	goto st801
+	st801:
 		if p++; p == pe {
-			goto _test_eof783
+			goto _test_eof801
 		}
-	st_case_783:
-//line memcached.go:22053
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 367:
-			goto st386
-		case 525:
-			goto tr31
-		case 623:
-			goto tr751
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr751:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st784
-	st784:
-		if p++; p == pe {
-			goto _test_eof784
-		}
-	st_case_784:
-//line memcached.go:22082
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 373:
-			goto st387
-		case 525:
-			goto tr31
-		case 629:
-			goto tr752
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr752:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st785
-	st785:
-		if p++; p == pe {
-			goto _test_eof785
-		}
-	st_case_785:
-//line memcached.go:22111
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 355:
-			goto st388
-		case 525:
-			goto tr31
-		case 611:
-			goto tr753
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr753:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st786
-	st786:
-		if p++; p == pe {
-			goto _test_eof786
-		}
-	st_case_786:
-//line memcached.go:22140
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 360:
-			goto st389
-		case 525:
-			goto tr31
-		case 616:
-			goto tr754
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr754:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st787
-	st787:
-		if p++; p == pe {
-			goto _test_eof787
-		}
-	st_case_787:
-//line memcached.go:22169
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 288:
-			goto st390
-		case 525:
-			goto tr31
-		case 544:
-			goto tr755
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr755:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st788
-	st788:
-		if p++; p == pe {
-			goto _test_eof788
-		}
-	st_case_788:
-//line memcached.go:22198
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 525:
-			goto tr31
-		}
-		switch {
-		case _widec < 512:
-			if 289 <= _widec && _widec <= 511 {
-				goto tr382
-			}
-		case _widec > 544:
-			if 545 <= _widec && _widec <= 767 {
-				goto tr756
-			}
-		default:
-			goto tr29
-		}
-		goto st0
-tr756:
-//line memcached.rl:46
-
-				keyString = keyString + string(data[p])
-			
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st789
-	st789:
-		if p++; p == pe {
-			goto _test_eof789
-		}
-	st_case_789:
-//line memcached.go:22236
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 288:
-			goto st392
-		case 525:
-			goto tr31
-		case 544:
-			goto tr757
-		}
-		switch {
-		case _widec < 512:
-			if 289 <= _widec && _widec <= 511 {
-				goto tr382
-			}
-		case _widec > 543:
-			if 545 <= _widec && _widec <= 767 {
-				goto tr756
-			}
-		default:
-			goto tr29
-		}
-		goto st0
-tr757:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st790
-	st790:
-		if p++; p == pe {
-			goto _test_eof790
-		}
-	st_case_790:
-//line memcached.go:22274
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 525:
-			goto tr31
-		}
-		switch {
-		case _widec < 512:
-			if 304 <= _widec && _widec <= 313 {
-				goto tr384
-			}
-		case _widec > 559:
-			switch {
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr29
-				}
-			case _widec >= 560:
-				goto tr758
-			}
-		default:
-			goto tr29
-		}
-		goto st0
-tr758:
-//line memcached.rl:45
- expiry = expiry * 10 + (int(data[p]) - '0') 
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st791
-	st791:
-		if p++; p == pe {
-			goto _test_eof791
-		}
-	st_case_791:
-//line memcached.go:22315
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 288:
-			goto st56
-		case 525:
-			goto tr31
-		case 544:
-			goto tr646
-		}
-		switch {
-		case _widec < 512:
-			if 304 <= _widec && _widec <= 313 {
-				goto tr384
-			}
-		case _widec > 559:
-			switch {
-			case _widec > 569:
-				if 570 <= _widec && _widec <= 767 {
-					goto tr29
-				}
-			case _widec >= 560:
-				goto tr758
-			}
-		default:
-			goto tr29
-		}
-		goto st0
-tr850:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st792
-	st792:
-		if p++; p == pe {
-			goto _test_eof792
-		}
-	st_case_792:
-//line memcached.go:22358
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 357:
-			goto st395
-		case 525:
-			goto tr31
-		case 613:
-			goto tr759
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr759:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st793
-	st793:
-		if p++; p == pe {
-			goto _test_eof793
-		}
-	st_case_793:
-//line memcached.go:22387
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 370:
-			goto st396
-		case 525:
-			goto tr31
-		case 626:
-			goto tr760
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr760:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st794
-	st794:
-		if p++; p == pe {
-			goto _test_eof794
-		}
-	st_case_794:
-//line memcached.go:22416
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 354:
-			goto st397
-		case 371:
-			goto st401
-		case 525:
-			goto tr31
-		case 610:
-			goto tr761
-		case 627:
-			goto tr762
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr761:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st795
-	st795:
-		if p++; p == pe {
-			goto _test_eof795
-		}
-	st_case_795:
-//line memcached.go:22449
+	st_case_801:
+//line memcached.go:22625
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -22459,236 +22635,6 @@ tr761:
 		case 525:
 			goto tr31
 		case 623:
-			goto tr763
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr763:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st796
-	st796:
-		if p++; p == pe {
-			goto _test_eof796
-		}
-	st_case_796:
-//line memcached.go:22478
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 371:
-			goto st399
-		case 525:
-			goto tr31
-		case 627:
-			goto tr764
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr764:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st797
-	st797:
-		if p++; p == pe {
-			goto _test_eof797
-		}
-	st_case_797:
-//line memcached.go:22507
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 361:
-			goto st400
-		case 525:
-			goto tr31
-		case 617:
-			goto tr765
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr765:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st798
-	st798:
-		if p++; p == pe {
-			goto _test_eof798
-		}
-	st_case_798:
-//line memcached.go:22536
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 372:
-			goto st62
-		case 525:
-			goto tr31
-		case 628:
-			goto tr652
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr762:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st799
-	st799:
-		if p++; p == pe {
-			goto _test_eof799
-		}
-	st_case_799:
-//line memcached.go:22565
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 361:
-			goto st402
-		case 525:
-			goto tr31
-		case 617:
-			goto tr766
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr766:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st800
-	st800:
-		if p++; p == pe {
-			goto _test_eof800
-		}
-	st_case_800:
-//line memcached.go:22594
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 367:
-			goto st403
-		case 525:
-			goto tr31
-		case 623:
-			goto tr767
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr767:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st801
-	st801:
-		if p++; p == pe {
-			goto _test_eof801
-		}
-	st_case_801:
-//line memcached.go:22623
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 366:
-			goto st63
-		case 525:
-			goto tr31
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr851:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st802
-	st802:
-		if p++; p == pe {
-			goto _test_eof802
-		}
-	st_case_802:
-//line memcached.go:22650
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 353:
-			goto st405
-		case 525:
-			goto tr31
-		case 609:
-			goto tr768
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr768:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st803
-	st803:
-		if p++; p == pe {
-			goto _test_eof803
-		}
-	st_case_803:
-//line memcached.go:22679
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 372:
-			goto st406
-		case 525:
-			goto tr31
-		case 628:
 			goto tr769
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -22698,13 +22644,13 @@ tr768:
 tr769:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st804
-	st804:
+	goto st802
+	st802:
 		if p++; p == pe {
-			goto _test_eof804
+			goto _test_eof802
 		}
-	st_case_804:
-//line memcached.go:22708
+	st_case_802:
+//line memcached.go:22654
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -22713,11 +22659,11 @@ tr769:
 		switch _widec {
 		case 269:
 			goto st16
-		case 355:
-			goto st407
+		case 373:
+			goto st399
 		case 525:
 			goto tr31
-		case 611:
+		case 629:
 			goto tr770
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -22727,166 +22673,13 @@ tr769:
 tr770:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st805
-	st805:
+	goto st803
+	st803:
 		if p++; p == pe {
-			goto _test_eof805
+			goto _test_eof803
 		}
-	st_case_805:
-//line memcached.go:22737
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 360:
-			goto st408
-		case 525:
-			goto tr31
-		case 616:
-			goto tr771
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr771:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st806
-	st806:
-		if p++; p == pe {
-			goto _test_eof806
-		}
-	st_case_806:
-//line memcached.go:22766
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 288:
-			goto st409
-		case 525:
-			goto tr31
-		case 544:
-			goto tr772
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr772:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st807
-	st807:
-		if p++; p == pe {
-			goto _test_eof807
-		}
-	st_case_807:
-//line memcached.go:22795
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 357:
-			goto st410
-		case 358:
-			goto st418
-		case 365:
-			goto st424
-		case 525:
-			goto tr31
-		case 613:
-			goto tr773
-		case 614:
-			goto tr774
-		case 621:
-			goto tr775
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr773:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st808
-	st808:
-		if p++; p == pe {
-			goto _test_eof808
-		}
-	st_case_808:
-//line memcached.go:22832
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 374:
-			goto st411
-		case 525:
-			goto tr31
-		case 630:
-			goto tr776
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr776:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st809
-	st809:
-		if p++; p == pe {
-			goto _test_eof809
-		}
-	st_case_809:
-//line memcached.go:22861
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 361:
-			goto st412
-		case 525:
-			goto tr31
-		case 617:
-			goto tr777
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr777:
-//line memcached.rl:44
- foundLen = foundLen + 1 
-	goto st810
-	st810:
-		if p++; p == pe {
-			goto _test_eof810
-		}
-	st_case_810:
-//line memcached.go:22890
+	st_case_803:
+//line memcached.go:22683
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -22896,10 +22689,286 @@ tr777:
 		case 269:
 			goto st16
 		case 355:
-			goto st413
+			goto st400
 		case 525:
 			goto tr31
 		case 611:
+			goto tr771
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr771:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st804
+	st804:
+		if p++; p == pe {
+			goto _test_eof804
+		}
+	st_case_804:
+//line memcached.go:22712
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 360:
+			goto st401
+		case 525:
+			goto tr31
+		case 616:
+			goto tr772
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr772:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st805
+	st805:
+		if p++; p == pe {
+			goto _test_eof805
+		}
+	st_case_805:
+//line memcached.go:22741
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 288:
+			goto st402
+		case 525:
+			goto tr31
+		case 544:
+			goto tr773
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr773:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st806
+	st806:
+		if p++; p == pe {
+			goto _test_eof806
+		}
+	st_case_806:
+//line memcached.go:22770
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 525:
+			goto tr31
+		}
+		switch {
+		case _widec < 512:
+			if 289 <= _widec && _widec <= 511 {
+				goto tr394
+			}
+		case _widec > 544:
+			if 545 <= _widec && _widec <= 767 {
+				goto tr774
+			}
+		default:
+			goto tr29
+		}
+		goto st0
+tr774:
+//line memcached.rl:46
+
+				keyString = keyString + string(data[p])
+			
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st807
+	st807:
+		if p++; p == pe {
+			goto _test_eof807
+		}
+	st_case_807:
+//line memcached.go:22808
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 288:
+			goto st404
+		case 525:
+			goto tr31
+		case 544:
+			goto tr775
+		}
+		switch {
+		case _widec < 512:
+			if 289 <= _widec && _widec <= 511 {
+				goto tr394
+			}
+		case _widec > 543:
+			if 545 <= _widec && _widec <= 767 {
+				goto tr774
+			}
+		default:
+			goto tr29
+		}
+		goto st0
+tr775:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st808
+	st808:
+		if p++; p == pe {
+			goto _test_eof808
+		}
+	st_case_808:
+//line memcached.go:22846
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 525:
+			goto tr31
+		}
+		switch {
+		case _widec < 512:
+			if 304 <= _widec && _widec <= 313 {
+				goto tr396
+			}
+		case _widec > 559:
+			switch {
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr29
+				}
+			case _widec >= 560:
+				goto tr776
+			}
+		default:
+			goto tr29
+		}
+		goto st0
+tr776:
+//line memcached.rl:45
+ expiry = expiry * 10 + (int(data[p]) - '0') 
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st809
+	st809:
+		if p++; p == pe {
+			goto _test_eof809
+		}
+	st_case_809:
+//line memcached.go:22887
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 288:
+			goto st56
+		case 525:
+			goto tr31
+		case 544:
+			goto tr661
+		}
+		switch {
+		case _widec < 512:
+			if 304 <= _widec && _widec <= 313 {
+				goto tr396
+			}
+		case _widec > 559:
+			switch {
+			case _widec > 569:
+				if 570 <= _widec && _widec <= 767 {
+					goto tr29
+				}
+			case _widec >= 560:
+				goto tr776
+			}
+		default:
+			goto tr29
+		}
+		goto st0
+tr868:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st810
+	st810:
+		if p++; p == pe {
+			goto _test_eof810
+		}
+	st_case_810:
+//line memcached.go:22930
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 357:
+			goto st407
+		case 525:
+			goto tr31
+		case 613:
+			goto tr777
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr777:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st811
+	st811:
+		if p++; p == pe {
+			goto _test_eof811
+		}
+	st_case_811:
+//line memcached.go:22959
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 370:
+			goto st408
+		case 525:
+			goto tr31
+		case 626:
 			goto tr778
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -22909,13 +22978,13 @@ tr777:
 tr778:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st811
-	st811:
+	goto st812
+	st812:
 		if p++; p == pe {
-			goto _test_eof811
+			goto _test_eof812
 		}
-	st_case_811:
-//line memcached.go:22919
+	st_case_812:
+//line memcached.go:22988
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -22924,12 +22993,16 @@ tr778:
 		switch _widec {
 		case 269:
 			goto st16
-		case 372:
-			goto st414
+		case 354:
+			goto st409
+		case 371:
+			goto st413
 		case 525:
 			goto tr31
-		case 628:
+		case 610:
 			goto tr779
+		case 627:
+			goto tr780
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
@@ -22938,42 +23011,13 @@ tr778:
 tr779:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st812
-	st812:
-		if p++; p == pe {
-			goto _test_eof812
-		}
-	st_case_812:
-//line memcached.go:22948
-		_widec = int16(data[p])
-		_widec = 256 + (int16(data[p]) - 0)
-		if  expectedLen > foundLen  {
-			_widec += 256
-		}
-		switch _widec {
-		case 269:
-			goto st16
-		case 361:
-			goto st415
-		case 525:
-			goto tr31
-		case 617:
-			goto tr780
-		}
-		if 512 <= _widec && _widec <= 767 {
-			goto tr29
-		}
-		goto st0
-tr780:
-//line memcached.rl:44
- foundLen = foundLen + 1 
 	goto st813
 	st813:
 		if p++; p == pe {
 			goto _test_eof813
 		}
 	st_case_813:
-//line memcached.go:22977
+//line memcached.go:23021
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -22983,7 +23027,7 @@ tr780:
 		case 269:
 			goto st16
 		case 367:
-			goto st416
+			goto st410
 		case 525:
 			goto tr31
 		case 623:
@@ -23002,7 +23046,7 @@ tr781:
 			goto _test_eof814
 		}
 	st_case_814:
-//line memcached.go:23006
+//line memcached.go:23050
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -23011,11 +23055,11 @@ tr781:
 		switch _widec {
 		case 269:
 			goto st16
-		case 366:
-			goto st417
+		case 371:
+			goto st411
 		case 525:
 			goto tr31
-		case 622:
+		case 627:
 			goto tr782
 		}
 		if 512 <= _widec && _widec <= 767 {
@@ -23031,7 +23075,535 @@ tr782:
 			goto _test_eof815
 		}
 	st_case_815:
-//line memcached.go:23035
+//line memcached.go:23079
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 361:
+			goto st412
+		case 525:
+			goto tr31
+		case 617:
+			goto tr783
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr783:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st816
+	st816:
+		if p++; p == pe {
+			goto _test_eof816
+		}
+	st_case_816:
+//line memcached.go:23108
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 372:
+			goto st62
+		case 525:
+			goto tr31
+		case 628:
+			goto tr667
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr780:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st817
+	st817:
+		if p++; p == pe {
+			goto _test_eof817
+		}
+	st_case_817:
+//line memcached.go:23137
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 361:
+			goto st414
+		case 525:
+			goto tr31
+		case 617:
+			goto tr784
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr784:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st818
+	st818:
+		if p++; p == pe {
+			goto _test_eof818
+		}
+	st_case_818:
+//line memcached.go:23166
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 367:
+			goto st415
+		case 525:
+			goto tr31
+		case 623:
+			goto tr785
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr785:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st819
+	st819:
+		if p++; p == pe {
+			goto _test_eof819
+		}
+	st_case_819:
+//line memcached.go:23195
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 366:
+			goto st63
+		case 525:
+			goto tr31
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr869:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st820
+	st820:
+		if p++; p == pe {
+			goto _test_eof820
+		}
+	st_case_820:
+//line memcached.go:23222
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 353:
+			goto st417
+		case 525:
+			goto tr31
+		case 609:
+			goto tr786
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr786:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st821
+	st821:
+		if p++; p == pe {
+			goto _test_eof821
+		}
+	st_case_821:
+//line memcached.go:23251
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 372:
+			goto st418
+		case 525:
+			goto tr31
+		case 628:
+			goto tr787
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr787:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st822
+	st822:
+		if p++; p == pe {
+			goto _test_eof822
+		}
+	st_case_822:
+//line memcached.go:23280
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 355:
+			goto st419
+		case 525:
+			goto tr31
+		case 611:
+			goto tr788
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr788:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st823
+	st823:
+		if p++; p == pe {
+			goto _test_eof823
+		}
+	st_case_823:
+//line memcached.go:23309
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 360:
+			goto st420
+		case 525:
+			goto tr31
+		case 616:
+			goto tr789
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr789:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st824
+	st824:
+		if p++; p == pe {
+			goto _test_eof824
+		}
+	st_case_824:
+//line memcached.go:23338
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 288:
+			goto st421
+		case 525:
+			goto tr31
+		case 544:
+			goto tr790
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr790:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st825
+	st825:
+		if p++; p == pe {
+			goto _test_eof825
+		}
+	st_case_825:
+//line memcached.go:23367
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 357:
+			goto st422
+		case 358:
+			goto st430
+		case 365:
+			goto st436
+		case 525:
+			goto tr31
+		case 613:
+			goto tr791
+		case 614:
+			goto tr792
+		case 621:
+			goto tr793
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr791:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st826
+	st826:
+		if p++; p == pe {
+			goto _test_eof826
+		}
+	st_case_826:
+//line memcached.go:23404
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 374:
+			goto st423
+		case 525:
+			goto tr31
+		case 630:
+			goto tr794
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr794:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st827
+	st827:
+		if p++; p == pe {
+			goto _test_eof827
+		}
+	st_case_827:
+//line memcached.go:23433
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 361:
+			goto st424
+		case 525:
+			goto tr31
+		case 617:
+			goto tr795
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr795:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st828
+	st828:
+		if p++; p == pe {
+			goto _test_eof828
+		}
+	st_case_828:
+//line memcached.go:23462
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 355:
+			goto st425
+		case 525:
+			goto tr31
+		case 611:
+			goto tr796
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr796:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st829
+	st829:
+		if p++; p == pe {
+			goto _test_eof829
+		}
+	st_case_829:
+//line memcached.go:23491
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 372:
+			goto st426
+		case 525:
+			goto tr31
+		case 628:
+			goto tr797
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr797:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st830
+	st830:
+		if p++; p == pe {
+			goto _test_eof830
+		}
+	st_case_830:
+//line memcached.go:23520
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 361:
+			goto st427
+		case 525:
+			goto tr31
+		case 617:
+			goto tr798
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr798:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st831
+	st831:
+		if p++; p == pe {
+			goto _test_eof831
+		}
+	st_case_831:
+//line memcached.go:23549
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 367:
+			goto st428
+		case 525:
+			goto tr31
+		case 623:
+			goto tr799
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr799:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st832
+	st832:
+		if p++; p == pe {
+			goto _test_eof832
+		}
+	st_case_832:
+//line memcached.go:23578
+		_widec = int16(data[p])
+		_widec = 256 + (int16(data[p]) - 0)
+		if  expectedLen > foundLen  {
+			_widec += 256
+		}
+		switch _widec {
+		case 269:
+			goto st16
+		case 366:
+			goto st429
+		case 525:
+			goto tr31
+		case 622:
+			goto tr800
+		}
+		if 512 <= _widec && _widec <= 767 {
+			goto tr29
+		}
+		goto st0
+tr800:
+//line memcached.rl:44
+ foundLen = foundLen + 1 
+	goto st833
+	st833:
+		if p++; p == pe {
+			goto _test_eof833
+		}
+	st_case_833:
+//line memcached.go:23607
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -23049,16 +23621,16 @@ tr782:
 			goto tr29
 		}
 		goto st0
-tr774:
+tr792:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st816
-	st816:
+	goto st834
+	st834:
 		if p++; p == pe {
-			goto _test_eof816
+			goto _test_eof834
 		}
-	st_case_816:
-//line memcached.go:23062
+	st_case_834:
+//line memcached.go:23634
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -23068,26 +23640,26 @@ tr774:
 		case 269:
 			goto st16
 		case 357:
-			goto st419
+			goto st431
 		case 525:
 			goto tr31
 		case 613:
-			goto tr783
+			goto tr801
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr783:
+tr801:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st817
-	st817:
+	goto st835
+	st835:
 		if p++; p == pe {
-			goto _test_eof817
+			goto _test_eof835
 		}
-	st_case_817:
-//line memcached.go:23091
+	st_case_835:
+//line memcached.go:23663
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -23097,26 +23669,26 @@ tr783:
 		case 269:
 			goto st16
 		case 372:
-			goto st420
+			goto st432
 		case 525:
 			goto tr31
 		case 628:
-			goto tr784
+			goto tr802
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr784:
+tr802:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st818
-	st818:
+	goto st836
+	st836:
 		if p++; p == pe {
-			goto _test_eof818
+			goto _test_eof836
 		}
-	st_case_818:
-//line memcached.go:23120
+	st_case_836:
+//line memcached.go:23692
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -23126,26 +23698,26 @@ tr784:
 		case 269:
 			goto st16
 		case 355:
-			goto st421
+			goto st433
 		case 525:
 			goto tr31
 		case 611:
-			goto tr785
+			goto tr803
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr785:
+tr803:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st819
-	st819:
+	goto st837
+	st837:
 		if p++; p == pe {
-			goto _test_eof819
+			goto _test_eof837
 		}
-	st_case_819:
-//line memcached.go:23149
+	st_case_837:
+//line memcached.go:23721
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -23155,26 +23727,26 @@ tr785:
 		case 269:
 			goto st16
 		case 360:
-			goto st422
+			goto st434
 		case 525:
 			goto tr31
 		case 616:
-			goto tr786
+			goto tr804
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr786:
+tr804:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st820
-	st820:
+	goto st838
+	st838:
 		if p++; p == pe {
-			goto _test_eof820
+			goto _test_eof838
 		}
-	st_case_820:
-//line memcached.go:23178
+	st_case_838:
+//line memcached.go:23750
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -23184,26 +23756,26 @@ tr786:
 		case 269:
 			goto st16
 		case 357:
-			goto st423
+			goto st435
 		case 525:
 			goto tr31
 		case 613:
-			goto tr787
+			goto tr805
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr787:
+tr805:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st821
-	st821:
+	goto st839
+	st839:
 		if p++; p == pe {
-			goto _test_eof821
+			goto _test_eof839
 		}
-	st_case_821:
-//line memcached.go:23207
+	st_case_839:
+//line memcached.go:23779
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -23213,26 +23785,26 @@ tr787:
 		case 269:
 			goto st16
 		case 370:
-			goto st417
+			goto st429
 		case 525:
 			goto tr31
 		case 626:
-			goto tr782
+			goto tr800
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr775:
+tr793:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st822
-	st822:
+	goto st840
+	st840:
 		if p++; p == pe {
-			goto _test_eof822
+			goto _test_eof840
 		}
-	st_case_822:
-//line memcached.go:23236
+	st_case_840:
+//line memcached.go:23808
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -23242,26 +23814,26 @@ tr775:
 		case 269:
 			goto st16
 		case 373:
-			goto st425
+			goto st437
 		case 525:
 			goto tr31
 		case 629:
-			goto tr788
+			goto tr806
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr788:
+tr806:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st823
-	st823:
+	goto st841
+	st841:
 		if p++; p == pe {
-			goto _test_eof823
+			goto _test_eof841
 		}
-	st_case_823:
-//line memcached.go:23265
+	st_case_841:
+//line memcached.go:23837
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -23271,26 +23843,26 @@ tr788:
 		case 269:
 			goto st16
 		case 372:
-			goto st426
+			goto st438
 		case 525:
 			goto tr31
 		case 628:
-			goto tr789
+			goto tr807
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr789:
+tr807:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st824
-	st824:
+	goto st842
+	st842:
 		if p++; p == pe {
-			goto _test_eof824
+			goto _test_eof842
 		}
-	st_case_824:
-//line memcached.go:23294
+	st_case_842:
+//line memcached.go:23866
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -23300,26 +23872,26 @@ tr789:
 		case 269:
 			goto st16
 		case 353:
-			goto st413
+			goto st425
 		case 525:
 			goto tr31
 		case 609:
-			goto tr778
+			goto tr796
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr29
 		}
 		goto st0
-tr428:
+tr440:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st825
-	st825:
+	goto st843
+	st843:
 		if p++; p == pe {
-			goto _test_eof825
+			goto _test_eof843
 		}
-	st_case_825:
-//line memcached.go:23323
+	st_case_843:
+//line memcached.go:23895
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -23327,7 +23899,7 @@ tr428:
 		}
 		switch _widec {
 		case 266:
-			goto tr430
+			goto tr442
 		case 269:
 			goto st16
 		case 522:
@@ -23339,16 +23911,16 @@ tr428:
 			goto tr62
 		}
 		goto st0
-tr429:
+tr441:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st826
-	st826:
+	goto st844
+	st844:
 		if p++; p == pe {
-			goto _test_eof826
+			goto _test_eof844
 		}
-	st_case_826:
-//line memcached.go:23352
+	st_case_844:
+//line memcached.go:23924
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -23358,26 +23930,26 @@ tr429:
 		case 269:
 			goto st16
 		case 366:
-			goto st727
+			goto st745
 		case 525:
 			goto tr63
 		case 622:
-			goto tr790
+			goto tr808
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr790:
+tr808:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st827
-	st827:
+	goto st845
+	st845:
 		if p++; p == pe {
-			goto _test_eof827
+			goto _test_eof845
 		}
-	st_case_827:
-//line memcached.go:23381
+	st_case_845:
+//line memcached.go:23953
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -23387,26 +23959,26 @@ tr790:
 		case 269:
 			goto st16
 		case 367:
-			goto st728
+			goto st746
 		case 525:
 			goto tr63
 		case 623:
-			goto tr791
+			goto tr809
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr791:
+tr809:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st828
-	st828:
+	goto st846
+	st846:
 		if p++; p == pe {
-			goto _test_eof828
+			goto _test_eof846
 		}
-	st_case_828:
-//line memcached.go:23410
+	st_case_846:
+//line memcached.go:23982
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -23416,26 +23988,26 @@ tr791:
 		case 269:
 			goto st16
 		case 370:
-			goto st729
+			goto st747
 		case 525:
 			goto tr63
 		case 626:
-			goto tr792
+			goto tr810
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr792:
+tr810:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st829
-	st829:
+	goto st847
+	st847:
 		if p++; p == pe {
-			goto _test_eof829
+			goto _test_eof847
 		}
-	st_case_829:
-//line memcached.go:23439
+	st_case_847:
+//line memcached.go:24011
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -23445,26 +24017,26 @@ tr792:
 		case 269:
 			goto st16
 		case 357:
-			goto st730
+			goto st748
 		case 525:
 			goto tr63
 		case 613:
-			goto tr793
+			goto tr811
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr793:
+tr811:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st830
-	st830:
+	goto st848
+	st848:
 		if p++; p == pe {
-			goto _test_eof830
+			goto _test_eof848
 		}
-	st_case_830:
-//line memcached.go:23468
+	st_case_848:
+//line memcached.go:24040
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -23474,26 +24046,26 @@ tr793:
 		case 269:
 			goto st16
 		case 368:
-			goto st731
+			goto st749
 		case 525:
 			goto tr63
 		case 624:
-			goto tr794
+			goto tr812
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr794:
+tr812:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st831
-	st831:
+	goto st849
+	st849:
 		if p++; p == pe {
-			goto _test_eof831
+			goto _test_eof849
 		}
-	st_case_831:
-//line memcached.go:23497
+	st_case_849:
+//line memcached.go:24069
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -23503,26 +24075,26 @@ tr794:
 		case 269:
 			goto st16
 		case 364:
-			goto st732
+			goto st750
 		case 525:
 			goto tr63
 		case 620:
-			goto tr795
+			goto tr813
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr795:
+tr813:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st832
-	st832:
+	goto st850
+	st850:
 		if p++; p == pe {
-			goto _test_eof832
+			goto _test_eof850
 		}
-	st_case_832:
-//line memcached.go:23526
+	st_case_850:
+//line memcached.go:24098
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -23532,26 +24104,26 @@ tr795:
 		case 269:
 			goto st16
 		case 377:
-			goto st733
+			goto st751
 		case 525:
 			goto tr63
 		case 633:
-			goto tr796
+			goto tr814
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
 		}
 		goto st0
-tr796:
+tr814:
 //line memcached.rl:44
  foundLen = foundLen + 1 
-	goto st833
-	st833:
+	goto st851
+	st851:
 		if p++; p == pe {
-			goto _test_eof833
+			goto _test_eof851
 		}
-	st_case_833:
-//line memcached.go:23555
+	st_case_851:
+//line memcached.go:24127
 		_widec = int16(data[p])
 		_widec = 256 + (int16(data[p]) - 0)
 		if  expectedLen > foundLen  {
@@ -23559,9 +24131,9 @@ tr796:
 		}
 		switch _widec {
 		case 269:
-			goto st438
+			goto st450
 		case 525:
-			goto tr428
+			goto tr440
 		}
 		if 512 <= _widec && _widec <= 767 {
 			goto tr62
@@ -23583,7 +24155,7 @@ tr796:
 	_test_eof14: cs = 14; goto _test_eof
 	_test_eof15: cs = 15; goto _test_eof
 	_test_eof16: cs = 16; goto _test_eof
-	_test_eof834: cs = 834; goto _test_eof
+	_test_eof852: cs = 852; goto _test_eof
 	_test_eof17: cs = 17; goto _test_eof
 	_test_eof18: cs = 18; goto _test_eof
 	_test_eof19: cs = 19; goto _test_eof
@@ -23615,7 +24187,7 @@ tr796:
 	_test_eof45: cs = 45; goto _test_eof
 	_test_eof46: cs = 46; goto _test_eof
 	_test_eof47: cs = 47; goto _test_eof
-	_test_eof835: cs = 835; goto _test_eof
+	_test_eof853: cs = 853; goto _test_eof
 	_test_eof48: cs = 48; goto _test_eof
 	_test_eof49: cs = 49; goto _test_eof
 	_test_eof50: cs = 50; goto _test_eof
@@ -23719,10 +24291,10 @@ tr796:
 	_test_eof148: cs = 148; goto _test_eof
 	_test_eof149: cs = 149; goto _test_eof
 	_test_eof150: cs = 150; goto _test_eof
-	_test_eof836: cs = 836; goto _test_eof
 	_test_eof151: cs = 151; goto _test_eof
 	_test_eof152: cs = 152; goto _test_eof
 	_test_eof153: cs = 153; goto _test_eof
+	_test_eof854: cs = 854; goto _test_eof
 	_test_eof154: cs = 154; goto _test_eof
 	_test_eof155: cs = 155; goto _test_eof
 	_test_eof156: cs = 156; goto _test_eof
@@ -23732,10 +24304,10 @@ tr796:
 	_test_eof160: cs = 160; goto _test_eof
 	_test_eof161: cs = 161; goto _test_eof
 	_test_eof162: cs = 162; goto _test_eof
-	_test_eof837: cs = 837; goto _test_eof
 	_test_eof163: cs = 163; goto _test_eof
 	_test_eof164: cs = 164; goto _test_eof
 	_test_eof165: cs = 165; goto _test_eof
+	_test_eof855: cs = 855; goto _test_eof
 	_test_eof166: cs = 166; goto _test_eof
 	_test_eof167: cs = 167; goto _test_eof
 	_test_eof168: cs = 168; goto _test_eof
@@ -23747,10 +24319,10 @@ tr796:
 	_test_eof174: cs = 174; goto _test_eof
 	_test_eof175: cs = 175; goto _test_eof
 	_test_eof176: cs = 176; goto _test_eof
-	_test_eof838: cs = 838; goto _test_eof
 	_test_eof177: cs = 177; goto _test_eof
 	_test_eof178: cs = 178; goto _test_eof
 	_test_eof179: cs = 179; goto _test_eof
+	_test_eof856: cs = 856; goto _test_eof
 	_test_eof180: cs = 180; goto _test_eof
 	_test_eof181: cs = 181; goto _test_eof
 	_test_eof182: cs = 182; goto _test_eof
@@ -24010,10 +24582,8 @@ tr796:
 	_test_eof436: cs = 436; goto _test_eof
 	_test_eof437: cs = 437; goto _test_eof
 	_test_eof438: cs = 438; goto _test_eof
-	_test_eof839: cs = 839; goto _test_eof
 	_test_eof439: cs = 439; goto _test_eof
 	_test_eof440: cs = 440; goto _test_eof
-	_test_eof840: cs = 840; goto _test_eof
 	_test_eof441: cs = 441; goto _test_eof
 	_test_eof442: cs = 442; goto _test_eof
 	_test_eof443: cs = 443; goto _test_eof
@@ -24024,8 +24594,10 @@ tr796:
 	_test_eof448: cs = 448; goto _test_eof
 	_test_eof449: cs = 449; goto _test_eof
 	_test_eof450: cs = 450; goto _test_eof
+	_test_eof857: cs = 857; goto _test_eof
 	_test_eof451: cs = 451; goto _test_eof
 	_test_eof452: cs = 452; goto _test_eof
+	_test_eof858: cs = 858; goto _test_eof
 	_test_eof453: cs = 453; goto _test_eof
 	_test_eof454: cs = 454; goto _test_eof
 	_test_eof455: cs = 455; goto _test_eof
@@ -24041,7 +24613,6 @@ tr796:
 	_test_eof465: cs = 465; goto _test_eof
 	_test_eof466: cs = 466; goto _test_eof
 	_test_eof467: cs = 467; goto _test_eof
-	_test_eof841: cs = 841; goto _test_eof
 	_test_eof468: cs = 468; goto _test_eof
 	_test_eof469: cs = 469; goto _test_eof
 	_test_eof470: cs = 470; goto _test_eof
@@ -24054,6 +24625,7 @@ tr796:
 	_test_eof477: cs = 477; goto _test_eof
 	_test_eof478: cs = 478; goto _test_eof
 	_test_eof479: cs = 479; goto _test_eof
+	_test_eof859: cs = 859; goto _test_eof
 	_test_eof480: cs = 480; goto _test_eof
 	_test_eof481: cs = 481; goto _test_eof
 	_test_eof482: cs = 482; goto _test_eof
@@ -24408,6 +24980,24 @@ tr796:
 	_test_eof831: cs = 831; goto _test_eof
 	_test_eof832: cs = 832; goto _test_eof
 	_test_eof833: cs = 833; goto _test_eof
+	_test_eof834: cs = 834; goto _test_eof
+	_test_eof835: cs = 835; goto _test_eof
+	_test_eof836: cs = 836; goto _test_eof
+	_test_eof837: cs = 837; goto _test_eof
+	_test_eof838: cs = 838; goto _test_eof
+	_test_eof839: cs = 839; goto _test_eof
+	_test_eof840: cs = 840; goto _test_eof
+	_test_eof841: cs = 841; goto _test_eof
+	_test_eof842: cs = 842; goto _test_eof
+	_test_eof843: cs = 843; goto _test_eof
+	_test_eof844: cs = 844; goto _test_eof
+	_test_eof845: cs = 845; goto _test_eof
+	_test_eof846: cs = 846; goto _test_eof
+	_test_eof847: cs = 847; goto _test_eof
+	_test_eof848: cs = 848; goto _test_eof
+	_test_eof849: cs = 849; goto _test_eof
+	_test_eof850: cs = 850; goto _test_eof
+	_test_eof851: cs = 851; goto _test_eof
 
 	_test_eof: {}
 	_out: {}
